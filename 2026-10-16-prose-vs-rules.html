@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Should the rules live in prose or in code?</title><style>body{max-width:680px;margin:0 auto;padding:2.5rem 1.2rem;font:18px/1.7 Georgia,serif;color:#222;background:#fdfcf9}
+a{color:#2b5fa8}h1,h2{font-family:system-ui,sans-serif;line-height:1.25}header a{color:#222;text-decoration:none;font-family:system-ui,sans-serif;font-weight:700}
+.meta{color:#888;font:14px system-ui,sans-serif}blockquote{border-left:3px solid #ccc;margin:1rem 0;padding-left:1rem;color:#555}
+ul.posts{list-style:none;padding:0}ul.posts li{margin:1.2rem 0}footer{margin-top:3rem;color:#aaa;font:13px system-ui,sans-serif}</style></head><body><header><a href="index.html">Vishwajit Pathare's Notes</a></header>
+<main><h1>Should the rules live in prose or in code?</h1><p class='meta'>2026-10-16</p><p>Most of what I bookmarked this week turned out to be about one question, even though I didn't save it that way: when you work with AI agents, where should your instructions actually live?</p>
+<h2>The case against comments</h2>
+<p>The post that got me thinking was <a href="https://x.com/poteto/status/2110149626133438732">@poteto's</a> argument to "ban and delete most if not all code comments." His reason isn't really about style. It's about how agents behave:</p>
+<blockquote>
+<p>"agents love copying what already exists. a seemingly harmless comment explaining some temporary workaround is one of the worst viruses you can have in your codebase."</p>
+</blockquote>
+<p>In a <a href="https://x.com/poteto/status/2110214162400137637">follow-up</a> he goes further: comments go stale, agents use them to explain workarounds instead of fixing the code, and "they are not enforceable and waste your agents' tokens." His conclusion is that moving prose (comments, rules, agent.md, skills) "into deterministic lint rules, better API design/types, is far more effective, enforceable, and token efficient."</p>
+<p>That bothered me at first, because the same person maintains a whole set of skills, which are written prose. So is he arguing against his own work?</p>
+<h2>Where it gets interesting</h2>
+<p>I don't think he is. In <a href="https://x.com/poteto/status/2110496830429839869">another post</a> he says the most durable part of his skills are short engineering principles, "~10-20 loc", and that "as models get smarter, i expect most of pstack skills to compress into short principles or workflows... and that i will be able to delete a few of them."</p>
+<p>So this is how I read it now. There are two kinds of instruction:</p>
+<ol>
+<li><strong>Things a machine can check.</strong> Types, lint rules, tests. These should be code, because prose here just goes stale.</li>
+<li><strong>Judgment.</strong> Why we do things a certain way, what matters when there's a trade-off. This might always have to be prose, but it should be short.</li>
+</ol>
+<p>The trick he uses is that agents have to name which principle shaped each decision. I like that: it turns a vague rule into something you can check afterward, even if it's not automated.</p>
+<p><a href="https://x.com/mattpocockuk/status/2109973273924579720">Matt Pocock's list of mistakes</a> seems to point the same way. "Your skills are too long," "Your automated checks are too lax," and "Your agent can't verify its own work" all show up together. He also has both "You're not aligning before you start work" and "You're aligning too often, and too hard," which I find honest. There isn't one right setting, just a balance you keep adjusting.</p>
+<h2>What I'm unsure about</h2>
+<p>There's a skill in that same set, <a href="https://x.com/poteto/status/2110047236369547621">/in-your-own-words</a>, that checks whether you and the agent agree on the goal before work starts. That's alignment, and it can't really be a lint rule. So maybe the line isn't "prose vs. code." Maybe it's "what can be verified vs. what has to be understood."</p>
+<p>This connects to something I <a href="https://x.com/VishwajitP27494/status/2024507921254797529">asked a while back</a> about first-principles cost estimates: carbon is cheap, "but you cant just get diamonds out of it." A rule written down is like the raw material. Turning it into behavior is the manufacturing step, and that's where the real cost is. Lint rules are cheap to enforce once they exist. A principle in prose is cheap to write but costs something every time an agent has to interpret it.</p>
+<p>I also <a href="https://x.com/VishwajitP27494/status/2110561793710182653">floated an idea</a> recently about turning an agent into a curious student that goes through my lectures, does its own readings, and grows over time. If I ever build that, this week's question applies directly. Which parts of "being a good student" could I check automatically (did it read the source, did it cite it), and which parts are judgment I'd have to write as a few short principles and then trust?</p>
+<p>I don't have an answer yet. My working rule for now: if I can check it, encode it. If I can't, write it in as few words as possible, and make the agent say when it used it.</p></main><footer>Written from my X posts and bookmarks.</footer></body></html>
