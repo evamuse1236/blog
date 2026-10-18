@@ -1,0 +1,28 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>What happens when the agent grills me instead?</title><style>body{max-width:680px;margin:0 auto;padding:2.5rem 1.2rem;font:18px/1.7 Georgia,serif;color:#222;background:#fdfcf9}
+a{color:#2b5fa8}h1,h2{font-family:system-ui,sans-serif;line-height:1.25}header a{color:#222;text-decoration:none;font-family:system-ui,sans-serif;font-weight:700}
+.meta{color:#888;font:14px system-ui,sans-serif}blockquote{border-left:3px solid #ccc;margin:1rem 0;padding-left:1rem;color:#555}
+ul.posts{list-style:none;padding:0}ul.posts li{margin:1.2rem 0}footer{margin-top:3rem;color:#aaa;font:13px system-ui,sans-serif}</style></head><body><header><a href="index.html">Vishwajit Pathare's Notes</a></header>
+<main><h1>What happens when the agent grills me instead?</h1><p class='meta'>2026-10-18</p><p>I bookmarked a short list of prompts yesterday and I haven't stopped thinking about one of them. Not because it's clever, but because it flips who is checking whom.</p>
+<h2>The three prompts</h2>
+<p><a href="https://x.com/Prayag12B/status/2111467943313969589">A post from @Prayag12B</a> says these come from Boris Cherny and the Claude Code team at Anthropic. I'm taking that attribution on the post's word. The prompts themselves are what interest me:</p>
+<blockquote>
+<p>"Knowing everything you know now, scrap this and implement the elegant solution."</p>
+<p>"Grill me on these changes and don't make a PR until I pass your test."</p>
+<p>"Prove to me this works by diffing the behavior between main and this feature branch."</p>
+</blockquote>
+<p>The framing around them is that most people accept the first thing the AI hands back. I recognize that in myself. If something runs, I'm usually relieved enough to move on.</p>
+<h2>They aren't the same kind of prompt</h2>
+<p>Reading them a few times, I think they do three different jobs.</p>
+<p>The first one asks for a redo. It works because the agent has learned something while making the messy version, so a second pass starts from a better place. But "elegant" is doing a lot of work there. Elegant by whose taste? I'd probably accept whatever it called elegant, which puts me right back where I started: trusting the first answer, just one round later.</p>
+<p>The third one is the one I trust most, because it asks for evidence instead of an opinion. "Does this work?" gets you a yes. "Show me the behavior before and after" gets you something you can look at and disagree with.</p>
+<p>The second one is the strange one, and the one I keep coming back to.</p>
+<h2>Being tested by the thing I'm supposed to be checking</h2>
+<p>"Grill me... don't make a PR until I pass your test." Here the agent isn't the one being reviewed. I am. The thing that wrote the code turns into the examiner, and the bar for shipping becomes whether I actually understand what changed.</p>
+<p>I like this more than I expected to. The real risk with agents writing my code isn't only bad code. It's code I approve without understanding. A test I have to pass is a pretty direct fix for that.</p>
+<p>It also pulls me back to something I care about outside of code. Early on X I <a href="https://x.com/VishwajitP27494/status/1877059253954818473">wrote to someone</a> that I was "on a search for a better educational model too." A tutor that won't let you move on until you can explain your own work back is an old idea, and a good one. I didn't expect to find it hiding in a list of coding tips.</p>
+<p>What I'm not sure about: who grades the grader? If the agent wrote the change and also writes the quiz, it might only ask about the parts it already thinks are important. The quiz could have the same blind spots as the code. Maybe that's still better than no quiz. I honestly don't know yet.</p>
+<h2>Rules versus judgment</h2>
+<p>Another bookmark from the same day makes a nice contrast. <a href="https://x.com/Voxyz_ai/status/2111140116572049485">@Voxyz_ai shared a prompt</a> for having an agent find sound effects on Openverse while it edits video. The prompt is full of hard limits: "Only use results with license=cc0,by,pdm," "search for each kind of sound only once," and "copy each result's attribution field into credits.txt as is."</p>
+<p>That prompt leaves almost nothing to the agent's taste. The grill-me prompt leaves almost everything to it. I think both are right for their jobs. Licensing and attribution are places where you want rules a script could check. Understanding a change is a place where you want a conversation.</p>
+<p>So if I try these this week, I'd keep the behavior diff as the real gate, use the redo prompt when something feels hacky, and use "grill me" mostly on myself, as a way to make sure I'm not just nodding along. I'm curious whether the questions it asks will be any good.</p></main><footer>Written from my X posts and bookmarks.</footer></body></html>
