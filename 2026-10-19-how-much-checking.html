@@ -1,0 +1,34 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How much checking does a change deserve?</title><style>body{max-width:680px;margin:0 auto;padding:2.5rem 1.2rem;font:18px/1.7 Georgia,serif;color:#222;background:#fdfcf9}
+a{color:#2b5fa8}h1,h2{font-family:system-ui,sans-serif;line-height:1.25}header a{color:#222;text-decoration:none;font-family:system-ui,sans-serif;font-weight:700}
+.meta{color:#888;font:14px system-ui,sans-serif}blockquote{border-left:3px solid #ccc;margin:1rem 0;padding-left:1rem;color:#555}
+ul.posts{list-style:none;padding:0}ul.posts li{margin:1.2rem 0}footer{margin-top:3rem;color:#aaa;font:13px system-ui,sans-serif}</style></head><body><header><a href="index.html">Vishwajit Pathare's Notes</a></header>
+<main><h1>How much checking does a change deserve?</h1><p class='meta'>2026-10-19</p><p>Yesterday I wrote about getting an agent to grill me before it opens a PR. Today I bookmarked a post that more or less answers the question I should have asked first: when is grilling worth it at all?</p>
+<h2>Don't grill a tiny diff</h2>
+<p><a href="https://x.com/mattpocockuk/status/2108216899439894574">@mattpocockuk lays out</a> when he uses his <code>/grill-with-docs</code> and <code>/wayfinder</code> commands and when he just lets the agent one-shot the code. The first rule is the one that stuck with me:</p>
+<blockquote>
+<p>"If the diff is tiny, DON'T grill"</p>
+</blockquote>
+<p>His reasoning is that grilling protects you from the agent building the wrong thing, and when the thing is tiny, building the wrong thing costs almost nothing. So you just check the result.</p>
+<p>The second rule is the more surprising one: "Never start with /wayfinder." From the post, wayfinder is the heavier planning step, the one that makes a map and tickets. If you start there and the solution turns out to be simple, you've built planning you don't need. So he starts with the conversation, and only turns it into a map if planning "starts to get out of hand."</p>
+<p>I like that the order is cheap first, heavy only when the work asks for it. And I notice I had it a bit backwards yesterday. I was excited about "grill me" as a habit for everything. Matt's version says the size of the change should decide how much talking happens before the code.</p>
+<h2>The check that needs no conversation</h2>
+<p>The same person posted a <a href="https://x.com/mattpocockuk/status/2111708560715292675">prompt of the day</a> that's the opposite kind of check:</p>
+<blockquote>
+<p>"Create a pre-commit hook that prevents files over 5,000 tokens. Tokens = bytes/4."</p>
+</blockquote>
+<p>It only runs on staged files and skips things agents didn't write, like lockfiles and generated code. The part I keep rereading is the last line of the prompt: "Provide explicit instructions on how to split files in the error message."</p>
+<p>So the error message is really a prompt. When the agent hits the limit, the thing that stops it also tells it what to do next. That links back to my post from a few days ago about <a href="2026-10-16-prose-vs-rules.html">whether rules belong in prose or in code</a>. This is a rule that lives in code, and it still talks, but only when it fires.</p>
+<p>I'm not sure the number matters much. Bytes divided by four is a rough guess at tokens, and 5,000 is a choice, not a law. My guess is the real value is that some limit exists and a script enforces it, so nobody has to remember it.</p>
+<h2>A job whose only task is doubt</h2>
+<p>The third bookmark is about memory rather than code, but it feels like the same question. <a href="https://x.com/Argona0x/status/2111837226006921640">@Argona0x describes a "second brain"</a> built from three bots in one group chat, which the post credits to a Karpathy pattern. I'm going on the post's description here, since I haven't seen the full setup it links to.</p>
+<p>The split is "Reader collects. Librarian writes. Checker doubts." The reader keeps sources untouched, the librarian rewrites wiki pages, and the checker runs every night looking for contradictions, stale claims, and pages nothing links to. Two details I liked:</p>
+<blockquote>
+<p>"a new source contradicts an old page: the checker tags you instead of quietly overwriting it"</p>
+<p>"a page goes 30 days without a fresh source: it gets marked unconfirmed"</p>
+</blockquote>
+<p>And every page has to show the claim, the source, and the date it was last confirmed. The line that sums it up for me is "a second brain can sound sure while remembering the wrong thing."</p>
+<h2>What ties these together, I think</h2>
+<p>All three are about matching the check to the risk. A tiny diff gets no grilling. A file-size rule gets a script, because a script never forgets. And memory, which slowly goes out of date without anyone noticing, gets a separate role that exists only to doubt it, and that asks a person when it finds a conflict instead of deciding on its own.</p>
+<p>That last part is the one I want for myself. The things I bookmark and the notes I keep go stale too, and I rarely notice. A page that says "last confirmed 40 days ago" is a small, honest thing to show.</p>
+<p>What I can't tell yet is how much of this I'd actually keep up. Three bots and a nightly check sounds great on the first day. The post's own advice is to "start with one topic you actually work on, not your whole life," which is probably right, and is also Matt's rule again in a different setting: start small, and add structure only when you need it.</p></main><footer>Written from my X posts and bookmarks.</footer></body></html>
