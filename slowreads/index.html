@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Slow Reads</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Calm single reading column. Light by default, dark follows the device. */
+:root{
+  --bg:#f1f3f1; --surface:#fbfcfb; --ink:#1d2622; --muted:#5f6b65; --faint:#8b958f;
+  --line:#d9dfdb; --accent:#2f6a5a; --accent-soft:#e1ece7; --done:#a9b3ad;
+  --display:"Familjen Grotesk","Helvetica Neue",Arial,sans-serif;
+  --body:"Literata",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#121715; --surface:#19201d; --ink:#e4ebe7; --muted:#9fada6; --faint:#76837c;
+    --line:#29332e; --accent:#8cc7b3; --accent-soft:#1e2c27; --done:#56625c;
+    color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.wrap{max-width:680px;margin:0 auto;
+  padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px));
+  padding-block:40px 80px;display:flex;flex-direction:column;gap:44px}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.2;text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+
+/* Header */
+header{display:flex;flex-direction:column;gap:10px}
+.date{font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(2rem,7vw,2.6rem);font-weight:700;letter-spacing:-.015em}
+.status{color:var(--muted);font-size:1rem}
+.bar{height:4px;background:var(--line);border-radius:99px;overflow:hidden;margin-top:6px}
+.bar i{display:block;height:100%;width:0;background:var(--accent);border-radius:99px;transition:width .5s ease}
+
+.tools{display:flex;justify-content:flex-end}
+.toggle{font-family:var(--display);font-size:.9rem;background:none;border:1.5px solid var(--line);border-radius:99px;padding:6px 14px;cursor:pointer;color:var(--muted)}
+.toggle[aria-pressed="true"]{border-color:var(--accent);color:var(--accent)}
+
+/* Sections */
+section{display:flex;flex-direction:column;gap:14px}
+.sec-title{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+h2{font-size:1rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.count{font-family:var(--mono);font-size:.78rem;color:var(--faint);font-variant-numeric:tabular-nums}
+.list{display:flex;flex-direction:column;gap:12px}
+
+/* Post card */
+.post{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 20px 16px;
+  display:flex;flex-direction:column;gap:10px;transition:opacity .3s ease,background .3s ease}
+.post.read{opacity:.55;background:transparent}
+.by{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;font-family:var(--display);font-size:.92rem;color:var(--muted)}
+.by b{color:var(--ink);font-weight:700}
+.by .when{font-family:var(--mono);font-size:.74rem;color:var(--faint)}
+.post h3{font-size:1.28rem;font-weight:700;letter-spacing:-.005em}
+.post h3 a{text-decoration:none}
+.post h3 a:hover{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:4px}
+.post.read h3{text-decoration:line-through;text-decoration-color:var(--done);text-decoration-thickness:1.5px}
+.summary{color:var(--ink);max-width:62ch}
+.post.read .summary{display:none}
+.meta{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-family:var(--mono);font-size:.7rem;letter-spacing:.03em;color:var(--muted);border:1px solid var(--line);border-radius:5px;padding:1px 7px}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px;padding-top:12px;border-top:1px solid var(--line)}
+.btn{display:inline-flex;align-items:center;gap:7px;min-height:40px;padding:0 14px;border-radius:10px;
+  font-family:var(--display);font-size:.92rem;font-weight:500;text-decoration:none;cursor:pointer;border:1.5px solid transparent}
+.btn.read-btn{background:var(--accent-soft);color:var(--accent)}
+.btn.read-btn[aria-pressed="true"]{background:transparent;border-color:var(--line);color:var(--muted)}
+.btn.open{background:var(--accent);color:var(--surface)}
+.btn.site{border-color:var(--line);color:var(--muted)}
+.btn svg{width:16px;height:16px;flex:none}
+
+/* Empty + archive */
+.empty{border:1.5px dashed var(--line);border-radius:14px;padding:22px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
+.empty b{font-family:var(--display);color:var(--ink)}
+.archive .post{border-style:dashed}
+
+footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;gap:4px}
+@media (max-width:420px){
+  body{font-size:16px}
+  .post{padding:18px 16px 14px}
+  .btn{flex:1 1 auto;justify-content:center}
+}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="date" id="date"></div>
+    <h1>Slow Reads</h1>
+    <p class="status" id="status"></p>
+    <div class="bar" aria-hidden="true"><i id="bar"></i></div>
+  </header>
+
+  <div class="tools"><button class="toggle" id="hideRead" aria-pressed="false">Hide read</button></div>
+
+  <section id="todaySec">
+    <div class="sec-title"><h2>Today</h2><span class="count" id="todayCount"></span></div>
+    <div class="list" id="today"></div>
+  </section>
+
+  <section id="weekSec">
+    <div class="sec-title"><h2>Earlier this week</h2><span class="count" id="weekCount"></span></div>
+    <div class="list" id="week"></div>
+  </section>
+
+  <section id="archiveSec" class="archive" hidden>
+    <div class="sec-title"><h2>From the archive</h2></div>
+    <div class="list" id="archive"></div>
+  </section>
+
+  <footer>
+    <span id="checked"></span>
+    <span id="failed" hidden></span>
+    <span>Read marks are saved in this browser only.</span>
+  </footer>
+</div>
+
+<!-- ===== DATA: the bot replaces only this block each day ===== -->
+<script id="digest" type="application/json">
+{
+ "date": "2026-10-21",
+ "checkedFeeds": 22,
+ "failedFeeds": [],
+ "posts": [
+  {
+   "title": "Battle Drones - a vibe coded RTS with audio-based multiplayer",
+   "author": "Simon Willison",
+   "site": "https://simonwillison.net/",
+   "url": "https://simonwillison.net/2026/Oct/20/battledrones/",
+   "published": "2026-10-21",
+   "topic": "Building with AI",
+   "paid": false,
+   "summary": "Simon describes building Battle Drones, a Command & Conquer style real-time strategy game made by prompting Claude, that supports multiplayer between nearby devices by syncing game state over audio. He walks through each version of the game and what he learned along the way."
+  },
+  {
+   "title": "Laypeople support technical fields for technology, not art",
+   "author": "Sean Goedecke",
+   "site": "https://www.seangoedecke.com/",
+   "url": "https://seangoedecke.com/laypeople-support-technical-fields-for-technology-not-art/",
+   "published": "2026-10-20",
+   "topic": "Building with AI",
+   "paid": false,
+   "summary": "Argues that saying programming and mathematics are really art, so LLMs should stay out of them, will not persuade the general public, who support those fields for the practical technology they produce."
+  },
+  {
+   "title": "What requirements don't you have?",
+   "author": "Sean Goedecke",
+   "site": "https://www.seangoedecke.com/",
+   "url": "https://seangoedecke.com/what-requirements-dont-you-have/",
+   "published": "2026-10-19",
+   "topic": "Building with AI",
+   "paid": false,
+   "summary": "Argues that the requirements a system does not have matter as much as the ones it does, and that deciding what can be slow, stale or inflexible is usually the key to an elegant design, using examples like Unicorn and S3."
+  },
+  {
+   "title": "Writing is no longer proof of work",
+   "author": "Sean Goedecke",
+   "site": "https://www.seangoedecke.com/",
+   "url": "https://seangoedecke.com/writing-is-no-longer-proof-of-work/",
+   "published": "2026-10-18",
+   "topic": "Building with AI",
+   "paid": false,
+   "summary": "Explains how tech companies use writing as evidence of compliance, effort or knowledge, much as Bitcoin uses proof-of-work, and how LLMs are undermining that practice."
+  },
+  {
+   "title": "AI is driving a boom in modestly successful software projects",
+   "author": "Sean Goedecke",
+   "site": "https://www.seangoedecke.com/",
+   "url": "https://seangoedecke.com/ai-is-driving-a-boom-in-modestly-successful-software/",
+   "published": "2026-10-16",
+   "topic": "Building with AI",
+   "paid": false,
+   "summary": "Looks at around twenty sources to answer where all the AI-built software is, and finds roughly 2x growth in modestly successful projects but no real growth in massively successful ones."
+  },
+  {
+   "title": "How To Use Decision Models for Evals",
+   "author": "Hamel Husain",
+   "site": "https://hamel.dev/",
+   "url": "https://hamel.dev/blog/posts/decision-model-evals/",
+   "published": "2026-10-20",
+   "topic": "How models work",
+   "paid": false,
+   "summary": "Covers when fast, cheap decision models are a good alternative to LLM judges for automated evals, and shows how to tune the decision threshold instead of relying on the default of 0.50."
+  },
+  {
+   "title": "Context Inertia: When Agents Won’t Let Go",
+   "author": "Drew Breunig",
+   "site": "https://www.dbreunig.com/",
+   "url": "https://www.dbreunig.com/2026/10/14/context-inertia.html",
+   "published": "2026-10-15",
+   "topic": "Big picture",
+   "paid": false,
+   "summary": "Names a new context failure mode, Context Inertia, where a model commits to a hypothesis or goal in its context and keeps pursuing it after the evidence says to change course, made worse by how persistent frontier models are trained to be."
+  },
+  {
+   "title": "30 Months on the Exponential (in Charts)",
+   "author": "Ethan Mollick",
+   "site": "https://www.oneusefulthing.org/",
+   "url": "https://www.oneusefulthing.org/p/30-months-on-the-exponential-in-charts",
+   "published": "2026-10-20",
+   "topic": "Big picture",
+   "paid": false,
+   "summary": "Marking the release of his second book, Co-Existence, Mollick uses charts to show how much AI has progressed in the 30 months since Co-Intelligence, and notes that he delegated making the charts to an AI agent."
+  },
+  {
+   "title": "New paper: Emerging trends in AI agent evaluation",
+   "author": "Arvind Narayanan & Sayash Kapoor",
+   "site": "https://www.normaltech.ai/",
+   "url": "https://www.normaltech.ai/p/new-paper-emerging-trends-in-ai-agent",
+   "published": "2026-10-20",
+   "topic": "Big picture",
+   "paid": false,
+   "summary": "Introduces a paper from Princeton, Stanford, the UK AI Security Institute and Brookings on the state of AI agent evaluation: what makes a good evaluation, what needs evaluating, and how to support the growing evaluation ecosystem."
+  },
+  {
+   "title": "Steering AI Beyond Automation",
+   "author": "Arvind Narayanan & Sayash Kapoor",
+   "site": "https://www.normaltech.ai/",
+   "url": "https://www.normaltech.ai/p/steering-ai-beyond-automation",
+   "published": "2026-10-15",
+   "topic": "Big picture",
+   "paid": false,
+   "summary": "Asks whether AI is purely about automating human labor, and challenges the technological determinism of the dominant Silicon Valley view that AI's internal logic favors automation."
+  },
+  {
+   "title": "AI is ushering in an age of personal media",
+   "author": "Timothy B. Lee",
+   "site": "https://www.understandingai.org/",
+   "url": "https://www.understandingai.org/p/ai-is-ushering-in-an-age-personal",
+   "published": "2026-10-19",
+   "topic": "Big picture",
+   "paid": false,
+   "summary": "Starting from his habit of composing and recording songs, Lee explains how AI tools make it practical to create media for a personal audience of one."
+  },
+  {
+   "title": "OpenAI’s ironic credibility problem",
+   "author": "Timothy B. Lee",
+   "site": "https://www.understandingai.org/",
+   "url": "https://www.understandingai.org/p/openais-ironic-credibility-problem",
+   "published": "2026-10-15",
+   "topic": "Big picture",
+   "paid": false,
+   "summary": "Reports on OpenAI firing three safety employees in early October, who say they were given differing reasons tied to their communication with the outside research group METR, and what this means for OpenAI's credibility."
+  }
+ ],
+ "archivePick": null
+}
+</script>
+<!-- ===== END DATA ===== -->
+
+<script>
+(function(){
+  var KEY="slowreads:read";
+  var data;
+  try{ data=JSON.parse(document.getElementById("digest").textContent); }
+  catch(e){ data={date:"",posts:[],archivePick:null}; }
+
+  function loadRead(){ try{ return new Set(JSON.parse(localStorage.getItem(KEY)||"[]")); }catch(e){ return new Set(); } }
+  function saveRead(s){ try{ localStorage.setItem(KEY,JSON.stringify(Array.from(s).slice(-500))); }catch(e){} }
+  var read=loadRead();
+  var hideRead=false;
+  try{ hideRead=localStorage.getItem("slowreads:hide")==="1"; }catch(e){}
+
+  function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];}); }
+  function parseDay(s){ var p=(s||"").split("-"); return new Date(+p[0],(+p[1]||1)-1,+p[2]||1); }
+  function niceDate(s){ var d=parseDay(s); return d.toLocaleDateString(undefined,{weekday:"long",day:"numeric",month:"long"}); }
+  function ago(s){
+    var diff=Math.round((parseDay(data.date)-parseDay(s))/86400000);
+    if(diff<=0) return "today"; if(diff===1) return "yesterday"; return diff+" days ago";
+  }
+
+  var icoOpen='<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12"/></svg>';
+  var icoCheck='<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m3 8.5 3 3 7-7"/></svg>';
+  var icoHome='<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 7.5 8 3l5.5 4.5V13h-11z"/></svg>';
+
+  function card(p,i){
+    var isRead=read.has(p.url);
+    return '<article class="post'+(isRead?' read':'')+'" data-url="'+esc(p.url)+'"'+(isRead&&hideRead?' hidden':'')+'>'+
+      '<div class="by"><b>'+esc(p.author)+'</b><span class="when">'+esc(ago(p.published))+'</span></div>'+
+      '<h3><a href="'+esc(p.url)+'" target="_blank" rel="noopener">'+esc(p.title)+'</a></h3>'+
+      (p.summary?'<p class="summary">'+esc(p.summary)+'</p>':'')+
+      '<div class="meta">'+(p.topic?'<span class="tag">'+esc(p.topic)+'</span>':'')+(p.paid?'<span class="tag">Partly paid</span>':'')+'</div>'+
+      '<div class="actions">'+
+        '<button class="btn read-btn" type="button" aria-pressed="'+isRead+'">'+icoCheck+'<span>'+(isRead?'Read':'Mark as read')+'</span></button>'+
+        '<a class="btn open" href="'+esc(p.url)+'" target="_blank" rel="noopener">'+icoOpen+'Read post</a>'+
+        '<a class="btn site" href="'+esc(p.site)+'" target="_blank" rel="noopener">'+icoHome+'Visit site</a>'+
+      '</div></article>';
+  }
+
+  var posts=(data.posts||[]).slice().sort(function(a,b){ return (b.published||"").localeCompare(a.published||""); });
+  var today=posts.filter(function(p){ return p.published===data.date; });
+  var week=posts.filter(function(p){ return p.published!==data.date; });
+
+  document.getElementById("date").textContent=data.date?niceDate(data.date):"";
+  document.getElementById("checked").textContent="Checked "+(data.checkedFeeds||"all")+" feeds"+(data.date?" on "+niceDate(data.date):"")+".";
+
+  if(data.failedFeeds&&data.failedFeeds.length){
+    var f=document.getElementById("failed");
+    f.textContent="Couldn't reach today: "+data.failedFeeds.join(", ")+".";
+    f.hidden=false;
+  }
+  var todayEl=document.getElementById("today");
+  todayEl.innerHTML=today.length?today.map(card).join(""):
+    '<div class="empty"><b>Nothing new today.</b><span>None of your writers published since yesterday. Pick something from earlier this week'+(data.archivePick?', or the archive pick below.':'.')+'</span></div>';
+  document.getElementById("week").innerHTML=week.map(card).join("");
+  document.getElementById("weekSec").hidden=!week.length;
+  if(data.archivePick){
+    document.getElementById("archive").innerHTML=card(data.archivePick);
+    document.getElementById("archiveSec").hidden=false;
+  }
+
+  function refresh(){
+    var all=posts.concat(data.archivePick?[data.archivePick]:[]);
+    var unread=all.filter(function(p){return !read.has(p.url);}).length;
+    var tr=today.filter(function(p){return read.has(p.url);}).length;
+    document.getElementById("todayCount").textContent=today.length?tr+" / "+today.length+" read":"";
+    document.getElementById("weekCount").textContent=week.length?week.filter(function(p){return !read.has(p.url);}).length+" unread":"";
+    var s;
+    if(!all.length) s="A quiet day. Nothing new to read.";
+    else if(!unread) s="All caught up. Nice.";
+    else if(today.length) s=today.length+" new "+(today.length===1?"post":"posts")+" today · "+unread+" unread in all";
+    else s=unread+" unread from this week";
+    document.getElementById("status").textContent=s;
+    document.getElementById("bar").style.width=(all.length?Math.round((all.length-unread)/all.length*100):0)+"%";
+    var hb=document.getElementById("hideRead");
+    hb.setAttribute("aria-pressed",String(hideRead));
+    hb.textContent=hideRead?"Show read":"Hide read";
+  }
+
+  document.addEventListener("click",function(e){
+    var b=e.target.closest(".read-btn"); if(!b) return;
+    var art=b.closest(".post"), url=art.getAttribute("data-url");
+    var now=!read.has(url);
+    if(now) read.add(url); else read.delete(url);
+    saveRead(read);
+    art.classList.toggle("read",now);
+    b.setAttribute("aria-pressed",String(now));
+    b.querySelector("span").textContent=now?"Read":"Mark as read";
+    if(now&&hideRead) setTimeout(function(){art.hidden=true;},350);
+    refresh();
+  });
+  document.getElementById("hideRead").addEventListener("click",function(){
+    hideRead=!hideRead;
+    try{ localStorage.setItem("slowreads:hide",hideRead?"1":"0"); }catch(e){}
+    document.querySelectorAll(".post").forEach(function(a){ a.hidden=hideRead&&a.classList.contains("read"); });
+    refresh();
+  });
+  refresh();
+})();
+</script>
+</body>
+</html>
