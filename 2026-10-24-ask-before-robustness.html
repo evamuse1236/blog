@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Should my agent ask before it makes things safer?</title><style>body{max-width:680px;margin:0 auto;padding:2.5rem 1.2rem;font:18px/1.7 Georgia,serif;color:#222;background:#fdfcf9}
+a{color:#2b5fa8}h1,h2{font-family:system-ui,sans-serif;line-height:1.25}header a{color:#222;text-decoration:none;font-family:system-ui,sans-serif;font-weight:700}
+.meta{color:#888;font:14px system-ui,sans-serif}blockquote{border-left:3px solid #ccc;margin:1rem 0;padding-left:1rem;color:#555}
+ul.posts{list-style:none;padding:0}ul.posts li{margin:1.2rem 0}footer{margin-top:3rem;color:#aaa;font:13px system-ui,sans-serif}</style></head><body><header><a href="index.html">Vishwajit Pathare's Notes</a></header>
+<main><h1>Should my agent ask before it makes things safer?</h1><p class='meta'>2026-10-24</p><p>A few days ago I wrote about <a href="2026-10-19-how-much-checking.html">how much checking a change deserves</a>. This week I bookmarked a post that flips the question around. It's not about how much I should check the agent. It's about when the agent should check with me before it adds checking of its own.</p>
+<h2>A rule against quiet extra work</h2>
+<p><a href="https://x.com/davekiss/status/2113363042247512161">@davekiss shared a rule</a> from the <code>AGENTS.md</code> file in the opencode project (<code>AGENTS.md</code> is the instruction file a coding agent reads before it works on a repo):</p>
+<blockquote>
+<p>"Before adding complexity for a speculative or vanishingly unlikely race or security edge case, explain the concrete failure mode, likelihood, and complexity cost to the user and get their buy-in. Do not silently expand scope for theoretical robustness."</p>
+</blockquote>
+<p>I recognise the thing this rule is fighting. I ask for a small change and get back the change plus a lock, a retry loop, and a guard for a case I can't picture ever happening. Each piece looks responsible on its own. Together they make the code harder to read, and I didn't choose any of them.</p>
+<p>What I like is that the rule doesn't say "never add safety." It says to name three things first: what would actually break, how likely that is, and what the fix costs in complexity. Then a person decides. That's a much more honest trade than either "always be defensive" or "never be."</p>
+<h2>But the right answer depends on who uses it</h2>
+<p>The obvious objection is that sometimes the edge case is real. <a href="https://x.com/mattpocockuk/status/2112880319934165307">@mattpocockuk's post</a> about the three rungs of programming helped me think about when:</p>
+<blockquote>
+<p>"1. Build personal software
+2. Build internal software (for a select group of people)
+3. Build public-facing software"</p>
+</blockquote>
+<p>and</p>
+<blockquote>
+<p>"As you climb the rungs the stakes get higher, your constraints get tighter, and you need to QA harder."</p>
+</blockquote>
+<p>So the same race condition might be a shrug in a script only I run, and a real bug in something strangers depend on. That makes me think the opencode rule is less about saying no to robustness and more about making the agent ask which rung we're on. The agent can't really know that by itself. I can.</p>
+<p>Matt's other point stung a bit: testers "show you how forgiving you are of your own crappy product." Most of what I build sits on the first rung, and I wonder how many of my "this is fine" calls are just that forgiveness.</p>
+<h2>Asking is only useful if the agent talks to me</h2>
+<p>There's a catch. A rule that says "get the user's buy-in" only works if the agent actually comes back to me. <a href="https://x.com/rileybrown/status/2112774708504510724">@rileybrown made a related point</a> about agents that run several threads at once:</p>
+<blockquote>
+<p>"A coordinator should not just coordinate the threads it should coordinate with the user. Even a one line thing that mentions the thread when it completes a task would go so far."</p>
+</blockquote>
+<p>I think these two posts want the same thing. A one-line "this finished" and a one-line "I could guard against X, it's unlikely, it would add Y, want it?" are both small check-ins that keep me in the loop without asking me to read everything.</p>
+<h2>Or make the edge case visible instead of arguing about it</h2>
+<p>The last bookmark offers a different way to settle the "is this edge case real?" question. <a href="https://x.com/poteto/status/2112736749281759566">@poteto describes</a> asking an agent to draw a statechart, then using a formal verification skill to find bugs "through something like TLA+" (a language for describing a system's states and checking rules against every path through them). The payoff, in the post's words: "you can both understand your code better and how the user flow should work, and fix issues users would otherwise see."</p>
+<p>That seems like a nice answer to the opencode rule's "likelihood" question. Instead of the agent guessing that a race is "vanishingly unlikely," or me guessing it isn't, a model checker can show whether a path to the bad state exists at all. I haven't tried this myself yet, so I don't know how much effort the model takes for a real feature, or whether it's worth it below the top rung.</p>
+<h2>Where I've landed, for now</h2>
+<p>If I put these together, I'd want my agents to work roughly like this. Do the change I asked for. If you see an edge case, tell me what breaks, how likely it is, and what guarding against it costs. Let the kind of software decide how hard we push. And when the likelihood really matters, try to show me the path rather than argue about it.</p>
+<p>What I'm unsure about is the cost of all that asking. If every task comes back with three "want me to guard against this?" questions, I'll start saying yes without reading, and then the rule has done nothing. Maybe the answer is that the agent should only ask when the guard is big, and just skip the small speculative ones. I don't know where that line is yet.</p></main><footer>Written from my X posts and bookmarks.</footer></body></html>
