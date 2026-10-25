@@ -1,0 +1,35 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Which way should messages go between my agents?</title><style>body{max-width:680px;margin:0 auto;padding:2.5rem 1.2rem;font:18px/1.7 Georgia,serif;color:#222;background:#fdfcf9}
+a{color:#2b5fa8}h1,h2{font-family:system-ui,sans-serif;line-height:1.25}header a{color:#222;text-decoration:none;font-family:system-ui,sans-serif;font-weight:700}
+.meta{color:#888;font:14px system-ui,sans-serif}blockquote{border-left:3px solid #ccc;margin:1rem 0;padding-left:1rem;color:#555}
+ul.posts{list-style:none;padding:0}ul.posts li{margin:1.2rem 0}footer{margin-top:3rem;color:#aaa;font:13px system-ui,sans-serif}</style></head><body><header><a href="index.html">Vishwajit Pathare's Notes</a></header>
+<main><h1>Which way should messages go between my agents?</h1><p class='meta'>2026-10-25</p><p>Yesterday I asked a question under someone else's post and nobody has answered it yet. So I'm going to think it through here instead.</p>
+<p><a href="https://x.com/VishwajitP27494/status/2114029335191642147">My question</a> was about Codex and Claude Code running on my own PC, outside the box my Grok Bot lives on:</p>
+<blockquote>
+<p>"can we use this to communicate to different codex and claude on my external pc
+Or from external pc to you? Or do I need them installed in your vm"</p>
+</blockquote>
+<p>Reading it back, I was really asking three things at once. Can my bot send work out to agents on my PC? Can agents on my PC send work in to my bot? Or is the boring answer to just install everything in one place? Two posts I bookmarked yesterday happen to cover the first two directions.</p>
+<h2>Sending work out</h2>
+<p>The post I replied to was <a href="https://x.com/_avichawla/status/2113954302901256597">@_avichawla on HarnessRouter</a>, an open-source layer that lets Grok Bot hand tasks to other coding agents like Codex, Claude Code, and Hermes. The idea, in the post's words:</p>
+<blockquote>
+<p>"each external specialist gets to use its own harness, model, tools, skills, and agent loop while Grok coordinates the project from one conversation."</p>
+</blockquote>
+<p>So Grok Bot stays the one I talk to, and the other agents become workers it can call. Everything goes through one shared protocol, which the post says "handles sessions, streaming, files, cancellation, and failures through the same interface." In a reply, the author put it more simply: Grok Bot "should only know how to talk to your HarnessRouter server."</p>
+<p>That reply is the closest thing to an answer I've found. If the bot only needs to reach a server, then maybe that server could sit on my PC next to my local Codex and Claude. But that's my guess, not something the post says. I haven't opened the repo to check where the server is meant to run.</p>
+<h2>Sending work in</h2>
+<p>The other direction is <a href="https://x.com/moritzkremb/status/2114051840102768922">@moritzkremb's new Grok Bot template</a>. It works the other way round. It "lets ChatGPT, Claude Code or any other agent send tasks to your Grok Bot." You add the bot, it gives you a webhook URL (an address another program can post a message to) and a key, and you paste a ready-made prompt into Claude Code so it learns to send tasks over.</p>
+<p>That covers "from external pc to you." But the replies under it found the catch quickly. Sending a task in is easy. Getting the answer back out is not. Moritz wrote:</p>
+<blockquote>
+<p>"i'm still not sure how claude would retrieve the info, i'm guessing he would need to poll the server."</p>
+</blockquote>
+<p>Polling means Claude keeps checking again and again to see if the result is ready. When someone suggested a way around that, he called it "like a reverse webhook." And his simplest suggestion was almost funny in how low-tech it is: "have grok bot write it in notion or gdrive and have the agent where you sent it from poll that."</p>
+<h2>The return trip is the hard part</h2>
+<p>This is what I hadn't noticed when I asked. One-way messages are the easy half. A task goes out, or a task comes in. The tricky part is the reply. Whoever started the job needs some way to hear that it's done, and to get the result.</p>
+<p>HarnessRouter seems to handle that inside its protocol, because the coordinator opens the session and waits on it. The webhook template doesn't, because a webhook only carries a message one way. So the two tools aren't really competing. They suit different jobs. If my bot is the boss, sending work out fits. If my PC agent is the boss and only wants to hand off a chore and forget it, sending work in is fine. It only gets awkward when the PC agent needs the answer back.</p>
+<h2>And maybe I don't need either</h2>
+<p>There was also a reply that cuts the whole thing short. <a href="https://x.com/vRobM/status/2114188743372427718">@vRobM pointed out</a> that "if you mainly use one agent like hermes, you don't need the harness as the local grok bot can run hermes cli."</p>
+<p>That's the third option in my question, the one about installing them in the VM. If I only care about one or two agents, putting them on the same box as my bot is probably simpler than any of this wiring. The plumbing only starts to pay off when the agents really have to live somewhere else. Maybe that's because a tool needs my PC's files, or a login I don't want on a shared machine.</p>
+<h2>What I'm still unsure about</h2>
+<p>I still don't know the real answer to my first question: can HarnessRouter reach agents on a different machine, or does it expect them all on one box? That's the next thing to check in the repo, instead of guessing.</p>
+<p>The bigger lesson for me is to ask "who waits for the answer?" before I ask "how do I connect these?" That decides which direction the messages need to flow. And it might also mean the answer is just to install the thing in one place.</p></main><footer>Written from my X posts and bookmarks.</footer></body></html>
