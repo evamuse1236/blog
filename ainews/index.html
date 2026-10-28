@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI News</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Calm single reading column. Light by default, dark follows the device. */
+:root{
+  --bg:#f1f3f1; --surface:#fbfcfb; --ink:#1d2622; --muted:#5f6b65; --faint:#8b958f;
+  --line:#d9dfdb; --accent:#2f6a5a; --accent-soft:#e1ece7; --done:#a9b3ad;
+  --display:"Familjen Grotesk","Helvetica Neue",Arial,sans-serif;
+  --body:"Literata",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#121715; --surface:#19201d; --ink:#e4ebe7; --muted:#9fada6; --faint:#76837c;
+    --line:#29332e; --accent:#8cc7b3; --accent-soft:#1e2c27; --done:#56625c;
+    color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.wrap{max-width:680px;margin:0 auto;
+  padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px));
+  padding-block:40px 80px;display:flex;flex-direction:column;gap:44px}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.2;text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+
+/* Header */
+header{display:flex;flex-direction:column;gap:10px}
+.date{font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(2rem,7vw,2.6rem);font-weight:700;letter-spacing:-.015em}
+.status{color:var(--muted);font-size:1rem}
+.bar{height:4px;background:var(--line);border-radius:99px;overflow:hidden;margin-top:6px}
+.bar i{display:block;height:100%;width:0;background:var(--accent);border-radius:99px;transition:width .5s ease}
+
+.tools{display:flex;justify-content:flex-end}
+.toggle{font-family:var(--display);font-size:.9rem;background:none;border:1.5px solid var(--line);border-radius:99px;padding:6px 14px;cursor:pointer;color:var(--muted)}
+.toggle[aria-pressed="true"]{border-color:var(--accent);color:var(--accent)}
+
+/* Sections */
+section{display:flex;flex-direction:column;gap:14px}
+.sec-title{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+h2{font-size:1rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.count{font-family:var(--mono);font-size:.78rem;color:var(--faint);font-variant-numeric:tabular-nums}
+.list{display:flex;flex-direction:column;gap:12px}
+
+/* Post card */
+.post{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 20px 16px;
+  display:flex;flex-direction:column;gap:10px;transition:opacity .3s ease,background .3s ease}
+.post.read{opacity:.55;background:transparent}
+.by{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;font-family:var(--display);font-size:.92rem;color:var(--muted)}
+.by b{color:var(--ink);font-weight:700}
+.by .when{font-family:var(--mono);font-size:.74rem;color:var(--faint)}
+.post h3{font-size:1.28rem;font-weight:700;letter-spacing:-.005em}
+.post h3 a{text-decoration:none}
+.post h3 a:hover{text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:4px}
+.post.read h3{text-decoration:line-through;text-decoration-color:var(--done);text-decoration-thickness:1.5px}
+.summary{color:var(--ink);max-width:62ch}
+.post.read .summary{display:none}
+.meta{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-family:var(--mono);font-size:.7rem;letter-spacing:.03em;color:var(--muted);border:1px solid var(--line);border-radius:5px;padding:1px 7px}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px;padding-top:12px;border-top:1px solid var(--line)}
+.btn{display:inline-flex;align-items:center;gap:7px;min-height:40px;padding:0 14px;border-radius:10px;
+  font-family:var(--display);font-size:.92rem;font-weight:500;text-decoration:none;cursor:pointer;border:1.5px solid transparent}
+.btn.read-btn{background:var(--accent-soft);color:var(--accent)}
+.btn.read-btn[aria-pressed="true"]{background:transparent;border-color:var(--line);color:var(--muted)}
+.btn.open{background:var(--accent);color:var(--surface)}
+.btn.site{border-color:var(--line);color:var(--muted)}
+.btn svg{width:16px;height:16px;flex:none}
+
+/* Empty + archive */
+.empty{border:1.5px dashed var(--line);border-radius:14px;padding:22px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
+.empty b{font-family:var(--display);color:var(--ink)}
+.archive .post{border-style:dashed}
+
+footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;gap:4px}
+@media (max-width:420px){
+  body{font-size:16px}
+  .post{padding:18px 16px 14px}
+  .btn{flex:1 1 auto;justify-content:center}
+}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="date" id="date"></div>
+    <h1>AI News</h1>
+    <p class="status" id="status"></p>
+    <div class="bar" aria-hidden="true"><i id="bar"></i></div>
+  </header>
+
+  <div class="tools"><button class="toggle" id="hideRead" aria-pressed="false">Hide read</button></div>
+
+  <section id="windowSec">
+    <div class="sec-title"><h2>This window</h2><span class="count" id="windowCount"></span></div>
+    <div class="list" id="window"></div>
+  </section>
+
+  <section id="earlierSec" hidden>
+    <div class="sec-title"><h2>Earlier today</h2><span class="count" id="earlierCount"></span></div>
+    <div class="list" id="earlier"></div>
+  </section>
+
+  <footer>
+    <span id="checked"></span>
+    <span>Best credible AI posts from X. Read marks stay in this browser only.</span>
+  </footer>
+</div>
+
+<!-- ===== DATA: the bot replaces only this block each day ===== -->
+<script id="digest" type="application/json">
+{
+ "updated": "2026-10-28T21:05:00+05:30",
+ "windowHours": 12,
+ "posts": [
+  {
+   "title": "NVIDIA Nemotron 3.5 Transcribe ties #1 open-weight speech-to-text",
+   "author": "@ArtificialAnlys",
+   "authorName": "Artificial Analysis",
+   "url": "https://x.com/ArtificialAnlys/status/2115459886045942161",
+   "published": "2026-10-28 20:35 IST",
+   "summary": "Nemotron 3.5 Transcribe scores 2.8% WER on the AA-WER Index, tying Voxtral Small for first among open-weight speech-to-text models, with 30B total and 4B active parameters.",
+   "why": "Independent AI benchmark lab; verified account",
+   "topic": "Models"
+  },
+  {
+   "title": "Claude Opus 5.5 can now build video games that are actually fun",
+   "author": "@simonw",
+   "authorName": "Simon Willison",
+   "url": "https://x.com/simonw/status/2115444742595260551",
+   "published": "2026-10-28 19:35 IST",
+   "summary": "Simon calls October another inflection for coding agents, saying Claude Opus 5.5 now builds video games that are actually fun to play.",
+   "why": "Well-known practitioner; high-signal builder commentary",
+   "topic": "Tools"
+  },
+  {
+   "title": "Locking open models into historical personas via single neurons",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2115419671877062710",
+   "published": "2026-10-28 17:55 IST",
+   "summary": "Highlights experiments that activate individual neurons to lock open models into personas, including one trained only on pre-1930 data with striking results.",
+   "why": "Wharton professor covering AI research; large verified-quality following",
+   "topic": "Research"
+  },
+  {
+   "title": "Claude Duet rolling out to US Claude Max users",
+   "author": "@testingcatalog",
+   "authorName": "AI News | TestingCatalog",
+   "url": "https://x.com/testingcatalog/status/2115370094658240579",
+   "published": "2026-10-28 14:38 IST",
+   "summary": "Reports Claude Duet is rolling out to Claude Max users in the US, with Pro next; broader expansion beyond the US planned with no firm timeline yet.",
+   "why": "Verified AI news account with a track record on model launches",
+   "topic": "Tools"
+  },
+  {
+   "title": "Artificial Analysis Intelligence Index v5 is live",
+   "author": "@testingcatalog",
+   "authorName": "AI News | TestingCatalog",
+   "url": "https://x.com/testingcatalog/status/2115355422034960876",
+   "published": "2026-10-28 13:40 IST",
+   "summary": "Index v5 adds FrontierCode 2.0 and Terminal-Bench-Science and leans on private datasets; Claude Opus 5.5 (max) leads at 58.",
+   "why": "Verified reporter summarizing a major independent benchmark update",
+   "topic": "Models"
+  },
+  {
+   "title": "Anthropic expands OneGov: Claude at 40% off for US governments",
+   "author": "@AnthropicAI",
+   "authorName": "Anthropic",
+   "url": "https://x.com/AnthropicAI/status/2115207004293853358",
+   "published": "2026-10-28 03:50 IST",
+   "summary": "Under a new OneGov agreement with the US GSA, Anthropic is bringing Claude to federal, state, local, tribal, and territorial governments at 40% off.",
+   "why": "Official Anthropic account",
+   "topic": "Policy"
+  },
+  {
+   "title": "Anthropic deepens drug-discovery partnerships and in-house work",
+   "author": "@AnthropicAI",
+   "authorName": "Anthropic",
+   "url": "https://x.com/AnthropicAI/status/2115178675050307942",
+   "published": "2026-10-28 01:57 IST",
+   "summary": "Anthropic says its scientists partnered with six organizations developing new medicines and have begun drug discovery efforts of their own with Claude.",
+   "why": "Official Anthropic account",
+   "topic": "Industry"
+  },
+  {
+   "title": "Genie 4: DeepMind's most realistic interactive world model",
+   "author": "@GoogleDeepMind",
+   "authorName": "Google DeepMind",
+   "url": "https://x.com/GoogleDeepMind/status/2115114028338962672",
+   "published": "2026-10-27 21:40 IST",
+   "summary": "DeepMind introduces Genie 4 for exploring dynamic environments in real time, with scene response, sound, and people who move, react, and speak.",
+   "why": "Official Google DeepMind announcement",
+   "topic": "Models"
+  },
+  {
+   "title": "Liquid AI introduces LFM3 multimodal foundation models",
+   "author": "@liquidai",
+   "authorName": "Liquid AI",
+   "url": "https://x.com/liquidai/status/2115128329003303107",
+   "published": "2026-10-27 22:37 IST",
+   "summary": "LFM3 is a new generation of Liquid Foundation Models with a tri-hybrid architecture and six instances across text, audio, vision, and omni modalities for edge and specialized use.",
+   "why": "Official Liquid AI account; open-weight release",
+   "topic": "Models"
+  },
+  {
+   "title": "Axiom formalizes Classification of Finite Simple Groups in Lean",
+   "author": "@axiommathai",
+   "authorName": "Axiom",
+   "url": "https://x.com/axiommathai/status/2115089794867040584",
+   "published": "2026-10-27 20:04 IST",
+   "summary": "Axiom announces a complete Lean auto-formalization of the Classification of Finite Simple Groups, the ~15,000-page proof built by over 100 mathematicians.",
+   "why": "Official Axiom Math account; primary research announcement",
+   "topic": "Research"
+  }
+ ]
+}
+</script>
+<!-- ===== END DATA ===== -->
+
+<script>
+(function(){
+  var KEY="ainews:read";
+  var data;
+  try{ data=JSON.parse(document.getElementById("digest").textContent); }
+  catch(e){ data={updated:"",windowHours:3,posts:[]}; }
+
+  function loadRead(){ try{ return new Set(JSON.parse(localStorage.getItem(KEY)||"[]")); }catch(e){ return new Set(); } }
+  function saveRead(s){ try{ localStorage.setItem(KEY,JSON.stringify(Array.from(s).slice(-500))); }catch(e){} }
+  var read=loadRead();
+  var hideRead=false;
+  try{ hideRead=localStorage.getItem("ainews:hide")==="1"; }catch(e){}
+
+  function esc(s){ return String(s==null?"":s).replace(/[&<>"']/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];}); }
+  function parseIST(s){
+    // "YYYY-MM-DD HH:MM IST" or ISO
+    if(!s) return null;
+    var m=String(s).match(/^(\d{4})-(\d{2})-(\d{2})(?:[ T](\d{2}):(\d{2}))?/);
+    if(!m) return null;
+    return new Date(+m[1],(+m[2]||1)-1,+m[3]||1,+(m[4]||0),+(m[5]||0));
+  }
+  function niceStamp(s){
+    var d=parseIST(s); if(!d) return s||"";
+    return d.toLocaleString(undefined,{weekday:"short",day:"numeric",month:"short",hour:"numeric",minute:"2-digit"});
+  }
+  function whenLabel(s){
+    var d=parseIST(s); if(!d) return "";
+    var now=new Date();
+    var diffMin=Math.round((now-d)/60000);
+    if(diffMin<60) return diffMin<=1?"just now":diffMin+" min ago";
+    var diffH=Math.round(diffMin/60);
+    if(diffH<24) return diffH+"h ago";
+    var diffD=Math.round(diffH/24);
+    if(diffD===1) return "yesterday";
+    return diffD+" days ago";
+  }
+  function dayKey(s){
+    var m=String(s||"").match(/^(\d{4}-\d{2}-\d{2})/);
+    return m?m[1]:"";
+  }
+  function updatedDay(){
+    var u=data.updated||"";
+    var m=String(u).match(/^(\d{4}-\d{2}-\d{2})/);
+    if(m) return m[1];
+    var d=parseIST(u); return d?d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"):"";
+  }
+
+  var icoOpen='<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12"/></svg>';
+  var icoCheck='<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m3 8.5 3 3 7-7"/></svg>';
+
+  function card(p){
+    var isRead=read.has(p.url);
+    var by=esc(p.authorName||p.author||"");
+    var handle=p.author?esc(p.author):"";
+    return '<article class="post'+(isRead?' read':'')+'" data-url="'+esc(p.url)+'"'+(isRead&&hideRead?' hidden':'')+'>'+
+      '<div class="by"><b>'+by+'</b>'+(handle?'<span>'+handle+'</span>':'')+'<span class="when">'+esc(whenLabel(p.published))+'</span></div>'+
+      '<h3><a href="'+esc(p.url)+'" target="_blank" rel="noopener">'+esc(p.title)+'</a></h3>'+
+      (p.summary?'<p class="summary">'+esc(p.summary)+'</p>':'')+
+      (p.why?'<p class="summary" style="color:var(--muted);font-size:.92rem">'+esc(p.why)+'</p>':'')+
+      '<div class="meta">'+(p.topic?'<span class="tag">'+esc(p.topic)+'</span>':'')+'</div>'+
+      '<div class="actions">'+
+        '<button class="btn read-btn" type="button" aria-pressed="'+isRead+'">'+icoCheck+'<span>'+(isRead?'Read':'Mark as read')+'</span></button>'+
+        '<a class="btn open" href="'+esc(p.url)+'" target="_blank" rel="noopener">'+icoOpen+'Open on X</a>'+
+      '</div></article>';
+  }
+
+  var posts=(data.posts||[]).slice().sort(function(a,b){
+    var da=parseIST(a.published), db=parseIST(b.published);
+    return (db?db.getTime():0)-(da?da.getTime():0);
+  });
+  var today=updatedDay();
+  // First half (newest) = this window; rest same calendar day = earlier today
+  var mid=Math.ceil(posts.length/2) || posts.length;
+  var windowPosts=posts.slice(0, Math.min(mid, posts.length));
+  // Prefer split by age relative to windowHours when possible
+  var wh=+(data.windowHours||3);
+  var cutoff=Date.now()-wh*3600000;
+  var fresh=[], earlier=[];
+  posts.forEach(function(p){
+    var d=parseIST(p.published);
+    if(d && d.getTime()>=cutoff) fresh.push(p); else earlier.push(p);
+  });
+  if(!fresh.length && posts.length){ fresh=posts; earlier=[]; }
+
+  document.getElementById("date").textContent=data.updated?("Updated "+niceStamp(data.updated)):"";
+  document.getElementById("checked").textContent="Window about "+(data.windowHours||3)+"h · "+posts.length+" posts · sources on X.";
+
+  var winEl=document.getElementById("window");
+  winEl.innerHTML=fresh.length?fresh.map(card).join(""):
+    '<div class="empty"><b>Nothing new this window.</b><span>No credible AI posts made the cut. Check back next run.</span></div>';
+  document.getElementById("earlier").innerHTML=earlier.map(card).join("");
+  document.getElementById("earlierSec").hidden=!earlier.length;
+
+  function refresh(){
+    var all=posts;
+    var unread=all.filter(function(p){return !read.has(p.url);}).length;
+    var fr=fresh.filter(function(p){return read.has(p.url);}).length;
+    document.getElementById("windowCount").textContent=fresh.length?fr+" / "+fresh.length+" read":"";
+    document.getElementById("earlierCount").textContent=earlier.length?earlier.filter(function(p){return !read.has(p.url);}).length+" unread":"";
+    var s;
+    if(!all.length) s="Quiet window. Nothing new.";
+    else if(!unread) s="All caught up. Nice.";
+    else s=fresh.length+" in this window · "+unread+" unread";
+    document.getElementById("status").textContent=s;
+    document.getElementById("bar").style.width=(all.length?Math.round((all.length-unread)/all.length*100):0)+"%";
+    var hb=document.getElementById("hideRead");
+    hb.setAttribute("aria-pressed",String(hideRead));
+    hb.textContent=hideRead?"Show read":"Hide read";
+  }
+
+  document.addEventListener("click",function(e){
+    var b=e.target.closest(".read-btn"); if(!b) return;
+    var art=b.closest(".post"), url=art.getAttribute("data-url");
+    var now=!read.has(url);
+    if(now) read.add(url); else read.delete(url);
+    saveRead(read);
+    art.classList.toggle("read",now);
+    b.setAttribute("aria-pressed",String(now));
+    b.querySelector("span").textContent=now?"Read":"Mark as read";
+    if(now&&hideRead) setTimeout(function(){art.hidden=true;},350);
+    refresh();
+  });
+  document.getElementById("hideRead").addEventListener("click",function(){
+    hideRead=!hideRead;
+    try{ localStorage.setItem("ainews:hide",hideRead?"1":"0"); }catch(e){}
+    document.querySelectorAll(".post").forEach(function(a){ a.hidden=hideRead&&a.classList.contains("read"); });
+    refresh();
+  });
+  refresh();
+})();
+</script>
+</body>
+</html>
