@@ -1,0 +1,19 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Turning my annoyed moments into a test</title><style>body{max-width:680px;margin:0 auto;padding:2.5rem 1.2rem;font:18px/1.7 Georgia,serif;color:#222;background:#fdfcf9}
+a{color:#2b5fa8}h1,h2{font-family:system-ui,sans-serif;line-height:1.25}header a{color:#222;text-decoration:none;font-family:system-ui,sans-serif;font-weight:700}
+.meta{color:#888;font:14px system-ui,sans-serif}blockquote{border-left:3px solid #ccc;margin:1rem 0;padding-left:1rem;color:#555}
+ul.posts{list-style:none;padding:0}ul.posts li{margin:1.2rem 0}footer{margin-top:3rem;color:#aaa;font:13px system-ui,sans-serif}</style></head><body><header><a href="index.html">Vishwajit Pathare's Notes</a></header>
+<main><h1>Turning my annoyed moments into a test</h1><p class='meta'>2026-10-28</p><p>Yesterday I wrote that I'd want my bots to review their own logs, and that my worry was they'd always find something to "improve." This morning I bookmarked a post from <a href="https://x.com/theo/status/2114955695434993702">@theo</a> that I think answers the worry better than I did.</p>
+<p>He says the tool schema in T3 Code had gotten "too big. Far too big." So he spent about a week building an eval. In his words, he "took all the ways my agents used these tools in my day to day work, as well as all the failures and rage moments I had, and turned them into a generic eval."</p>
+<p>He expected to mostly trim descriptions. Instead: "My eval had over 80 cases, and Opus failed over half of them."</p>
+<h2>The order of the steps is the interesting part</h2>
+<p>His steps go roughly like this. Adjust the tool descriptions until Sonnet 5.5 gets a perfect score. Add Sol and do the same. Add Opus and do the same. Merge it. Then, in a new thread, "tell Opus to trim until it uses 50% less context without any regressions in the eval." Ship.</p>
+<p>So he fixes behavior first and shrinks second, and the shrinking is only allowed while the eval keeps passing. The eval is the thing that says "stop." That's exactly what I was missing yesterday. A loop that reads logs and proposes improvements has no finish line. A loop that has to keep 80 real cases green has one.</p>
+<h2>My rage moments are already written down</h2>
+<p>The part that got me is "rage moments." I have plenty of those with my own bots. They mostly live in chat, as me saying "no, not like that" and the bot fixing it once. Then a week later the same thing happens again.</p>
+<p>Each of those messages is basically a test case that I wrote and then threw away. If I kept them, I'd have the start of an eval without spending a week on it. The case would be: here's what I asked, here's what went wrong, here's what right looks like.</p>
+<p>I don't think I need 80. Even ten real ones would tell me more than a bot grading its own logs, because they'd be about things I actually cared enough to complain about.</p>
+<h2>A smaller thing I saved</h2>
+<p>I also bookmarked a short note from <a href="https://x.com/ChromiumDev/status/2114776553481445523">@ChromiumDev</a>: "MCP connects agents to your services. WebMCP connects agents to your website while it's open and the user's in the loop." I'd been fuzzy on why both exist, and that one line cleared it up. It's the same split as a bot working in the background versus one working next to me.</p>
+<h2>What I'd try</h2>
+<p>Start a plain file of "times this went wrong," one line each, copied from my own annoyed messages. When a bot's instructions change, run it against that list before trusting the change. Theo said the shape of it "was not far from the UI overhaul hill climb," and that "you can kinda just turn into evals" a lot of problems. I'd like to find out if that's true at my small scale, where the whole eval is just my own complaints.</p></main><footer>Written from my X posts and bookmarks.</footer></body></html>
