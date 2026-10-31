@@ -128,9 +128,93 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-10-31T20:10:00+05:30",
+ "updated": "2026-10-31T23:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Lauren Tan: a short guide to building good Grok Bots and managing your team",
+   "author": "@poteto",
+   "authorName": "lauren",
+   "url": "https://x.com/poteto/status/2116576229319233596",
+   "published": "2026-10-31 22:31 IST",
+   "summary": "Her tips: keep a few good bots rather than many, have bots write skills for themselves as you teach them, give them connectors and their own email, and ask them how to automate the copy-paste steps in your workflow. Favourite tip: brain-dump by voice, then ask the bot to 'restate this in your own words'.",
+   "why": "Watchlist practitioner; first-hand practice from someone who builds bots daily",
+   "topic": "Tools",
+   "replies": "Low signal. Almost every reply is someone tagging @bot asking it to read the post and improve their team, plus a couple of auto-replies from @bot and one user saying they love Grok Bot so far.",
+   "replyCount": 10
+  },
+  {
+   "title": "Harrison Chase: the new context engineering challenges in late 2026",
+   "author": "@hwchase17",
+   "authorName": "Harrison Chase",
+   "url": "https://x.com/hwchase17/status/2116553654857867330",
+   "published": "2026-10-31 21:01 IST",
+   "summary": "LangChain's CEO argues that many context engineering problems now have standard fixes, which has some engineers calling agent engineering solved, but new ones are emerging as agents run longer and act more on their own. The article links work on agent memory, Vercel removing 80% of its agent's tools, subagents, and ambient/proactive agents.",
+   "why": "Watchlist practitioner; LangChain CEO writing long-form",
+   "topic": "Tools",
+   "replies": "Builders agree the hard part now is memory over long runs: deciding what to remember, forget, and keep up to date, especially when a user changes their mind mid-task. Others flag shared state between agents and, for local models, prefill time as a real cost of long context. @dedupedai adds a caveat that Vercel's tool-trimming savings depended on moving tool descriptions into retrieval.",
+   "replyCount": 10
+  },
+  {
+   "title": "OpenAI, Google, Microsoft and Anthropic back one robots.txt opt-out from AI training",
+   "author": "@verge",
+   "authorName": "The Verge",
+   "url": "https://x.com/verge/status/2116266570356015347",
+   "published": "2026-10-31 02:00 IST",
+   "summary": "A new shared control lets publishers set AI training preferences across multiple crawlers at once, using a '__usage_ai-training' user-agent group in robots.txt. Per X's news summary and several reports, it covers training only (not search crawling), and rollout timelines stretch into 2027 for some providers.",
+   "why": "Reputable tech outlet; cross-lab policy change that affects every publisher",
+   "topic": "Policy",
+   "replies": "Broadly welcomed as simpler than per-crawler rules, but the main pushback is enforcement: people want public compliance reporting, not just promises. Replies also stress it only covers future training (nothing already scraped is undone), crawling stays allowed by default, and Meta isn't part of it.",
+   "replyCount": 10
+  },
+  {
+   "title": "Google DeepMind paper: RL on simulated patients makes a better psychiatric intake interviewer",
+   "author": "@rohanpaul_ai",
+   "authorName": "Rohan Paul",
+   "url": "https://x.com/rohanpaul_ai/status/2116551519034048861",
+   "published": "2026-10-31 20:53 IST",
+   "summary": "Gemini 3.1 Flash-Lite was trained with multi-turn RL against simulated patients who only reveal key facts after rapport. Blind-graded by psychiatrists, it beat its base model in 76.7% of 60 case pairs and cut missed escalations of acute risk on 256 adversarial cases from 30.5% to 12.9%.",
+   "why": "Summary of a named DeepMind arXiv paper with concrete numbers",
+   "topic": "Research",
+   "replies": "Clinicians and builders say the missed-escalation drop is the number that matters and like that psychiatrists did the grading. Pushback: 12.9% still means about 1 in 8 crises slip through, the simulated patients are LLM-scripted, and one reply asks whether exhausted human clinicians were measured on the same cases.",
+   "replyCount": 10
+  },
+  {
+   "title": "IBM paper: a runtime policy gate between agents and their tools doubles τ²-bench Telecom success",
+   "author": "@omarsar0",
+   "authorName": "elvis",
+   "url": "https://x.com/omarsar0/status/2116547247018229999",
+   "published": "2026-10-31 20:36 IST",
+   "summary": "JevAct turns a domain policy into code checks and yes/no questions, then checks each tool call before it runs and sends failures back to the agent to revise. On τ²-bench Telecom, Opus 4.6's all-three-runs success rose from 39.5% to 80.7%; all eight agents improved on Telecom and all nine on BFCL, while Airline gains were smaller and mixed.",
+   "why": "Well-known AI paper curator summarising an IBM paper",
+   "topic": "Research",
+   "replies": "Most like putting the gate outside the model so policy can be versioned and tested like code. The main critique, from @rzrgrv, is that the policy-to-check step is itself an LLM translation with no verifier, so a dropped rule fails open; others suggest replaying known-bad tool traces as regression tests.",
+   "replyCount": 10
+  },
+  {
+   "title": "Rumor/early signal: Antigravity adds a security warning about agent data exfiltration",
+   "author": "@testingcatalog",
+   "authorName": "TestingCatalog",
+   "url": "https://x.com/testingcatalog/status/2116566536735293885",
+   "published": "2026-10-31 21:52 IST",
+   "summary": "Google's Antigravity is showing a new notice warning that AI coding agents carry risks including data exfiltration and possible code execution, and telling users to avoid highly sensitive data. TestingCatalog speculates a new agent could land next week.",
+   "why": "Rumor/early signal: app teardown account with a good track record; the 'new agent' part is speculation",
+   "topic": "Tools",
+   "replies": "People like that the warning is in the product, but many call a label the cheapest security feature: they want scoped credentials, default-deny network access, a sandbox and an action log. One reply notes the data-sharing checkbox in the same dialog is unticked by default.",
+   "replyCount": 10
+  },
+  {
+   "title": "NVIDIA: AI agents now steer the Allen Telescope Array in the search for alien signals",
+   "author": "@NVIDIAAI",
+   "authorName": "NVIDIA AI",
+   "url": "https://x.com/NVIDIAAI/status/2116560120457142451",
+   "published": "2026-10-31 21:27 IST",
+   "summary": "NVIDIA says the SETI Institute and Breakthrough Listen are using AI agents, built on NVIDIA Holoscan and CUDA-X libraries, to steer the Allen Telescope Array in Northern California.",
+   "why": "Official NVIDIA AI account",
+   "topic": "Industry",
+   "replies": "Mostly Halloween jokes. The useful questions are what the agents decide on their own (where to point the array or only which signals to flag) and how they handle false alarms, with one reply noting most of what the array hears is human satellite and phone interference.",
+   "replyCount": 10
+  },
   {
    "title": "Google DeepMind: PlanAssist cuts UK planning-officer assessment time by up to 58%",
    "author": "@GoogleDeepMind",
