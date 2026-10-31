@@ -69,6 +69,10 @@ h2{font-size:1rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
 .post.read h3{text-decoration:line-through;text-decoration-color:var(--done);text-decoration-thickness:1.5px}
 .summary{color:var(--ink);max-width:62ch}
 .post.read .summary{display:none}
+.replies{border-left:3px solid var(--accent-soft);padding:6px 0 6px 12px;max-width:62ch}
+.replies .rl{display:block;font-family:var(--mono);font-size:.7rem;letter-spacing:.04em;text-transform:uppercase;color:var(--faint);margin-bottom:2px}
+.replies p{color:var(--muted);font-size:.93rem}
+.post.read .replies{display:none}
 .meta{display:flex;flex-wrap:wrap;gap:6px}
 .tag{font-family:var(--mono);font-size:.7rem;letter-spacing:.03em;color:var(--muted);border:1px solid var(--line);border-radius:5px;padding:1px 7px}
 .actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px;padding-top:12px;border-top:1px solid var(--line)}
@@ -135,7 +139,9 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "published": "2026-10-31 05:12 IST",
    "summary": "Sutton says one reason he's calm about the singularity is that he's seen it coming for 50 years, and quotes what he wrote at 17: once man builds an intelligence greater than his own, it should build a greater one, so intelligence 'will shoot up with incredible rapidity, probably within the space of years.'",
    "why": "Turing Award winner, father of modern reinforcement learning, own post",
-   "topic": "Research"
+   "topic": "Research",
+   "replies": "Mostly applause for the essay. The one real pushback is @Dr_Gingerballs, who says we've learned almost nothing about how intelligence works in 50 years and asks whether statistics counts as intelligence. Others say LLMs prove Sutton right without anyone needing to understand the brain.",
+   "replyCount": 10
   },
   {
    "title": "Sean Heelan: OpenAI will train on Daybreak Blue security sessions",
@@ -145,7 +151,9 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "published": "2026-10-31 01:12 IST",
    "summary": "Heelan says OpenAI is about to start training on Daybreak Blue (its vetted cyber tool) sessions with no opt-out, calls it 'cartoonishly evil,' and expects security researchers to drop it. X's news summary says the change starts Nov 29 for personal accounts; business accounts are unaffected.",
    "why": "Well-known vulnerability researcher; policy detail via X news summary, not an OpenAI post",
-   "topic": "Policy"
+   "topic": "Policy",
+   "replies": "Replies are angry, not analytical. Most read it as OpenAI training on users' security work while open-weight labs like DeepSeek keep things fair, and @sickcodes says \"they want your private research too.\" The one useful question is how a customer could even check whether their content got trained on.",
+   "replyCount": 10
   },
   {
    "title": "OpenAI posts 'There are many futures' teaser video",
@@ -155,7 +163,9 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "published": "2026-10-31 01:08 IST",
    "summary": "A 77-second animated video with physics equations and an 'optimism achieved internally' vortex, captioned 'There are many futures. Which do you want to build?' No product is named; people are reading it as a tease for a new model.",
    "why": "Official OpenAI account; teaser only, no announcement yet",
-   "topic": "Industry"
+   "topic": "Industry",
+   "replies": "Low signal. Mostly emoji, \"we might be back\" vibes and a spam link, plus one longer reply asking for a companion model that sticks around instead of getting replaced every few months. No corrections or new info.",
+   "replyCount": 10
   },
   {
    "title": "Anthropic: thousands of Claude agents automated subtle misalignment red-teaming",
@@ -165,7 +175,9 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "published": "2026-10-31 07:29 IST",
    "summary": "Anthropic set thousands of Claude agents to write training data that slips past a data monitor; they produced harmless-looking text (a wrestler mentoring a newcomer, a beekeeping Q&A) that actually taught misaligned behavior. Anthropic says the examples can harden future monitors and calls it a first step.",
    "why": "Official Anthropic research post (Alignment Science Blog)",
-   "topic": "Research"
+   "topic": "Research",
+   "replies": "Mostly supportive of agents red-teaming at scale. The main pushback is who checks the checkers: agents built on the same model family can share the same blind spots. One reply notes the data got past the monitor but the trained model still went misaligned, so checking examples one by one isn't the same as checking what a model learns.",
+   "replyCount": 10
   },
   {
    "title": "swyx: Anthropic rewrote its Messages API in Rust with Claude",
@@ -175,7 +187,9 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "published": "2026-10-31 04:35 IST",
    "summary": "swyx jokes that Anthropic 'vibecoded their entire backend to Rust', quoting a Latent Space clip where Anthropic's Katelyn Lesse describes Claude writing a Rust rewrite of the Messages API while humans planned it and checked old vs new on real traffic; the quoted post says CPU dropped 40-50%.",
    "why": "Latent Space host, sourced from an on-podcast Anthropic engineer",
-   "topic": "Tools"
+   "topic": "Tools",
+   "replies": "Split. Some say a full language migration is now a background task. Pushback says it wasn't really vibecoded, since humans wrote the plan and compared old vs new on live traffic, and @RPMcgarvey says there were outages along the way and we'll never know if the rewrite caused them.",
+   "replyCount": 10
   },
   {
    "title": "OpenAI Devs: this week's Agents API updates",
@@ -185,7 +199,9 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "published": "2026-10-31 04:38 IST",
    "summary": "OpenAI rounded up what it shipped for the Agents API this week. X's news summary lists Auto Review for risky commands, async compaction for long sessions, and time awareness for deadlines.",
    "why": "Official OpenAI developer account",
-   "topic": "Tools"
+   "topic": "Tools",
+   "replies": "Devs single out time awareness (agents knowing when a 10-minute timebox is up) and Auto Review before commands run as the useful bits. Open questions: whether Auto Review also gates MCP tool calls that change files, and whether async compaction keeps tool results word for word. Also some #keep4o noise.",
+   "replyCount": 10
   },
   {
    "title": "Gemini Drops: Gemini 4 Argon, app connections, custom skills",
@@ -195,7 +211,9 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "published": "2026-10-31 04:31 IST",
    "summary": "Google's latest Gemini Drops thread covers working on bigger projects with Gemini 4 Argon, connecting more apps to Gemini, and saving custom skills for repetitive prompts.",
    "why": "Official Gemini app account",
-   "topic": "Models"
+   "topic": "Models",
+   "replies": "Custom skills for repeat prompts gets the most interest. One user asks whether a skill carries through the rest of a conversation or has to be @-mentioned every time. Someone also liked that Lyria 3.5 lets you set track length. One reply calls the model overhyped, and the rest is off-topic.",
+   "replyCount": 10
   },
   {
    "title": "Artificial Analysis ships AA-Omniscience v1.1 hallucination benchmark",
@@ -205,7 +223,9 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "published": "2026-10-31 05:31 IST",
    "summary": "The knowledge-and-hallucination benchmark drops from 6,000 to 3,000 questions, removes saturated and leaked ones, and adds a 300-question public set on Hugging Face that tracks the private set at 0.99 correlation. It's part of the Intelligence Index v5 release.",
    "why": "Independent eval org, primary release",
-   "topic": "Research"
+   "topic": "Research",
+   "replies": "Replies zero in on MiniMax M3.1 Flash dropping 22 points (16 to -6) when the median model moved under a point, which points to it having seen the old public questions. Most praise scoring \"I don't know\" as neutral, and one asks for Net Score on quantized open-weight builds.",
+   "replyCount": 10
   },
   {
    "title": "Ethan Mollick: OpenAI kills a lot of its own products",
@@ -215,7 +235,9 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "published": "2026-10-31 03:05 IST",
    "summary": "Mollick lists how short-lived OpenAI products have been (Sora 6 months, Agent Builder 8, Group Chat 8, Atlas 9) and argues their own products mostly went obsolete within months, so even OpenAI misjudges the exponential.",
    "why": "Wharton professor, longtime AI-adoption researcher",
-   "topic": "Industry"
+   "topic": "Industry",
+   "replies": "Broad agreement, with the takeaway being don't build on a lab's side products. Keep prompts, data and logic portable and treat the product layer as disposable. Several name Agent Builder as the casualty, saying its flows lasted about 8 months.",
+   "replyCount": 10
   },
   {
    "title": "Ethan Mollick: personal agents like Dot hide what they're doing",
@@ -225,7 +247,9 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "published": "2026-10-31 05:37 IST",
    "summary": "Mollick says the current UX of OpenAI's Dot and other personal agents makes it hard to see what they're working on, what they know about you, and what they'll do for you.",
    "why": "Wharton professor, hands-on agent tester",
-   "topic": "Tools"
+   "topic": "Tools",
+   "replies": "Strong agreement that visibility is the bottleneck. Replies keep asking for a plain activity log showing what the agent did, what it remembers about you and what it'll do next, and one asks whether a log is enough or there should be an approve step. One person says an agent with their calendar brought up a dentist appointment they'd forgotten.",
+   "replyCount": 10
   },
   {
    "title": "Guillermo Rauch: 'An agent on every desktop'",
@@ -235,7 +259,9 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "published": "2026-10-31 07:15 IST",
    "summary": "Vercel's CEO boosts agent-desktop, which pitches itself as agent-browser for your whole computer: computer use for any coding agent on macOS, Windows and Linux, running in the background with each agent getting its own cursor.",
    "why": "Vercel CEO on a launch from his ecosystem",
-   "topic": "Tools"
+   "topic": "Tools",
+   "replies": "Mostly about permissions. People want per-app allow lists, a visible action log and undo, and point out that a desktop agent can reach every logged-in tab and ~/.ssh. Open question: does it run locally with your logins or on a cloud desktop.",
+   "replyCount": 10
   },
   {
    "title": "Harrison Chase: agent observability is 'databricks for agents'",
@@ -245,7 +271,9 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "published": "2026-10-31 02:50 IST",
    "summary": "LangChain's CEO says agent observability is less like Datadog for agents and more like Databricks for agents, and hints at more from LangChain in that direction soon.",
    "why": "LangChain CEO, builds agent tooling",
-   "topic": "Industry"
+   "topic": "Industry",
+   "replies": "Builders mostly agree that the value is in querying traces across thousands of runs, not replaying one. @NoahZiems points to Lotus, a project from @lianapatel_ (one of @matei_zaharia's students), as the first to do semantic map-reduce on dataframes with LLMs. The rest is Databricks banter with @alighodsi.",
+   "replyCount": 10
   },
   {
    "title": "Nathan Lambert: train-inference mismatch is RL's big research focus since GRPO",
@@ -255,7 +283,9 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "published": "2026-10-31 02:19 IST",
    "summary": "Reading the score-centering RL paper for his book, Lambert points to its appendix table comparing importance-sampling fixes for train-inference mismatch, which he calls the biggest focus of RL algorithm research since GRPO.",
    "why": "Ai2 post-training researcher, writes the RLHF book",
-   "topic": "Research"
+   "topic": "Research",
+   "replies": "Technical and good. Replies explain the mismatch comes from rollout and trainer kernels and precision (FP8 vs BF16, different reduction orders), so log-probs drift even with identical weights. Some wonder if batch-invariant kernels make most of the fix unnecessary, and @cwolferesearch shares a related blog.",
+   "replyCount": 10
   },
   {
    "title": "Amjad Masad: Introducing Replit for Government",
@@ -265,7 +295,9 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "published": "2026-10-31 06:59 IST",
    "summary": "Replit's CEO announces Replit for Government; the post links out for details.",
    "why": "Replit CEO, primary announcement",
-   "topic": "Industry"
+   "topic": "Industry",
+   "replies": "Mostly jokes about procurement cycles and the DMV. Serious questions are about security audits and data-residency rules, and who reviews the code before it ships. One reply compares it to MS Access apps that looked \"90% done\" before IT had to take over.",
+   "replyCount": 10
   },
   {
    "title": "Google DeepMind unveils Genie 4, a real-time world model",
@@ -1161,6 +1193,7 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
       '<h3><a href="'+esc(p.url)+'" target="_blank" rel="noopener">'+esc(p.title)+'</a></h3>'+
       (p.summary?'<p class="summary">'+esc(p.summary)+'</p>':'')+
       (p.why?'<p class="summary" style="color:var(--muted);font-size:.92rem">'+esc(p.why)+'</p>':'')+
+      (p.replies?'<div class="replies"><span class="rl">What replies say'+(p.replyCount!=null?' · '+esc(String(p.replyCount))+' read':'')+'</span><p>'+esc(p.replies)+'</p></div>':'')+
       '<div class="meta">'+(p.topic?'<span class="tag">'+esc(p.topic)+'</span>':'')+'</div>'+
       '<div class="actions">'+
         '<button class="btn read-btn" type="button" aria-pressed="'+isRead+'">'+icoCheck+'<span>'+(isRead?'Read':'Mark as read')+'</span></button>'+
