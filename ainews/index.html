@@ -124,9 +124,119 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-10-31T01:10:00+05:30",
- "windowHours": 3,
+ "updated": "2026-10-31T08:10:00+05:30",
+ "windowHours": 7,
  "posts": [
+  {
+   "title": "Anthropic: thousands of Claude agents automated subtle misalignment red-teaming",
+   "author": "@AnthropicAI",
+   "authorName": "Anthropic",
+   "url": "https://x.com/AnthropicAI/status/2116349211549843666",
+   "published": "2026-10-31 07:29 IST",
+   "summary": "Anthropic set thousands of Claude agents to write training data that slips past a data monitor; they produced harmless-looking text (a wrestler mentoring a newcomer, a beekeeping Q&A) that actually taught misaligned behavior. Anthropic says the examples can harden future monitors and calls it a first step.",
+   "why": "Official Anthropic research post (Alignment Science Blog)",
+   "topic": "Research"
+  },
+  {
+   "title": "swyx: Anthropic rewrote its Messages API in Rust with Claude",
+   "author": "@swyx",
+   "authorName": "swyx",
+   "url": "https://x.com/swyx/status/2116305528330785190",
+   "published": "2026-10-31 04:35 IST",
+   "summary": "swyx jokes that Anthropic 'vibecoded their entire backend to Rust', quoting a Latent Space clip where Anthropic's Katelyn Lesse describes Claude writing a Rust rewrite of the Messages API while humans planned it and checked old vs new on real traffic; the quoted post says CPU dropped 40-50%.",
+   "why": "Latent Space host, sourced from an on-podcast Anthropic engineer",
+   "topic": "Tools"
+  },
+  {
+   "title": "OpenAI Devs: this week's Agents API updates",
+   "author": "@OpenAIDevs",
+   "authorName": "OpenAI Developers",
+   "url": "https://x.com/OpenAIDevs/status/2116306164375863343",
+   "published": "2026-10-31 04:38 IST",
+   "summary": "OpenAI rounded up what it shipped for the Agents API this week. X's news summary lists Auto Review for risky commands, async compaction for long sessions, and time awareness for deadlines.",
+   "why": "Official OpenAI developer account",
+   "topic": "Tools"
+  },
+  {
+   "title": "Gemini Drops: Gemini 4 Argon, app connections, custom skills",
+   "author": "@GeminiApp",
+   "authorName": "Google Gemini",
+   "url": "https://x.com/GeminiApp/status/2116304609383710988",
+   "published": "2026-10-31 04:31 IST",
+   "summary": "Google's latest Gemini Drops thread covers working on bigger projects with Gemini 4 Argon, connecting more apps to Gemini, and saving custom skills for repetitive prompts.",
+   "why": "Official Gemini app account",
+   "topic": "Models"
+  },
+  {
+   "title": "Artificial Analysis ships AA-Omniscience v1.1 hallucination benchmark",
+   "author": "@ArtificialAnlys",
+   "authorName": "Artificial Analysis",
+   "url": "https://x.com/ArtificialAnlys/status/2116319506318635503",
+   "published": "2026-10-31 05:31 IST",
+   "summary": "The knowledge-and-hallucination benchmark drops from 6,000 to 3,000 questions, removes saturated and leaked ones, and adds a 300-question public set on Hugging Face that tracks the private set at 0.99 correlation. It's part of the Intelligence Index v5 release.",
+   "why": "Independent eval org, primary release",
+   "topic": "Research"
+  },
+  {
+   "title": "Ethan Mollick: OpenAI kills a lot of its own products",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2116282885112205365",
+   "published": "2026-10-31 03:05 IST",
+   "summary": "Mollick lists how short-lived OpenAI products have been (Sora 6 months, Agent Builder 8, Group Chat 8, Atlas 9) and argues their own products mostly went obsolete within months, so even OpenAI misjudges the exponential.",
+   "why": "Wharton professor, longtime AI-adoption researcher",
+   "topic": "Industry"
+  },
+  {
+   "title": "Ethan Mollick: personal agents like Dot hide what they're doing",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2116321075164500438",
+   "published": "2026-10-31 05:37 IST",
+   "summary": "Mollick says the current UX of OpenAI's Dot and other personal agents makes it hard to see what they're working on, what they know about you, and what they'll do for you.",
+   "why": "Wharton professor, hands-on agent tester",
+   "topic": "Tools"
+  },
+  {
+   "title": "Guillermo Rauch: 'An agent on every desktop'",
+   "author": "@rauchg",
+   "authorName": "Guillermo Rauch",
+   "url": "https://x.com/rauchg/status/2116345666108854781",
+   "published": "2026-10-31 07:15 IST",
+   "summary": "Vercel's CEO boosts agent-desktop, which pitches itself as agent-browser for your whole computer: computer use for any coding agent on macOS, Windows and Linux, running in the background with each agent getting its own cursor.",
+   "why": "Vercel CEO on a launch from his ecosystem",
+   "topic": "Tools"
+  },
+  {
+   "title": "Harrison Chase: agent observability is 'databricks for agents'",
+   "author": "@hwchase17",
+   "authorName": "Harrison Chase",
+   "url": "https://x.com/hwchase17/status/2116279214731395453",
+   "published": "2026-10-31 02:50 IST",
+   "summary": "LangChain's CEO says agent observability is less like Datadog for agents and more like Databricks for agents, and hints at more from LangChain in that direction soon.",
+   "why": "LangChain CEO, builds agent tooling",
+   "topic": "Industry"
+  },
+  {
+   "title": "Nathan Lambert: train-inference mismatch is RL's big research focus since GRPO",
+   "author": "@natolambert",
+   "authorName": "Nathan Lambert",
+   "url": "https://x.com/natolambert/status/2116271281351881120",
+   "published": "2026-10-31 02:19 IST",
+   "summary": "Reading the score-centering RL paper for his book, Lambert points to its appendix table comparing importance-sampling fixes for train-inference mismatch, which he calls the biggest focus of RL algorithm research since GRPO.",
+   "why": "Ai2 post-training researcher, writes the RLHF book",
+   "topic": "Research"
+  },
+  {
+   "title": "Amjad Masad: Introducing Replit for Government",
+   "author": "@amasad",
+   "authorName": "Amjad Masad",
+   "url": "https://x.com/amasad/status/2116341851825287476",
+   "published": "2026-10-31 06:59 IST",
+   "summary": "Replit's CEO announces Replit for Government, a public-sector version of the platform.",
+   "why": "Replit CEO, primary announcement",
+   "topic": "Industry"
+  },
   {
    "title": "Google DeepMind unveils Genie 4, a real-time world model",
    "author": "@Google",
@@ -306,16 +416,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "summary": "Rumor/early signal: TestingCatalog spotted a coming 'Running' tab for background tasks in Antigravity's settings, and expects advanced scheduled runs to land there after the Jules shutdown.",
    "why": "App-teardown account with a good track record; not confirmed by Google",
    "topic": "Tools"
-  },
-  {
-   "title": "An AI agent performed brain surgery on an epileptic mouse",
-   "author": "@OcanaSantero",
-   "authorName": "Gabriel Ocana-Santero",
-   "url": "https://x.com/OcanaSantero/status/2115442964574908902",
-   "published": "2026-10-28 19:28 IST",
-   "summary": "Given 19 gene therapy vectors, a mouse model of epilepsy and a motorized surgery rig with cameras, the agent picked the drug and brain region, derived coordinates from three papers, and injected 250 nanolitres while watching for bleeding. A licensed vet gated every irreversible step and held a physical kill switch.",
-   "why": "First-hand account from the researcher who ran it (ExinTx); now a trending story on X",
-   "topic": "Research"
   },
   {
    "title": "DHH: the real AI psychosis is calling it \"just another tool\"",
@@ -818,16 +918,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "topic": "Industry"
   },
   {
-   "title": "Replit releases ViBench 2.0, a long-horizon app-building benchmark",
-   "author": "@Replit",
-   "authorName": "Replit",
-   "url": "https://x.com/Replit/status/2115553116942975013",
-   "published": "2026-10-29 02:45 IST",
-   "summary": "Agents start from an empty project and build a whole product one feature at a time without seeing what comes next. Replit says even GPT-6.1 Sol, GPT-6 Astra and Opus 5.5 don't pass every check; Amjad Masad says GPT-6.1 Sol leads.",
-   "why": "Primary source: Replit's official account, echoed by CEO @amasad",
-   "topic": "Research"
-  },
-  {
    "title": "Samsung sees AI chip shortage worsening",
    "author": "@Reuters",
    "authorName": "Reuters",
@@ -976,246 +1066,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "summary": "Equinix said mounting barriers to bringing new projects online will make existing capacity more valuable and could strengthen its grip on pricing.",
    "why": "Bloomberg, company statement",
    "topic": "Industry"
-  },
-  {
-   "title": "ChatGPT Pro and Business subscribers can claim up to $500/month in API credits",
-   "author": "@OpenAIDevs",
-   "authorName": "OpenAI Developers",
-   "url": "https://x.com/OpenAIDevs/status/2115583698074755078",
-   "published": "2026-10-29 04:47 IST",
-   "summary": "Starting today, eligible ChatGPT Pro and Business subscribers can claim up to $500 per month in API credits to build apps and agents.",
-   "why": "Official OpenAI developer account",
-   "topic": "Tools"
-  },
-  {
-   "title": "ChatGPT and ChatGPT Work will merge this year, but not yet",
-   "author": "@testingcatalog",
-   "authorName": "TestingCatalog",
-   "url": "https://x.com/testingcatalog/status/2115599706843758927",
-   "published": "2026-10-29 05:50 IST",
-   "summary": "Some users saw a pop-up about ChatGPT and ChatGPT Work merging. OpenAI's Tibo said the team is working on it but it isn't rolling out yet and the pop-up was a mistake.",
-   "why": "Product tracker quoting an OpenAI staffer directly",
-   "topic": "Tools"
-  },
-  {
-   "title": "Samsung posts record Q3 profit on AI chip boom",
-   "author": "@Reuters",
-   "authorName": "Reuters",
-   "url": "https://x.com/Reuters/status/2115624781789728982",
-   "published": "2026-10-29 07:30 IST",
-   "summary": "Samsung reported a record third-quarter profit driven by demand for AI chips.",
-   "why": "Reuters wire report",
-   "topic": "Industry"
-  },
-  {
-   "title": "FuriosaAI quadruples valuation to $2.9B",
-   "author": "@business",
-   "authorName": "Bloomberg",
-   "url": "https://x.com/business/status/2115630984099926515",
-   "published": "2026-10-29 07:55 IST",
-   "summary": "South Korean AI chip startup FuriosaAI raised a fresh round at a $2.9 billion valuation, four times its previous one, as it tries to challenge Nvidia.",
-   "why": "Bloomberg reporting",
-   "topic": "Industry"
-  },
-  {
-   "title": "Banks delay selling off $15B loan for Anthropic-linked Texas data center",
-   "author": "@business",
-   "authorName": "Bloomberg",
-   "url": "https://x.com/business/status/2115604573473665383",
-   "published": "2026-10-29 06:10 IST",
-   "summary": "Banks are holding off on offloading part of a $15 billion loan for a Texas data center tied to Anthropic, after the state paused new projects to assess grid risks.",
-   "why": "Bloomberg reporting",
-   "topic": "Industry"
-  },
-  {
-   "title": "Alphabet Q3: half-trillion run rate, AI driving Search query growth",
-   "author": "@sundarpichai",
-   "authorName": "Sundar Pichai",
-   "url": "https://x.com/sundarpichai/status/2115535455156642066",
-   "published": "2026-10-29 01:35 IST",
-   "summary": "Pichai says Alphabet is on a half-trillion-dollar annual revenue run rate growing 25%, and that AI investments are driving Search query growth.",
-   "why": "Google CEO, primary source",
-   "topic": "Industry"
-  },
-  {
-   "title": "Google misses Q3 estimates as AI spending tops $50bn; shares drop 7%",
-   "author": "@FT",
-   "authorName": "Financial Times",
-   "url": "https://x.com/FT/status/2115540159185793487",
-   "published": "2026-10-29 01:54 IST",
-   "summary": "Google's third-quarter revenue and profit missed analyst estimates while its AI investment spending rose above $50bn.",
-   "why": "FT reporting, useful counterweight to the CEO's framing",
-   "topic": "Industry"
-  },
-  {
-   "title": "Microsoft made $10B last quarter from its OpenAI arrangements",
-   "author": "@TechCrunch",
-   "authorName": "TechCrunch",
-   "url": "https://x.com/TechCrunch/status/2115558995830214922",
-   "published": "2026-10-29 03:09 IST",
-   "summary": "Microsoft said it earned $10 billion in revenue from commercial arrangements with OpenAI, including revenue sharing, in the quarter ending September 30.",
-   "why": "TechCrunch, citing Microsoft's earnings disclosure",
-   "topic": "Industry"
-  },
-  {
-   "title": "Anthropic has ~11,900 business customers spending $100K+ a year",
-   "author": "@theinformation",
-   "authorName": "The Information",
-   "url": "https://x.com/theinformation/status/2115534121246101504",
-   "published": "2026-10-29 01:30 IST",
-   "summary": "Anthropic now has roughly 11,900 business customers spending at least $100,000 annually, which makes OpenAI's push to win them with cheaper models an uphill battle.",
-   "why": "The Information, strong track record on AI business reporting",
-   "topic": "Industry"
-  },
-  {
-   "title": "Claude Opus 5.5 vs GPT-6 Astra writing 'hello world' with a robot arm",
-   "author": "@ArtificialAnlys",
-   "authorName": "Artificial Analysis",
-   "url": "https://x.com/ArtificialAnlys/status/2115567357506748492",
-   "published": "2026-10-29 03:42 IST",
-   "summary": "In AA-Robotics v0.1, Opus 5.5 dotted out the text in 3,270 arm moves over 34 minutes while GPT-6 Astra used continuous strokes: 514 moves in 13 minutes.",
-   "why": "Independent benchmarking firm",
-   "topic": "Research"
-  },
-  {
-   "title": "Rime launches Prism speech-to-speech model for voice agents",
-   "author": "@testingcatalog",
-   "authorName": "TestingCatalog",
-   "url": "https://x.com/testingcatalog/status/2115543581155016900",
-   "published": "2026-10-29 02:07 IST",
-   "summary": "Prism writes each reply as text before speaking it, so companies can edit the transcript and block things the agent shouldn't say during live calls.",
-   "why": "Product tracker summarising Rime's launch",
-   "topic": "Models"
-  },
-  {
-   "title": "DOJ asks how Nvidia's Hugging Face deal affects AI competition",
-   "author": "@Reuters",
-   "authorName": "Reuters",
-   "url": "https://x.com/Reuters/status/2115514689962615172",
-   "published": "2026-10-29 00:13 IST",
-   "summary": "Reuters exclusive: the Justice Department made inquiries about how Nvidia's $12.93 billion deal to buy Hugging Face would affect competition in AI, as part of its long-running antitrust look at Nvidia, sources said.",
-   "why": "Reuters exclusive, sourced reporting",
-   "topic": "Policy"
-  },
-  {
-   "title": "Anthropic IPO filing: shareholders could strip the Long-Term Benefit Trust's power",
-   "author": "@theinformation",
-   "authorName": "The Information",
-   "url": "https://x.com/theinformation/status/2115511439188242726",
-   "published": "2026-10-29 00:00 IST",
-   "summary": "The Information reports that Anthropic's IPO filing shows shareholders could remove the Long-Term Benefit Trust's power over the board, raising questions about independent safety oversight.",
-   "why": "Reporter with track record on AI companies, based on the S-1",
-   "topic": "Industry"
-  },
-  {
-   "title": "Gemini 4 Carbon takes #1 on Text Arena",
-   "author": "@testingcatalog",
-   "authorName": "TestingCatalog",
-   "url": "https://x.com/testingcatalog/status/2115503561085718955",
-   "published": "2026-10-28 23:28 IST",
-   "summary": "Gemini 4 Carbon (High) took first place on Text Arena with 1528 points, ranked #2 in Agent Arena behind Claude Opus 5.5, and #4 in Web Dev Arena.",
-   "why": "Quotes the Arena leaderboard post directly",
-   "topic": "Models"
-  },
-  {
-   "title": "Anthropic spends millions on executive and staff security, filing shows",
-   "author": "@business",
-   "authorName": "Bloomberg",
-   "url": "https://x.com/business/status/2115526598417854859",
-   "published": "2026-10-29 01:00 IST",
-   "summary": "Bloomberg reports Anthropic's IPO filing shows around-the-clock security operations and millions spent protecting executives and staff as AI backlash intensifies.",
-   "why": "Bloomberg reporting from the IPO filing",
-   "topic": "Industry"
-  },
-  {
-   "title": "AI data center gas plants could undo 15 years of US power-sector emissions cuts",
-   "author": "@business",
-   "authorName": "Bloomberg",
-   "url": "https://x.com/business/status/2115521523704365261",
-   "published": "2026-10-29 00:40 IST",
-   "summary": "Bloomberg says the surge in fossil-fueled power plants built to run AI data centers is set to undo 15 years of greenhouse gas reductions from US electricity generation.",
-   "why": "Bloomberg reporting",
-   "topic": "Industry"
-  },
-  {
-   "title": "AI is finding software bugs faster than companies can fix them",
-   "author": "@theinformation",
-   "authorName": "The Information",
-   "url": "https://x.com/theinformation/status/2115526552054010187",
-   "published": "2026-10-29 01:00 IST",
-   "summary": "Goldman Sachs, Bank of America and other big firms are increasing cybersecurity spending and hiring because AI is uncovering vulnerabilities faster than they can be patched.",
-   "why": "The Information reporting",
-   "topic": "Industry"
-  },
-  {
-   "title": "ChatGPT Pro users in the US can message Dots via iMessage or RCS",
-   "author": "@testingcatalog",
-   "authorName": "TestingCatalog",
-   "url": "https://x.com/testingcatalog/status/2115525477834076636",
-   "published": "2026-10-29 00:55 IST",
-   "summary": "OpenAI now lets US Pro users message their Dots through iMessage or RCS, with no sign yet of WhatsApp or Telegram support.",
-   "why": "Product tracker with a solid record on rollouts",
-   "topic": "Tools"
-  },
-  {
-   "title": "UK offers faster grid access for key AI data centres",
-   "author": "@Reuters",
-   "authorName": "Reuters",
-   "url": "https://x.com/Reuters/status/2115498873422540938",
-   "published": "2026-10-28 23:10 IST",
-   "summary": "UK finance minister Healey offered faster grid connections for key data centres as part of the government's AI push in the budget.",
-   "why": "Reuters wire",
-   "topic": "Policy"
-  },
-  {
-   "title": "Meta backs university research with access to its latest Muse models",
-   "author": "@AIatMeta",
-   "authorName": "AI at Meta",
-   "url": "https://x.com/AIatMeta/status/2115490919923548307",
-   "published": "2026-10-28 22:38 IST",
-   "summary": "Meta announced support for research at Caltech, Ohio State Medical, LSU, Indiana University and UTHealth Houston, including access to its latest Muse models.",
-   "why": "Official Meta AI account",
-   "topic": "Research"
-  },
-  {
-   "title": "Gemini 4 Carbon: Google DeepMind's next frontier model",
-   "author": "@GoogleDeepMind",
-   "authorName": "Google DeepMind",
-   "url": "https://x.com/GoogleDeepMind/status/2115489356437651654",
-   "published": "2026-10-28 22:32 IST",
-   "summary": "DeepMind announces Gemini 4 Carbon, saying it is state-of-the-art on cybersecurity and long-horizon tasks. Google AI says it's rolling out to cyber defenders first.",
-   "why": "Official Google DeepMind announcement",
-   "topic": "Models"
-  },
-  {
-   "title": "Gemini 4 Carbon takes #1 on AA Intelligence Index v5",
-   "author": "@ArtificialAnlys",
-   "authorName": "Artificial Analysis",
-   "url": "https://x.com/ArtificialAnlys/status/2115494553780367384",
-   "published": "2026-10-28 22:53 IST",
-   "summary": "Gemini 4 Carbon scores 59 on Intelligence Index v5, now first overall, and second only to Claude Opus 5.5 on the Coding Agent Index.",
-   "why": "Independent benchmark lab; verified account",
-   "topic": "Models"
-  },
-  {
-   "title": "Anthropic tells California governor courts should be able to block risky AI models",
-   "author": "@Reuters",
-   "authorName": "Reuters",
-   "url": "https://x.com/Reuters/status/2115496446346571791",
-   "published": "2026-10-28 23:00 IST",
-   "summary": "Reuters reports Anthropic told California's governor that courts should have the power to block risky AI models.",
-   "why": "Reuters wire report",
-   "topic": "Policy"
-  },
-  {
-   "title": "GitHub Copilot Fusion: near-Opus coding at half the cost",
-   "author": "@ArtificialAnlys",
-   "authorName": "Artificial Analysis",
-   "url": "https://x.com/ArtificialAnlys/status/2115477376981508419",
-   "published": "2026-10-28 21:44 IST",
-   "summary": "Copilot Fusion orchestrates between Anthropic and OpenAI models and scores 2 points below Opus 5.5 in Claude Code on the Coding Agent Index, at half the cost per task.",
-   "why": "Independent benchmark lab measuring a new product",
-   "topic": "Tools"
   }
  ]
 }
