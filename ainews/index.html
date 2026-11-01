@@ -128,9 +128,69 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-01T23:10:00+05:30",
+ "updated": "2026-11-02T01:15:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Karpathy's weekend hack HackerTube: Claude mined 20 years of HN comments for the videos people keep recommending",
+   "author": "@karpathy",
+   "authorName": "Andrej Karpathy",
+   "url": "https://x.com/karpathy/status/2116957135661945283",
+   "published": "2026-11-01 23:44 IST",
+   "summary": "Annoyed with YouTube recommendations, Karpathy had Claude filter 43M Hacker News comments from 20 years down to 6,454 videos that keep getting recommended. He says it took about 2 hours with Opus 5.5 and gives a much better viewing experience.",
+   "why": "Karpathy's own post about his own build.",
+   "topic": "Tools",
+   "replies": "Mostly enthusiasm. One replier notes the only manual steps were account and payment stuff (API key, VPS, domain), while code and deploy ran on prompts; others ask how the 6,454 were picked from raw mentions and suggest the same trick for books, papers and podcasts. Several praise using a mid-video frame as the thumbnail to strip out clickbait.",
+   "replyCount": 10
+  },
+  {
+   "title": "Sholto Douglas on HackerTube: 'Claude fighting for you' against short-form feeds",
+   "author": "@_sholtodouglas",
+   "authorName": "Sholto Douglas",
+   "url": "https://x.com/_sholtodouglas/status/2116963764612563415",
+   "published": "2026-11-02 00:11 IST",
+   "summary": "Quoting Karpathy's HackerTube, the Anthropic researcher calls short-form video and recommender loops 'the cigs of our generation' and says it's user hostile that you can't permanently turn off Shorts or Reels. He argues current rec algorithms are primitive and points at what one person can now build in a weekend.",
+   "why": "Anthropic researcher on the watchlist; original take.",
+   "topic": "Tools",
+   "replies": "Replies mostly agree and share their own Shorts blockers and extensions. One pushback: comment-based recs break for brand-new videos with no comments yet, so the old feed still wins on cold start. Another asks how long before a platform calls this a ToS violation.",
+   "replyCount": 10
+  },
+  {
+   "title": "Mustafa Suleyman: 'Don't build conscious superintelligence'",
+   "author": "@mustafasuleyman",
+   "authorName": "Mustafa Suleyman",
+   "url": "https://x.com/mustafasuleyman/status/2116913722878820528",
+   "published": "2026-11-01 20:52 IST",
+   "summary": "Microsoft AI's chief follows up his model-welfare essay: he says today's AIs are not conscious, any evidence otherwise must be disclosed publicly, and if consciousness started to emerge in training he would call for stopping AI development until it could be designed out. He argues welfare concern should go to humans, animals and the environment first.",
+   "why": "Primary source: an X article by the head of Microsoft AI.",
+   "topic": "Policy",
+   "replies": "Split and fairly low signal. Some cheer it as the voice of reason; others say 'today's models are not conscious' is a claim nobody can prove and that the line he wants to stop before can't be located. One asks whether people consented to AI reshaping jobs and privacy either, and a few replies push AI-rights claims without evidence.",
+   "replyCount": 10
+  },
+  {
+   "title": "Tobi Lutke on Shopify's monorepo move for coding agents",
+   "author": "@tobi",
+   "authorName": "tobi lutke",
+   "url": "https://x.com/tobi/status/2116918113450983504",
+   "published": "2026-11-01 21:09 IST",
+   "summary": "Shopify's CEO quotes advice he got that every engineer hates moving to a monorepo, and once it's there nobody wants to work anywhere without one. He's quoting a Shopify engineer who says the monorepo has been 'a boon for agents' despite needing thoughtful tooling.",
+   "why": "Shopify CEO, first-hand on his own company's engineering change.",
+   "topic": "Industry",
+   "replies": "Thin but some substance: one asks how Shopify spotted engineers quietly avoiding the monorepo, another says a shared monorepo lets a whole team use the same agent context, MCP servers and memories. Others raise regression-testing cost and how open-source code fits, with suggestions like duplicating code and porting changes both ways.",
+   "replyCount": 10
+  },
+  {
+   "title": "Tibor Blaho's weekly: GPT-6.1 Terra, Anthropic's S-1, shared ChatGPT/Codex limits, Claude Ultra",
+   "author": "@btibor91",
+   "authorName": "Tibor Blaho",
+   "url": "https://x.com/btibor91/status/2116955752267206776",
+   "published": "2026-11-01 23:39 IST",
+   "summary": "A Week 44 roundup: OpenAI's GPT-6.1 Terra computer-use model at half the price of GPT-5.6 Terra (not in regular ChatGPT), a Model Spec rewrite, and a hidden checkout note pointing to limits shared across ChatGPT and Codex from December. On Anthropic's side: the S-1 filing to list on Nasdaq as ANT and Max plans renamed to Max and Ultra at the same prices.",
+   "why": "Rumor/early signal mixed with recap: Tibor is reliable; the shared-limits item comes from a hidden disclaimer, not an announcement.",
+   "topic": "Industry",
+   "replies": "Replies focus on shared limits ('gonna hurt the most') and why Terra is kept out of regular ChatGPT, with guesses that it pushes businesses toward Work. One reads the verified-Ultra perk as an attack on shared and resold logins, and two pick out Anthropic's judgment-study stat that analysts mostly went with the agent's lean but rarely credited it.",
+   "replyCount": 8
+  },
   {
    "title": "Rumor/early signal: a hidden 'Claude Mythos 5.5' line shows up on Anthropic's website",
    "author": "@testingcatalog",
