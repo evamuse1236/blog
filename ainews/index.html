@@ -128,9 +128,69 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-01T11:15:00+05:30",
+ "updated": "2026-11-01T14:15:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Jun Song: an anonymous black hat group offered him huge money to RL-train open-weight models on exploit data",
+   "author": "@jun_song",
+   "authorName": "Jun Song",
+   "url": "https://x.com/jun_song/status/2116717099402096682",
+   "published": "2026-11-01 07:50 IST",
+   "summary": "Jun Song says an anonymous black hat group offered an 'astronomical' sum to post-train open-weight models on a huge exploit dataset; he turned it down. He notes a white-hat GLM-5.3 project using under 1% of that data already beat frontier models, and worries someone else will take the deal.",
+   "why": "First-hand account from an ML engineer with ~48K followers; the offer itself is unverified.",
+   "topic": "Policy",
+   "replies": "Repliers ask what the data actually is (CVE diffs, exploit chains) and where the group came from, and several say he should have gone to law enforcement first. A few point out the group could just rent GPUs and do it themselves, and that dark-market exploit data is already plentiful.",
+   "replyCount": 10
+  },
+  {
+   "title": "CNBC: OpenAI pares its fundraising goal to up to $20 billion",
+   "author": "@CNBC",
+   "authorName": "CNBC",
+   "url": "https://x.com/CNBC/status/2116621770811674986",
+   "published": "2026-11-01 01:32 IST",
+   "summary": "CNBC reports OpenAI is now seeking up to $20 billion in its latest round, down from an earlier, larger target.",
+   "why": "Major outlet; one of the bigger business stories of the weekend, also reported by the FT.",
+   "topic": "Industry",
+   "replies": "Mostly low signal, but the substantive replies read the cut as investors getting pickier on burn rate after the tech selloff, and one notes the FT reported the new ceiling is $10 billion below the prior target. Others argue $20B is still a huge round.",
+   "replyCount": 10
+  },
+  {
+   "title": "swyx: Karpathy built HackerTube on Opus 5.5 at medium effort",
+   "author": "@swyx",
+   "authorName": "swyx",
+   "url": "https://x.com/swyx/status/2116773135668404286",
+   "published": "2026-11-01 11:33 IST",
+   "summary": "swyx points out that Karpathy used medium effort on Opus 5.5 for HackerTube, a YouTube-style site of videos recommended on Hacker News that launched today. He calls effort-level debates the tabs-vs-spaces of our time: tweak to taste.",
+   "why": "Watchlist practitioner continuing his low-effort-plus-critique-loop argument with a concrete example.",
+   "topic": "Tools",
+   "replies": "Most agree effort settings are a taste call and that few people test them; one cites Artificial Analysis numbers where Opus 5.5 max costs about 4x medium per task for a modest score gain. Others say the real lever is the review loop, and ask for cost-per-solved-task comparisons on the same task set.",
+   "replyCount": 10
+  },
+  {
+   "title": "Matt Pocock pitches Sandcastle v1: a software factory where every skill becomes an Agent()",
+   "author": "@mattpocockuk",
+   "authorName": "Matt Pocock",
+   "url": "https://x.com/mattpocockuk/status/2116805878187794740",
+   "published": "2026-11-01 13:43 IST",
+   "summary": "Matt Pocock is reshaping Sandcastle into a 'software factory': six built-in harnesses (Claude Code, Codex, etc.), sandbox providers like Daytona, Vercel and E2B, durable runs via Inngest/Trigger.dev, and human-in-the-loop over Slack/Discord. Each skill in his repo becomes a callable function such as CodeReview() or ImplementSpec().",
+   "why": "Watchlist practitioner sharing a concrete plan for his agent tooling.",
+   "topic": "Tools",
+   "replies": "People like the bring-your-own-harness angle, especially swapping Claude Code for Codex when limits run out, and several say the skills-as-functions part should lead the pitch. Requests include running on Claude/Codex subscriptions instead of API billing, task tracking, and custom workflows; one warns six harnesses need shared done checks.",
+   "replyCount": 10
+  },
+  {
+   "title": "RoboColiseum: Opus 5.5 and GPT-6 Astra nearly tie on a robot-control benchmark",
+   "author": "@jiqizhixin",
+   "authorName": "机器之心 JIQIZHIXIN",
+   "url": "https://x.com/jiqizhixin/status/2116799402132259274",
+   "published": "2026-11-01 13:18 IST",
+   "summary": "A paper introduces Agent2Act, a harness connecting frontier multimodal models to robot observations and actions; Claude Opus 5.5 scores 76.28 and GPT-6 Astra 75.99. The authors say the close scores hide a bigger gap between understanding instructions and reliable manipulation, and simulation scores don't prove real-world control.",
+   "why": "Research paper with arXiv, project page and code, relayed by a major Chinese AI outlet.",
+   "topic": "Research",
+   "replies": "Only two replies so far; both note a 0.3-point gap is basically a tie and ask which model actually drops fewer objects.",
+   "replyCount": 2
+  },
   {
    "title": "Ethan Mollick: same-model agents find each other's hidden channels easily",
    "author": "@emollick",
