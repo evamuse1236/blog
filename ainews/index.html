@@ -128,9 +128,57 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-01T17:10:00+05:30",
+ "updated": "2026-11-01T20:15:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Rumor/early signal: GPT-6.2 Astra appears in some Codex usage stats",
+   "author": "@vikktorrrre",
+   "authorName": "Veee",
+   "url": "https://x.com/vikktorrrre/status/2116877492090798330",
+   "published": "2026-11-01 18:28 IST",
+   "summary": "Several Codex users say their usage breakdown lists \"gpt-6.2-astra\" even though the model picker still shows GPT-6 Astra, which looks like a quiet gray rollout. OpenAI hasn't announced anything; the poster predicts a release this week to face Anthropic's Fable 5.5.",
+   "why": "Rumor/early signal: aggregator account, but the same usage-panel sighting is reported independently by many users since this morning; no OpenAI confirmation.",
+   "topic": "Models",
+   "replies": "Repliers mostly treat the sighting as real but doubt the \"this week\" timing, with one noting that if it is already running people's tasks it is basically shipped minus the blog post. Others say a 2-point Terminal-Bench gap is noise and usage burn matters more, and a few are annoyed that OpenAI would swap the model in Codex without telling anyone.",
+   "replyCount": 10
+  },
+  {
+   "title": "Rumor/early signal: Google's Antigravity agent \"Chief of Stuff\" may get Gemini Live",
+   "author": "@testingcatalog",
+   "authorName": "TestingCatalog",
+   "url": "https://x.com/testingcatalog/status/2116885887313133576",
+   "published": "2026-11-01 19:01 IST",
+   "summary": "TestingCatalog reports an unreleased Antigravity agent, currently called \"Chief of Stuff\", that can operate Antigravity on its own, spawn sub-agents, review pending conversations and code changes, and learn personalized rules from your history. It is not public yet.",
+   "why": "Rumor/early signal: TestingCatalog, generally reliable app teardown account; feature is unreleased.",
+   "topic": "Tools",
+   "replies": "The name gets plenty of jokes, but the substantive replies focus on the rule-learning feature: people worry an agent learning rules from chat history (much of it corrections) could lock in bad habits. Others read it as Google moving toward a manager that runs sub-agents rather than one chat box, and warn about forgotten sub-agents still running tasks.",
+   "replyCount": 10
+  },
+  {
+   "title": "The Information: Ray Kurzweil is building an AI replica of himself called Rai",
+   "author": "@theinformation",
+   "authorName": "The Information",
+   "url": "https://x.com/theinformation/status/2116893062752338177",
+   "published": "2026-11-01 19:30 IST",
+   "summary": "The Information reports that Kurzweil, 78, is working on an AI version of himself, Rai, that can learn from conversations, form new memories and potentially keep evolving after he dies.",
+   "why": "Exclusive from The Information, a reporting outlet with a strong track record on AI.",
+   "topic": "Industry",
+   "replies": "Only a few replies so far, all circling one question: if Rai keeps learning after Kurzweil is gone, at what point does it stop being him. One notes Kurzweil predicted human-level AI by 2029 back in 1999.",
+   "replyCount": 3
+  },
+  {
+   "title": "ResGate: a policy gate cuts agent resource-hijacking attacks from 84% to 24%",
+   "author": "@jiqizhixin",
+   "authorName": "机器之心 JIQIZHIXIN",
+   "url": "https://x.com/jiqizhixin/status/2116880939653685619",
+   "published": "2026-11-01 18:42 IST",
+   "summary": "A Shanghai Jiao Tong and Nankai paper shows agents can keep credentials secret yet still spend protected resources for an unauthorized user, and introduces a 900-prompt benchmark that checks real behavior in isolated environments. Their fix has a model extract resource and operation metadata, then deterministic code checks the requester against a fixed policy, dropping attack success from 84.1% to 23.6% with authorized-task success going from 90.4% to 89.3%.",
+   "why": "Paper summary with links to paper and code from a long-running Chinese AI research outlet; the post itself flags the remaining 23.6% as substantial.",
+   "topic": "Research",
+   "replies": "Few replies. The sharpest one points out the extraction step is still a model, so a prompt that steers the metadata fields would get past the deterministic gate, and guesses much of the remaining 23.6% lives there. Others like that the paper measures the cost to legitimate tasks.",
+   "replyCount": 4
+  },
   {
    "title": "Cobalt: an infostealer asks an LLM what each victim is worth",
    "author": "@CobaltHere",
