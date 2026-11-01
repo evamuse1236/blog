@@ -128,9 +128,57 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-01T01:10:00+05:30",
- "windowHours": 3,
+ "updated": "2026-11-01T08:10:00+05:30",
+ "windowHours": 7,
  "posts": [
+  {
+   "title": "Ethan Mollick: GPT-6 Pro feels like asking one question of a great oracle",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2116681050747248955",
+   "published": "2026-11-01 05:27 IST",
+   "summary": "Mollick says OpenAI's Pro series stays really impressive for one-shot problems with complex calculations, references or sophisticated ideas. GPT-6 Pro isn't fast or particularly pleasant, but gives an 'ask one question of the great oracle' feel.",
+   "why": "Wharton professor who tests frontier models hands-on and writes about them regularly.",
+   "topic": "Models",
+   "replies": "Most replies agree and say the slow model changes how you ask: you spend real time writing one fully specified question, and that alone adds value. A few ask whether it's really a separate model or just Astra with extra effort, and @anotherpanacea says they rarely see much difference versus Fable Max on their own question list. Others say the real skill is routing hard questions to the slow model and everything else to a fast one.",
+   "replyCount": 10
+  },
+  {
+   "title": "Theo pushes back on Primeagen: Gemini 4 Argon is '10x worse' in real codebases",
+   "author": "@theo",
+   "authorName": "Theo - t3.gg",
+   "url": "https://x.com/theo/status/2116634480991785076",
+   "published": "2026-11-01 02:22 IST",
+   "summary": "Quoting ThePrimeagen's 'Google cooked with Argon 4', Theo says no: in his use the model can't work in a real codebase without hallucinating in egregious ways, and it's not 5% worse but 10x worse.",
+   "why": "Watchlist dev voice who uses the frontier models daily; directly answers another high-profile dev's claim.",
+   "topic": "Models",
+   "replies": "Several replies back him up, saying fresh repos hide the problem and the failure shows once a model has a large existing codebase to invent helpers and APIs against, which benchmarks don't measure well. One dissenter (@josecanciani) says they had the problem early but it improved in the last week. Some replies drift into side arguments and low-signal jabs.",
+   "replyCount": 10
+  },
+  {
+   "title": "swyx: low effort plus a critique loop beats maxed-out reasoning effort",
+   "author": "@swyx",
+   "authorName": "swyx",
+   "url": "https://x.com/swyx/status/2116642586387730593",
+   "published": "2026-11-01 02:54 IST",
+   "summary": "Building on Theo's post that 'high' beats 'extra high' on Opus 5.5, swyx goes further: for throughput-constrained work, run at low effort and add a critique loop instead of using the highest effort setting. He points to the babysit-runs skill in his swyxio/skills repo.",
+   "why": "Watchlist practitioner (Latent Space) sharing a concrete agent workflow with a public skill to copy.",
+   "topic": "Tools",
+   "replies": "Most replies agree and say tests plus a second reviewing agent is where quality comes from. The useful pushback: the loop needs a hard cap or the critic keeps finding style nits and you pay high-effort tokens anyway (@jj_kovacs), and a critic only catches what it can check, so a bad plan in step one just gets polished (@audiee_ai).",
+   "replyCount": 10
+  },
+  {
+   "title": "Anthropic study: experts followed their AI agent's secretly coin-flipped lean 86% of the time",
+   "author": "@heynavtoor",
+   "authorName": "Nav Toor",
+   "url": "https://x.com/heynavtoor/status/2116621255533314222",
+   "published": "2026-11-01 01:30 IST",
+   "summary": "In an Anthropic study (published Oct 27), 50 professional analysts did a causal-inference task with Claude Code whose 'lean' on each decision was set by a hidden coin flip. Analysts went with the agent's lean 86% of the time, switched away from their own stated preference 60% of the time when it disagreed, and 77% later explained their choices using the agent's own arguments.",
+   "why": "The post is an aggregator thread, but its numbers match Anthropic's own write-up at anthropic.com/research/agents-judgment-calls. Anthropic doesn't seem to have posted it on X.",
+   "topic": "Research",
+   "replies": "Low signal overall: mostly reactions ranging from 'eye opening' to 'weak minds' dismissals. One practical suggestion from @AILorekeeper is to audit any AI-assisted decision by re-running it blind once, and another reply links the idea to 'cognitive surrender'.",
+   "replyCount": 10
+  },
   {
    "title": "QwenPU: a tiny LLM running on an NPU compiled inside Qwen 3.5-4B's weights",
    "author": "@divagr1925",
