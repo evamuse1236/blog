@@ -128,9 +128,117 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-02T23:15:00+05:30",
+ "updated": "2026-11-03T01:20:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Altman: the model behind OpenAI's Navier-Stokes proof is \"the next GPT\" and ships soon",
+   "author": "@deredleritt3r",
+   "authorName": "prinz",
+   "url": "https://x.com/deredleritt3r/status/2117255388353663125",
+   "published": "2026-11-02 19:29 IST",
+   "summary": "Clip from Sam Altman's ADIPEC talk in Abu Dhabi: \"It was 10,000 agents of the model that is going to be released soon, the next GPT, working for about four days, nonstop, collaborating with each other perfectly.\"",
+   "why": "Direct video clip of Altman on stage; widely reshared, no official OpenAI post yet on timing.",
+   "topic": "Models",
+   "replies": "Mostly reactions and guessing about which model this is and when it lands, with no new information. One reply picks at the word \"perfectly\" as a safety worry, since imperfect coordination between agents has been a buffer; another says the model is 12 to 18 months out, with nothing to back it up.",
+   "replyCount": 10
+  },
+  {
+   "title": "Weight-Space Programming: GPT-6 Astra edits a small model's weights directly to fix its math",
+   "author": "@rikiyatakehi",
+   "authorName": "Rikiya Takehi",
+   "url": "https://x.com/rikiyatakehi/status/2117313742891327994",
+   "published": "2026-11-02 23:21 IST",
+   "summary": "Researchers had GPT-6 Astra edit Qwen3.5-0.8B's weights with no gradients or training. It changed 0.016% of weights, fixed reasoning loops, and reports up to 6x better math and 3x better instruction following.",
+   "why": "Primary research thread with a blog post; Ethan Mollick quoted it as \"a pretty big deal\" pending replication.",
+   "topic": "Research",
+   "replies": "Replies are impressed but light. One asks the authors to share Astra's reasoning trace so people can see why it picked those weights, and another notes that naive quantization would likely wash out such tiny edits unless calibrated for the task.",
+   "replyCount": 9
+  },
+  {
+   "title": "Anthropic's amended S-1 now says capabilities \"may have already advanced\" past its faster-progress threshold",
+   "author": "@choblin29",
+   "authorName": "Choblin",
+   "url": "https://x.com/choblin29/status/2117310103212957767",
+   "published": "2026-11-02 23:07 IST",
+   "summary": "A side-by-side of the Oct 26 S-1 and today's S-1/A shows Anthropic changed \"could advance\" to \"may have already advanced\" on whether AI-driven R&D has sped up progress enough to trigger stronger safety measures.",
+   "why": "Points to the actual SEC filing text with screenshots; check the S-1/A itself before leaning on it.",
+   "topic": "Policy",
+   "replies": "Only four replies, mostly hype. The useful one notes that S-1 risk factors are written by lawyers who disclose anything that could later look hidden, but adds that lawyers don't change a word like that for no reason.",
+   "replyCount": 4
+  },
+  {
+   "title": "Simon Willison: the Census Bureau's AI-adoption survey got changed by the 'Super Intelligence' executive order",
+   "author": "@simonw",
+   "authorName": "Simon Willison",
+   "url": "https://x.com/simonw/status/2117337139633607167",
+   "published": "2026-11-03 00:54 IST",
+   "summary": "While updating his chart of US company AI adoption from the Census Bureau's long-running survey, Simon found the survey had been altered because of the 'Super Intelligence' executive order. Ethan Mollick shared it, noting adoption keeps growing.",
+   "why": "Simon tracks this dataset closely and writes up methodology; primary analysis with a blog post.",
+   "topic": "Policy",
+   "replies": "Replies focus on whether the trend line still means anything. People point out that changed wording splits it into two series, that an earlier break in November 2025 already caused the big jump, and that the first answers under the new wording land Thursday.",
+   "replyCount": 7
+  },
+  {
+   "title": "Arena: top coding agents read about 93 input tokens for every token they write",
+   "author": "@arena",
+   "authorName": "Arena",
+   "url": "https://x.com/arena/status/2117332916854501753",
+   "published": "2026-11-03 00:38 IST",
+   "summary": "Arena's analysis of 26K+ Agent Arena sessions finds the top 10 agents process about 93 input tokens per output token, which is why labs are racing to make cached input cheaper.",
+   "why": "First-party data from Arena's own agent eval logs.",
+   "topic": "Research",
+   "replies": "Replies agree that at 93:1 the output price barely matters and cache pricing and hit rate decide cost. Several ask Arena to publish actual cache hit rates, and one notes that a timestamp or reordered tool list near the top of the prompt breaks the cache on every turn.",
+   "replyCount": 10
+  },
+  {
+   "title": "Guillermo Rauch: stateless sandboxes are the wrong benchmark for agents",
+   "author": "@rauchg",
+   "authorName": "Guillermo Rauch",
+   "url": "https://x.com/rauchg/status/2117338179535810957",
+   "published": "2026-11-03 00:58 IST",
+   "summary": "Rauch argues agents are only useful when their workspace (identity, skills, repos, memories) comes with them, and says Vercel Sandbox has been hitting its latency and throughput targets.",
+   "why": "Vercel CEO on his own product, so read it as a pitch, but the framing is a real infra debate.",
+   "topic": "Tools",
+   "replies": "Mostly agreement, with the 'new hire on day one, every day' line repeated a few times. Useful questions: whether a sandbox can fork from the exact state a run started in, and why p95 startup only dropped from 2.2s to 1.6s while the median went from 1.7s to 0.7s.",
+   "replyCount": 10
+  },
+  {
+   "title": "NVIDIA Cosmos recipes: turn a daytime drive into a rainy night with the same scene",
+   "author": "@NVIDIAAI",
+   "authorName": "NVIDIA AI",
+   "url": "https://x.com/NVIDIAAI/status/2117332456768717244",
+   "published": "2026-11-03 00:36 IST",
+   "summary": "New Cosmos simulation recipes change conditions like weather and lighting while keeping road layout and vehicle paths fixed, for generating data and testing policies in autonomous vehicles, robots and surgical applications.",
+   "why": "Official NVIDIA account announcing its own release, with a thread on recipes and deployment.",
+   "topic": "Tools",
+   "replies": "Replies like that only the weather changes, so a failing policy points clearly at conditions. Open questions are whether labels carry over to the new clips and whether wet-road glare at night is covered; the rest of the thread is NVIDIA's own follow-ups.",
+   "replyCount": 9
+  },
+  {
+   "title": "Lauren Tan's game passes almost 100k non-story plays",
+   "author": "@poteto",
+   "authorName": "Lauren Tan",
+   "url": "https://x.com/poteto/status/2117328786555564192",
+   "published": "2026-11-03 00:21 IST",
+   "summary": "poteto says almost 100k non-story games have been played since launch, says the real game is more fun than story mode, and asks for ideas and feedback on what to add.",
+   "why": "On Vishwa's watchlist; first-hand update on her own project.",
+   "topic": "Tools",
+   "replies": "Feature requests mostly: armor or gear, a nightmare-mode leaderboard, snarky achievements. One person says they don't know how to play, and another wants a walkthrough of how she built it so fast beyond 'use pstack'.",
+   "replyCount": 10
+  },
+  {
+   "title": "ElevenLabs: voice beats chat as support conversations get longer",
+   "author": "@ElevenLabs",
+   "authorName": "ElevenLabs",
+   "url": "https://x.com/ElevenLabs/status/2117327298492047775",
+   "published": "2026-11-03 00:15 IST",
+   "summary": "Across 469 agents running both voice and chat in production, ElevenLabs found success rates rise with conversation length for voice, and voice resolves complex conversations fastest.",
+   "why": "First-party production data, though from a voice vendor with an obvious interest in the result.",
+   "topic": "Industry",
+   "replies": "Replies say it fits their experience, since messy problems are easier to say than type. One fair question is whether already-frustrated people switching to voice explain the result; one reply is spam with a fake API key.",
+   "replyCount": 8
+  },
   {
    "title": "OpenAI introduces LifeVal, a benchmark for everyday personal-assistant tasks",
    "author": "@OpenAI",
