@@ -128,9 +128,117 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-02T01:15:00+05:30",
+ "updated": "2026-11-02T08:15:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "MiniMax credits community quants that let M3.1 Flash (428B) run locally",
+   "author": "@MiniMax_AI",
+   "authorName": "MiniMax (official)",
+   "url": "https://x.com/MiniMax_AI/status/2116996123164569606",
+   "published": "2026-11-02 02:19 IST",
+   "summary": "MiniMax's official account says quantizing its 428B M3.1 Flash opens more local hardware paths, and credits builders by name, including Unsloth's 2-bit Dynamic GGUF at 143.9 GB, mlx-community quants for Apple Silicon, and AMD's Quark MXFP4 for Instinct.",
+   "why": "Official lab account; names specific, checkable community releases.",
+   "topic": "Models",
+   "replies": "Unsloth and Daniel Han thanked MiniMax back. Practical questions dominate: whether 128 GB machines can fit it (a reply says only the 1-bit or IQ2_XXS quants squeeze in, with little room for context), and how much the 2-bit quants lose on coding and agentic evals, which nobody has answered yet. @SoumilBhandari notes 143.9 GB for 428B works out to about 2.7 bits per weight, so the \"2-bit\" quant is really a mix.",
+   "replyCount": 10
+  },
+  {
+   "title": "Guillermo Rauch: \"Own your intelligence\" and keep local models proliferating",
+   "author": "@rauchg",
+   "authorName": "Guillermo Rauch",
+   "url": "https://x.com/rauchg/status/2117000819623243925",
+   "published": "2026-11-02 02:38 IST",
+   "summary": "Vercel's CEO argues local models need to keep spreading. The biggest models may be out of reach locally for now, so he says to keep your options open and own your harness, data, connections, runtime and agents, and to embrace open source.",
+   "why": "Vercel CEO; a clear stance on the local vs rented model debate.",
+   "topic": "Industry",
+   "replies": "Split. Supporters say to run cheap routine agent steps on a local 24 GB card and keep the frontier API for the hard 10 percent, or that renting brains means having a landlord. Skeptics say that for individuals and small companies local only makes sense for pet projects, and that flagship models are worth giving up the data.",
+   "replyCount": 10
+  },
+  {
+   "title": "Amjad Masad: subsidized AI subscriptions are about to get pulled back",
+   "author": "@amasad",
+   "authorName": "Amjad Masad",
+   "url": "https://x.com/amasad/status/2117010858845089805",
+   "published": "2026-11-02 03:18 IST",
+   "summary": "Replit's CEO warns people enjoying subsidized AI subscriptions to \"get ready to get rug pulled.\" He's quoting a Sawyer Merritt post about Elon explaining why some Grok Bot users hit their usage limit faster this cycle.",
+   "why": "Replit CEO who sells AI-agent subscriptions himself; one-line take, no new data.",
+   "topic": "Industry",
+   "replies": "Most agree flat-rate plans were VC burn that long reasoning loops broke, and some say metered billing is where this ends up. Practical advice shows up too: rehearse a sudden 50% quota cut and keep your harness and evals portable. One reply asks directly whether usage-based pricing wins once the subsidies end.",
+   "replyCount": 10
+  },
+  {
+   "title": "Ethan Mollick: GPT-4 managed 4 minutes of solo work; current models manage weeks",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2116987671939875319",
+   "published": "2026-11-02 01:46 IST",
+   "summary": "Mollick says GPT-4 could do about 4 minutes of independent work at a 50% success rate, while current models can do multiple weeks. He backs January 2026 as a reasonable cutoff for when agentic work started, and says large productivity effects before that would mostly be in coding.",
+   "why": "Wharton professor who tracks AI adoption closely; quoting economist Alex Imas.",
+   "topic": "Research",
+   "replies": "Mostly agreement, with useful pushback. Several say task length grows faster than trust, so the gain depends on how cheap checking the work gets (\"which 'done' is actually done\"). @joneyubr points out coding scaled first because tests give cheap checks, and multi-week work without that needs checkpointing and knowing when to stop and ask.",
+   "replyCount": 10
+  },
+  {
+   "title": "Hamel Husain likens AI benchmark companies to Gartner and credit rating agencies",
+   "author": "@HamelHusain",
+   "authorName": "Hamel Husain",
+   "url": "https://x.com/HamelHusain/status/2116987667716223160",
+   "published": "2026-11-02 01:46 IST",
+   "summary": "Hamel puts AI benchmark companies in the same business as Gartner vendor rankings, credit rating agencies for mortgage-backed securities, and US News college rankings, and says more people will catch on. In the thread he adds that this covers any company that publishes a benchmark and also sells consulting or data tied to it.",
+   "why": "Well-known evals practitioner; an opinion, not a specific accusation.",
+   "topic": "Research",
+   "replies": "Replies push the same point: when the issuer pays, the benchmark drifts toward what the labs are good at, and the ranked end up shaping the ranking. The common fix suggested is your own small eval on 30 to 50 real tasks. @jxnlco asks whether METR counts, and Hamel agrees with a reply that #4 is worse than the other three.",
+   "replyCount": 10
+  },
+  {
+   "title": "Matt Pocock: maybe Redux-style single state needs a comeback for agents",
+   "author": "@mattpocockuk",
+   "authorName": "Matt Pocock",
+   "url": "https://x.com/mattpocockuk/status/2116988157933560144",
+   "published": "2026-11-02 01:48 IST",
+   "summary": "Matt suggests Redux or a Redux-like framework could make a comeback, because keeping state in only one place limits an agent's decision space and allows only one way of doing things.",
+   "why": "TypeScript educator on Vishwa's watchlist; a thought, not a release.",
+   "topic": "Tools",
+   "replies": "Mixed. A good point from one reply: agents copy every pattern they see in a repo, so fewer patterns means cleaner new code. Others suggest Zustand, Pinia or TanStack DB instead, and skeptics say one store just means one place to debug, or that open-ended UIs need scoped state.",
+   "replyCount": 10
+  },
+  {
+   "title": "Lauren Tan ships tibo's game, made with Grok Bot and Cursor",
+   "author": "@poteto",
+   "authorName": "Lauren Tan",
+   "url": "https://x.com/poteto/status/2117004709198475365",
+   "published": "2026-11-02 02:53 IST",
+   "summary": "poteto launched a small game about Tibo at tibo.dog, built with Grok Bot and Cursor on a $5.99 domain, with easter eggs, and says it should be playable inside X too.",
+   "why": "poteto (on the watchlist); a fun build, light on news.",
+   "topic": "Tools",
+   "replies": "Mostly delight (\"peak\", \"goated\", \"surprisingly thorough for a meme game\"). One side thread has Grok explaining how to install her pStack Cursor plugin. Otherwise low signal.",
+   "replyCount": 10
+  },
+  {
+   "title": "Theo: of hundreds of AI dev influencers, maybe 10 know what they're talking about",
+   "author": "@theo",
+   "authorName": "Theo - t3.gg",
+   "url": "https://x.com/theo/status/2117026145518686701",
+   "published": "2026-11-02 04:19 IST",
+   "summary": "Theo says there are hundreds of AI dev influencers sharing thoughts, tools and skills, and maybe 10 who actually know what they're talking about. Separately he posted that a small in-app star prompt 10x'd T3 Code's daily GitHub stars.",
+   "why": "Theo (on the watchlist); a hot take on the feed itself.",
+   "topic": "Industry",
+   "replies": "Agreement plus filters: trust people who show cost per finished task and how often an agent needs rescuing, or who share workflows you can rerun in an afternoon. One reply names @mattpocockuk as one of the ten. A couple of replies are promo spam.",
+   "replyCount": 10
+  },
+  {
+   "title": "Nathan Lambert: the AI buildout is pricing in markets that may arrive late",
+   "author": "@natolambert",
+   "authorName": "Nathan Lambert",
+   "url": "https://x.com/natolambert/status/2117065900688118087",
+   "published": "2026-11-02 06:56 IST",
+   "summary": "Nathan says the AI buildout is pricing in new markets emerging, which AI has kept delivering, but timing is everything and those markets could come well after the compute comes online.",
+   "why": "Ai2 researcher; short commentary on a quoted post.",
+   "topic": "Industry",
+   "replies": "Replies focus on the timing risk. @LarryHope01 notes dark fiber could wait 25 years for YouTube, but GPUs go stale in two generations. Others point to six-year depreciation schedules and monthly compute bills, and @ryan_ntk says the quoted piece suggests US labs may need about 20x price cuts to soak up the capacity.",
+   "replyCount": 10
+  },
   {
    "title": "Karpathy's weekend hack HackerTube: Claude mined 20 years of HN comments for the videos people keep recommending",
    "author": "@karpathy",
