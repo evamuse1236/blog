@@ -128,9 +128,57 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-02T14:15:00+05:30",
+ "updated": "2026-11-02T17:15:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Theo's explainer video on what a coding-agent 'harness' actually is",
+   "author": "@theo",
+   "authorName": "Theo - t3.gg",
+   "url": "https://x.com/theo/status/2117213872348348429",
+   "published": "2026-11-02 16:44 IST",
+   "summary": "Theo posted a roughly 50-minute video turning his earlier 'What is a harness?' article into a full walkthrough: the LLM only emits text, and the harness is the layer that defines tools, parses tool calls, runs them and feeds results back. He again stresses that T3 Code is not a harness; it sits on top of the Claude Agent SDK and Codex App Server.",
+   "why": "Watchlist builder; runs T3 Code and explains from hands-on work",
+   "topic": "Tools",
+   "replies": "Mostly people agreeing that 'harness' gets misused for any prompt box, with a couple of jokes that the T3 Code comments will survive the video anyway. One useful question asks whether he'd ever use Pi or OpenCode over lab-made harnesses like Codex and Claude Code, since models are tuned to those. Otherwise low signal.",
+   "replyCount": 10
+  },
+  {
+   "title": "Theo built a Chrome extension to visualize complex GitHub Actions runs",
+   "author": "@theo",
+   "authorName": "Theo - t3.gg",
+   "url": "https://x.com/theo/status/2117174053702344982",
+   "published": "2026-11-02 14:06 IST",
+   "summary": "Theo says his 'CI psychosis' got bad enough that he vibe-coded a Chrome extension to visualize complex GitHub Actions workflows. It quotes his earlier post about keeping T3 Code release times under 10 minutes.",
+   "why": "Watchlist builder sharing his own tooling",
+   "topic": "Tools",
+   "replies": "Replies relate hard to the CI pain and several ask whether the extension is public, which he hasn't answered in what we read. One asks if it follows reusable workflows or only a single file; another suggests showing it inside T3 Code PRs. A side thread notes that making the Actions graph visible is what keeps fast pipelines alive after the original builder leaves.",
+   "replyCount": 10
+  },
+  {
+   "title": "Tsinghua and Microsoft paper: let agents pre-plan steps with pass checks, cut tokens up to 88%",
+   "author": "@rohanpaul_ai",
+   "authorName": "Rohan Paul",
+   "url": "https://x.com/rohanpaul_ai/status/2117177813652709633",
+   "published": "2026-11-02 14:21 IST",
+   "summary": "Agent tools usually call the LLM after every tool result, even when the next step is obvious, like running tests after a clean build. The paper's HarnessMM has the model write future commands plus a pass check for each, skipping the LLM call when the check passes; on 98 HumanEval tasks Codex kept 90.82% success with 29.54% fewer tokens, and DeepSeek Harness went from 71.43% to 85.71% while using 87.93% fewer tokens.",
+   "why": "Paper summary from a widely followed research aggregator; numbers are from the paper, not independently checked",
+   "topic": "Research",
+   "replies": "Replies like the idea but the main pushback is the same from several people: HumanEval tasks are short, so they want to see it on long, messy real repos. Others point out the risk of a pass check succeeding while the plan is already wrong, so the agent runs ahead with no model watching. A side thread notes skipping calls saves latency too, roughly 200-300ms each with prefix caching.",
+   "replyCount": 10
+  },
+  {
+   "title": "Rumor/early signal: Gemini 4 Carbon on Arena as 'Argon 4', Antigravity cloud runs, GPT-6.2 Astra sightings",
+   "author": "@testingcatalog",
+   "authorName": "TestingCatalog",
+   "url": "https://x.com/testingcatalog/status/2117189114927673487",
+   "published": "2026-11-02 15:06 IST",
+   "summary": "TestingCatalog's Nov 2 brief says Gemini 4 Carbon is reportedly on Arena as 'Argon 4', Antigravity may get cloud execution next week, GPT-6.2 Astra shows up in Codex and ChatGPT Work usage analytics, SpaceXSI will turn on text watermarking on Nov 7, and DeepSeek V4.1 Pro is appearing in benchmark setups. Several items are second-hand (credited to other accounts) and the brief says it was composed with Grok.",
+   "why": "Rumor/early signal: reliable app-teardown account, but this is an aggregated brief with second-hand items",
+   "topic": "Models",
+   "replies": "Most replies say Antigravity cloud execution matters more than another Arena codename, and ask whether it will run parallel sandboxes like Codex cloud tasks. One reply pushes back on the Nov 7 watermarking, citing research (Sadasivan et al.) that paraphrasing defeats text watermarks. The rest is low signal.",
+   "replyCount": 10
+  },
   {
    "title": "ADNOC becomes the first energy company to deploy OpenAI frontier tech, with G42",
    "author": "@ADNOCGroup",
