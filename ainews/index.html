@@ -128,9 +128,69 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-02T08:15:00+05:30",
+ "updated": "2026-11-02T11:15:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "SemiAnalysis launches GDPx: the best model scores just 12%",
+   "author": "@SemiAnalysis_",
+   "authorName": "SemiAnalysis",
+   "url": "https://x.com/SemiAnalysis_/status/2117075900575477855",
+   "published": "2026-11-02 07:36 IST",
+   "summary": "SemiAnalysis released GDPx, a benchmark of agentic work across what it calls the most valuable domains (built with specialized data partners per domain). It says even the best model scores just 12%; reposts of the leaderboard put Claude Opus 5.5 at 12.0%, Gemini 4 Carbon at 10.9% and GPT-6 Astra at 9.6%.",
+   "why": "Primary launch thread from a well-known semiconductor and AI research firm",
+   "topic": "Research",
+   "replies": "Replies mix congratulations on a benchmark with real headroom and skepticism (\"another benchmark that probably doesn't do what it says on the tin\"). Useful pushback asks why the 11 domains are equally weighted and whether task-level data is public. @AndrewMegalaa, replying in-thread, says Gemini's cyber classifiers trigger refusals that the harness retries, and they're working with labs on no-refusal scoring.",
+   "replyCount": 10
+  },
+  {
+   "title": "Dylan Patel: 'Official apology to Google, they cooked with Carbon'",
+   "author": "@dylan522p",
+   "authorName": "Dylan Patel",
+   "url": "https://x.com/dylan522p/status/2117092550842683671",
+   "published": "2026-11-02 08:42 IST",
+   "summary": "SemiAnalysis founder Dylan Patel publicly walked back his earlier criticism of Google after the GDPx results. He says Gemini 4 Carbon is spikier across domains and capabilities, but really good in a few areas.",
+   "why": "Benchmark author commenting on his own results",
+   "topic": "Models",
+   "replies": "Most replies focus on cost: one reply lists per-task costs from the leaderboard and argues the ranking flips per dollar, with Carbon around a third of Opus 5.5's cost. Others say spiky domain coverage is the interesting part, while one says those uneven domains are what keeps them away from Carbon.",
+   "replyCount": 10
+  },
+  {
+   "title": "Sundar Pichai points to Carbon's cost line on GDPx",
+   "author": "@sundarpichai",
+   "authorName": "Sundar Pichai",
+   "url": "https://x.com/sundarpichai/status/2117113121102045347",
+   "published": "2026-11-02 10:04 IST",
+   "summary": "Google's CEO shared the GDPx chart: \"Great to see high quality benchmarks with headroom and look at that cost line for Carbon.\" Carbon is the Gemini 4 model that placed second on the new benchmark.",
+   "why": "Official comment from Google's CEO on an independent benchmark",
+   "topic": "Models",
+   "replies": "Replies are split between people who say cost matters more than score because the cheap model gets used daily, and doubters calling it benchmaxxing or asking Google to release it so users can judge. One user describes Gemini mixing up two container tags in a YAML edit and breaking a deploy. Several replies are about usage limits and the stock rather than the model.",
+   "replyCount": 10
+  },
+  {
+   "title": "hardmaru: Sakana AI is training an agent-native LLM from scratch, 'Sawara'",
+   "author": "@hardmaru",
+   "authorName": "David Ha (hardmaru)",
+   "url": "https://x.com/hardmaru/status/2117073468345004258",
+   "published": "2026-11-02 07:27 IST",
+   "summary": "Sakana AI CEO David Ha says the company's RSI Lab is building on his 2018 World Models paper with Jürgen Schmidhuber to train an agent-native LLM from scratch, Sakana Sawara. Sakana's quoted Japanese report says the first small model, Sawara Small (working name), is planned for spring 2027 if things go smoothly.",
+   "why": "Lab CEO announcing his own company's model plan, with a full symposium report",
+   "topic": "Research",
+   "replies": "Replies are mostly supportive of building in Japan. The more useful ones ask what \"agent-native\" means in practice (trained on action trajectories from the start vs. fine-tuned later) and who guards the eval if each Sawara helps train the next. One reply summarises the report as pre-training starting in December with weights in spring 2027.",
+   "replyCount": 10
+  },
+  {
+   "title": "Theo: defined agent roles are 'so 2024'",
+   "author": "@theo",
+   "authorName": "Theo - t3.gg",
+   "url": "https://x.com/theo/status/2117086643547177469",
+   "published": "2026-11-02 08:19 IST",
+   "summary": "Theo says T3 is exploring bot-like \"meta threads\" for commanding your threads, agents and environments, but not a defined-role system, since roles and agent archetypes are artifacts of dumber models. In a follow-up he notes everyone telling him he's wrong has been a big local-model user.",
+   "why": "Builder of T3 Code describing his product direction",
+   "topic": "Tools",
+   "replies": "Some agree that roles were a patch for models that lost the task halfway. Pushback says role scaffolding still matters on small local models, and one dev says they still give each agent a job description so the writer never reviews and the reviewer never merges. A few argue both sides are right since local models lag the frontier.",
+   "replyCount": 10
+  },
   {
    "title": "MiniMax credits community quants that let M3.1 Flash (428B) run locally",
    "author": "@MiniMax_AI",
