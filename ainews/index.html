@@ -128,9 +128,45 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-02T17:15:00+05:30",
+ "updated": "2026-11-02T20:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Theo: T3 Code does roughly 2x the token throughput of all of OpenAI last year",
+   "author": "@theo",
+   "authorName": "Theo - t3.gg",
+   "url": "https://x.com/theo/status/2117261338351161486",
+   "published": "2026-11-02 19:53 IST",
+   "summary": "Theo says T3 Code is doing roughly twice the token throughput of all of OpenAI last year, following his earlier post that it is on track for 5.5 quadrillion tokens a year.",
+   "why": "Founder sharing his own product's usage numbers (self-reported)",
+   "topic": "Tools",
+   "replies": "Several replies push back on the framing: @StumpyTeamDev notes the 2x is an annualized run rate, not tokens already served, and others say most of the volume is context re-reads, with @bekamakhar reporting 97.3% cache reads in his own Claude Code use. A few suggest cost per merged change is the more useful number, while others read it as proof usage isn't slowing.",
+   "replyCount": 10
+  },
+  {
+   "title": "Mistral Large 4 writes a quantum chemistry SCF solver from scratch",
+   "author": "@MistralAI",
+   "authorName": "Mistral AI",
+   "url": "https://x.com/MistralAI/status/2117229259425038344",
+   "published": "2026-11-02 17:46 IST",
+   "summary": "Mistral shows Large 4 writing a quantum chemistry SCF solver from a short prompt, validating its output, and building a 3D view of a molecule breaking, choosing on its own which bond to break and which orbitals to show.",
+   "why": "Official lab demo of its own model",
+   "topic": "Models",
+   "replies": "Replies mostly like that the model validated its own output and picked the chemistry itself. @srjkmrnyk cautions that launch benchmarks are Mistral-reported with the technical report still 'coming soon', that the ~1T-param open weights need a multi-GPU server, and that the license has a MaaS condition; @datachad asks what it validated against. The rest is low signal.",
+   "replyCount": 10
+  },
+  {
+   "title": "Artificial Analysis adds GPU rental pricing to AA-AgentPerf: Throughput per $/hr",
+   "author": "@ArtificialAnlys",
+   "authorName": "Artificial Analysis",
+   "url": "https://x.com/ArtificialAnlys/status/2117255658613735918",
+   "published": "2026-11-02 19:31 IST",
+   "summary": "Artificial Analysis is using Silicon Data's daily GPU rental price indices (H100, H200, B200, B300) to add a Throughput per $/hr metric to its datacenter benchmark. Among systems with rental prices, NVIDIA's B300 generally leads, with B200 matching it at faster output speeds on some models; the MI355X rate is AA's own assumption from market quotes.",
+   "why": "Independent benchmarking org, primary source",
+   "topic": "Research",
+   "replies": "Replies welcome a per-dollar number but ask for detail: spot vs on-demand vs reserved prices, whether the figure refreshes per run, and cost per finished agent task rather than raw throughput. @flaviusburca says throughput per dollar only means something at a fixed latency and context length, and @dwkim601 suggests keeping the assumed MI355X rate out of rankings.",
+   "replyCount": 10
+  },
   {
    "title": "Theo's explainer video on what a coding-agent 'harness' actually is",
    "author": "@theo",
