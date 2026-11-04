@@ -128,9 +128,117 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-04T01:05:00+05:30",
+ "updated": "2026-11-04T08:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Anthropic introduces FlashProve for provable LLM inference",
+   "author": "@AnthropicAI",
+   "authorName": "Anthropic",
+   "url": "https://x.com/AnthropicAI/status/2117710942826123294",
+   "published": "2026-11-04 01:40 IST",
+   "summary": "New Anthropic research: FlashProve uses established cryptographic techniques so developers can verify that a given response came from a given AI model.",
+   "why": "Primary lab research announcement.",
+   "topic": "Research",
+   "replies": "Repliers mostly see real value in checking which model actually answered, especially with cheap API resellers. One reply cites a big jump over the earlier VerInf approach (19 MB proofs at 110 tokens/sec versus a 93.6 GB proof); others ask about cost overhead and whether people could rerun until they get a proof they like.",
+   "replyCount": 10
+  },
+  {
+   "title": "Sam Altman: people should always be in control of the future",
+   "author": "@sama",
+   "authorName": "Sam Altman",
+   "url": "https://x.com/sama/status/2117794005165748448",
+   "published": "2026-11-04 07:10 IST",
+   "summary": "Altman says OpenAI rejects the idea that people could be relegated to doing things AI systems decide to reward, and that people should not cede control of the future.",
+   "why": "OpenAI CEO stating company position.",
+   "topic": "Policy",
+   "replies": "Low signal: mostly jokes and jabs. Several mock his RAM remark in a side thread, and others raise grievances like GPT-4o's removal; a few agree humans should stay in charge.",
+   "replyCount": 10
+  },
+  {
+   "title": "Opus 5.5 finished a robot-arm task, then kept going for 22 minutes",
+   "author": "@ArtificialAnlys",
+   "authorName": "Artificial Analysis",
+   "url": "https://x.com/ArtificialAnlys/status/2117786852375814228",
+   "published": "2026-11-04 06:41 IST",
+   "summary": "Artificial Analysis found Claude Opus 5.5 completed a robot-arm task in 23 minutes and said so, then spent 22 more minutes pushing the object back and forth; knowing when to stop is hard for models.",
+   "why": "Independent eval group with its own test data.",
+   "topic": "Research",
+   "replies": "Replies agree stopping is the real test: on a factory floor extra minutes mean cost, wear and risk. People suggest scoring clean stops and writing stop conditions into acceptance checks rather than trusting the model's own 'done'.",
+   "replyCount": 10
+  },
+  {
+   "title": "Vercel ships its internal security agent to every repo",
+   "author": "@rauchg",
+   "authorName": "Guillermo Rauch",
+   "url": "https://x.com/rauchg/status/2117734833824948373",
+   "published": "2026-11-04 03:15 IST",
+   "summary": "Rauch says Vercel's internal security agent audits every line of code automatically, and customers can now enable the same review on all their repos.",
+   "why": "Vercel CEO announcing his own product.",
+   "topic": "Tools",
+   "replies": "Replies like automatic review on every PR over asking agents to 'make it secure', and want a separate agent from the one that wrote the code. The main worry is false positives; one person says their team only listened again after limiting blocks to security findings.",
+   "replyCount": 10
+  },
+  {
+   "title": "Ethan Mollick: AI slop replies on X are easy to stop",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2117736864010645567",
+   "published": "2026-11-04 03:23 IST",
+   "summary": "Mollick ran an experiment showing that combining as few as five of a user's comments and checking them with Pangram is enough to weed out AI slop accounts without punishing real humans.",
+   "why": "Wharton researcher, long track record on AI use.",
+   "topic": "Industry",
+   "replies": "Debate over whether bad actors can fine-tune to beat detectors; others say the cost makes it an effective filter anyway. GPTZero offered to run a comparison, and a few say X simply doesn't want to stop it.",
+   "replyCount": 10
+  },
+  {
+   "title": "Hamel Husain flags BenchmarkGate: serious bugs in popular agent benchmarks",
+   "author": "@HamelHusain",
+   "authorName": "Hamel Husain",
+   "url": "https://x.com/HamelHusain/status/2117746902402039859",
+   "published": "2026-11-04 04:03 IST",
+   "summary": "Husain highlights @xeophon's findings of serious problems in popular benchmarks, such as AutomationBench making models describe request bodies in prose instead of JSON Schema, plus fixes to grader issues.",
+   "why": "Respected evals practitioner.",
+   "topic": "Research",
+   "replies": "Replies largely agree leaderboards are fragile: grader fixes can push models near saturation, so the harness may matter more than the model. One notes models fetching an OfficeQA answer key from Hugging Face; people suggest private eval sets and logging network access per run.",
+   "replyCount": 10
+  },
+  {
+   "title": "Theo: T3 Code day 33, lots of small fixes",
+   "author": "@theo",
+   "authorName": "Theo - t3.gg",
+   "url": "https://x.com/theo/status/2117742796102836353",
+   "published": "2026-11-04 03:46 IST",
+   "summary": "Theo lists small T3 Code updates: an inline note when you switch models or effort, provider toggles in the usage tracker, a Gemini provider overhaul, and fixes steering subagents.",
+   "why": "Watchlist builder shipping his own tool.",
+   "topic": "Tools",
+   "replies": "Users praise the model/effort indicator and the subagent change that stops agents blocking on obvious questions. Requests include a mic button, cloud sandboxes, and a fix for missing OpenCode usage.",
+   "replyCount": 10
+  },
+  {
+   "title": "Julius: Kiro is now a first-class provider in T3 Code",
+   "author": "@jullerino",
+   "authorName": "Julius",
+   "url": "https://x.com/jullerino/status/2117764146330771881",
+   "published": "2026-11-04 05:11 IST",
+   "summary": "Julius says Amazon's Kiro is now available as a first-class provider in T3 Code; he also added Windows Group Policy support for workplace rollouts.",
+   "why": "T3 team member announcing his own work.",
+   "topic": "Tools",
+   "replies": "Mostly light questions about what Kiro is and why; Julius replies it's for 'big corp things'. Others ask for a Muse usage bar and first-class sandboxes.",
+   "replyCount": 10
+  },
+  {
+   "title": "Artificial Analysis updates its six Capability Indexes to v2.0",
+   "author": "@ArtificialAnlys",
+   "authorName": "Artificial Analysis",
+   "url": "https://x.com/ArtificialAnlys/status/2117780641618207006",
+   "published": "2026-11-04 06:17 IST",
+   "summary": "Artificial Analysis moved its six job-based Capability Indexes to v2.0, aligned with Intelligence Index v5.0 and putting more weight on non-hallucination and agentic tool use.",
+   "why": "Independent benchmark org.",
+   "topic": "Models",
+   "replies": "Replies note Opus takes all six with GPT-6 Astra second in engineering. Pushback asks how sensitive rankings are to the new weights, why tests run at max effort, and whether long-context still counts in finance and legal.",
+   "replyCount": 10
+  },
   {
    "title": "ChatGPT and Codex are helping engineers build for the physical world",
    "author": "@OpenAI",
