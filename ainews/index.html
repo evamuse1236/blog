@@ -128,9 +128,45 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-04T17:10:00+05:30",
+ "updated": "2026-11-04T20:05:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Matt Pocock: reconsider our priors on code readability",
+   "author": "@mattpocockuk",
+   "authorName": "Matt Pocock",
+   "url": "https://x.com/mattpocockuk/status/2117953152376799498",
+   "published": "2026-11-04 17:42 IST",
+   "summary": "Matt argues readability mattered because humans are slow at reading large amounts of text; with agents doing the reading, he says what 'readable' means needs rethinking. He followed up that software fundamentals still matter.",
+   "why": "Watchlist TypeScript/AI-tooling educator; 700+ likes, 500+ bookmarks.",
+   "topic": "Tools",
+   "replies": "Split views. Several agree, and one replier says they've stopped caring about variable names because it doesn't affect whether code works. Pushback says tests written by the same agent just mean \"two models agreeing with each other\" (@RealKrishBhakta), and others say readability still matters for whoever gets paged and for human-readable tests that capture intent.",
+   "replyCount": 10
+  },
+  {
+   "title": "Matt Pocock may ship his agent skills to npm for pinning",
+   "author": "@mattpocockuk",
+   "authorName": "Matt Pocock",
+   "url": "https://x.com/mattpocockuk/status/2117948553381515721",
+   "published": "2026-11-04 17:24 IST",
+   "summary": "Matt is thinking about publishing his skills to npm and other registries so they can be used in software factories, made dynamic per agent, and pinned to a version. Separately he says his skills repo is close to being the most-starred skills repo on GitHub.",
+   "why": "Watchlist developer; first-hand plan about a popular skills repo.",
+   "topic": "Tools",
+   "replies": "Mostly supportive, with version pinning seen as the big win: repliers compare a silent skill change to a dependency update you never approved, and one asks for changelogs that describe how agent behavior changes. Alem Tuzlak brings up TanStack AI typesafe MCP resources, and Matt replies that factories can still just `npx skills add` them.",
+   "replyCount": 10
+  },
+  {
+   "title": "AI21: DPO in NVIDIA Megatron Bridge now trains like SFT",
+   "author": "@AI21Labs",
+   "authorName": "AI21 Labs",
+   "url": "https://x.com/AI21Labs/status/2117963321429156006",
+   "published": "2026-11-04 18:23 IST",
+   "summary": "AI21 says DPO in NVIDIA's NeMo Megatron Bridge no longer keeps a frozen reference model on the GPUs: it precomputes the reference logprobs, so training uses the same memory and step time as SFT. They found pipeline-parallel changes left reference scores identical, while tensor-parallel changes altered them on every pair.",
+   "why": "Official lab engineering post.",
+   "topic": "Research",
+   "replies": "Only one outside reply so far. It suggests logging the parallel layout (TP, PP, GPU type) next to each reference score so gaps between runs can be traced.",
+   "replyCount": 2
+  },
   {
    "title": "Theo: today was my last day at Anthropic",
    "author": "@theo",
