@@ -128,9 +128,93 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-04T20:05:00+05:30",
+ "updated": "2026-11-04T23:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Kimi K3.1 Pro weights released",
+   "author": "@Kimi_Moonshot",
+   "authorName": "Kimi.ai",
+   "url": "https://x.com/Kimi_Moonshot/status/2118010528123773297",
+   "published": "2026-11-04 21:30 IST",
+   "summary": "Moonshot released the model weights of Kimi K3.1 Pro and says it will keep pushing open models.",
+   "why": "Official lab account, primary announcement",
+   "topic": "Models",
+   "replies": "Mostly excitement plus the practical question of who can run it. A Grok reply estimates a roughly 2.8T MoE with about 104B active params and a ~1.6TB checkpoint, so multi-GPU only; some call it bench-maxing.",
+   "replyCount": 10
+  },
+  {
+   "title": "poteto: shipping 30x more code without reading it",
+   "author": "@poteto",
+   "authorName": "Lauren Tan",
+   "url": "https://x.com/poteto/status/2118017093677494706",
+   "published": "2026-11-04 21:56 IST",
+   "summary": "Slides from her upcoming AI Engineer talk on shipping about 30x more code without reading it, while app performance stays as good or better than at launch.",
+   "why": "Watchlist practitioner, firsthand numbers",
+   "topic": "Tools",
+   "replies": "People like the perf numbers (long chat p90 dropping from 14.2 to 5.8 ms gets called out) and want the recording. Pushback asks about time-to-fix when nobody read the code, and what gate replaces review: perf budgets in CI or evals.",
+   "replyCount": 10
+  },
+  {
+   "title": "Artificial Analysis switches to Time per Task",
+   "author": "@ArtificialAnlys",
+   "authorName": "Artificial Analysis",
+   "url": "https://x.com/ArtificialAnlys/status/2118034157909712992",
+   "published": "2026-11-04 23:04 IST",
+   "summary": "Their API benchmarking now headlines Time per Task (how long a model takes to finish a task) instead of streaming speed, across ~1,000 serverless endpoints.",
+   "why": "Independent eval org, primary methodology change",
+   "topic": "Research",
+   "replies": "Replies are mostly their own thread: failed requests now score 0 speed, slow first-token GLM-5.3 endpoints fall in rankings, and lower default effort cuts task time a lot (GPT-6 Astra ~5.8 vs ~18 minutes). Little outside discussion yet.",
+   "replyCount": 5
+  },
+  {
+   "title": "Agent Arena: long-horizon tasks widen model gaps",
+   "author": "@arena",
+   "authorName": "LMArena",
+   "url": "https://x.com/arena/status/2118033077121524129",
+   "published": "2026-11-04 23:00 IST",
+   "summary": "Arena says sessions spanning hundreds of turns, like porting a codebase to Rust, amplify differences between frontier models.",
+   "why": "Major eval platform, own data",
+   "topic": "Research",
+   "replies": "Few replies so far. One notes long runs drift with more turns; another cites Opus 5.5 peaking at 1h 51m and Kimi K3.1 Pro at 56 min and asks for time per solved task.",
+   "replyCount": 3
+  },
+  {
+   "title": "Visual symbols steer models outside their chain of thought",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2118012530215854477",
+   "published": "2026-11-04 21:38 IST",
+   "summary": "Mollick highlights a paper finding AIs are strongly affected by visual symbols in ways their chains of thought often don't mention, and differently than humans would read them.",
+   "why": "Watchlist researcher, pointing to a paper",
+   "topic": "Research",
+   "replies": "Replies focus on the implication that reading CoT won't catch the influence, so evals that grade only reasoning text miss it. Suggestions include swapping symbols and diffing outputs, plus a question about controlling shape features.",
+   "replyCount": 10
+  },
+  {
+   "title": "Hugging Face co-founds RoboColosseum",
+   "author": "@huggingface",
+   "authorName": "Hugging Face",
+   "url": "https://x.com/huggingface/status/2118004921597665638",
+   "published": "2026-11-04 21:08 IST",
+   "summary": "A real-world robot eval with 100+ robots and 140+ in-the-wild scenes, with every rollout, failures included, open on the Hub.",
+   "why": "Official org account, primary announcement",
+   "topic": "Research",
+   "replies": "Near-unanimous praise for publishing failed rollouts instead of highlight reels. One question on handling scene shifts between runs; otherwise fairly repetitive.",
+   "replyCount": 10
+  },
+  {
+   "title": "NVIDIA expands Agent Toolkit with access controls",
+   "author": "@NVIDIAAI",
+   "authorName": "NVIDIA AI",
+   "url": "https://x.com/NVIDIAAI/status/2118014372845142048",
+   "published": "2026-11-04 21:45 IST",
+   "summary": "NVIDIA expanded its Agent Toolkit for agents that answer questions and make predictions over company data, with controls on what agents can access and do.",
+   "why": "Official company account",
+   "topic": "Tools",
+   "replies": "Replies agree the access controls are the real product, but ask how they're enforced: service-account indexes leaking access, permission inheritance, query logs, and tests that agents refuse answers from docs the user can't read.",
+   "replyCount": 10
+  },
   {
    "title": "Matt Pocock: reconsider our priors on code readability",
    "author": "@mattpocockuk",
@@ -297,90 +381,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Independent eval group with its own test data.",
    "topic": "Research",
    "replies": "Replies agree stopping is the real test: on a factory floor extra minutes mean cost, wear and risk. People suggest scoring clean stops and writing stop conditions into acceptance checks rather than trusting the model's own 'done'.",
-   "replyCount": 10
-  },
-  {
-   "title": "Vercel ships its internal security agent to every repo",
-   "author": "@rauchg",
-   "authorName": "Guillermo Rauch",
-   "url": "https://x.com/rauchg/status/2117734833824948373",
-   "published": "2026-11-04 03:15 IST",
-   "summary": "Rauch says Vercel's internal security agent audits every line of code automatically, and customers can now enable the same review on all their repos.",
-   "why": "Vercel CEO announcing his own product.",
-   "topic": "Tools",
-   "replies": "Replies like automatic review on every PR over asking agents to 'make it secure', and want a separate agent from the one that wrote the code. The main worry is false positives; one person says their team only listened again after limiting blocks to security findings.",
-   "replyCount": 10
-  },
-  {
-   "title": "Ethan Mollick: AI slop replies on X are easy to stop",
-   "author": "@emollick",
-   "authorName": "Ethan Mollick",
-   "url": "https://x.com/emollick/status/2117736864010645567",
-   "published": "2026-11-04 03:23 IST",
-   "summary": "Mollick ran an experiment showing that combining as few as five of a user's comments and checking them with Pangram is enough to weed out AI slop accounts without punishing real humans.",
-   "why": "Wharton researcher, long track record on AI use.",
-   "topic": "Industry",
-   "replies": "Debate over whether bad actors can fine-tune to beat detectors; others say the cost makes it an effective filter anyway. GPTZero offered to run a comparison, and a few say X simply doesn't want to stop it.",
-   "replyCount": 10
-  },
-  {
-   "title": "Hamel Husain flags BenchmarkGate: serious bugs in popular agent benchmarks",
-   "author": "@HamelHusain",
-   "authorName": "Hamel Husain",
-   "url": "https://x.com/HamelHusain/status/2117746902402039859",
-   "published": "2026-11-04 04:03 IST",
-   "summary": "Husain highlights @xeophon's findings of serious problems in popular benchmarks, such as AutomationBench making models describe request bodies in prose instead of JSON Schema, plus fixes to grader issues.",
-   "why": "Respected evals practitioner.",
-   "topic": "Research",
-   "replies": "Replies largely agree leaderboards are fragile: grader fixes can push models near saturation, so the harness may matter more than the model. One notes models fetching an OfficeQA answer key from Hugging Face; people suggest private eval sets and logging network access per run.",
-   "replyCount": 10
-  },
-  {
-   "title": "Theo: T3 Code day 33, lots of small fixes",
-   "author": "@theo",
-   "authorName": "Theo - t3.gg",
-   "url": "https://x.com/theo/status/2117742796102836353",
-   "published": "2026-11-04 03:46 IST",
-   "summary": "Theo lists small T3 Code updates: an inline note when you switch models or effort, provider toggles in the usage tracker, a Gemini provider overhaul, and fixes steering subagents.",
-   "why": "Watchlist builder shipping his own tool.",
-   "topic": "Tools",
-   "replies": "Users praise the model/effort indicator and the subagent change that stops agents blocking on obvious questions. Requests include a mic button, cloud sandboxes, and a fix for missing OpenCode usage.",
-   "replyCount": 10
-  },
-  {
-   "title": "Julius: Kiro is now a first-class provider in T3 Code",
-   "author": "@jullerino",
-   "authorName": "Julius",
-   "url": "https://x.com/jullerino/status/2117764146330771881",
-   "published": "2026-11-04 05:11 IST",
-   "summary": "Julius says Amazon's Kiro is now available as a first-class provider in T3 Code; he also added Windows Group Policy support for workplace rollouts.",
-   "why": "T3 team member announcing his own work.",
-   "topic": "Tools",
-   "replies": "Mostly light questions about what Kiro is and why; Julius replies it's for 'big corp things'. Others ask for a Muse usage bar and first-class sandboxes.",
-   "replyCount": 10
-  },
-  {
-   "title": "Artificial Analysis updates its six Capability Indexes to v2.0",
-   "author": "@ArtificialAnlys",
-   "authorName": "Artificial Analysis",
-   "url": "https://x.com/ArtificialAnlys/status/2117780641618207006",
-   "published": "2026-11-04 06:17 IST",
-   "summary": "Artificial Analysis moved its six job-based Capability Indexes to v2.0, aligned with Intelligence Index v5.0 and putting more weight on non-hallucination and agentic tool use.",
-   "why": "Independent benchmark org.",
-   "topic": "Models",
-   "replies": "Replies note Opus takes all six with GPT-6 Astra second in engineering. Pushback asks how sensitive rankings are to the new weights, why tests run at max effort, and whether long-context still counts in finance and legal.",
-   "replyCount": 10
-  },
-  {
-   "title": "ChatGPT and Codex are helping engineers build for the physical world",
-   "author": "@OpenAI",
-   "authorName": "OpenAI",
-   "url": "https://x.com/OpenAI/status/2117692475775258785",
-   "published": "2026-11-04 00:26 IST",
-   "summary": "OpenAI shared progress using ChatGPT and Codex across mechanical design, electrical engineering, and simulation, both inside its own hardware teams and with industry partners.",
-   "why": "Official OpenAI account",
-   "topic": "Tools",
-   "replies": "Repliers pulled details from the write-up: hardware-team token usage reportedly up 23x since February, and the model still missed manufacturing tolerances and assembly details. Others ask when the CAD/ECAD integrations open to everyone and how design sign-off works; one complains about Codex usage limits.",
    "replyCount": 10
   }
  ]
