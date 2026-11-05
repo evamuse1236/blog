@@ -128,9 +128,117 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-05T20:10:00+05:30",
+ "updated": "2026-11-05T23:15:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "OpenAI launches GPT-6 Cyber for security research",
+   "author": "@OpenAI",
+   "authorName": "OpenAI",
+   "url": "https://x.com/OpenAI/status/2118390190246879554",
+   "published": "2026-11-05 22:39 IST",
+   "summary": "OpenAI introduced GPT-6 Cyber, a security-research model it says pairs stronger capabilities with better alignment. It powered the Linux kernel research announced yesterday and is being used by security teams at Mozilla, Palo Alto Networks and others.",
+   "why": "Primary announcement from OpenAI; Greg Brockman adds that it was trained to stay within the scope it's given.",
+   "topic": "Models",
+   "replies": "Early replies are mostly low signal: jokes, 'boring', and people asking where the rumored GPT-6.2 Astra is. A few say using it on the Linux kernel first was a strong proof point and want to see what Mozilla and Palo Alto find next.",
+   "replyCount": 10
+  },
+  {
+   "title": "Logan Kilpatrick: Gemini Omni Flash 1.2 rolls out",
+   "author": "@OfficialLoganK",
+   "authorName": "Logan Kilpatrick",
+   "url": "https://x.com/OfficialLoganK/status/2118390838434693281",
+   "published": "2026-11-05 22:41 IST",
+   "summary": "Google is rolling out Gemini Omni Flash 1.2 with 15-second video generation, deeper camera controls, multi-turn conversational editing, less visual drift, and a 30% lower price than 1.1.",
+   "why": "Google AI Studio/Gemini product lead; matches the official @GoogleAI post.",
+   "topic": "Models",
+   "replies": "Mostly congrats and emoji. The substantive replies single out multi-turn editing as the sleeper feature, since fixing one camera move without regenerating the whole clip saves credits, and one asks whether it's limited to the Ultra plan (no answer yet).",
+   "replyCount": 10
+  },
+  {
+   "title": "OpenAI Private Safety Processing for the API",
+   "author": "@OpenAIDevs",
+   "authorName": "OpenAI Developers",
+   "url": "https://x.com/OpenAIDevs/status/2118386439675420743",
+   "published": "2026-11-05 22:24 IST",
+   "summary": "A new API option lets OpenAI safety-review related requests without retaining prompts or responses: records stay in the customer's environment and an automated safety agent reviews them, with no OpenAI staff access.",
+   "why": "Official OpenAI developer account.",
+   "topic": "Tools",
+   "replies": "Builders like that zero-data-retention customers get a path beyond 'trust us'. Pushback centres on false positives with no human to appeal to, whether OpenAI sees flagged requests or only a verdict, and that customers still own a 30-day storage bucket and its key permissions.",
+   "replyCount": 10
+  },
+  {
+   "title": "Perplexity launches Teammates, proactive agents",
+   "author": "@perplexity_ai",
+   "authorName": "Perplexity",
+   "url": "https://x.com/perplexity_ai/status/2118389326459670825",
+   "published": "2026-11-05 22:35 IST",
+   "summary": "Teammates take on jobs and work proactively using Perplexity Computer tasks, skills, memory and tools; they collaborate with each other and can message coworkers in Slack. Available now to Max subscribers on the web.",
+   "why": "Official Perplexity announcement; TestingCatalog confirms the web rollout with mobile coming.",
+   "topic": "Tools",
+   "replies": "Several replies compare it to Grok Bot and OpenAI's Dots as persistent AI coworkers. The more serious ones ask who sets limits and checks the work, and whether Max users get per-teammate tool allowlists; the rest is jokes and one hostile reply.",
+   "replyCount": 10
+  },
+  {
+   "title": "Mistral Studio adds managed agents and apps",
+   "author": "@MistralAI",
+   "authorName": "Mistral AI",
+   "url": "https://x.com/MistralAI/status/2118370229466153299",
+   "published": "2026-11-05 21:19 IST",
+   "summary": "Mistral Studio now offers managed agents and apps, plus new workflow, enterprise connection, observability and evaluation features, pitched as 'deploy where you choose' with Le Chonk as the model.",
+   "why": "Official Mistral announcement.",
+   "topic": "Tools",
+   "replies": "Replies like evals and traces sitting next to the agent runtime. Skeptics want to test the 'deploy where you choose' claim, since managed runtimes often live on the vendor's side, and ask about exporting traces and fully on-prem deployment.",
+   "replyCount": 10
+  },
+  {
+   "title": "Jim Fan: VFlash, a fast parallel vision model for robots",
+   "author": "@DrJimFan",
+   "authorName": "Jim Fan",
+   "url": "https://x.com/DrJimFan/status/2118380813498892301",
+   "published": "2026-11-05 22:01 IST",
+   "summary": "NVIDIA's Jim Fan introduced VFlash, which predicts fixed-length outputs like object boxes, robot trajectories and 3D motion in parallel rather than token by token, aimed at fast on-robot perception for physical AI.",
+   "why": "NVIDIA robotics research lead posting his team's own work.",
+   "topic": "Research",
+   "replies": "Replies pull numbers from the project page: up to about 12x faster action decoding, about 5.1x end-to-end on Jetson Thor, and up to 61% lower 3D trajectory error. People ask about on-robot latency, code release, and whether the gains hold on long-horizon tasks.",
+   "replyCount": 10
+  },
+  {
+   "title": "Ethan Mollick: the two camps inside every firm adopting AI",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2118371656939053117",
+   "published": "2026-11-05 21:25 IST",
+   "summary": "Mollick says firms have two groups both claiming to do 'AI transformation': people who see AI as an existential threat or opportunity, and people who want it treated as a regular technology so nothing has to change.",
+   "why": "Wharton professor who studies AI adoption in organisations.",
+   "topic": "Industry",
+   "replies": "Many agree the split is real, and one notes the second group usually controls the budget. Pushback calls the 'regular technology' framing a caricature, and another suggests a third group who would adopt AI if someone trained them first.",
+   "replyCount": 10
+  },
+  {
+   "title": "Hamel Husain: run your own private evals",
+   "author": "@HamelHusain",
+   "authorName": "Hamel Husain",
+   "url": "https://x.com/HamelHusain/status/2118357661750288570",
+   "published": "2026-11-05 20:29 IST",
+   "summary": "Hamel argues against relying on public benchmarks because many have material flaws and some models have memorised the answers. In a follow-up he clarifies he means high-quality tests specific to your real system, not just another private benchmark.",
+   "why": "Well-known evals practitioner and teacher.",
+   "topic": "Research",
+   "replies": "Strong agreement from practitioners, including a clinician saying only evals built from messy real cases are trustworthy. Practical tips: the private sets teams keep rerunning are small (10 to 50 cases of past failures), and editing tasks to contradict leaked hints exposes memorisation.",
+   "replyCount": 10
+  },
+  {
+   "title": "Nathan Lambert adds score-centering to the RLHF book",
+   "author": "@natolambert",
+   "authorName": "Nathan Lambert",
+   "url": "https://x.com/natolambert/status/2118359553532481655",
+   "published": "2026-11-05 20:37 IST",
+   "summary": "Lambert added score-centering, which he hears is popular in industry (for example Tinker's StableReinforce), to his RLHF book as a way to understand training-inference mismatch. A video explainer is coming.",
+   "why": "Ai2 post-training researcher and author of the RLHF book.",
+   "topic": "Research",
+   "replies": "Readers say training-inference mismatch deserves more attention and one links a thread interpreting what score-centering actually does. Open questions: whether it still helps when the sampler changes mid-run or runs at lower precision than the trainer.",
+   "replyCount": 10
+  },
   {
    "title": "Matt Pocock: prompt of the day, 'How do we make this change fully verifiable?'",
    "author": "@mattpocockuk",
