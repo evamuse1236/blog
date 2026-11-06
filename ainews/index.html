@@ -128,9 +128,45 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-06T23:04:51+05:30",
+ "updated": "2026-11-07T01:06:39+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "OpenAI BioBasicsBench: wet-lab agent analysis",
+   "author": "@OpenAI",
+   "authorName": "OpenAI",
+   "url": "https://x.com/OpenAI/status/2118782708767965238",
+   "published": "2026-11-07 00:38 IST",
+   "summary": "OpenAI launched BioBasicsBench with biotech firm Ligo: 100 tasks from real wet-lab experiments that test whether agents can interpret raw lab data, spot errors, and recognize when evidence does not support a conclusion. Framed as tracking progress for scientific work, biosafety, and biosecurity.",
+   "why": "Primary OpenAI research announcement of a wet-lab agent benchmark.",
+   "topic": "Research",
+   "replies": "Consensus that real raw wet-lab tasks beat synthetic or multiple-choice bio evals, and that partnering with Ligo for real failure modes matters. People ask whether scoring credits flagging bad data vs only the final answer, which models were baselined, the human gap, and whether tasks/scoring are public. Chart reads note even top models hover near ~60% with limited gains from more thinking effort.",
+   "replyCount": 10
+  },
+  {
+   "title": "Meta: Muse Wonder Active Memory/Focus in Muse and Meta AI",
+   "author": "@AIatMeta",
+   "authorName": "AI at Meta",
+   "url": "https://x.com/AIatMeta/status/2118768974779634084",
+   "published": "2026-11-06 23:44 IST",
+   "summary": "Meta is shipping specialized models trained with Muse Wonder into Muse and Meta AI, including Active Memory (keep relevant earlier context, drop stale) and Active Focus (recover when constraints change). Meta cites 2.4x less forgetting of goal-critical info and a 67% improvement getting unstuck as plans evolve.",
+   "why": "Official Meta / AI at Meta product rollout of Muse Wonder capabilities.",
+   "topic": "Models",
+   "replies": "Builders zoom in on the 2.4x forgetting and 67% unstuck numbers and ask whether Meta AI sees the same eval gains as Muse or mainly better step-breaking mid-chat. Questions on whether Active Memory evals include deliberately stale details, and on temporary-vs-permanent memory (e.g. price vs size/budget). Some low-signal 'still rewriting emails' jokes.",
+   "replyCount": 10
+  },
+  {
+   "title": "rauchg: coding is solved, bugs are not — use production traces",
+   "author": "@rauchg",
+   "authorName": "Guillermo Rauch",
+   "url": "https://x.com/rauchg/status/2118777039226642547",
+   "published": "2026-11-07 00:16 IST",
+   "summary": "Guillermo Rauch agrees with Boris Cherny that coding is solved but bugs are not: you can burn infinite tokens refining anything, including optimizations nobody will care about. His fix loop: capture production traces, then have agents course-correct from how software is actually used—instrument first, prompt second. Tied to Vercel Tracing GA.",
+   "why": "Watchlist practitioner (Vercel CEO) take on agent coding vs production bugs.",
+   "topic": "Tools",
+   "replies": "Strong agreement that writing code got easy while bugs, state orchestration, and concurrency did not; agents still polish paths with no failing check. Consensus scarce skill is picking which bug is worth the tokens; 'optimize forever' called the new trap. People ask whether whole teams will request traces once agents can read them, or only the habit-holders.",
+   "replyCount": 10
+  },
   {
    "title": "DeepMind: AI agents find weaknesses in legacy 1024-bit RSA",
    "author": "@GoogleDeepMind",
@@ -192,18 +228,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "replyCount": 10
   },
   {
-   "title": "Nace AI publishes Drex technical report (open decision models)",
-   "author": "@NaceAI",
-   "authorName": "Nace AI",
-   "url": "https://x.com/NaceAI/status/2118695842551103645",
-   "published": "2026-11-06 18:53 IST",
-   "summary": "Nace AI released the Drex technical report detailing how its open-source foundation decision models are trained with RLAF. Drex outputs probabilities over fixed options rather than generating text; coverage notes Drex Max (~27B) lands near frontier chat models on Decision Bench while answering in ~183 ms.",
-   "why": "Primary lab release + tech report for open decision / agent-routing models.",
-   "topic": "Models",
-   "replies": "Thin but constructive thread: Nace posted the paper link; builders ask about RLAF ablations, calibration under domain shift, and whether the console lets you temperature-tune on a few labeled in-domain decisions. Consensus interest is production agent loops that need a pick, not a paragraph.",
-   "replyCount": 4
-  },
-  {
    "title": "Hugging Face: stream live training runs",
    "author": "@huggingface",
    "authorName": "Hugging Face",
@@ -225,54 +249,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Official research release from Ai2 (allen_ai) with open assets and sim-to-real evidence.",
    "topic": "Research",
    "replies": "Thread fills in the release: controlled tests showed weak spatial generalization at first; natural-language tool interface for instructing the robot; roadmap for more skills, RL, and two-arm work. Outside replies focus on VRAM (does the 8-env quick start fit 16GB?) and that failure-to-cause tracing is what sim-to-real needs.",
-   "replyCount": 10
-  },
-  {
-   "title": "swyx: Astra remasters Chinese UI video with matched lighting",
-   "author": "@swyx",
-   "authorName": "swyx",
-   "url": "https://x.com/swyx/status/2118663921448169741",
-   "published": "2026-11-06 16:46 IST",
-   "summary": "Watchlist take: swyx shows GPT-6 Astra remastering a dual-Chinese UI clip into English while matching font, lighting, and animations—calling out that both sides of the original footage were Chinese and the model rebuilt the English overlay in place.",
-   "why": "Watchlist practitioner demo of frontier video remaster / localization fidelity.",
-   "topic": "Models",
-   "replies": "Consensus that matching lighting/font/animation is the jump vs plain translation. Pushback focuses on temporal hard parts: glyph edges without shimmer, mid-shot lighting changes, and moving cameras—where most video rerenders fail. Some low-signal \"agi\" jokes mixed in.",
-   "replyCount": 10
-  },
-  {
-   "title": "Matt Pocock: understanding React matters more than ever",
-   "author": "@mattpocockuk",
-   "authorName": "Matt Pocock",
-   "url": "https://x.com/mattpocockuk/status/2118663407616606637",
-   "published": "2026-11-06 16:44 IST",
-   "summary": "Watchlist take: Matt Pocock says understanding React still matters—more than ever—as AI writes more code, linking a React Advanced talk on whether software fundamentals survive agentic coding. In-thread he adds that the knowledge now scales to as many agents as your budget allows.",
-   "why": "Watchlist practitioner (Matt Pocock) on fundamentals in the agent era.",
-   "topic": "Tools",
-   "replies": "Broad agreement that agents copy repo patterns, so bad React ships at 10x and someone still has to set patterns worth copying. Matt stresses fundamentals now amplify across many agents, not one developer. Mild pushback that old methods will be \"lapped\"; a few Angular/SolidJS tangents.",
-   "replyCount": 10
-  },
-  {
-   "title": "Claude Code leaked account emails in User-Agent headers",
-   "author": "@hqmank",
-   "authorName": "Kai",
-   "url": "https://x.com/hqmank/status/2118634539123712287",
-   "published": "2026-11-06 14:50 IST",
-   "summary": "Claude Code put users' account emails into outbound HTTP User-Agent headers on web/shell calls (e.g. when sites ask bots for a contact). Anthropic's Claude Code team confirmed and apologized; v2.1.317 adds privacy checks (cc-plugin-privacy), and a fuller fix will stop putting account email in model context. GitHub issue anthropics/claude-code#107757.",
-   "why": "Confirmed Anthropic product privacy incident with apology and shipped mitigation.",
-   "topic": "Tools",
-   "replies": "Consensus that read access must not imply share access—outbound headers are now in the threat model. People are installing cc-plugin-privacy as a stopgap while waiting for the full fix. Some argue the harness (skills/hooks with keys) is as much to blame as the model stuffing email into context.",
-   "replyCount": 10
-  },
-  {
-   "title": "Lauren Tan: you don't need a \"software factory\"",
-   "author": "@poteto",
-   "authorName": "lauren",
-   "url": "https://x.com/poteto/status/2118613050462728659",
-   "published": "2026-11-06 13:24 IST",
-   "summary": "Watchlist take: Lauren Tan says you don't need a \"software factory\" and dislikes the term as marketing. What matters is good software engineering and putting tokens where work is deterministic and efficient—quoting the line that companies selling factories ship shockingly little software.",
-   "why": "Watchlist practitioner (Lauren Tan / poteto) pushback on agent-factory hype.",
-   "topic": "Tools",
-   "replies": "Broad agreement that \"software factory\" is marketing ick. People ask which steps she moved out of the model into plain code, whether \"invest tokens in deterministic parts\" means more tests/types or less model routing, and note the missing layer is knowing what you actually want so the factory doesn't just ship the wrong thing faster.",
    "replyCount": 10
   }
  ]
