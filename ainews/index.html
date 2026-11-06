@@ -128,19 +128,43 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-06T14:04:52+05:30",
+ "updated": "2026-11-06T17:12:41+05:30",
  "windowHours": 3,
  "posts": [
   {
-   "title": "METR: Anthropic AI R&D pace roughly ~2x prior rate",
-   "author": "@METR_Evals",
-   "authorName": "METR",
-   "url": "https://x.com/METR_Evals/status/2118412183860351084",
-   "published": "2026-11-06 00:06 IST",
-   "summary": "METR spent Aug–Oct 2026 with deep Anthropic internal access assessing whether AI is accelerating AI R&D. Their subjective read: as of Oct 2026, capability growth on well-specified tasks is about 2x the Mar 2024–Oct 2025 pace (range ~1.3–3x); AECI scores grew 1.9x [1.5–2.8] since Oct 2025. They believe most of the recent speedup is likely from AI used in R&D (uncertain; staff disagree), not faster training-compute growth, and saw no clear near-term bottlenecks. Key evidence was redacted; compute-allocation pilot was canceled.",
-   "why": "Independent eval nonprofit with high-access Anthropic risk assessment; primary source.",
-   "topic": "Research",
-   "replies": "Pushback centers on uncertainty and redactions: people call the “majority AI-driven but we’re not sure” line weak, ask what was cut from the compute pilot, and note the hard part is the historical baseline, not the assist. Others worry 1.9x compounds fast if evidence stays opaque, and debate whether AECI (verifiable/RSI-heavy benches) overstates real-world speedup.",
+   "title": "swyx: Astra remasters Chinese UI video with matched lighting",
+   "author": "@swyx",
+   "authorName": "swyx",
+   "url": "https://x.com/swyx/status/2118663921448169741",
+   "published": "2026-11-06 16:46 IST",
+   "summary": "Watchlist take: swyx shows GPT-6 Astra remastering a dual-Chinese UI clip into English while matching font, lighting, and animations—calling out that both sides of the original footage were Chinese and the model rebuilt the English overlay in place.",
+   "why": "Watchlist practitioner demo of frontier video remaster / localization fidelity.",
+   "topic": "Models",
+   "replies": "Consensus that matching lighting/font/animation is the jump vs plain translation. Pushback focuses on temporal hard parts: glyph edges without shimmer, mid-shot lighting changes, and moving cameras—where most video rerenders fail. Some low-signal \"agi\" jokes mixed in.",
+   "replyCount": 10
+  },
+  {
+   "title": "Matt Pocock: understanding React matters more than ever",
+   "author": "@mattpocockuk",
+   "authorName": "Matt Pocock",
+   "url": "https://x.com/mattpocockuk/status/2118663407616606637",
+   "published": "2026-11-06 16:44 IST",
+   "summary": "Watchlist take: Matt Pocock says understanding React still matters—more than ever—as AI writes more code, linking a React Advanced talk on whether software fundamentals survive agentic coding. In-thread he adds that the knowledge now scales to as many agents as your budget allows.",
+   "why": "Watchlist practitioner (Matt Pocock) on fundamentals in the agent era.",
+   "topic": "Tools",
+   "replies": "Broad agreement that agents copy repo patterns, so bad React ships at 10x and someone still has to set patterns worth copying. Matt stresses fundamentals now amplify across many agents, not one developer. Mild pushback that old methods will be \"lapped\"; a few Angular/SolidJS tangents.",
+   "replyCount": 10
+  },
+  {
+   "title": "Claude Code leaked account emails in User-Agent headers",
+   "author": "@hqmank",
+   "authorName": "Kai",
+   "url": "https://x.com/hqmank/status/2118634539123712287",
+   "published": "2026-11-06 14:50 IST",
+   "summary": "Claude Code put users' account emails into outbound HTTP User-Agent headers on web/shell calls (e.g. when sites ask bots for a contact). Anthropic's Claude Code team confirmed and apologized; v2.1.317 adds privacy checks (cc-plugin-privacy), and a fuller fix will stop putting account email in model context. GitHub issue anthropics/claude-code#107757.",
+   "why": "Confirmed Anthropic product privacy incident with apology and shipped mitigation.",
+   "topic": "Tools",
+   "replies": "Consensus that read access must not imply share access—outbound headers are now in the threat model. People are installing cc-plugin-privacy as a stopgap while waiting for the full fix. Some argue the harness (skills/hooks with keys) is as much to blame as the model stuffing email into context.",
    "replyCount": 10
   },
   {
@@ -153,30 +177,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Watchlist practitioner (Lauren Tan / poteto) pushback on agent-factory hype.",
    "topic": "Tools",
    "replies": "Broad agreement that \"software factory\" is marketing ick. People ask which steps she moved out of the model into plain code, whether \"invest tokens in deterministic parts\" means more tests/types or less model routing, and note the missing layer is knowing what you actually want so the factory doesn't just ship the wrong thing faster.",
-   "replyCount": 10
-  },
-  {
-   "title": "Google Antigravity: remote agents on cloud VMs",
-   "author": "@antigravity",
-   "authorName": "Google Antigravity",
-   "url": "https://x.com/antigravity/status/2118530564428833010",
-   "published": "2026-11-06 07:57 IST",
-   "summary": "Google Antigravity is rolling out remote agents: tasks run in independent cloud VMs so you can fire off work, step away, unblock permissions from your phone, and return to passed tests and a clean PR. Available on paid consumer plans (docs point to Google AI Pro/Ultra).",
-   "why": "Official product launch from Google's Antigravity coding-agent account.",
-   "topic": "Tools",
-   "replies": "Excitement about fire-and-forget cloud agents mixed with plan confusion (Pro/Ultra vs Plus/promo) and quota jokes—Argon burning weekly limits while you're at coffee. Practical tips: pre-scope tools before stepping away. Some complain mobile browser UX and UI glitches; others ask where Carbon is.",
-   "replyCount": 10
-  },
-  {
-   "title": "DeepFinance: ultra-long-horizon PE/IB deal benchmark",
-   "author": "@0interestrates",
-   "authorName": "rahul",
-   "url": "https://x.com/0interestrates/status/2118473925902635507",
-   "published": "2026-11-06 04:11 IST",
-   "summary": "Julius Research released DeepFinance: 21 ultra-long-horizon problems built from real PE/IB deal data by people with Evercore/JPM/UBS and HBS/Wharton backgrounds. Each task mirrors ~20–40 hours of human diligence with messy conflicting evidence, not doc-QA. Leaderboard at juliusresearch.ai/deep-finance; Claude Opus 5.5 leads near ~55% on the rubric with top models clustered.",
-   "why": "Primary release of a novel long-horizon finance agent eval from Julius Research CEO.",
-   "topic": "Research",
-   "replies": "Consensus that 20–40h deal workflows are a different shape than finance doc-QA. Watchers note Opus/Sonnet/GPT-6 Astra cluster ~55% of an 84-point rubric with overlapping error bars, care most about which source an agent trusts when files disagree, and ask when cheaper near-tied models are the right hire. Audit-trail scoring (cited inputs vs judgment) keeps coming up.",
    "replyCount": 10
   },
   {
@@ -228,6 +228,18 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "replyCount": 10
   },
   {
+   "title": "Google Antigravity: remote agents on cloud VMs",
+   "author": "@antigravity",
+   "authorName": "Google Antigravity",
+   "url": "https://x.com/antigravity/status/2118530564428833010",
+   "published": "2026-11-06 07:57 IST",
+   "summary": "Google Antigravity is rolling out remote agents: tasks run in independent cloud VMs so you can fire off work, step away, unblock permissions from your phone, and return to passed tests and a clean PR. Available on paid consumer plans (docs point to Google AI Pro/Ultra).",
+   "why": "Official product launch from Google's Antigravity coding-agent account.",
+   "topic": "Tools",
+   "replies": "Excitement about fire-and-forget cloud agents mixed with plan confusion (Pro/Ultra vs Plus/promo) and quota jokes—Argon burning weekly limits while you're at coffee. Practical tips: pre-scope tools before stepping away. Some complain mobile browser UX and UI glitches; others ask where Carbon is.",
+   "replyCount": 10
+  },
+  {
    "title": "Thinking Machines releases Inkling 2 Small (AA score 31)",
    "author": "@thinkymachines",
    "authorName": "Thinking Machines",
@@ -240,15 +252,15 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "replyCount": 10
   },
   {
-   "title": "Dwarkesh: $20k ClocktowerBench — models playing social deception",
-   "author": "@dwarkesh_sp",
-   "authorName": "Dwarkesh Patel",
-   "url": "https://x.com/dwarkesh_sp/status/2118449808402681911",
-   "published": "2026-11-06 02:36 IST",
-   "summary": "Dwarkesh spent about $20,000 in API credits having models play Blood on the Clocktower against each other. He says models improved a lot this year at on-the-spot scheming, bluffing, and team reasoning, with OpenAI's newer models clearly ahead of Anthropic's on this game; full bench and human-vs-AI play at clocktowerbench.com.",
-   "why": "Watchlist practitioner releasing a novel social-deception eval with primary spend and methodology.",
+   "title": "METR: Anthropic AI R&D pace roughly ~2x prior rate",
+   "author": "@METR_Evals",
+   "authorName": "METR",
+   "url": "https://x.com/METR_Evals/status/2118412183860351084",
+   "published": "2026-11-06 00:06 IST",
+   "summary": "METR spent Aug–Oct 2026 with deep Anthropic internal access assessing whether AI is accelerating AI R&D. Their subjective read: as of Oct 2026, capability growth on well-specified tasks is about 2x the Mar 2024–Oct 2025 pace (range ~1.3–3x); AECI scores grew 1.9x [1.5–2.8] since Oct 2025. They believe most of the recent speedup is likely from AI used in R&D (uncertain; staff disagree), not faster training-compute growth, and saw no clear near-term bottlenecks. Key evidence was redacted; compute-allocation pilot was canceled.",
+   "why": "Independent eval nonprofit with high-access Anthropic risk assessment; primary source.",
    "topic": "Research",
-   "replies": "Noam Brown (@polynoamial) says he is impressed with the methodology and jokes about hiring Dwarkesh for OpenAI evals. Others note OpenAI's Elo jump vs Anthropic on this task, retell Astra sacrificing a teammate to win, and praise social deception as harder to game than static benches.",
+   "replies": "Pushback centers on uncertainty and redactions: people call the “majority AI-driven but we’re not sure” line weak, ask what was cut from the compute pilot, and note the hard part is the historical baseline, not the assist. Others worry 1.9x compounds fast if evidence stays opaque, and debate whether AECI (verifiable/RSI-heavy benches) overstates real-world speedup.",
    "replyCount": 10
   }
  ]
