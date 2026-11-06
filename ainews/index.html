@@ -128,9 +128,69 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-06T21:19:12+05:30",
+ "updated": "2026-11-06T23:04:51+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "DeepMind: AI agents find weaknesses in legacy 1024-bit RSA",
+   "author": "@GoogleDeepMind",
+   "authorName": "Google DeepMind",
+   "url": "https://x.com/GoogleDeepMind/status/2118755418675765656",
+   "published": "2026-11-06 22:50 IST",
+   "summary": "Google DeepMind published research on AI agents accelerating cryptanalysis: guided by humans, their models uncovered two major weaknesses in legacy 1024-bit RSA cryptosystems. VP Science Pushmeet Kohli posted a longer write-up of the Science team's advances.",
+   "why": "Primary Google DeepMind research announcement on AI-assisted cryptanalysis.",
+   "topic": "Research",
+   "replies": "Consensus that this is a to-do for anyone still running 1024-bit RSA (including some DNSSEC zones), not a panic about 2048-bit. People ask how much human guidance shaped the attack surface vs agent-proposed paths, and praise publishing on retired keys so defenders see it first. Practical tips: check key size with ssh-keygen and move to ed25519.",
+   "replyCount": 10
+  },
+  {
+   "title": "Artificial Analysis: VIALS-AA visual reasoning for life sciences",
+   "author": "@ArtificialAnlys",
+   "authorName": "Artificial Analysis",
+   "url": "https://x.com/ArtificialAnlys/status/2118752670030700953",
+   "published": "2026-11-06 22:39 IST",
+   "summary": "Artificial Analysis launched VIALS-AA, a leaderboard for Handshake AI's VIALS benchmark on visual reasoning in life sciences and biotech. The pitch: scientists already decide from experiment images and artifacts; this measures whether models can interpret them reliably.",
+   "why": "Watchlist eval org shipping a domain-specific visual-reasoning leaderboard.",
+   "topic": "Research",
+   "replies": "Useful numbers in-thread: Kimi K3.1 Pro clears 119/161 tasks at least once vs 118 for GPT-6 Astra, but force all-three-correct and Kimi drops to 73 (45%) while Astra holds 101 (63%). Cost gap called out (Opus ~$1.64/task vs Sol ~$0.056). Consensus that consistency across retries beats one-shot demos; open weights still lag.",
+   "replyCount": 10
+  },
+  {
+   "title": "Mistral: Voxtral 3 end-of-turn detection for voice agents",
+   "author": "@MistralAI",
+   "authorName": "Mistral AI",
+   "url": "https://x.com/MistralAI/status/2118744719870066936",
+   "published": "2026-11-06 22:08 IST",
+   "summary": "Mistral AI highlighted Voxtral 3's end-of-turn detection: knowing when a speaker has finished, not just transcribing them. Aimed at responsive voice interactions without relying on crude silence heuristics alone.",
+   "why": "Official Mistral product feature for a hard voice-agent UX problem.",
+   "topic": "Tools",
+   "replies": "Strong builder consensus that end-of-turn is the real voice bottleneck (false cutoffs mid-thought, phone numbers, self-corrections). Asks for confidence scores vs hard cuts, default silence/timeouts, and whether turn.end can arrive before the last transcript words. Multilingual pause false-end rates requested.",
+   "replyCount": 10
+  },
+  {
+   "title": "Harrison Chase: LangChain week — async subagents, Stagehand, BYOC",
+   "author": "@hwchase17",
+   "authorName": "Harrison Chase",
+   "url": "https://x.com/hwchase17/status/2118739844696277338",
+   "published": "2026-11-06 21:48 IST",
+   "summary": "LangChain week notes from Harrison Chase: async subagents so the main agent keeps talking while workers run; browser-use tuning in MDA (7 toolsets tested, Stagehand won); LangSmith BYOC on AWS/Azure/GCP; Interrupt conference back March 24–25 in SF.",
+   "why": "Watchlist practitioner (LangChain founder) shipping concrete agent-runtime updates.",
+   "topic": "Tools",
+   "replies": "Builders like async subagents but immediately ask about shared-state races (two workers, one file/browser session) and a single permission ledger before writes. Curiosity on whether LangSmith BYOC keeps evals next to traces in customer cloud. Stagehand winning a 7-toolset bakeoff gets praise as the kind of changelog detail people want.",
+   "replyCount": 10
+  },
+  {
+   "title": "Runway: GPT Image 2.6 live (faster gen, GIFs, SVG)",
+   "author": "@runwayml",
+   "authorName": "Runway",
+   "url": "https://x.com/runwayml/status/2118735600241270879",
+   "published": "2026-11-06 21:31 IST",
+   "summary": "Runway added GPT Image 2.6: claims ~50% faster generation, GIF support, SVG vector export, and precise edits that keep characters, products, and brand details consistent. Also noted on Runway Dev API.",
+   "why": "Official Runway product integration of OpenAI's latest image model.",
+   "topic": "Tools",
+   "replies": "Creators care most about brand/product consistency across GIF frames and whether SVG text stays editable paths. Asks for seamless GIF loop pin (matching first/last frames). Some note faster gen just moves the bottleneck to distribution; a few low-signal hype replies.",
+   "replyCount": 10
+  },
   {
    "title": "Nace AI publishes Drex technical report (open decision models)",
    "author": "@NaceAI",
@@ -213,42 +273,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Watchlist practitioner (Lauren Tan / poteto) pushback on agent-factory hype.",
    "topic": "Tools",
    "replies": "Broad agreement that \"software factory\" is marketing ick. People ask which steps she moved out of the model into plain code, whether \"invest tokens in deterministic parts\" means more tests/types or less model routing, and note the missing layer is knowing what you actually want so the factory doesn't just ship the wrong thing faster.",
-   "replyCount": 10
-  },
-  {
-   "title": "Artificial Analysis: Endpoint Accuracy Index v1.1",
-   "author": "@ArtificialAnlys",
-   "authorName": "Artificial Analysis",
-   "url": "https://x.com/ArtificialAnlys/status/2118534967387185476",
-   "published": "2026-11-06 08:14 IST",
-   "summary": "AA shipped Endpoint Accuracy Index v1.1 covering 100+ serverless endpoints for six open-weight models (adding GLM-5.3 Flash and Muse Spark Open). Nearly 1 in 4 endpoints score below a self-hosted reference of the same weights; providers lose accuracy via quantization, output caps, thinner reasoning, and bugs. Scores blend BFCL-500, HLE-250, and AA-LCR-25 against the official-weights reference.",
-   "why": "Independent eval org measuring provider fidelity for the same model name.",
-   "topic": "Models",
-   "replies": "Consensus is that the model name is not the product—the endpoint is. People report cheapest/fast hosts returning quietly worse answers, call out a ~32-point GLM-5.3 spread across hosts, and flag audit risk for regulated work (need to pin endpoint/version or self-host). Some ask AA to separate deliberate caps from plain bugs, and which host scored 104.2 on GLM-5.3 Flash.",
-   "replyCount": 10
-  },
-  {
-   "title": "Jeff Dean partners with Laude Institute on open-science moonshots",
-   "author": "@JeffDean",
-   "authorName": "Jeff Dean",
-   "url": "https://x.com/JeffDean/status/2118554350859813374",
-   "published": "2026-11-06 09:31 IST",
-   "summary": "Jeff Dean says he is partnering with Laude Institute alongside Sanjay Ghemawat, John Hennessy, Dave Patterson, Ben Gomes, and Andy Konwinski to help fund open-science moonshot labs. Laude's Moonshots // ONE program selected four multi-year ~$10M labs after a Demo Day in San Francisco.",
-   "why": "Watchlist Google Research leader backing open frontier science funding.",
-   "topic": "Research",
-   "replies": "Mostly thanks and support from Laude folks (@andykonwinski) and winners. A few ask what they would fund that a normal grant committee would reject, note ~$40M already across four labs, and argue moonshot grants should require publishing failed configs and loss curves so others stop rebuying the same dead ends.",
-   "replyCount": 10
-  },
-  {
-   "title": "Ethan Mollick: national AI crash projects for public good",
-   "author": "@emollick",
-   "authorName": "Ethan Mollick",
-   "url": "https://x.com/emollick/status/2118551754908356979",
-   "published": "2026-11-06 09:21 IST",
-   "summary": "Mollick argues labs, policymakers, and NGOs underinvest in near-term national crash projects that current models can already support: universal tutoring, healthcare second opinions, financial literacy/scam avoidance, and easier government services. He says careful design and studies are needed, but waiting for smarter models is not required.",
-   "why": "Watchlist researcher take pushing concrete public-good deployments over demos.",
-   "topic": "Policy",
-   "replies": "Strong agreement on scoped pilots with owners, meters, and kill dates. Replies push boring public metrics (forms completed, clinic hours saved), ask who owns a working national tutor, and note gatekeepers differ by domain (schools vs regulators vs the state). Consensus: distribution and workflows matter more than another keynote demo.",
    "replyCount": 10
   }
  ]
