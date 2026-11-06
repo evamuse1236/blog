@@ -128,9 +128,45 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-06T17:12:41+05:30",
+ "updated": "2026-11-06T21:19:12+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Nace AI publishes Drex technical report (open decision models)",
+   "author": "@NaceAI",
+   "authorName": "Nace AI",
+   "url": "https://x.com/NaceAI/status/2118695842551103645",
+   "published": "2026-11-06 18:53 IST",
+   "summary": "Nace AI released the Drex technical report detailing how its open-source foundation decision models are trained with RLAF. Drex outputs probabilities over fixed options rather than generating text; coverage notes Drex Max (~27B) lands near frontier chat models on Decision Bench while answering in ~183 ms.",
+   "why": "Primary lab release + tech report for open decision / agent-routing models.",
+   "topic": "Models",
+   "replies": "Thin but constructive thread: Nace posted the paper link; builders ask about RLAF ablations, calibration under domain shift, and whether the console lets you temperature-tune on a few labeled in-domain decisions. Consensus interest is production agent loops that need a pick, not a paragraph.",
+   "replyCount": 4
+  },
+  {
+   "title": "Hugging Face: stream live training runs",
+   "author": "@huggingface",
+   "authorName": "Hugging Face",
+   "url": "https://x.com/huggingface/status/2118715992343789911",
+   "published": "2026-11-06 20:13 IST",
+   "summary": "Hugging Face is streaming live training runs on the Hub. The linked run trains LoRA harness adapters on Liquid LFM2.5/LFM3 and Twil-9B with RL so small models stay accurate on agentic tool formats; one frozen base can serve multiple adapters.",
+   "why": "Official Hugging Face product/infra announcement with public live training.",
+   "topic": "Tools",
+   "replies": "Consensus that watching a run live beats another static model card—especially when loss spikes or a bad shard shows up mid-job. People ask whether live views include harness evals (not just adapter loss) and whether separate adapters for pi / OpenCode / Hermes transfer across harnesses. A few Twitch-for-trainers jokes.",
+   "replyCount": 10
+  },
+  {
+   "title": "Ai2 ToyBlocks: open sim for robot-learning experiments",
+   "author": "@allen_ai",
+   "authorName": "Ai2",
+   "url": "https://x.com/allen_ai/status/2118708454378402266",
+   "published": "2026-11-06 19:43 IST",
+   "summary": "Ai2 introduced ToyBlocks, an open simulated tabletop for controlled robot-learning experiments: researchers can shape training data, run targeted evals, and trace failures. Initial release includes ~85K long-horizon demos, assets, generators, two trained models, and code; a sim-trained stack spelled words with lettered blocks on a real robot in 15/30 tries.",
+   "why": "Official research release from Ai2 (allen_ai) with open assets and sim-to-real evidence.",
+   "topic": "Research",
+   "replies": "Thread fills in the release: controlled tests showed weak spatial generalization at first; natural-language tool interface for instructing the robot; roadmap for more skills, RL, and two-arm work. Outside replies focus on VRAM (does the 8-env quick start fit 16GB?) and that failure-to-cause tracing is what sim-to-real needs.",
+   "replyCount": 10
+  },
   {
    "title": "swyx: Astra remasters Chinese UI video with matched lighting",
    "author": "@swyx",
@@ -204,18 +240,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "replyCount": 10
   },
   {
-   "title": "Tibo: humans weren't great at secure infrastructure",
-   "author": "@thsottiaux",
-   "authorName": "Tibo",
-   "url": "https://x.com/thsottiaux/status/2118569235953893573",
-   "published": "2026-11-06 10:30 IST",
-   "summary": "OpenAI Codex lead Tibo says humans were not very good at writing secure infrastructure, and that the end state is hypersecure software for everyone—with turbulence on the way. Context is OpenAI's Patch the Planet / GPT-6 Cyber work securing open-source systems at scale.",
-   "why": "Watchlist OpenAI practitioner framing the security-transition thesis behind cyber models.",
-   "topic": "Industry",
-   "replies": "Thread is noisy: lots of Codex reset begging and \"when GPT 6.2\" bait mixed with short agreement. Sparse substance—one reply notes \"secure\" is relative (AI vs average vs senior human). Low signal overall beyond restating the turbulence framing.",
-   "replyCount": 10
-  },
-  {
    "title": "Ethan Mollick: national AI crash projects for public good",
    "author": "@emollick",
    "authorName": "Ethan Mollick",
@@ -225,42 +249,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Watchlist researcher take pushing concrete public-good deployments over demos.",
    "topic": "Policy",
    "replies": "Strong agreement on scoped pilots with owners, meters, and kill dates. Replies push boring public metrics (forms completed, clinic hours saved), ask who owns a working national tutor, and note gatekeepers differ by domain (schools vs regulators vs the state). Consensus: distribution and workflows matter more than another keynote demo.",
-   "replyCount": 10
-  },
-  {
-   "title": "Google Antigravity: remote agents on cloud VMs",
-   "author": "@antigravity",
-   "authorName": "Google Antigravity",
-   "url": "https://x.com/antigravity/status/2118530564428833010",
-   "published": "2026-11-06 07:57 IST",
-   "summary": "Google Antigravity is rolling out remote agents: tasks run in independent cloud VMs so you can fire off work, step away, unblock permissions from your phone, and return to passed tests and a clean PR. Available on paid consumer plans (docs point to Google AI Pro/Ultra).",
-   "why": "Official product launch from Google's Antigravity coding-agent account.",
-   "topic": "Tools",
-   "replies": "Excitement about fire-and-forget cloud agents mixed with plan confusion (Pro/Ultra vs Plus/promo) and quota jokes—Argon burning weekly limits while you're at coffee. Practical tips: pre-scope tools before stepping away. Some complain mobile browser UX and UI glitches; others ask where Carbon is.",
-   "replyCount": 10
-  },
-  {
-   "title": "Thinking Machines releases Inkling 2 Small (AA score 31)",
-   "author": "@thinkymachines",
-   "authorName": "Thinking Machines",
-   "url": "https://x.com/thinkymachines/status/2118489527362912566",
-   "published": "2026-11-06 05:13 IST",
-   "summary": "Thinking Machines introduced Inkling 2 Small, scoring 31 on the Artificial Analysis Intelligence Index, a large jump over Inkling Small. It is available for fine-tuning and inference on Tinker today, with a full weight release planned soon (Apache 2.0 expected).",
-   "why": "Primary release from a major AI lab official account.",
-   "topic": "Models",
-   "replies": "Quotes call it a monster for its size (close to DeepSeek V4.1 on text, stronger on vision) and note ~68-hour NVFP4 pretrain. Staff highlight extreme finetunability and joint RL without MOPD. Common caveat: weights are not out yet, Tinker-only for now; some ask whether it runs on a single 5070 Ti.",
-   "replyCount": 10
-  },
-  {
-   "title": "METR: Anthropic AI R&D pace roughly ~2x prior rate",
-   "author": "@METR_Evals",
-   "authorName": "METR",
-   "url": "https://x.com/METR_Evals/status/2118412183860351084",
-   "published": "2026-11-06 00:06 IST",
-   "summary": "METR spent Aug–Oct 2026 with deep Anthropic internal access assessing whether AI is accelerating AI R&D. Their subjective read: as of Oct 2026, capability growth on well-specified tasks is about 2x the Mar 2024–Oct 2025 pace (range ~1.3–3x); AECI scores grew 1.9x [1.5–2.8] since Oct 2025. They believe most of the recent speedup is likely from AI used in R&D (uncertain; staff disagree), not faster training-compute growth, and saw no clear near-term bottlenecks. Key evidence was redacted; compute-allocation pilot was canceled.",
-   "why": "Independent eval nonprofit with high-access Anthropic risk assessment; primary source.",
-   "topic": "Research",
-   "replies": "Pushback centers on uncertainty and redactions: people call the “majority AI-driven but we’re not sure” line weak, ask what was cut from the compute pilot, and note the hard part is the historical baseline, not the assist. Others worry 1.9x compounds fast if evidence stays opaque, and debate whether AECI (verifiable/RSI-heavy benches) overstates real-world speedup.",
    "replyCount": 10
   }
  ]
