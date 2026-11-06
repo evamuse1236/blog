@@ -128,9 +128,57 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-06T08:11:52+05:30",
- "windowHours": 7,
+ "updated": "2026-11-06T11:02:44+05:30",
+ "windowHours": 3,
  "posts": [
+  {
+   "title": "Artificial Analysis: Endpoint Accuracy Index v1.1",
+   "author": "@ArtificialAnlys",
+   "authorName": "Artificial Analysis",
+   "url": "https://x.com/ArtificialAnlys/status/2118534967387185476",
+   "published": "2026-11-06 08:14 IST",
+   "summary": "AA shipped Endpoint Accuracy Index v1.1 covering 100+ serverless endpoints for six open-weight models (adding GLM-5.3 Flash and Muse Spark Open). Nearly 1 in 4 endpoints score below a self-hosted reference of the same weights; providers lose accuracy via quantization, output caps, thinner reasoning, and bugs. Scores blend BFCL-500, HLE-250, and AA-LCR-25 against the official-weights reference.",
+   "why": "Independent eval org measuring provider fidelity for the same model name.",
+   "topic": "Models",
+   "replies": "Consensus is that the model name is not the product—the endpoint is. People report cheapest/fast hosts returning quietly worse answers, call out a ~32-point GLM-5.3 spread across hosts, and flag audit risk for regulated work (need to pin endpoint/version or self-host). Some ask AA to separate deliberate caps from plain bugs, and which host scored 104.2 on GLM-5.3 Flash.",
+   "replyCount": 10
+  },
+  {
+   "title": "Jeff Dean partners with Laude Institute on open-science moonshots",
+   "author": "@JeffDean",
+   "authorName": "Jeff Dean",
+   "url": "https://x.com/JeffDean/status/2118554350859813374",
+   "published": "2026-11-06 09:31 IST",
+   "summary": "Jeff Dean says he is partnering with Laude Institute alongside Sanjay Ghemawat, John Hennessy, Dave Patterson, Ben Gomes, and Andy Konwinski to help fund open-science moonshot labs. Laude's Moonshots // ONE program selected four multi-year ~$10M labs after a Demo Day in San Francisco.",
+   "why": "Watchlist Google Research leader backing open frontier science funding.",
+   "topic": "Research",
+   "replies": "Mostly thanks and support from Laude folks (@andykonwinski) and winners. A few ask what they would fund that a normal grant committee would reject, note ~$40M already across four labs, and argue moonshot grants should require publishing failed configs and loss curves so others stop rebuying the same dead ends.",
+   "replyCount": 10
+  },
+  {
+   "title": "Tibo: humans weren't great at secure infrastructure",
+   "author": "@thsottiaux",
+   "authorName": "Tibo",
+   "url": "https://x.com/thsottiaux/status/2118569235953893573",
+   "published": "2026-11-06 10:30 IST",
+   "summary": "OpenAI Codex lead Tibo says humans were not very good at writing secure infrastructure, and that the end state is hypersecure software for everyone—with turbulence on the way. Context is OpenAI's Patch the Planet / GPT-6 Cyber work securing open-source systems at scale.",
+   "why": "Watchlist OpenAI practitioner framing the security-transition thesis behind cyber models.",
+   "topic": "Industry",
+   "replies": "Thread is noisy: lots of Codex reset begging and \"when GPT 6.2\" bait mixed with short agreement. Sparse substance—one reply notes \"secure\" is relative (AI vs average vs senior human). Low signal overall beyond restating the turbulence framing.",
+   "replyCount": 10
+  },
+  {
+   "title": "Ethan Mollick: national AI crash projects for public good",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2118551754908356979",
+   "published": "2026-11-06 09:21 IST",
+   "summary": "Mollick argues labs, policymakers, and NGOs underinvest in near-term national crash projects that current models can already support: universal tutoring, healthcare second opinions, financial literacy/scam avoidance, and easier government services. He says careful design and studies are needed, but waiting for smarter models is not required.",
+   "why": "Watchlist researcher take pushing concrete public-good deployments over demos.",
+   "topic": "Policy",
+   "replies": "Strong agreement on scoped pilots with owners, meters, and kill dates. Replies push boring public metrics (forms completed, clinic hours saved), ask who owns a working national tutor, and note gatekeepers differ by domain (schools vs regulators vs the state). Consensus: distribution and workflows matter more than another keynote demo.",
+   "replyCount": 10
+  },
   {
    "title": "Thinking Machines releases Inkling 2 Small (AA score 31)",
    "author": "@thinkymachines",
@@ -180,18 +228,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "replyCount": 10
   },
   {
-   "title": "Tibo: ChatGPT + API now generate 4B+ images per week",
-   "author": "@thsottiaux",
-   "authorName": "Tibo",
-   "url": "https://x.com/thsottiaux/status/2118469621011677521",
-   "published": "2026-11-06 03:54 IST",
-   "summary": "OpenAI Codex lead Tibo says image generation across ChatGPT and the API is now more than 4 billion images per week, up from more than 3B only eight weeks ago, quoting the ChatGPT Images 2.6 launch context.",
-   "why": "Watchlist OpenAI practitioner sharing a primary usage scale stat.",
-   "topic": "Industry",
-   "replies": "Quotes argue scale means production queues more than exploration, and that the hard metric is retained workflows not one-off wow. Some call much of the volume spam; competitive chatter asks where Nano Banana Pro and Seedream sit at this volume.",
-   "replyCount": 8
-  },
-  {
    "title": "Dwarkesh: $20k ClocktowerBench — models playing social deception",
    "author": "@dwarkesh_sp",
    "authorName": "Dwarkesh Patel",
@@ -204,40 +240,16 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "replyCount": 10
   },
   {
-   "title": "Julius: local transcription models as a dictation hub on t3.codes",
-   "author": "@jullerino",
-   "authorName": "Julius",
-   "url": "https://x.com/jullerino/status/2118521476542558265",
-   "published": "2026-11-06 07:20 IST",
-   "summary": "Julius (T3) shipped local transcription models on t3.codes environments as a dictation hub for any client: pick among models, filter for your voice, add a dictionary for misheard words, and optional post-processing.",
-   "why": "Watchlist practitioner product update from Theo's T3 team.",
-   "topic": "Tools",
-   "replies": "Quotes are mostly eager tries and requests to bring the same into T3 mobile / voice chat. Low technical pushback so far; signal is light product-love rather than critique.",
-   "replyCount": 6
-  },
-  {
-   "title": "Ethan Mollick: AI stock downturn won't rewrite the AI trajectory",
-   "author": "@emollick",
-   "authorName": "Ethan Mollick",
-   "url": "https://x.com/emollick/status/2118497026329518238",
-   "published": "2026-11-06 05:43 IST",
-   "summary": "Against a midterm-driven AI equity selloff, Mollick argues a financial downturn in AI stocks will not greatly change the AI trajectory: adoption and development are not slowing, and the real need is policy and effort so AI is used well.",
-   "why": "Watchlist researcher take that counters dry market-wire coverage of the same day.",
+   "title": "Tibo: ChatGPT + API now generate 4B+ images per week",
+   "author": "@thsottiaux",
+   "authorName": "Tibo",
+   "url": "https://x.com/thsottiaux/status/2118469621011677521",
+   "published": "2026-11-06 03:54 IST",
+   "summary": "OpenAI Codex lead Tibo says image generation across ChatGPT and the API is now more than 4 billion images per week, up from more than 3B only eight weeks ago, quoting the ChatGPT Images 2.6 launch context.",
+   "why": "Watchlist OpenAI practitioner sharing a primary usage scale stat.",
    "topic": "Industry",
-   "replies": "Quotes agree the stock move and the tech trajectory are separate, and amplify the call to focus on use and policy over price action. Volume is low and mostly restatement.",
-   "replyCount": 3
-  },
-  {
-   "title": "Theo: burn tokens to make agents good at UI",
-   "author": "@theo",
-   "authorName": "Theo - t3.gg",
-   "url": "https://x.com/theo/status/2118465321032106235",
-   "published": "2026-11-06 03:37 IST",
-   "summary": "Theo says agents get good at UI if you spend enough tokens on iterative review, and shares a video walkthrough that developers report has helped. Frames it as adversarial / hill-climb loops applied to UI rather than a new model capability.",
-   "why": "Watchlist practitioner tip with concrete workflow (screenshot compare + retry).",
-   "topic": "Tools",
-   "replies": "People say the gain is more rounds of looking at the result, pair it with council/hill-climb prompts, and ask whether that is progress or an expensive workaround. Some are surprised others only just applied adversarial review to UI/UX.",
-   "replyCount": 6
+   "replies": "Quotes argue scale means production queues more than exploration, and that the hard metric is retained workflows not one-off wow. Some call much of the volume spam; competitive chatter asks where Nano Banana Pro and Seedream sit at this volume.",
+   "replyCount": 8
   }
  ]
 }
