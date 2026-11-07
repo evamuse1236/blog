@@ -128,9 +128,45 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-07T20:10:00+05:30",
+ "updated": "2026-11-07T23:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Karpathy: TristanTube one-shotted with Claude Code in 3 minutes",
+   "author": "@karpathy",
+   "authorName": "Andrej Karpathy",
+   "url": "https://x.com/karpathy/status/2119114537442189652",
+   "published": "2026-11-07 22:37 IST",
+   "summary": "Andrej Karpathy turned Tristan's top-YouTube-channels list into TristanTube — 47K nerdy videos plus a TV mode — one-shotted with Claude Code in 3 minutes, building on his earlier HackerTube (~2 hours with Opus 5.5).",
+   "why": "Watchlist researcher; concrete Claude Code remix of a prior weekend hack.",
+   "topic": "Tools",
+   "replies": "Consensus that the second Tube is a remix of HackerTube's pipeline (2 hours → 3 minutes once the first build exists). People ask how TV mode ranks the next video across 47K channels, and @Swagtdog (Tristan) thanked him for building it. Rest is short praise about curated lists becoming apps.",
+   "replyCount": 10
+  },
+  {
+   "title": "Rumor/early signal: SpaceXSI rolling out Slack integration for Grok Bot",
+   "author": "@testingcatalog",
+   "authorName": "TestingCatalog",
+   "url": "https://x.com/testingcatalog/status/2119091992214810808",
+   "published": "2026-11-07 21:07 IST",
+   "summary": "TestingCatalog says SpaceXSI is preparing to roll out Slack integration for Grok Bot: users can connect bots individually, then DM or @mention them in Slack with the same plugins, context, and memories. Claims it should arrive in the 1.1.0 macOS build. Not announced by SpaceXSI/xAI.",
+   "why": "Rumor/early signal: TestingCatalog app teardown; no official confirmation.",
+   "topic": "Tools",
+   "replies": "Interest centers on shared memory across X and Slack and whether Slack-triggered runs ask before acting or inherit existing bot permissions. A few ask if it is for all Grok subscribers or a separate tier; one joke about bots doing standups as status theater. Mostly short enthusiasm otherwise.",
+   "replyCount": 10
+  },
+  {
+   "title": "Ethan Mollick: LLMs can 10x investigative research",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2119083280381383072",
+   "published": "2026-11-07 20:33 IST",
+   "summary": "Ethan Mollick argues this can be a golden age of investigative journalism: digging through filings, records, and public data used to take a team a long time; LLMs can 10x that investigative research.",
+   "why": "Watchlist researcher take on AI × journalism/research workflows.",
+   "topic": "Research",
+   "replies": "Strong agreement that reading/search scales, but the bottleneck moves to provenance: every claim needs a page-level citation and a human verification pass, or you just 10x confident errors. Several draw the same parallel to coding agents — generation is cheap, judgment and review are scarce.",
+   "replyCount": 10
+  },
   {
    "title": "Matt Pocock: Markdown files make the Thoughtworks Technology Radar",
    "author": "@mattpocockuk",
@@ -262,42 +298,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "topic": "Research",
    "replies": "Consensus that 38% is decomposable task time (lit review, boilerplate), not equal output lift; experiment design, wet-lab work, and verification still bottleneck. Pushback that 'if adopted widely' does most of the work and labs may just spend the hours on more grants or papers.",
    "replyCount": 10
-  },
-  {
-   "title": "rauchg: generative UI as the dominant human-agent interaction",
-   "author": "@rauchg",
-   "authorName": "Guillermo Rauch",
-   "url": "https://x.com/rauchg/status/2118856239719608353",
-   "published": "2026-11-07 05:31 IST",
-   "summary": "Guillermo Rauch argues generative UI will become the dominant Human-Agent Interaction pattern: combine the AI SDK with Chat SDK and json-render so an LLM goes straight to live UI on Slack and Teams, not just text.",
-   "why": "Watchlist practitioner (Vercel CEO) product/architecture take on agent UX.",
-   "topic": "Tools",
-   "replies": "Builders like the idea but demand a frozen JSON schema as contract, coherent permissions/state across Slack vs Teams, and review-before-publish. Pushback that one-by-one element reveals prove little about live generation (\"PowerPoint does that\"). Busy-channel durability called the real test.",
-   "replyCount": 10
-  },
-  {
-   "title": "AA: GPT Image 2.6 takes #1/#2 on T2I and editing boards",
-   "author": "@ArtificialAnlys",
-   "authorName": "Artificial Analysis",
-   "url": "https://x.com/ArtificialAnlys/status/2118851088111865983",
-   "published": "2026-11-07 05:10 IST",
-   "summary": "Artificial Analysis says OpenAI's GPT Image 2.6 takes #1 and #2 on both AA-Image-T2I v2.1 and AA-Image-Editing v2.1. Flare is almost twice as fast as GPT Image 2.5 Flare with slightly better quality; Sunburst leads overall with longer generation times.",
-   "why": "Watchlist eval org posting concrete latency/quality numbers for the new image model.",
-   "topic": "Models",
-   "replies": "Consensus that Flare's ~2x speed with a small quality bump is the product-relevant win for iteration, with Sunburst reserved for final renders. Asks for a quality-latency frontier at matched resolution/candidates, not separate podiums.",
-   "replyCount": 10
-  },
-  {
-   "title": "theo: more reasons to never use \"max\" reasoning",
-   "author": "@theo",
-   "authorName": "Theo - t3.gg",
-   "url": "https://x.com/theo/status/2118894224733249655",
-   "published": "2026-11-07 08:02 IST",
-   "summary": "Theo shares T3 anonymized telemetry backing Adam Holter's finding: Opus 5.5 fails about twice as many T3 turns on max as on high, across turn-length buckets, with most extra failures in the first 30 seconds. Sol shows a smaller ~1.4x pattern. More reasons to skip max reasoning.",
-   "why": "Watchlist practitioner (T3) sharing production telemetry against max reasoning.",
-   "topic": "Tools",
-   "replies": "Agreement that max burns time without smarter answers; people ask what mode to use when the task actually matters (xhigh?) and how often max runs get retried lower. Brand-new thread, still light on replies.",
-   "replyCount": 6
   }
  ]
 }
