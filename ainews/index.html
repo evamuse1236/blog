@@ -128,9 +128,33 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-07T11:15:00+05:30",
+ "updated": "2026-11-07T14:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "theo: copy-pasting Claude↔Codex is the new Stack Overflow",
+   "author": "@theo",
+   "authorName": "Theo - t3.gg",
+   "url": "https://x.com/theo/status/2118957088257056848",
+   "published": "2026-11-07 12:11 IST",
+   "summary": "Theo argues that copy-pasting between Claude and Codex is the 2026 equivalent of copy-pasting from Stack Overflow — a common multi-model coding habit where the skill is stitching the good parts.",
+   "why": "Watchlist practitioner (T3) naming a widespread multi-model coding pattern.",
+   "topic": "Tools",
+   "replies": "Most replies recognize the habit and say the real skill is knowing which model half-solved the problem. Pushback notes Stack Overflow never rewrote three files you didn't ask about, and that free tokens just make you the clipboard all day (Jevons). A few ask whether one model calling the other as a subagent keeps context.",
+   "replyCount": 10
+  },
+  {
+   "title": "Julius: T3 cloud transcription BYOK (OpenAI, Grok, OpenRouter)",
+   "author": "@jullerino",
+   "authorName": "Julius",
+   "url": "https://x.com/jullerino/status/2118942074209005870",
+   "published": "2026-11-07 11:12 IST",
+   "summary": "Julius (T3) says you can now send transcription to select cloud providers instead of running local models; BYOK for OpenAI, Grok, and OpenRouter lands in the next nightly. Existing subscriptions do not cover it.",
+   "why": "Watchlist T3 team product update (Julius) on dictation/transcription options.",
+   "topic": "Tools",
+   "replies": "Requests pile up for ElevenLabs, Gemini, and using a connected Codex subscription for native transcription without the Codex desktop app. One reply asks which trade-off hurt more in testing: unusual-word accuracy, latency, or per-minute cost. Rest is short praise.",
+   "replyCount": 10
+  },
   {
    "title": "Anthropic: how \"dreaming\" helps Claude organize its memory",
    "author": "@AnthropicAI",
@@ -177,18 +201,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Primary NVIDIA research release with paper and code.",
    "topic": "Research",
    "replies": "The useful replies say returning to a place consistently is the real test, and ask how far a path can go before drift forces regeneration. One reply says the project page lists weights and inference code since April 15 and training code since July 15. Mostly short praise otherwise.",
-   "replyCount": 10
-  },
-  {
-   "title": "ChatGPT Remix: make your own editable copy of a teammate's site",
-   "author": "@ChatGPT",
-   "authorName": "ChatGPT",
-   "url": "https://x.com/ChatGPT/status/2118827837239226387",
-   "published": "2026-11-07 03:38 IST",
-   "summary": "Remix lets you make your own version of a site by telling ChatGPT what to change, then keep editing your copy in chat. It's rolling out to ChatGPT Business and Enterprise accounts.",
-   "why": "Official ChatGPT product announcement (small, Business/Enterprise only).",
-   "topic": "Tools",
-   "replies": "Low signal: one reply likes plain-language tweaks over rebuilding, one notes the word \"teammate\" a day after the Teammates launch, and the rest are jokes, 4o-revival pleas, and spam links.",
    "replyCount": 10
   },
   {
@@ -240,18 +252,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "replyCount": 10
   },
   {
-   "title": "AA: TTS accent split — Qwen US English, HeyGen overall/UK",
-   "author": "@ArtificialAnlys",
-   "authorName": "Artificial Analysis",
-   "url": "https://x.com/ArtificialAnlys/status/2118871344633045072",
-   "published": "2026-11-07 06:31 IST",
-   "summary": "Artificial Analysis shows accent flips TTS rankings: Qwen-Audio-3.1-TTS-Plus leads in US English while HeyGen Voice leads in UK English and on the overall board. Same voices, different accent — ranking changes.",
-   "why": "Watchlist eval org isolating accent as a first-class TTS dimension.",
-   "topic": "Tools",
-   "replies": "Consensus that overall TTS leaderboards hide locale fit; buyers should score by market accent. Thread notes average ~7 Elo gap and models with non-overlapping US vs UK intervals. Ask whether scores mix accent fidelity with naturalness.",
-   "replyCount": 10
-  },
-  {
    "title": "theo: more reasons to never use \"max\" reasoning",
    "author": "@theo",
    "authorName": "Theo - t3.gg",
@@ -262,30 +262,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "topic": "Tools",
    "replies": "Agreement that max burns time without smarter answers; people ask what mode to use when the task actually matters (xhigh?) and how often max runs get retried lower. Brand-new thread, still light on replies.",
    "replyCount": 6
-  },
-  {
-   "title": "rauchg: coding is solved, bugs are not — use production traces",
-   "author": "@rauchg",
-   "authorName": "Guillermo Rauch",
-   "url": "https://x.com/rauchg/status/2118777039226642547",
-   "published": "2026-11-07 00:16 IST",
-   "summary": "Guillermo Rauch agrees with Boris Cherny that coding is solved but bugs are not: you can burn infinite tokens refining anything, including optimizations nobody will care about. His fix loop: capture production traces, then have agents course-correct from how software is actually used—instrument first, prompt second. Tied to Vercel Tracing GA.",
-   "why": "Watchlist practitioner (Vercel CEO) take on agent coding vs production bugs.",
-   "topic": "Tools",
-   "replies": "Strong agreement that writing code got easy while bugs, state orchestration, and concurrency did not; agents still polish paths with no failing check. Consensus scarce skill is picking which bug is worth the tokens; 'optimize forever' called the new trap. People ask whether whole teams will request traces once agents can read them, or only the habit-holders.",
-   "replyCount": 10
-  },
-  {
-   "title": "OpenAI BioBasicsBench: wet-lab agent analysis",
-   "author": "@OpenAI",
-   "authorName": "OpenAI",
-   "url": "https://x.com/OpenAI/status/2118782708767965238",
-   "published": "2026-11-07 00:38 IST",
-   "summary": "OpenAI launched BioBasicsBench with biotech firm Ligo: 100 tasks from real wet-lab experiments that test whether agents can interpret raw lab data, spot errors, and recognize when evidence does not support a conclusion. Framed as tracking progress for scientific work, biosafety, and biosecurity.",
-   "why": "Primary OpenAI research announcement of a wet-lab agent benchmark.",
-   "topic": "Research",
-   "replies": "Consensus that real raw wet-lab tasks beat synthetic or multiple-choice bio evals, and that partnering with Ligo for real failure modes matters. People ask whether scoring credits flagging bad data vs only the final answer, which models were baselined, the human gap, and whether tasks/scoring are public. Chart reads note even top models hover near ~60% with limited gains from more thinking effort.",
-   "replyCount": 10
   }
  ]
 }
