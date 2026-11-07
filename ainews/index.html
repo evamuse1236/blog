@@ -128,9 +128,69 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-07T08:10:17+05:30",
+ "updated": "2026-11-07T11:15:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Anthropic: how \"dreaming\" helps Claude organize its memory",
+   "author": "@AnthropicAI",
+   "authorName": "Anthropic",
+   "url": "https://x.com/AnthropicAI/status/2118814753154064501",
+   "published": "2026-11-07 02:46 IST",
+   "summary": "A new Anthropic Engineering Blog post explains \"dreaming\": Claude reviews what it has learned between sessions to organize memory, correct its mistakes, and find what it needs more easily next time.",
+   "why": "Primary Anthropic engineering post (overnight gap after the 1am digest).",
+   "topic": "Research",
+   "replies": "Most substantive replies like the cleanup-between-sessions idea but want provenance: where a memory came from, when, and a way to delete it, so one bad inference doesn't harden into fact. One reply cites the post's contract test, where several agents sharing one table kept 41 of 57 graded facts versus 57 of 57 with one agent per contract. The rest is low-signal or off-topic complaints.",
+   "replyCount": 10
+  },
+  {
+   "title": "Anthropic Science Blog: AI is starting to write and test scientific models",
+   "author": "@AnthropicAI",
+   "authorName": "Anthropic",
+   "url": "https://x.com/AnthropicAI/status/2118792930211107115",
+   "published": "2026-11-07 01:19 IST",
+   "summary": "In a guest post, Jakob Macke, Daniel Gedon, and Stefan Wahl describe AI writing, running, fitting, and revising scientific models as code, so it can explore many candidate model structures and see which explanations the data support.",
+   "why": "Primary Anthropic Science Blog post with named academic guest authors.",
+   "topic": "Research",
+   "replies": "Replies focus on validation: a model that's faster to build but no easier to falsify doesn't help, and the real test is predicting new observations. One reply notes the blog's own caveat that evidence is mostly rediscovery of known models, with little yet on unknown-answer problems. A few spam or off-topic replies.",
+   "replyCount": 10
+  },
+  {
+   "title": "OpenAI + Frontier Model Forum: framework for rating cyber jailbreak severity",
+   "author": "@OpenAI",
+   "authorName": "OpenAI",
+   "url": "https://x.com/OpenAI/status/2118795218099253606",
+   "published": "2026-11-07 01:28 IST",
+   "summary": "OpenAI worked with the Frontier Model Forum and its member firms on a framework to judge when bypassing an AI system's safeguards could enable serious cyber harm, so labs can compare jailbreak severity and prioritize stronger protections.",
+   "why": "Primary OpenAI announcement of a cross-lab safety framework.",
+   "topic": "Policy",
+   "replies": "Several replies say a shared severity scale is overdue, but its value depends on whether all frontier labs actually adopt it. One reply points out the spec can rate a jailbreak \"Negligible\" when it adds nothing beyond widely available models, which is a relative rating, not a clean bill of health. The rest is quota complaints and abuse.",
+   "replyCount": 10
+  },
+  {
+   "title": "NVIDIA Lyra 2.0: explore a 3D world generated from one image",
+   "author": "@NVIDIAAI",
+   "authorName": "NVIDIA AI",
+   "url": "https://x.com/NVIDIAAI/status/2118800021013643269",
+   "published": "2026-11-07 01:47 IST",
+   "summary": "NVIDIA researchers combine video generation with 3D reconstruction to build an explorable environment from a single image along a chosen camera path, using earlier views to correct accumulating errors so places stay consistent when you return. Paper, code, and demos are public.",
+   "why": "Primary NVIDIA research release with paper and code.",
+   "topic": "Research",
+   "replies": "The useful replies say returning to a place consistently is the real test, and ask how far a path can go before drift forces regeneration. One reply says the project page lists weights and inference code since April 15 and training code since July 15. Mostly short praise otherwise.",
+   "replyCount": 10
+  },
+  {
+   "title": "ChatGPT Remix: make your own editable copy of a teammate's site",
+   "author": "@ChatGPT",
+   "authorName": "ChatGPT",
+   "url": "https://x.com/ChatGPT/status/2118827837239226387",
+   "published": "2026-11-07 03:38 IST",
+   "summary": "Remix lets you make your own version of a site by telling ChatGPT what to change, then keep editing your copy in chat. It's rolling out to ChatGPT Business and Enterprise accounts.",
+   "why": "Official ChatGPT product announcement (small, Business/Enterprise only).",
+   "topic": "Tools",
+   "replies": "Low signal: one reply likes plain-language tweaks over rebuilding, one notes the word \"teammate\" a day after the Teammates launch, and the rest are jokes, 4o-revival pleas, and spam links.",
+   "replyCount": 10
+  },
   {
    "title": "Nous Research Arete-27B: strip CCP alignment from Qwen3.8-27B",
    "author": "@NousResearch",
@@ -204,18 +264,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "replyCount": 6
   },
   {
-   "title": "Meta: Muse Wonder Active Memory/Focus in Muse and Meta AI",
-   "author": "@AIatMeta",
-   "authorName": "AI at Meta",
-   "url": "https://x.com/AIatMeta/status/2118768974779634084",
-   "published": "2026-11-06 23:44 IST",
-   "summary": "Meta is shipping specialized models trained with Muse Wonder into Muse and Meta AI, including Active Memory (keep relevant earlier context, drop stale) and Active Focus (recover when constraints change). Meta cites 2.4x less forgetting of goal-critical info and a 67% improvement getting unstuck as plans evolve.",
-   "why": "Official Meta / AI at Meta product rollout of Muse Wonder capabilities.",
-   "topic": "Models",
-   "replies": "Builders zoom in on the 2.4x forgetting and 67% unstuck numbers and ask whether Meta AI sees the same eval gains as Muse or mainly better step-breaking mid-chat. Questions on whether Active Memory evals include deliberately stale details, and on temporary-vs-permanent memory (e.g. price vs size/budget). Some low-signal 'still rewriting emails' jokes.",
-   "replyCount": 10
-  },
-  {
    "title": "rauchg: coding is solved, bugs are not — use production traces",
    "author": "@rauchg",
    "authorName": "Guillermo Rauch",
@@ -225,30 +273,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Watchlist practitioner (Vercel CEO) take on agent coding vs production bugs.",
    "topic": "Tools",
    "replies": "Strong agreement that writing code got easy while bugs, state orchestration, and concurrency did not; agents still polish paths with no failing check. Consensus scarce skill is picking which bug is worth the tokens; 'optimize forever' called the new trap. People ask whether whole teams will request traces once agents can read them, or only the habit-holders.",
-   "replyCount": 10
-  },
-  {
-   "title": "DeepMind: AI agents find weaknesses in legacy 1024-bit RSA",
-   "author": "@GoogleDeepMind",
-   "authorName": "Google DeepMind",
-   "url": "https://x.com/GoogleDeepMind/status/2118755418675765656",
-   "published": "2026-11-06 22:50 IST",
-   "summary": "Google DeepMind published research on AI agents accelerating cryptanalysis: guided by humans, their models uncovered two major weaknesses in legacy 1024-bit RSA cryptosystems. VP Science Pushmeet Kohli posted a longer write-up of the Science team's advances.",
-   "why": "Primary Google DeepMind research announcement on AI-assisted cryptanalysis.",
-   "topic": "Research",
-   "replies": "Consensus that this is a to-do for anyone still running 1024-bit RSA (including some DNSSEC zones), not a panic about 2048-bit. People ask how much human guidance shaped the attack surface vs agent-proposed paths, and praise publishing on retired keys so defenders see it first. Practical tips: check key size with ssh-keygen and move to ed25519.",
-   "replyCount": 10
-  },
-  {
-   "title": "Artificial Analysis: VIALS-AA visual reasoning for life sciences",
-   "author": "@ArtificialAnlys",
-   "authorName": "Artificial Analysis",
-   "url": "https://x.com/ArtificialAnlys/status/2118752670030700953",
-   "published": "2026-11-06 22:39 IST",
-   "summary": "Artificial Analysis launched VIALS-AA, a leaderboard for Handshake AI's VIALS benchmark on visual reasoning in life sciences and biotech. The pitch: scientists already decide from experiment images and artifacts; this measures whether models can interpret them reliably.",
-   "why": "Watchlist eval org shipping a domain-specific visual-reasoning leaderboard.",
-   "topic": "Research",
-   "replies": "Useful numbers in-thread: Kimi K3.1 Pro clears 119/161 tasks at least once vs 118 for GPT-6 Astra, but force all-three-correct and Kimi drops to 73 (45%) while Astra holds 101 (63%). Cost gap called out (Opus ~$1.64/task vs Sol ~$0.056). Consensus that consistency across retries beats one-shot demos; open weights still lag.",
    "replyCount": 10
   },
   {
