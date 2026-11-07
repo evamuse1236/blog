@@ -128,9 +128,33 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-07T23:10:00+05:30",
+ "updated": "2026-11-08T01:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Hamel Husain: the industrial-benchmark complex is on thin ice",
+   "author": "@HamelHusain",
+   "authorName": "Hamel Husain",
+   "url": "https://x.com/HamelHusain/status/2119138141793841376",
+   "published": "2026-11-08 00:11 IST",
+   "summary": "Hamel quote-posts MaxxBench (by @loresjpg): 89 DeepSWE tasks with small tweaks to instructions or starting code, where models that cluster around 74% on DeepSWE end up 23 points apart. His one-line take: the industrial-benchmark complex is on thin ice.",
+   "why": "Well-known evals practitioner; the underlying MaxxBench post has 2K+ likes and 650+ bookmarks",
+   "topic": "Research",
+   "replies": "Mostly agreement: @balazsfab says if a lowercase filename moves a model 23 points, leaderboards were mostly measuring fit to the task format, and one reply flags DeepSeek V4 Flash dropping from 53.3 to 28.1. Others add that benchmarks run every task cold while real work happens deep in long sessions, and that evals on your own data are the only ones worth trusting.",
+   "replyCount": 10
+  },
+  {
+   "title": "Ethan Mollick: we worry too much about verifying AI output for facts",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2119140502746308674",
+   "published": "2026-11-08 00:20 IST",
+   "summary": "Mollick argues there is too much concern about verifying AI output in everyday work because of factual errors. He says that used to be true, but data on recent models suggests they beat human experts, including PhD specialists, at finding facts and checking claims.",
+   "why": "Wharton professor who tracks AI-at-work research closely; shares a chart backing the claim",
+   "topic": "Research",
+   "replies": "Split between agreement and pushback. @ragzoi points out that on the chart's deepfact panel, answering \"unsupported\" to every claim scores 83.9% (most claims were made unsupported on purpose), above the GPT-4.1 agent's 83.2%. Others say the worry has moved to rare confidently-wrong claims and to verifying agent actions rather than facts, and one user says Gemini still makes things up in review.",
+   "replyCount": 10
+  },
   {
    "title": "Karpathy: TristanTube one-shotted with Claude Code in 3 minutes",
    "author": "@karpathy",
@@ -237,42 +261,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Primary Anthropic engineering post (overnight gap after the 1am digest).",
    "topic": "Research",
    "replies": "Most substantive replies like the cleanup-between-sessions idea but want provenance: where a memory came from, when, and a way to delete it, so one bad inference doesn't harden into fact. One reply cites the post's contract test, where several agents sharing one table kept 41 of 57 graded facts versus 57 of 57 with one agent per contract. The rest is low-signal or off-topic complaints.",
-   "replyCount": 10
-  },
-  {
-   "title": "Anthropic Science Blog: AI is starting to write and test scientific models",
-   "author": "@AnthropicAI",
-   "authorName": "Anthropic",
-   "url": "https://x.com/AnthropicAI/status/2118792930211107115",
-   "published": "2026-11-07 01:19 IST",
-   "summary": "In a guest post, Jakob Macke, Daniel Gedon, and Stefan Wahl describe AI writing, running, fitting, and revising scientific models as code, so it can explore many candidate model structures and see which explanations the data support.",
-   "why": "Primary Anthropic Science Blog post with named academic guest authors.",
-   "topic": "Research",
-   "replies": "Replies focus on validation: a model that's faster to build but no easier to falsify doesn't help, and the real test is predicting new observations. One reply notes the blog's own caveat that evidence is mostly rediscovery of known models, with little yet on unknown-answer problems. A few spam or off-topic replies.",
-   "replyCount": 10
-  },
-  {
-   "title": "OpenAI + Frontier Model Forum: framework for rating cyber jailbreak severity",
-   "author": "@OpenAI",
-   "authorName": "OpenAI",
-   "url": "https://x.com/OpenAI/status/2118795218099253606",
-   "published": "2026-11-07 01:28 IST",
-   "summary": "OpenAI worked with the Frontier Model Forum and its member firms on a framework to judge when bypassing an AI system's safeguards could enable serious cyber harm, so labs can compare jailbreak severity and prioritize stronger protections.",
-   "why": "Primary OpenAI announcement of a cross-lab safety framework.",
-   "topic": "Policy",
-   "replies": "Several replies say a shared severity scale is overdue, but its value depends on whether all frontier labs actually adopt it. One reply points out the spec can rate a jailbreak \"Negligible\" when it adds nothing beyond widely available models, which is a relative rating, not a clean bill of health. The rest is quota complaints and abuse.",
-   "replyCount": 10
-  },
-  {
-   "title": "NVIDIA Lyra 2.0: explore a 3D world generated from one image",
-   "author": "@NVIDIAAI",
-   "authorName": "NVIDIA AI",
-   "url": "https://x.com/NVIDIAAI/status/2118800021013643269",
-   "published": "2026-11-07 01:47 IST",
-   "summary": "NVIDIA researchers combine video generation with 3D reconstruction to build an explorable environment from a single image along a chosen camera path, using earlier views to correct accumulating errors so places stay consistent when you return. Paper, code, and demos are public.",
-   "why": "Primary NVIDIA research release with paper and code.",
-   "topic": "Research",
-   "replies": "The useful replies say returning to a place consistently is the real test, and ask how far a path can go before drift forces regeneration. One reply says the project page lists weights and inference code since April 15 and training code since July 15. Mostly short praise otherwise.",
    "replyCount": 10
   },
   {
