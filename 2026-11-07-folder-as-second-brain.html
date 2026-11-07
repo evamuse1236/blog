@@ -1,0 +1,28 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Do I need a notes app if an agent can run my folder?</title><style>body{max-width:680px;margin:0 auto;padding:2.5rem 1.2rem;font:18px/1.7 Georgia,serif;color:#222;background:#fdfcf9}
+a{color:#2b5fa8}h1,h2{font-family:system-ui,sans-serif;line-height:1.25}header a{color:#222;text-decoration:none;font-family:system-ui,sans-serif;font-weight:700}
+.meta{color:#888;font:14px system-ui,sans-serif}blockquote{border-left:3px solid #ccc;margin:1rem 0;padding-left:1rem;color:#555}
+ul.posts{list-style:none;padding:0}ul.posts li{margin:1.2rem 0}footer{margin-top:3rem;color:#aaa;font:13px system-ui,sans-serif}</style></head><body><header><a href="index.html">Vishwajit Pathare's Notes</a></header>
+<main><h1>Do I need a notes app if an agent can run my folder?</h1><p class='meta'>2026-11-07</p><p>I bookmarked a post this week that made me look sideways at every notes app I've ever opened. <a href="https://x.com/slash1sol/status/2118683688959385914">@slash1sol</a> wrote:</p>
+<blockquote>
+<p>"Andrej Karpathy doesn't use Notion, Obsidian plugins or any notes app. His second brain is a folder of markdown files, and he released a prompt that just turned that setup into something Opus 5.5 runs for you."</p>
+</blockquote>
+<p>I don't know how accurate the Karpathy claim is from the outside, and I'm not treating the post as a source of truth about him. What stuck is the shape of the idea: plain files, one folder, and a prompt that an agent can actually run against them. No graph view. No plugin zoo. No sync tax.</p>
+<h2>Why this feels familiar</h2>
+<p>A few weeks ago I wrote about <a href="2026-10-20-back-to-paper.html">whose memory it is</a> after bookmarking Ari and Matt Pocock's personal wiki. The instinct there was the same: if a tutor or a wiki only lives inside a vendor, I don't really own the part that learns me. Markdown on disk is boring in a good way. I can copy it, diff it, and hand it to a different model next year.</p>
+<p>This bookmark pushes that one step further. It isn't just "store memory as files." It's "the files <em>are</em> the app, and the agent is the interface." That collapses a lot of product surface area I've been casually assuming I need.</p>
+<h2>What a notes app is actually doing for me</h2>
+<p>When I open Notion or Obsidian, I'm usually doing one of three things:</p>
+<ol>
+<li>Capturing a thought before it disappears.</li>
+<li>Finding something I already wrote.</li>
+<li>Asking "what do I think about X?" across scattered notes.</li>
+</ol>
+<p>(1) is a text box. (2) is search. (3) is exactly the kind of job I already give bots. If an agent can walk a folder, quote the right files, and write a short answer back, then the app is mostly packaging around those three verbs. Packaging can be nice. I'm less sure it's load-bearing.</p>
+<p>There's also a quieter cost. Apps want structure — databases, tags, properties — and I spend energy feeding that structure instead of writing. Agents copy what's there. If my notes are half-filled property tables, I suspect the agent learns the empty fields instead of the ideas.</p>
+<h2>What I'd lose</h2>
+<p>I'm not pretending a folder is free. I'd lose easy multiplayer, pretty databases, and the feeling that someone else maintains the product. I might also lose the friction that forces me to title and file things. A folder of <code>note-3.md</code> and <code>asdf.md</code> is not a second brain; it's a drawer.</p>
+<p>So the real test isn't "can an agent read markdown." Of course it can. The test is whether <em>I</em> keep the folder coherent enough that an agent reading it sounds like me, not like a dump of half-thoughts.</p>
+<h2>What I'd try</h2>
+<p>Pick one real topic I already care about — how my bots should talk to coding agents on my own machine, say — and put everything I already have about it into a single folder of plain <code>.md</code> files. No plugins. Give a bot one prompt: read the folder, answer a question, and propose one new note to add. Do that for a week.</p>
+<p>If the answers feel grounded in what I actually wrote, and the folder stays readable without an app, then maybe the notes app was doing less work than I thought. If I keep reaching for tags and views, I'll know what I was paying for.</p></main><footer>Written from my X posts and bookmarks.</footer></body></html>
