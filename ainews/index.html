@@ -128,9 +128,45 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-08T11:10:00+05:30",
+ "updated": "2026-11-08T14:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Tibo: GPT-6.1 Terra isn't meant to compete with Opus 5.5",
+   "author": "@thsottiaux",
+   "authorName": "Tibo",
+   "url": "https://x.com/thsottiaux/status/2119304055126425939",
+   "published": "2026-11-08 11:10 IST",
+   "summary": "Replying to a user comparing the two, OpenAI's Tibo Sottiaux said it's \"pretty wild\" that GPT 6.1 Terra gets compared to Opus 5.5: a great model, but \"not meant to compete in the big leagues. We've got other models for that.\"",
+   "why": "OpenAI's Codex/ChatGPT product lead on how OpenAI positions its own model tiers",
+   "topic": "Models",
+   "replies": "Mostly skeptical. Several argue the comparison is fair on usage cost (one says Opus usage is roughly Terra's, while Astra drains usage much faster), others ask which OpenAI model actually competes with Opus 5.5, and a few just tell him to ship instead of hype.",
+   "replyCount": 10
+  },
+  {
+   "title": "poteto: getting an agent to make a music-explainer video when you lack the words",
+   "author": "@poteto",
+   "authorName": "Lauren Tan",
+   "url": "https://x.com/poteto/status/2119313621188849806",
+   "published": "2026-11-08 11:48 IST",
+   "summary": "Lauren Tan had Grok Bot make a video explaining how her game's Game Boy-style music was made. With no music background, she told the bot \"i lack the vocabulary to describe what i want,\" used the /sharpen and /in-your-own-words skills to check it understood, and had it do a storyboard and animatic before the full video.",
+   "why": "Practitioner write-up of a concrete agent workflow from someone who builds these tools",
+   "topic": "Tools",
+   "replies": "Fans liked the align-first trick (tell the agent what you can't articulate, confirm its understanding, then storyboard before rendering), and some shared their own Grok Bot music experiments. A noticeable chunk of replies are complaints about Grok Bot usage cuts and blocked local code execution rather than about the post.",
+   "replyCount": 10
+  },
+  {
+   "title": "DeepSeek V4.1 Flash 1017 Ultrafast lands on Vercel AI Gateway at 1,000+ tok/s",
+   "author": "@vercel_dev",
+   "authorName": "Vercel Developers",
+   "url": "https://x.com/vercel_dev/status/2119119166510862752",
+   "published": "2026-11-07 22:55 IST",
+   "summary": "Vercel says DeepSeek V4.1 Flash 1017 Ultrafast is now on AI Gateway and generates over 1,000 tokens per second, pitched for coding, reasoning, and agents (model id deepseek/deepseek-v4.1-flash-1017-ultrafast).",
+   "why": "Official Vercel announcement; the 1017 checkpoint is trending as a fast open-weights coding option",
+   "topic": "Tools",
+   "replies": "People are impressed by the speed but question the price: one reply says the Ultrafast endpoint runs via Fireworks at about $2.40 in / $9.60 out per million tokens versus far cheaper standard pricing for the same snapshot (unverified here). Others note tool-call round trips, not token speed, are now the real agent bottleneck.",
+   "replyCount": 10
+  },
   {
    "title": "Tibo: Pro plans have no 5-hour limits; Pro 100/200/500 give 10x/20x/50x Plus usage",
    "author": "@thsottiaux",
@@ -141,78 +177,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Tibo works on OpenAI Codex; first-hand plan details from the team.",
    "topic": "Tools",
    "replies": "Mostly Plus subscribers asking what they get and complaining that Plus is being treated unfairly, in English and Chinese. One reply claims a regression on the Pro plan over the last 5 days, and another asks about a usage reset for Pro 200. No corrections from OpenAI in the thread yet.",
-   "replyCount": 10
-  },
-  {
-   "title": "Brian Armstrong: one lead agent per focus area, a chief-of-staff agent, and one review queue",
-   "author": "@brian_armstrong",
-   "authorName": "Brian Armstrong",
-   "url": "https://x.com/brian_armstrong/status/2119112609223827547",
-   "published": "2026-11-07 22:29 IST",
-   "summary": "Coinbase's CEO runs an always-on lead agent per area, each managing sub-agents that code, test and chase reviews, under a chief-of-staff agent. Everything he must decide lands in one prioritized local web-app queue with screenshots and video demos, and every change still goes through human review and security checks.",
-   "why": "First-hand workflow from a public-company CEO; 8k+ bookmarks and trending on X.",
-   "topic": "Industry",
-   "replies": "Replies split between people who say the single decision queue is the missing piece in most agent setups and skeptics who call the chief-of-staff layer reinvented middle management with the human as the bottleneck. Others ask who owns and can turn off each lead agent, and how conflicting review requests get merged. A few say it resembles Claude Code Projects.",
-   "replyCount": 10
-  },
-  {
-   "title": "theo: the Opus 5.5 'nerf' looks like a reasoning-summarizer rollout",
-   "author": "@theo",
-   "authorName": "Theo - t3.gg",
-   "url": "https://x.com/theo/status/2119238026136330313",
-   "published": "2026-11-08 06:48 IST",
-   "summary": "Quoting Shane Melaugh's analysis of 1,400 Claude Code sessions that found reasoning changed sharply on Nov 3, theo says Anthropic appears to be rolling out a reasoning-summarizer change per account. He sees no sign of degraded capability and thinks they're fixing reasoning traces that have been poor for weeks.",
-   "why": "Heavy daily Claude/Codex user weighing in on the biggest overnight developer thread",
-   "topic": "Models",
-   "replies": "Many replies agree it reads as a rollout, not a nerf; others say the traces have been noise for a while or suspect they're deliberately degraded to prevent distillation. Pushback: @nekoRunwin wants matched tasks and pass rates before any capability conclusions, and @ndrwlmns says per-account rollouts explain the contradicting reports and asks for a proper changelog.",
-   "replyCount": 10
-  },
-  {
-   "title": "Richard Sutton: brute-force computation is not enough for intelligence",
-   "author": "@RichardSSutton",
-   "authorName": "Richard Sutton",
-   "url": "https://x.com/RichardSSutton/status/2119142310894334262",
-   "published": "2026-11-08 00:27 IST",
-   "summary": "The Bitter Lesson author writes that brute-force computation is not enough for intelligence, clever new methods are needed, and the science of AI is far from finished. Amjad Masad quoted it as \"The Better Lesson\".",
-   "why": "Turing Award winner and author of The Bitter Lesson; 3k+ likes, 246 quotes",
-   "topic": "Research",
-   "replies": "Mostly agreement, with replies like @IgorNaverniouk's \"Intelligence is compression.\" and complaints about the energy and catastrophic forgetting in current training. Some threads go on about compute limits and computational irreducibility; several replies are link-drops, so it's middling signal.",
-   "replyCount": 10
-  },
-  {
-   "title": "Greg Brockman: security architecture fundamentals matter more than ever",
-   "author": "@gdb",
-   "authorName": "Greg Brockman",
-   "url": "https://x.com/gdb/status/2119179547468005432",
-   "published": "2026-11-08 02:55 IST",
-   "summary": "OpenAI's president says security architecture fundamentals are more important than ever, quoting Pat Opet's advice that security firms should abstract their services from the open internet rather than let anonymous attacker agents interact with their systems.",
-   "why": "OpenAI co-founder and president signalling how AI attackers change defensive priorities",
-   "topic": "Policy",
-   "replies": "Replies broadly agree: once agents can call tools, auth, allowlists and least privilege matter more than smarter models, and an agent reaching production without auth is \"an open door\". @benharelone adds that top incident-response firms in the US are at capacity, with queues of breached companies waiting for help.",
-   "replyCount": 10
-  },
-  {
-   "title": "Harrison Chase: long tasks shouldn't block the chat (LangChain async subagents)",
-   "author": "@hwchase17",
-   "authorName": "Harrison Chase",
-   "url": "https://x.com/hwchase17/status/2119190885871312911",
-   "published": "2026-11-08 03:40 IST",
-   "summary": "LangChain's CEO points to the new 'agents are going async' post: async subagents keep the agent responsive to you while background workers handle long tasks.",
-   "why": "LangChain CEO announcing a framework pattern backed by an official blog post",
-   "topic": "Tools",
-   "replies": "Builders like the direction but focus on the hard parts: what happens if you change the request mid-run, stale results arriving after the plan changed, race conditions with concurrent turns, and durability when the orchestrator restarts. Several ask whether the subagent should interrupt you when done or just queue results.",
-   "replyCount": 10
-  },
-  {
-   "title": "Rumor/early signal: OpenAI Dots can read email sign-up codes to finish 2FA",
-   "author": "@testingcatalog",
-   "authorName": "TestingCatalog",
-   "url": "https://x.com/testingcatalog/status/2119163315687731405",
-   "published": "2026-11-08 01:51 IST",
-   "summary": "TestingCatalog reports that OpenAI's Dots agent can now take sign-up codes from an email to complete 2FA on your behalf when prompted, based on a user's video.",
-   "why": "Established feature tracker; not officially announced by OpenAI",
-   "topic": "Tools",
-   "replies": "Reactions split between 'real autonomy' and security worry: several note email-code relay is what phishing flows target and that mailbox access now becomes production access. @411apt points to OpenAI's Dots safety FAQ, saying password changes and money moves still require the user to take over; one reply notes the feature isn't officially announced.",
    "replyCount": 10
   },
   {
@@ -228,15 +192,63 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "replyCount": 10
   },
   {
-   "title": "Hamel Husain: the industrial-benchmark complex is on thin ice",
-   "author": "@HamelHusain",
-   "authorName": "Hamel Husain",
-   "url": "https://x.com/HamelHusain/status/2119138141793841376",
-   "published": "2026-11-08 00:11 IST",
-   "summary": "Hamel quote-posts MaxxBench (by @loresjpg): 89 DeepSWE tasks with small tweaks to instructions or starting code, where models that cluster around 74% on DeepSWE end up 23 points apart. His one-line take: the industrial-benchmark complex is on thin ice.",
-   "why": "Well-known evals practitioner; the underlying MaxxBench post has 2K+ likes and 650+ bookmarks",
+   "title": "theo: the Opus 5.5 'nerf' looks like a reasoning-summarizer rollout",
+   "author": "@theo",
+   "authorName": "Theo - t3.gg",
+   "url": "https://x.com/theo/status/2119238026136330313",
+   "published": "2026-11-08 06:48 IST",
+   "summary": "Quoting Shane Melaugh's analysis of 1,400 Claude Code sessions that found reasoning changed sharply on Nov 3, theo says Anthropic appears to be rolling out a reasoning-summarizer change per account. He sees no sign of degraded capability and thinks they're fixing reasoning traces that have been poor for weeks.",
+   "why": "Heavy daily Claude/Codex user weighing in on the biggest overnight developer thread",
+   "topic": "Models",
+   "replies": "Many replies agree it reads as a rollout, not a nerf; others say the traces have been noise for a while or suspect they're deliberately degraded to prevent distillation. Pushback: @nekoRunwin wants matched tasks and pass rates before any capability conclusions, and @ndrwlmns says per-account rollouts explain the contradicting reports and asks for a proper changelog.",
+   "replyCount": 10
+  },
+  {
+   "title": "Harrison Chase: long tasks shouldn't block the chat (LangChain async subagents)",
+   "author": "@hwchase17",
+   "authorName": "Harrison Chase",
+   "url": "https://x.com/hwchase17/status/2119190885871312911",
+   "published": "2026-11-08 03:40 IST",
+   "summary": "LangChain's CEO points to the new 'agents are going async' post: async subagents keep the agent responsive to you while background workers handle long tasks.",
+   "why": "LangChain CEO announcing a framework pattern backed by an official blog post",
+   "topic": "Tools",
+   "replies": "Builders like the direction but focus on the hard parts: what happens if you change the request mid-run, stale results arriving after the plan changed, race conditions with concurrent turns, and durability when the orchestrator restarts. Several ask whether the subagent should interrupt you when done or just queue results.",
+   "replyCount": 10
+  },
+  {
+   "title": "Greg Brockman: security architecture fundamentals matter more than ever",
+   "author": "@gdb",
+   "authorName": "Greg Brockman",
+   "url": "https://x.com/gdb/status/2119179547468005432",
+   "published": "2026-11-08 02:55 IST",
+   "summary": "OpenAI's president says security architecture fundamentals are more important than ever, quoting Pat Opet's advice that security firms should abstract their services from the open internet rather than let anonymous attacker agents interact with their systems.",
+   "why": "OpenAI co-founder and president signalling how AI attackers change defensive priorities",
+   "topic": "Policy",
+   "replies": "Replies broadly agree: once agents can call tools, auth, allowlists and least privilege matter more than smarter models, and an agent reaching production without auth is \"an open door\". @benharelone adds that top incident-response firms in the US are at capacity, with queues of breached companies waiting for help.",
+   "replyCount": 10
+  },
+  {
+   "title": "Rumor/early signal: OpenAI Dots can read email sign-up codes to finish 2FA",
+   "author": "@testingcatalog",
+   "authorName": "TestingCatalog",
+   "url": "https://x.com/testingcatalog/status/2119163315687731405",
+   "published": "2026-11-08 01:51 IST",
+   "summary": "TestingCatalog reports that OpenAI's Dots agent can now take sign-up codes from an email to complete 2FA on your behalf when prompted, based on a user's video.",
+   "why": "Established feature tracker; not officially announced by OpenAI",
+   "topic": "Tools",
+   "replies": "Reactions split between 'real autonomy' and security worry: several note email-code relay is what phishing flows target and that mailbox access now becomes production access. @411apt points to OpenAI's Dots safety FAQ, saying password changes and money moves still require the user to take over; one reply notes the feature isn't officially announced.",
+   "replyCount": 10
+  },
+  {
+   "title": "Richard Sutton: brute-force computation is not enough for intelligence",
+   "author": "@RichardSSutton",
+   "authorName": "Richard Sutton",
+   "url": "https://x.com/RichardSSutton/status/2119142310894334262",
+   "published": "2026-11-08 00:27 IST",
+   "summary": "The Bitter Lesson author writes that brute-force computation is not enough for intelligence, clever new methods are needed, and the science of AI is far from finished. Amjad Masad quoted it as \"The Better Lesson\".",
+   "why": "Turing Award winner and author of The Bitter Lesson; 3k+ likes, 246 quotes",
    "topic": "Research",
-   "replies": "Mostly agreement: @balazsfab says if a lowercase filename moves a model 23 points, leaderboards were mostly measuring fit to the task format, and one reply flags DeepSeek V4 Flash dropping from 53.3 to 28.1. Others add that benchmarks run every task cold while real work happens deep in long sessions, and that evals on your own data are the only ones worth trusting.",
+   "replies": "Mostly agreement, with replies like @IgorNaverniouk's \"Intelligence is compression.\" and complaints about the energy and catastrophic forgetting in current training. Some threads go on about compute limits and computational irreducibility; several replies are link-drops, so it's middling signal.",
    "replyCount": 10
   },
   {
@@ -252,6 +264,18 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "replyCount": 10
   },
   {
+   "title": "Hamel Husain: the industrial-benchmark complex is on thin ice",
+   "author": "@HamelHusain",
+   "authorName": "Hamel Husain",
+   "url": "https://x.com/HamelHusain/status/2119138141793841376",
+   "published": "2026-11-08 00:11 IST",
+   "summary": "Hamel quote-posts MaxxBench (by @loresjpg): 89 DeepSWE tasks with small tweaks to instructions or starting code, where models that cluster around 74% on DeepSWE end up 23 points apart. His one-line take: the industrial-benchmark complex is on thin ice.",
+   "why": "Well-known evals practitioner; the underlying MaxxBench post has 2K+ likes and 650+ bookmarks",
+   "topic": "Research",
+   "replies": "Mostly agreement: @balazsfab says if a lowercase filename moves a model 23 points, leaderboards were mostly measuring fit to the task format, and one reply flags DeepSeek V4 Flash dropping from 53.3 to 28.1. Others add that benchmarks run every task cold while real work happens deep in long sessions, and that evals on your own data are the only ones worth trusting.",
+   "replyCount": 10
+  },
+  {
    "title": "Karpathy: TristanTube one-shotted with Claude Code in 3 minutes",
    "author": "@karpathy",
    "authorName": "Andrej Karpathy",
@@ -261,18 +285,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Watchlist researcher; concrete Claude Code remix of a prior weekend hack.",
    "topic": "Tools",
    "replies": "Consensus that the second Tube is a remix of HackerTube's pipeline (2 hours → 3 minutes once the first build exists). People ask how TV mode ranks the next video across 47K channels, and @Swagtdog (Tristan) thanked him for building it. Rest is short praise about curated lists becoming apps.",
-   "replyCount": 10
-  },
-  {
-   "title": "Rumor/early signal: SpaceXSI rolling out Slack integration for Grok Bot",
-   "author": "@testingcatalog",
-   "authorName": "TestingCatalog",
-   "url": "https://x.com/testingcatalog/status/2119091992214810808",
-   "published": "2026-11-07 21:07 IST",
-   "summary": "TestingCatalog says SpaceXSI is preparing to roll out Slack integration for Grok Bot: users can connect bots individually, then DM or @mention them in Slack with the same plugins, context, and memories. Claims it should arrive in the 1.1.0 macOS build. Not announced by SpaceXSI/xAI.",
-   "why": "Rumor/early signal: TestingCatalog app teardown; no official confirmation.",
-   "topic": "Tools",
-   "replies": "Interest centers on shared memory across X and Slack and whether Slack-triggered runs ask before acting or inherit existing bot permissions. A few ask if it is for all Grok subscribers or a separate tier; one joke about bots doing standups as status theater. Mostly short enthusiasm otherwise.",
    "replyCount": 10
   }
  ]
