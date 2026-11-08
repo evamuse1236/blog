@@ -128,9 +128,33 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-08T17:10:00+05:30",
- "windowHours": 4,
+ "updated": "2026-11-08T20:10:00+05:30",
+ "windowHours": 3,
  "posts": [
+  {
+   "title": "Rumor/early signal: Google building a next-generation Gemini agent for Enterprise",
+   "author": "@testingcatalog",
+   "authorName": "TestingCatalog",
+   "url": "https://x.com/testingcatalog/status/2119432843365417047",
+   "published": "2026-11-08 19:42 IST",
+   "summary": "TestingCatalog says Google is working on \"the next generation Gemini agent\" for Gemini Enterprise, described internally as \"Gemini for Google - The next generation Gemini agent for enterprise,\" and that the experience is already being used inside Google. They also say Google appears to be preparing a new generation of AI products for work.",
+   "why": "Established feature tracker; screenshot of an internal Gemini Enterprise agent string, not announced by Google",
+   "topic": "Tools",
+   "replies": "Replies focus on the screenshot more than the headline: @Moretti_ale90 flags a banner about custom MCP servers in Gemini, and @testingcatalog says that part has been around for a while but likely isn't rolled out to everyone yet. Others note that every AI app is collapsing into the same \"give your agent a task\" box, that the hard part is which actions still need a human yes, and that an internal-only build may just be a repackage until there's a real demo.",
+   "replyCount": 10
+  },
+  {
+   "title": "DeepMind's Pushmeet Kohli: a phase transition in the pace of scientific discovery",
+   "author": "@pushmeet",
+   "authorName": "Pushmeet Kohli",
+   "url": "https://x.com/pushmeet/status/2119373171321196892",
+   "published": "2026-11-08 15:45 IST",
+   "summary": "DeepMind VP and Google Cloud Chief Scientist Pushmeet Kohli writes that across DeepMind's projects they are \"witnessing a genuine phase transition in the pace of scientific discovery,\" and that a glimpse will show up in their releases over the next few weeks.",
+   "why": "Primary-source note from DeepMind's science lead (AlphaFold, AlphaEvolve, Co-Scientist); 3k+ likes. Missed by the 17:00 run.",
+   "topic": "Research",
+   "replies": "The sampled replies are mixed and fairly low-signal. Some ask which scientific areas will show results first or hope the work leads to disease treatments; others are skeptical or tell DeepMind to ship undeniable breakthroughs after a stretch of gloomy CEO messaging. @LLDWnnn argues a phase transition only matters if the tools are available to scientists outside a few labs, with verification built in.",
+   "replyCount": 10
+  },
   {
    "title": "Addy Osmani: \"Your coding agents made you a manager\"",
    "author": "@addyosmani",
@@ -165,18 +189,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Practitioner write-up of a concrete agent workflow from someone who builds these tools",
    "topic": "Tools",
    "replies": "Fans liked the align-first trick (tell the agent what you can't articulate, confirm its understanding, then storyboard before rendering), and some shared their own Grok Bot music experiments. A noticeable chunk of replies are complaints about Grok Bot usage cuts and blocked local code execution rather than about the post.",
-   "replyCount": 10
-  },
-  {
-   "title": "DeepSeek V4.1 Flash 1017 Ultrafast lands on Vercel AI Gateway at 1,000+ tok/s",
-   "author": "@vercel_dev",
-   "authorName": "Vercel Developers",
-   "url": "https://x.com/vercel_dev/status/2119119166510862752",
-   "published": "2026-11-07 22:55 IST",
-   "summary": "Vercel says DeepSeek V4.1 Flash 1017 Ultrafast is now on AI Gateway and generates over 1,000 tokens per second, pitched for coding, reasoning, and agents (model id deepseek/deepseek-v4.1-flash-1017-ultrafast).",
-   "why": "Official Vercel announcement; the 1017 checkpoint is trending as a fast open-weights coding option",
-   "topic": "Tools",
-   "replies": "People are impressed by the speed but question the price: one reply says the Ultrafast endpoint runs via Fireworks at about $2.40 in / $9.60 out per million tokens versus far cheaper standard pricing for the same snapshot (unverified here). Others note tool-call round trips, not token speed, are now the real agent bottleneck.",
    "replyCount": 10
   },
   {
@@ -273,18 +285,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Wharton professor who tracks AI-at-work research closely; shares a chart backing the claim",
    "topic": "Research",
    "replies": "Split between agreement and pushback. @ragzoi points out that on the chart's deepfact panel, answering \"unsupported\" to every claim scores 83.9% (most claims were made unsupported on purpose), above the GPT-4.1 agent's 83.2%. Others say the worry has moved to rare confidently-wrong claims and to verifying agent actions rather than facts, and one user says Gemini still makes things up in review.",
-   "replyCount": 10
-  },
-  {
-   "title": "Hamel Husain: the industrial-benchmark complex is on thin ice",
-   "author": "@HamelHusain",
-   "authorName": "Hamel Husain",
-   "url": "https://x.com/HamelHusain/status/2119138141793841376",
-   "published": "2026-11-08 00:11 IST",
-   "summary": "Hamel quote-posts MaxxBench (by @loresjpg): 89 DeepSWE tasks with small tweaks to instructions or starting code, where models that cluster around 74% on DeepSWE end up 23 points apart. His one-line take: the industrial-benchmark complex is on thin ice.",
-   "why": "Well-known evals practitioner; the underlying MaxxBench post has 2K+ likes and 650+ bookmarks",
-   "topic": "Research",
-   "replies": "Mostly agreement: @balazsfab says if a lowercase filename moves a model 23 points, leaderboards were mostly measuring fit to the task format, and one reply flags DeepSeek V4 Flash dropping from 53.3 to 28.1. Others add that benchmarks run every task cold while real work happens deep in long sessions, and that evals on your own data are the only ones worth trusting.",
    "replyCount": 10
   }
  ]
