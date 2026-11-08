@@ -1,0 +1,30 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Is judging most of the job now?</title><style>body{max-width:680px;margin:0 auto;padding:2.5rem 1.2rem;font:18px/1.7 Georgia,serif;color:#222;background:#fdfcf9}
+a{color:#2b5fa8}h1,h2{font-family:system-ui,sans-serif;line-height:1.25}header a{color:#222;text-decoration:none;font-family:system-ui,sans-serif;font-weight:700}
+.meta{color:#888;font:14px system-ui,sans-serif}blockquote{border-left:3px solid #ccc;margin:1rem 0;padding-left:1rem;color:#555}
+ul.posts{list-style:none;padding:0}ul.posts li{margin:1.2rem 0}footer{margin-top:3rem;color:#aaa;font:13px system-ui,sans-serif}</style></head><body><header><a href="index.html">Vishwajit Pathare's Notes</a></header>
+<main><h1>Is judging most of the job now?</h1><p class='meta'>2026-11-08</p><p>I bookmarked a rec from <a href="https://x.com/BrettFromDJ/status/2118820200607088873">@BrettFromDJ</a>:</p>
+<blockquote>
+<p>"This thread is a literal goldmine for designers.</p>
+<p>Highly recommend reading/bookmarking this."</p>
+</blockquote>
+<p>The thread is by <a href="https://x.com/VNallatamby/status/2118811242592907427">@VNallatamby</a>, who used to work on Stitch and now works at Quest with their designer, <a href="https://x.com/premiumtantan">@premiumtantan</a>. Vincent wrote:</p>
+<blockquote>
+<p>"Before Quest, I worked on Stitch and spent hours trying to understand how designers' jobs would evolve with AI.</p>
+<p>Now I'm working with @premiumtantan every day on Quest, and I think we finally figured something out."</p>
+</blockquote>
+<p>I'm not a product designer, and I haven't used Quest, so I'm not taking "we figured it out" as a verdict. What I cared about is the shape of the job he describes.</p>
+<h2>The work moved out of the old file</h2>
+<p>They still start in Figma. Vincent is clear about that: Tan used it "to set a first direction. Nothing new here." Once they liked the direction, Tan took those static visuals into Claude Code, turned them into components, and put the design system in a GitHub repository. After that, the underlying artifact is code.</p>
+<p>That sounds a lot like what I wrote yesterday about <a href="2026-11-07-folder-as-second-brain.html">a folder of markdown instead of a notes app</a>. The familiar tool is how you start. The thing the agent can actually run is where the work lives.</p>
+<p>The part that made me sit up is what fills the rest of the day. Vincent says Tan's main work now is "prompting, judging, iterating," and that this is "probably what takes 70% of Tan's time."</p>
+<p>If that's true, the scarce skill isn't drawing the button. It's knowing which versions to keep.</p>
+<h2>They didn't skip the checking</h2>
+<p>This is not "the agent ships design now." Joel, their iOS engineer, added tests and structured the codebase so agent contributions have to clear a minimum quality bar. Tan's agent is connected to GitHub and has to follow their company rules. Vincent is explicit: "His contributions are reviewed both by agents and by humans. No auto-merge."</p>
+<p>They also got Tan an iPhone 14 on purpose, so animations get checked on an older phone, not only on a Mac. And because design isn't a straight line — a new prompt usually overwrites the last version — they wrote a skill that keeps iterations as micro-branches, and dumps each one onto a shared canvas so people can go back and forth.</p>
+<p>I wrote a few weeks ago about <a href="2026-10-19-how-much-checking.html">how much checking a change deserves</a>, and about whether <a href="2026-10-24-ask-before-robustness.html">my agent should ask before it makes things safer</a>. This team picked an answer I like: the agent can open the pull request. It cannot merge it. A test suite is the floor, not the finish.</p>
+<p>There's a smaller trick I want to remember too. When Tan needs to nudge something tiny, like a corner radius, prompting is a bad tool and Figma would pull him back into the old file. So he asked Claude to build a configuration panel into the prototype, tuned the details there, then asked the agent to remove the panel. He stayed in the artifact instead of fleeing back to the app.</p>
+<h2>What I'd try</h2>
+<p>I'm not about to become an iOS designer. I do keep asking bots to write, change, and ship things for me. The honest parallel is: what would I need before I let one of them open a pull request?</p>
+<p>Pick one small real surface I already care about. Put the source of truth in a repo the bot can edit. Write the shortest quality bar I would actually trust — a test, a checklist, something that fails out loud. Let the bot open a pull request. Do not auto-merge it. Spend a week only judging and sending it back.</p>
+<p>If most of my time goes into judging, I'll know what the job became. If I keep ducking back into the old tool to fix details by hand, I'll know what I still need from it.</p></main><footer>Written from my X posts and bookmarks.</footer></body></html>
