@@ -128,9 +128,21 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-08T23:10:00+05:30",
+ "updated": "2026-11-09T01:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "DeepSeek Harness: 1.54M daily users, ~35,000 plugins, and a creator program",
+   "author": "@DeepSeekHarness",
+   "authorName": "DeepSeek Harness",
+   "url": "https://x.com/DeepSeekHarness/status/2119431663642153128",
+   "published": "2026-11-08 19:37 IST",
+   "summary": "DeepSeek Harness's official account published an X article saying that as of November 4, counting official-API users only, the agent app has 1.54 million daily active users and consumes about 92 trillion tokens per day. It also says third-party plugins have grown to roughly 35,000, about 60% of active users have built or installed at least one, and the team is preparing an official plugin marketplace plus a plugin-author support program with token grants, technical help, and promotion.",
+   "why": "Official DeepSeek product account sharing first detailed usage figures; missed by the 23:00 run",
+   "topic": "Tools",
+   "replies": "The sampled replies are fairly low-signal: install questions (Windows/macOS desktop vs Linux via Node), praise, a request for Figma-like plugins, and someone promoting their own Excel plugin. The sharper note is about plugin risk: @AskarKerey asks how compatibility and permissions will be handled as the ecosystem grows, and @SlavaOPs points out that a marketplace with security review is still described in the future tense while thousands of third-party plugins are already being installed.",
+   "replyCount": 10
+  },
   {
    "title": "Jim Fan: \"Real robot. Real time. Uncut shot. Autonomous.\" Reveal tomorrow",
    "author": "@DrJimFan",
@@ -249,42 +261,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Heavy daily Claude/Codex user weighing in on the biggest overnight developer thread",
    "topic": "Models",
    "replies": "Many replies agree it reads as a rollout, not a nerf; others say the traces have been noise for a while or suspect they're deliberately degraded to prevent distillation. Pushback: @nekoRunwin wants matched tasks and pass rates before any capability conclusions, and @ndrwlmns says per-account rollouts explain the contradicting reports and asks for a proper changelog.",
-   "replyCount": 10
-  },
-  {
-   "title": "Harrison Chase: long tasks shouldn't block the chat (LangChain async subagents)",
-   "author": "@hwchase17",
-   "authorName": "Harrison Chase",
-   "url": "https://x.com/hwchase17/status/2119190885871312911",
-   "published": "2026-11-08 03:40 IST",
-   "summary": "LangChain's CEO points to the new 'agents are going async' post: async subagents keep the agent responsive to you while background workers handle long tasks.",
-   "why": "LangChain CEO announcing a framework pattern backed by an official blog post",
-   "topic": "Tools",
-   "replies": "Builders like the direction but focus on the hard parts: what happens if you change the request mid-run, stale results arriving after the plan changed, race conditions with concurrent turns, and durability when the orchestrator restarts. Several ask whether the subagent should interrupt you when done or just queue results.",
-   "replyCount": 10
-  },
-  {
-   "title": "Greg Brockman: security architecture fundamentals matter more than ever",
-   "author": "@gdb",
-   "authorName": "Greg Brockman",
-   "url": "https://x.com/gdb/status/2119179547468005432",
-   "published": "2026-11-08 02:55 IST",
-   "summary": "OpenAI's president says security architecture fundamentals are more important than ever, quoting Pat Opet's advice that security firms should abstract their services from the open internet rather than let anonymous attacker agents interact with their systems.",
-   "why": "OpenAI co-founder and president signalling how AI attackers change defensive priorities",
-   "topic": "Policy",
-   "replies": "Replies broadly agree: once agents can call tools, auth, allowlists and least privilege matter more than smarter models, and an agent reaching production without auth is \"an open door\". @benharelone adds that top incident-response firms in the US are at capacity, with queues of breached companies waiting for help.",
-   "replyCount": 10
-  },
-  {
-   "title": "Rumor/early signal: OpenAI Dots can read email sign-up codes to finish 2FA",
-   "author": "@testingcatalog",
-   "authorName": "TestingCatalog",
-   "url": "https://x.com/testingcatalog/status/2119163315687731405",
-   "published": "2026-11-08 01:51 IST",
-   "summary": "TestingCatalog reports that OpenAI's Dots agent can now take sign-up codes from an email to complete 2FA on your behalf when prompted, based on a user's video.",
-   "why": "Established feature tracker; not officially announced by OpenAI",
-   "topic": "Tools",
-   "replies": "Reactions split between 'real autonomy' and security worry: several note email-code relay is what phishing flows target and that mailbox access now becomes production access. @411apt points to OpenAI's Dots safety FAQ, saying password changes and money moves still require the user to take over; one reply notes the feature isn't officially announced.",
    "replyCount": 10
   }
  ]
