@@ -128,9 +128,56 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-09T11:10:00+05:30",
+ "updated": "2026-11-09T14:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "theo: a UX lesson on 'things that look good vs things that are good' in T3 Code's sidebar",
+   "author": "@theo",
+   "authorName": "Theo - t3.gg",
+   "url": "https://x.com/theo/status/2119695061550043291",
+   "published": "2026-11-09 13:04 IST",
+   "summary": "Responding to a community redesign of T3 Code's thread rows, theo says the denser layout looks better but trims titles to fit a status icon, so a thread's title visibly changes when it finishes, which makes it harder to find your place. He says he spent days on sidebar width and a week tuning the title-generation prompt, and would merge a PR that makes it genuinely better.",
+   "why": "Builder of T3 Code explaining a real design tradeoff in his own product",
+   "topic": "Tools",
+   "replies": "Mostly agreement on label stability: @victor_explore suggests a fixed, always-present icon slot so title width never changes, and another builder says stable labels beat vertical density in their own app. One reply prefers the old layout for at-a-glance context, one asks for mod support instead, and a side thread is about a bug-triage bot.",
+   "replyCount": 10
+  },
+  {
+   "title": "NVIDIA AI: Dynamo deployment recipes for four Korean open models, up to 2x on B200",
+   "author": "@NVIDIAAI",
+   "authorName": "NVIDIA AI",
+   "url": "https://x.com/NVIDIAAI/status/2119667551982813584",
+   "published": "2026-11-09 11:15 IST",
+   "summary": "NVIDIA published Dynamo deployment recipes for SK Telecom's A.X K2, LG AI Research's K-EXAONE 2.0, Upstage's Solar Open 2 and Motif Technologies' Motif-3. NVIDIA says the recipes deliver up to 2x inference performance on B200 GPUs.",
+   "why": "Official NVIDIA AI account; these are deployment configs, not new models",
+   "topic": "Tools",
+   "replies": "Low signal overall, with emoji and spam. A Korean-language reply from @krsuncom who read the K-EXAONE recipe notes that it pins the MoE backend to FLASHINFER_CUTLASS for accuracy, saying the auto-picked backend can give plausible but wrong long answers. Others ask whether the 2x gain holds on H100 or smaller GPUs, and one calls the models weak.",
+   "replyCount": 10
+  },
+  {
+   "title": "NVIDIA AI: LG opens K-EXAONE 2.5 API; Hyundai and AIM test OpenShell for secure agents",
+   "author": "@NVIDIAAI",
+   "authorName": "NVIDIA AI",
+   "url": "https://x.com/NVIDIAAI/status/2119687439518208353",
+   "published": "2026-11-09 12:34 IST",
+   "summary": "NVIDIA says Hyundai Motor Group is exploring NVIDIA NemoClaw and OpenShell, and AIM Safety is integrating OpenShell to help businesses run AI agents securely. LG AI Research is opening API access to K-EXAONE-2.5, which NVIDIA says was trained on Nemotron datasets.",
+   "why": "Official NVIDIA account, confirmed in-thread by LG AI Research's own account",
+   "topic": "Industry",
+   "replies": "@LG_AI_Research replied that K-EXAONE 2.5 API access is now open to everybody with no approval needed. Other replies ask how OpenShell enforces security (sandboxing tool calls versus data policy) and what latency it adds, and one argues real enterprise security lives at the data boundary; the rest is low signal.",
+   "replyCount": 10
+  },
+  {
+   "title": "swyx: humans, like LLMs, get more powerful with a scratchpad",
+   "author": "@swyx",
+   "authorName": "swyx",
+   "url": "https://x.com/swyx/status/2119711420912939220",
+   "published": "2026-11-09 14:09 IST",
+   "summary": "swyx recommends Murat Demirbas's blog post 'Writing as a thinking tool' as a good read on why humans, like LLMs, get a lot more powerful when given a scratchpad.",
+   "why": "AI engineer and AI Engineer conference organizer, sharing a researcher's essay",
+   "topic": "Research",
+   "replyCount": 0
+  },
   {
    "title": "Simon Willison: hide AI-written PR descriptions behind a collapsed details tag",
    "author": "@simonw",
@@ -192,18 +239,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "replyCount": 10
   },
   {
-   "title": "NVIDIA board opens independent investigation into reports Jensen Huang was targeted by foreign intelligence",
-   "author": "@nvidianewsroom",
-   "authorName": "NVIDIA Newsroom",
-   "url": "https://x.com/nvidianewsroom/status/2119520873577398695",
-   "published": "2026-11-09 01:32 IST",
-   "summary": "NVIDIA's board says a committee of independent directors, with outside counsel, will investigate \"in light of recent reporting that founder and CEO Jensen Huang has been the target of a foreign intelligence effort.\" The board says it has no reason to believe national security or NVIDIA secrets were compromised, that Huang supports the review, and that it has confidence in him.",
-   "why": "Official company statement from NVIDIA's board (press release on nvidianews.nvidia.com)",
-   "topic": "Industry",
-   "replies": "Low signal: mostly jokes about affairs and GPUs, xenophobic takes, and a call from @ysadvisor25 for Huang to step down during the investigation. No new facts in the replies.",
-   "replyCount": 10
-  },
-  {
    "title": "OpenAI Developers: \"Tomorrow.\"",
    "author": "@OpenAIDevs",
    "authorName": "OpenAI Developers",
@@ -252,18 +287,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "replyCount": 10
   },
   {
-   "title": "Julius: Opus 5.5 seems to know work-in-progress code can be thrown away",
-   "author": "@jullerino",
-   "authorName": "Julius",
-   "url": "https://x.com/jullerino/status/2119590421412352167",
-   "published": "2026-11-09 06:08 IST",
-   "summary": "Julius from T3 asks whether Opus 5.5 is the first model that knows in-progress changes are free to be reverted and reworked from scratch, saying GPT models would build migrations unless told they can nuke work-in-progress contracts.",
-   "why": "T3 engineer reporting day-to-day model behavior; on Vishwa's watchlist",
-   "topic": "Models",
-   "replies": "Many agree, comparing it to how senior engineers treat an unmerged branch. Pushback: @SteDjokovic says Opus 5.5 did want migrations of WIP work before and suspects a recent system prompt change, @johnroodepic argues it's about context (a fresh thread nukes WIP, a long one defends it), and @mktpavlenko warns the same instinct could nuke shipped code.",
-   "replyCount": 10
-  },
-  {
    "title": "poteto: use pstack's formal-verification and statechart skills on your app's state machines",
    "author": "@poteto",
    "authorName": "Lauren Tan",
@@ -273,30 +296,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Author of pstack at Cursor; points to the actual open-source skills",
    "topic": "Tools",
    "replies": "Mostly thanks and people trying it. @milhouscc likes the real-code replay step for catching a model that tells the wrong story, and @skylar_b_payne notes reconciliation across network boundaries makes state machines more complex. A couple of replies are off-topic complaints about Grok Bot usage limits and cloud-agent lock-in.",
-   "replyCount": 10
-  },
-  {
-   "title": "Bloomberg/Gurman: Apple's new CEO presses Federighi on a more ambitious AI plan",
-   "author": "@business",
-   "authorName": "Bloomberg",
-   "url": "https://x.com/business/status/2119527902874059004",
-   "published": "2026-11-09 02:00 IST",
-   "summary": "Mark Gurman's Power On newsletter reports Apple's new CEO is pressing software chief Craig Federighi to take a more ambitious approach to AI, with the company looking to turn Siri into a true AI agent like ChatGPT Dots for iOS 28.",
-   "why": "Mark Gurman, Bloomberg's long-running Apple reporter",
-   "topic": "Industry",
-   "replies": "Only a few replies and low signal; @Vision33X quips that Federighi's 18-month roadmap \"just met a ceo who wanted it yesterday.\"",
-   "replyCount": 3
-  },
-  {
-   "title": "Rumor/early signal: lyra says Google has a new internal checkpoint, Krypton, better than Carbon",
-   "author": "@lyraxana",
-   "authorName": "lyra",
-   "url": "https://x.com/lyraxana/status/2119562817384964486",
-   "published": "2026-11-09 04:18 IST",
-   "summary": "lyra posted that \"Google released a new internal checkpoint called Krypton,\" with results \"even better than Carbon.\" No benchmarks or screenshots were shared, and Google hasn't said anything.",
-   "why": "Unverified insider-style claim from a watchlist account; Gemini 4 Carbon itself still isn't broadly available",
-   "topic": "Models",
-   "replies": "Skeptical and impatient: several ask when they'll even get Carbon, and @AsifQuyyumAQ notes Carbon was announced before earnings and still isn't broadly rolled out. @fraskey007 asks for numbers and whether Krypton beats Carbon on the same evals. Andrew Curran was tagged in the thread.",
    "replyCount": 10
   }
  ]
