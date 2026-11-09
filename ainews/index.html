@@ -128,9 +128,33 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-09T14:10:00+05:30",
+ "updated": "2026-11-09T17:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Matt Pocock defends the term \"Software Factory\"",
+   "author": "@mattpocockuk",
+   "authorName": "Matt Pocock",
+   "url": "https://x.com/mattpocockuk/status/2119748545691402733",
+   "published": "2026-11-09 16:36 IST",
+   "summary": "Matt admits \"Software Factory\" is hyped and sounds fancier than it is, but says it names a real shift: earlier this year top teams used agents to ship features, now they build automations that let agents work on the product for them. In his words: \"We're not working on the product, we're working on the factory that builds the product.\"",
+   "why": "TypeScript educator who teaches AI-assisted engineering; first-hand view of how teams work",
+   "topic": "Tools",
+   "replies": "Mostly agreement that the shift is real even if the name is overhyped, with a few alternative names like 'inference rails'. Pushback is practical: @Kieren_PB_Day notes a bug in the factory repeats on every feature it builds, and @NKocica says their ~15 agents take about 3 days for work he could prompt himself in an hour, mostly waiting on each other.",
+   "replyCount": 10
+  },
+  {
+   "title": "Rumor/early signal: lyra posts Gemini 4 Krypton vs Carbon vs Argon side-by-side clips",
+   "author": "@lyraxana",
+   "authorName": "lyra",
+   "url": "https://x.com/lyraxana/status/2119735932190343175",
+   "published": "2026-11-09 15:46 IST",
+   "summary": "lyra shared three ~45-second clips titled \"Gemini 4 Krypton vs Carbon vs Argon\", comparing the released Argon with unreleased Carbon and Krypton checkpoints. Google hasn't confirmed Krypton; clip contents weren't reviewed here.",
+   "why": "Rumor/early signal: model-spotter on the watchlist; no official Google DeepMind post",
+   "topic": "Models",
+   "replies": "Low signal: mostly hype ('Google is on FIRE', 'We're back!!'). The one useful thread explains that Argon is the current released checkpoint while Carbon and Krypton are unreleased ones, which is a reply's reading, not confirmation from Google.",
+   "replyCount": 10
+  },
   {
    "title": "theo: a UX lesson on 'things that look good vs things that are good' in T3 Code's sidebar",
    "author": "@theo",
@@ -248,54 +272,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Official OpenAI developer account; 9k+ likes and 700k views in a few hours",
    "topic": "Tools",
    "replies": "Mostly hype and guessing. Several replies read the teaser as Game Boy or game-dev related, with @RbBtSn0w guessing Codex is getting a built-in game-development loop, which lines up with TestingCatalog's separate note that OpenAI is teasing a Modretro Chromatic handheld drop on Nov 9. @jc38157498 asks for day-one migration notes if it changes harness benchmarks.",
-   "replyCount": 10
-  },
-  {
-   "title": "Greg Brockman: frontier models with lots of test-time compute are becoming the engine of scientific discovery",
-   "author": "@gdb",
-   "authorName": "Greg Brockman",
-   "url": "https://x.com/gdb/status/2119561347805687848",
-   "published": "2026-11-09 04:12 IST",
-   "summary": "OpenAI's president posted that \"frontier models, with lots of test time compute, are becoming the engine of scientific discovery.\" It lands alongside renewed discussion of OpenAI's internal model behind its Navier–Stokes proof, which Andrew Curran notes showed no diminishing returns on test-time compute.",
-   "why": "OpenAI co-founder and president, primary voice on OpenAI's research direction",
-   "topic": "Research",
-   "replies": "Supportive but skeptical about checking results: @timecommuter says test-time compute is the lever but verification is the bottleneck, and @YL9104 argues the hard part moves to designing evals that can tell a real discovery from a plausible artifact. Others ask which field gets the first real breakthrough.",
-   "replyCount": 10
-  },
-  {
-   "title": "Artificial Analysis Decision Index v2: 45% private data and a score that rewards calibration",
-   "author": "@ArtificialAnlys",
-   "authorName": "Artificial Analysis",
-   "url": "https://x.com/ArtificialAnlys/status/2119578471559213411",
-   "published": "2026-11-09 05:21 IST",
-   "summary": "Artificial Analysis released v2 of its Decision Index for decision/extraction models, now 45% private data (up from 25%), with a new headline score that rewards both correctness and calibrated confidence and new private benchmarks AA-Paperclip and AA-Symmetry. Drex Max v1.1 (Nace AI) and GLiDE v1.2 (Fastino) lead decision models at 73; Claude Haiku 5.5 (Max) scores 77 and GPT-6 Luna (Max) 76, but GPT-6 Luna costs about 15x more per task and is ~40x slower than Drex Max.",
-   "why": "Independent eval org publishing its own benchmark methodology and results",
-   "topic": "Research",
-   "replies": "Replies like the calibration focus. @411apt points out that on AA-Paperclip, Drex Max gets 97% of individual answers right but passes only 63% of documents, and @arb5z asks whether document-level confidence is calibrated too. @ZeeshhDecodes notes that more private data means more trusting the scoreboard, and asks AA to publish how often high-confidence answers were wrong.",
-   "replyCount": 10
-  },
-  {
-   "title": "theo: LLMs are still bad at building tools for agents, especially MCP auth",
-   "author": "@theo",
-   "authorName": "Theo - t3.gg",
-   "url": "https://x.com/theo/status/2119575130204717336",
-   "published": "2026-11-09 05:07 IST",
-   "summary": "Theo says every time he asks Opus to set up an MCP authentication path it \"makes horrible assumptions and builds something that straight up doesn't work.\" In a follow-up he says he's writing a general \"mcp the right way\" guide for his agents, after a draft rendered the MCP URL as a clickable link for users.",
-   "why": "T3 founder shipping agent tooling daily; hands-on report, on Vishwa's watchlist",
-   "topic": "Tools",
-   "replies": "Mostly practical fixes: @goon_nguyen says MCP auth changed several times over the past year and naming \"OAuth 2.1\" in the prompt helps, and @MirageaVoice and @VIFE_AI suggest giving the spec, token type and expected flow up front or making the model list its assumptions first. @shal0vbxm notes the agent designs OAuth for its own session but never sits in the user's browser.",
-   "replyCount": 10
-  },
-  {
-   "title": "poteto: use pstack's formal-verification and statechart skills on your app's state machines",
-   "author": "@poteto",
-   "authorName": "Lauren Tan",
-   "url": "https://x.com/poteto/status/2119521036660314339",
-   "published": "2026-11-09 01:32 IST",
-   "summary": "Following Steve Ruiz's \"find all of the implicit state machines in my app\" prompt, Lauren suggests: \"use /create-formal-verification-skill to model these state machines, one skill per subsystem. and use /statechart to visualize my most important user flows\". Both skills ship in pstack in the cursor/plugins repo.",
-   "why": "Author of pstack at Cursor; points to the actual open-source skills",
-   "topic": "Tools",
-   "replies": "Mostly thanks and people trying it. @milhouscc likes the real-code replay step for catching a model that tells the wrong story, and @skylar_b_payne notes reconciliation across network boundaries makes state machines more complex. A couple of replies are off-topic complaints about Grok Bot usage limits and cloud-agent lock-in.",
    "replyCount": 10
   }
  ]
