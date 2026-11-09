@@ -128,9 +128,129 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-09T23:15:00+05:30",
+ "updated": "2026-11-10T01:15:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Anthropic launches Claude Fable 5.2 and Claude Mythos 5.2",
+   "author": "@claudeai",
+   "authorName": "Claude",
+   "url": "https://x.com/claudeai/status/2119867114450268322",
+   "published": "2026-11-10 00:27 IST",
+   "summary": "Anthropic introduced Claude Fable 5.2 and Claude Mythos 5.2, pitched for the hardest technical work, with gains in coding, reasoning, and vision. @AnthropicAI says both are available now.",
+   "why": "Official Anthropic launch post",
+   "topic": "Models",
+   "replies": "Mostly hype and emoji; one reply jokes that Opus 5.5 barely got time on top. One reply (in Spanish) backs keeping the most powerful version limited to verified cybersecurity teams, and one is an angry anti-AI post about RAM prices. Low signal overall.",
+   "replyCount": 10
+  },
+  {
+   "title": "Meta releases Muse Ember, its smallest and most efficient model",
+   "author": "@AIatMeta",
+   "authorName": "AI at Meta",
+   "url": "https://x.com/AIatMeta/status/2119853591703998787",
+   "published": "2026-11-09 23:34 IST",
+   "summary": "Meta's Muse Ember is built for agent work: chaining tool calls across apps, running tests, and making targeted code fixes. It has a 1M-token context window and native text, image, audio, and video input.",
+   "why": "Official Meta AI launch post",
+   "topic": "Models",
+   "replies": "Replies are mostly positive and focus on price for agent loops. @411apt points out that reasoning effort defaults to max in the Model API docs and can be lowered for simple routing tasks. A few want open weights.",
+   "replyCount": 10
+  },
+  {
+   "title": "Artificial Analysis: Muse Ember matches Claude Haiku 5.5 at a third of the cost",
+   "author": "@ArtificialAnlys",
+   "authorName": "Artificial Analysis",
+   "url": "https://x.com/ArtificialAnlys/status/2119854348587123007",
+   "published": "2026-11-09 23:37 IST",
+   "summary": "Muse Ember (max) scores 36 on the Intelligence Index at $0.14 per task, the same score as Claude Haiku 5.5 (max) at $0.41. It declines 64% of knowledge questions, which keeps its hallucination rate at 17.4%, about half of Haiku's; pricing is $0.10 in and $0.50 out per 1M tokens.",
+   "why": "Independent benchmark org with published methodology",
+   "topic": "Research",
+   "replies": "People like the refuse-rather-than-hallucinate trade for agent work and see it changing model routing. @dwkim601 warns that Terminal-Bench and FrontierCode point in opposite directions against Haiku, so the single index number hides a mixed coding picture. Several ask where Fable 5.2 is.",
+   "replyCount": 10
+  },
+  {
+   "title": "Arena: Muse Ember is the top small model in Code Arena WebDev",
+   "author": "@arena",
+   "authorName": "Arena.ai",
+   "url": "https://x.com/arena/status/2119857775446757697",
+   "published": "2026-11-09 23:50 IST",
+   "summary": "Muse Ember (Max) scored 1608 in Code Arena WebDev, ahead of Claude Haiku 5.5 (1595) and GPT-6 Luna (1578), at a median $0.03 per task versus $0.06 for Luna and $0.11 for Haiku, despite identical token pricing.",
+   "why": "Arena's own crowd-ranked leaderboard result",
+   "topic": "Research",
+   "replies": "A reply notes the score gap is under 1%, so this is really a cost win, not a capability gap. Others ask whether the low cost holds on multi-file work and whether the 1M window stays usable after many tool calls; one says DeepSeek V4.1 Flash is still better.",
+   "replyCount": 10
+  },
+  {
+   "title": "Ethan Mollick: Fable 5.2 crosses into 'Jagged AGI'",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2119870150845599972",
+   "published": "2026-11-10 00:40 IST",
+   "summary": "Mollick had early access and wrote up tests where Fable 5.2 launched a business, did academic research, hacked hardware, and built 3D models. He argues it shows both the limits and the powers of a 'sort of Jagged AGI'. Post: oneusefulthing.org/p/fable-52-and-jagged-agi",
+   "why": "Wharton professor with early access, detailed hands-on write-up",
+   "topic": "Models",
+   "replies": "Most agree 'jagged' fits and stress that verification matters more as models fail with the same confidence they succeed with. @ge0xrge points out that hardware either boots or it doesn't, while a launched business has no such check, so the demos aren't equal evidence. Someone asks whether the business actually made money.",
+   "replyCount": 10
+  },
+  {
+   "title": "Boris Cherny: longer Claude subscribers get more Fable resets",
+   "author": "@bcherny",
+   "authorName": "Boris Cherny",
+   "url": "https://x.com/bcherny/status/2119873095129550880",
+   "published": "2026-11-10 00:51 IST",
+   "summary": "Claude Code lead Boris Cherny says that with Fable 5.2, the longer you've been subscribed, the more Fable usage resets you get.",
+   "why": "Claude Code creator at Anthropic, first-hand product detail",
+   "topic": "Tools",
+   "replies": "Reaction is mixed. Some praise rewarding long-time subscribers, but others ask for a full weekly reset instead, since a Fable reset reportedly draws from the current weekly limit. One user asks for a bigger context window than 200K.",
+   "replyCount": 10
+  },
+  {
+   "title": "Theo: Fable 5.2 is better, but the Claude Code desktop app UX is rough",
+   "author": "@theo",
+   "authorName": "Theo - t3.gg",
+   "url": "https://x.com/theo/status/2119873100745768974",
+   "published": "2026-11-10 00:51 IST",
+   "summary": "Theo tried Fable 5.2 in the Claude Code desktop app and says the model has improved a lot, but adding a project took about two minutes and enabling 'bypass permissions' meant digging through settings.",
+   "why": "Watchlist developer, hands-on first impression",
+   "topic": "Tools",
+   "replies": "Several agree and say they moved to T3 Code over this. @Mohamed3nan says Theo is probably on an outdated version and adding a project takes a second. Another user complains of a 200K context that autocompacts every few minutes.",
+   "replyCount": 10
+  },
+  {
+   "title": "Perplexity: Fable 5.2 sets a record on its WANDR benchmark",
+   "author": "@perplexity_ai",
+   "authorName": "Perplexity",
+   "url": "https://x.com/perplexity_ai/status/2119875089974104489",
+   "published": "2026-11-10 00:59 IST",
+   "summary": "Claude Fable 5.2 is live in Perplexity Computer for Pro and Max, and in Search for Max. Perplexity says it hit a record 0.851 on its WANDR benchmark at $14.51 per task.",
+   "why": "Official Perplexity account; first-party benchmark",
+   "topic": "Tools",
+   "replies": "Only a few replies. One questions the $14.51 per-task cost and gating by subscription tier; another says per-task price is the number to watch. Low signal otherwise.",
+   "replyCount": 5
+  },
+  {
+   "title": "Rumor/early signal: Gemini 4 Hydrogen private early access has started",
+   "author": "@lyraxana",
+   "authorName": "lyra",
+   "url": "https://x.com/lyraxana/status/2119856544682594352",
+   "published": "2026-11-09 23:45 IST",
+   "summary": "Rumor/early signal: lyra says a private early-access program for gemini-4-hydrogen has started and expects a release soon. Not confirmed by Google.",
+   "why": "Watchlist leaker; unconfirmed, label as rumor",
+   "topic": "Models",
+   "replies": "Replies are speculation. Some expect a flash-tier model to ship faster than the bigger ones, maybe early next week; others doubt it, pointing to Argon and Carbon that never arrived on schedule.",
+   "replyCount": 10
+  },
+  {
+   "title": "Runway adds Sightline for consistent 360 panoramas",
+   "author": "@runwayml",
+   "authorName": "Runway",
+   "url": "https://x.com/runwayml/status/2119874555581694370",
+   "published": "2026-11-10 00:57 IST",
+   "summary": "Runway's new Sightline tool builds a 360 panorama of a location so you can frame shots from any angle with a consistent environment, and export it for 3D use. It's in App Studio.",
+   "why": "Official Runway product launch",
+   "topic": "Tools",
+   "replies": "Only two replies: one compliment and Runway's own link to get started.",
+   "replyCount": 2
+  },
   {
    "title": "Lauren Tan: a renaissance in programming languages and a golden age of testing",
    "author": "@poteto",
@@ -214,102 +334,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "topic": "Industry",
    "replies": "Only three replies. They ask whether this becomes the template for studios adopting AI, and whether \"artist-led\" means artists can say no, get paid, or have a say in what trains the model.",
    "replyCount": 3
-  },
-  {
-   "title": "Google adds TPU 8i Max and TPU 8tx to its 8th-gen TPU lineup",
-   "author": "@Google",
-   "authorName": "Google",
-   "url": "https://x.com/Google/status/2119788086490001906",
-   "published": "2026-11-09 19:13 IST",
-   "summary": "Google announced two more eighth-generation TPU systems, making four this year. TPU 8i Max is built for massive context windows and the highest compute density per rack, and TPU 8tx is optimized for secure and confidential inference; Amin Vahdat explains the lineup in an attached video.",
-   "why": "Official Google announcement, echoed by @googlecloud.",
-   "topic": "Industry",
-   "replies": "Mostly light reactions and jokes about four TPU launches in one year. A few replies say specializing chips for long context versus confidential inference makes sense, and one argues the 8i Max bet is that memory bandwidth caps agent work; another complains access still needs a long enterprise sales process.",
-   "replyCount": 10
-  },
-  {
-   "title": "FT: woman at centre of Nvidia spying scandal pitched AI chip deal to China-based investors",
-   "author": "@FT",
-   "authorName": "Financial Times",
-   "url": "https://x.com/FT/status/2119792853190680591",
-   "published": "2026-11-09 19:32 IST",
-   "summary": "FT exclusive: the woman at the centre of the Nvidia spying scandal pitched an AI chips deal to China-based investors, touting her ability to secure Nvidia GPUs and her commercial relationship with Alibaba. Follows Nvidia's internal probe into whether Jensen Huang was targeted by a foreign intelligence effort.",
-   "why": "FT exclusive reporting on a major ongoing story.",
-   "topic": "Industry",
-   "replies": "Low signal. A handful of replies argue she is a middleman rather than a spy, one says to wait for Nvidia's side, and the rest are memes or links.",
-   "replyCount": 6
-  },
-  {
-   "title": "Nathan Lambert: will popular open models on OpenRouter ever stop being mostly Chinese?",
-   "author": "@natolambert",
-   "authorName": "Nathan Lambert",
-   "url": "https://x.com/natolambert/status/2119789894251729185",
-   "published": "2026-11-09 19:21 IST",
-   "summary": "Nathan Lambert shared a chart of open-model share on OpenRouter and asked whether, and when, the popular open models there will stop being predominantly Chinese.",
-   "why": "Ai2 researcher who tracks open-model adoption closely.",
-   "topic": "Research",
-   "replies": "Replies mostly say price and cost per solved task drive the Chinese lead, and one argues open weights come from compute-constrained labs, which are more common in China. Another points out US usage has grown in absolute terms since about July, it just grew slower; Tim Rocktäschel replied \"hold my beer\" and Lambert clarified the chart shows open-model share only.",
-   "replyCount": 10
-  },
-  {
-   "title": "theo: open-sourcing T3 Code means you can always fork it",
-   "author": "@theo",
-   "authorName": "Theo - t3.gg",
-   "url": "https://x.com/theo/status/2119761845448015969",
-   "published": "2026-11-09 17:29 IST",
-   "summary": "Quoting a user switching to T3 Code, theo said a big reason they open-sourced it is that today's experience will always exist and users can fork if they dislike future direction changes.",
-   "why": "Watchlist: T3 Code creator on product philosophy.",
-   "topic": "Tools",
-   "replies": "Replies like \"just fork it\" as a policy and say freezing a dialed-in setup protects muscle memory. One notes forks only stay usable if custom changes are easy to carry forward, and others ask about terminal support and how many forks exist.",
-   "replyCount": 10
-  },
-  {
-   "title": "Matt Pocock defends the term \"Software Factory\"",
-   "author": "@mattpocockuk",
-   "authorName": "Matt Pocock",
-   "url": "https://x.com/mattpocockuk/status/2119748545691402733",
-   "published": "2026-11-09 16:36 IST",
-   "summary": "Matt admits \"Software Factory\" is hyped and sounds fancier than it is, but says it names a real shift: earlier this year top teams used agents to ship features, now they build automations that let agents work on the product for them. In his words: \"We're not working on the product, we're working on the factory that builds the product.\"",
-   "why": "TypeScript educator who teaches AI-assisted engineering; first-hand view of how teams work",
-   "topic": "Tools",
-   "replies": "Mostly agreement that the shift is real even if the name is overhyped, with a few alternative names like 'inference rails'. Pushback is practical: @Kieren_PB_Day notes a bug in the factory repeats on every feature it builds, and @NKocica says their ~15 agents take about 3 days for work he could prompt himself in an hour, mostly waiting on each other.",
-   "replyCount": 10
-  },
-  {
-   "title": "Rumor/early signal: lyra posts Gemini 4 Krypton vs Carbon vs Argon side-by-side clips",
-   "author": "@lyraxana",
-   "authorName": "lyra",
-   "url": "https://x.com/lyraxana/status/2119735932190343175",
-   "published": "2026-11-09 15:46 IST",
-   "summary": "lyra shared three ~45-second clips titled \"Gemini 4 Krypton vs Carbon vs Argon\", comparing the released Argon with unreleased Carbon and Krypton checkpoints. Google hasn't confirmed Krypton; clip contents weren't reviewed here.",
-   "why": "Rumor/early signal: model-spotter on the watchlist; no official Google DeepMind post",
-   "topic": "Models",
-   "replies": "Low signal: mostly hype ('Google is on FIRE', 'We're back!!'). The one useful thread explains that Argon is the current released checkpoint while Carbon and Krypton are unreleased ones, which is a reply's reading, not confirmation from Google.",
-   "replyCount": 10
-  },
-  {
-   "title": "theo: a UX lesson on 'things that look good vs things that are good' in T3 Code's sidebar",
-   "author": "@theo",
-   "authorName": "Theo - t3.gg",
-   "url": "https://x.com/theo/status/2119695061550043291",
-   "published": "2026-11-09 13:04 IST",
-   "summary": "Responding to a community redesign of T3 Code's thread rows, theo says the denser layout looks better but trims titles to fit a status icon, so a thread's title visibly changes when it finishes, which makes it harder to find your place. He says he spent days on sidebar width and a week tuning the title-generation prompt, and would merge a PR that makes it genuinely better.",
-   "why": "Builder of T3 Code explaining a real design tradeoff in his own product",
-   "topic": "Tools",
-   "replies": "Mostly agreement on label stability: @victor_explore suggests a fixed, always-present icon slot so title width never changes, and another builder says stable labels beat vertical density in their own app. One reply prefers the old layout for at-a-glance context, one asks for mod support instead, and a side thread is about a bug-triage bot.",
-   "replyCount": 10
-  },
-  {
-   "title": "NVIDIA AI: LG opens K-EXAONE 2.5 API; Hyundai and AIM test OpenShell for secure agents",
-   "author": "@NVIDIAAI",
-   "authorName": "NVIDIA AI",
-   "url": "https://x.com/NVIDIAAI/status/2119687439518208353",
-   "published": "2026-11-09 12:34 IST",
-   "summary": "NVIDIA says Hyundai Motor Group is exploring NVIDIA NemoClaw and OpenShell, and AIM Safety is integrating OpenShell to help businesses run AI agents securely. LG AI Research is opening API access to K-EXAONE-2.5, which NVIDIA says was trained on Nemotron datasets.",
-   "why": "Official NVIDIA account, confirmed in-thread by LG AI Research's own account",
-   "topic": "Industry",
-   "replies": "@LG_AI_Research replied that K-EXAONE 2.5 API access is now open to everybody with no approval needed. Other replies ask how OpenShell enforces security (sandboxing tool calls versus data policy) and what latency it adds, and one argues real enterprise security lives at the data boundary; the rest is low signal.",
-   "replyCount": 10
   }
  ]
 }
