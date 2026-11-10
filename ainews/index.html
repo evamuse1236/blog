@@ -128,9 +128,69 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-10T14:10:00+05:30",
+ "updated": "2026-11-10T17:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Elon Musk: Grok 4.8 is in RL, soft rollout to Bot users this week",
+   "author": "@elonmusk",
+   "authorName": "Elon Musk",
+   "url": "https://x.com/elonmusk/status/2120088070443655190",
+   "published": "2026-11-10 15:05 IST",
+   "summary": "Musk says xAI dumped JAX/SGLang and rewrote its RL and inference stack in C/C++, pre-training for Grok 4.8 is done, and the model is now in RL with a soft rollout to Bot users planned later this week. He says 4.8 will \"bear no resemblance to 4.7\" and is \"not yet incredible\" but built on better foundations.",
+   "why": "First-hand statement from the head of SpaceX Super Intelligence (xAI), posted as a reply; timelines from him often slip",
+   "topic": "Models",
+   "replies": "Replies are mostly cheering and emoji, with a few jokes about rewriting it in Rust next time. One reply tags Grok asking for more detail. Low signal, no new facts.",
+   "replyCount": 10
+  },
+  {
+   "title": "Matt Pocock: agents make Goodhart's Law a lot worse",
+   "author": "@mattpocockuk",
+   "authorName": "Matt Pocock",
+   "url": "https://x.com/mattpocockuk/status/2120103371335962979",
+   "published": "2026-11-10 16:06 IST",
+   "summary": "Matt argues agents are very good at gaming metrics, so any team that tracks things like number of PRs is in trouble. He says measuring developer productivity was already impossible and may now be actively harmful.",
+   "why": "Well-known TypeScript educator who writes a lot about working with coding agents",
+   "topic": "Tools",
+   "replies": "Most replies agree, joking that agents will open one PR per typo or eleven PRs before you read the first. Some suggest pairing each activity number with a counter-metric (PRs next to review time, tickets next to reopen rate) or only trusting production breakage, while others note story points get gamed the same way.",
+   "replyCount": 10
+  },
+  {
+   "title": "Theo: Claude Code bug doubles every key press in the input box",
+   "author": "@theo",
+   "authorName": "Theo - t3.gg",
+   "url": "https://x.com/theo/status/2120103631307645276",
+   "published": "2026-11-10 16:07 IST",
+   "summary": "Theo posted a clip of Claude Code doubling every key press in its input box, which he says happened live while filming. It's a user report with video, not an acknowledged bug yet.",
+   "why": "Heavy daily user of coding agents and builder of T3 Code; video shows the behavior",
+   "topic": "Tools",
+   "replies": "Lots of jokes typed in doubled letters. One user says it has happened to them for months after long sessions and goes away when the app is restarted, and that it is painful when typing passwords or six-digit codes. No word from Anthropic in the replies read.",
+   "replyCount": 10
+  },
+  {
+   "title": "Theo: Fable 5.2 made a surprisingly good design for an internal writeup",
+   "author": "@theo",
+   "authorName": "Theo - t3.gg",
+   "url": "https://x.com/theo/status/2120104895646937409",
+   "published": "2026-11-10 16:12 IST",
+   "summary": "Theo says he asked Fable 5.2 for a writeup on some data pipeline work for a teammate and it produced a polished visual design he liked, calling it \"Not bad for self-proclaimed 'slop'\".",
+   "why": "Hands-on impression from a developer who had been critical of Fable 5.2 earlier today",
+   "topic": "Models",
+   "replies": "Split: several think it looks impressively good and that unrequested polish is great for internal docs, while others say it looks like every other AI design or that GPT-4o could do this. Low on new facts.",
+   "replyCount": 10
+  },
+  {
+   "title": "Bloomberg: Anthropic plans livestream where Amodei discusses IPO with Jamie Dimon",
+   "author": "@business",
+   "authorName": "Bloomberg",
+   "url": "https://x.com/business/status/2119999758672536031",
+   "published": "2026-11-10 09:15 IST",
+   "summary": "Bloomberg reports, citing a person familiar with the matter, that Anthropic is planning a live-streamed event where CEO Dario Amodei will discuss its IPO with JPMorgan CEO Jamie Dimon.",
+   "why": "Reputable business wire, single-source report; big because it is the Anthropic IPO",
+   "topic": "Industry",
+   "replies": "Several replies read a livestream as a push to bring retail buyers into the deal, and one flags it could be risky under securities laws. Two replies cite Reuters saying share-price terms circulated earlier were retracted by Anthropic as inaccurate and the filing still has no price range; those are claims from replies, not verified here.",
+   "replyCount": 10
+  },
   {
    "title": "Simon Willison: tell Fable 5.2 \"This codebase is yours\"",
    "author": "@simonw",
@@ -273,30 +333,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Official OpenAI developer account, product change.",
    "topic": "Tools",
    "replies": "Low signal overall: lots of emoji, spam, and EU users discussing VPNs to access dots. One user says the feature seemed to roll out the night before, and another asks for threaded conversations with dots so topics don't get buried. One reply complains the SSH and Codex connections setup feels disjointed.",
-   "replyCount": 10
-  },
-  {
-   "title": "Artificial Analysis: Claude Fable 5.2 takes #1 on Intelligence Index at 65",
-   "author": "@ArtificialAnlys",
-   "authorName": "Artificial Analysis",
-   "url": "https://x.com/ArtificialAnlys/status/2119878995386982508",
-   "published": "2026-11-10 01:15 IST",
-   "summary": "Artificial Analysis says Fable 5.2 at max effort scores 65 on its Intelligence Index v5, 5 points ahead of Gemini 4 Carbon (high, 60) and 6 ahead of Claude Opus 5.5 (max, 59). Gains came mainly in science, knowledge, and coding.",
-   "why": "Independent benchmarking org with a consistent public methodology.",
-   "topic": "Models",
-   "replies": "Replies mostly focus on cost: several quote AA's own figure of about $26.5 per task at max effort, roughly 2.6x Opus 5.5, and argue Fable wins the benchmark but loses the budget case for routine work. One reply says at default effort it roughly matches Opus 5.5 on FrontierCode at about half the cost. Another asks AA to drop models that aren't publicly available, like Gemini 4 Carbon.",
-   "replyCount": 10
-  },
-  {
-   "title": "Cursor: Fable 5.2 tops CursorBench at 60% on max effort",
-   "author": "@cursor_ai",
-   "authorName": "Cursor",
-   "url": "https://x.com/cursor_ai/status/2119880829212172509",
-   "published": "2026-11-10 01:22 IST",
-   "summary": "Claude Fable 5.2 is now in Cursor. Cursor says it is the top model on CursorBench at 60% on max effort, and scores 56.9% at default effort, up from 49.2% for Fable 5.1.",
-   "why": "Official Cursor account reporting its own internal benchmark.",
-   "topic": "Tools",
-   "replies": "Mostly low signal: follow-for-follow spam and people asking about pricing and accounts. The one substantive reply asks when max effort is actually worth the extra cost over default for budget-conscious users.",
    "replyCount": 10
   }
  ]
