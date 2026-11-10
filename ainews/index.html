@@ -128,9 +128,69 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-10T17:10:00+05:30",
+ "updated": "2026-11-10T20:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Anthropic launches the roadshow for its IPO",
+   "author": "@AnthropicAI",
+   "authorName": "Anthropic",
+   "url": "https://x.com/AnthropicAI/status/2120117722230968385",
+   "published": "2026-11-10 17:03 IST",
+   "summary": "Anthropic's official account says it has launched the roadshow for its proposed initial public offering; the SEC registration statement is filed but not yet effective. Press coverage puts the expected range at $70–78 a share, and Bloomberg says the IPO plus a private placement could raise up to $90.4B.",
+   "why": "Primary company announcement, backed by Bloomberg and FT reporting",
+   "topic": "Industry",
+   "replies": "Replies are mostly low signal: pre-IPO trading plugs and jokes about an 'ANT' ticker. The one useful note, from @worldblinkbrief, points out that Anthropic gets no proceeds from the secondary shares existing holders sell and that $70–78 is an expected range, not a final price.",
+   "replyCount": 10
+  },
+  {
+   "title": "MiniMax releases H3-Image with open weights",
+   "author": "@MiniMax_AI",
+   "authorName": "MiniMax (official)",
+   "url": "https://x.com/MiniMax_AI/status/2120158341229928576",
+   "published": "2026-11-10 19:45 IST",
+   "summary": "MiniMax introduced H3-Image, an image model built on its H3 model, and says it is releasing the weights. It claims 4K × 4K (16-megapixel) images in 10–20 seconds.",
+   "why": "Official lab launch; speed claims are MiniMax's own and not yet independently tested",
+   "topic": "Models",
+   "replies": "Replies are mostly congratulations and praise for shipping open weights on day one. One skeptic says MiniMax gives away weights with little profit; one person plans to try it on a single RTX 5090. No independent quality tests yet.",
+   "replyCount": 10
+  },
+  {
+   "title": "Matt Pocock: a shared 'decision ticket' board to settle choices before code",
+   "author": "@mattpocockuk",
+   "authorName": "Matt Pocock",
+   "url": "https://x.com/mattpocockuk/status/2120135880916808093",
+   "published": "2026-11-10 18:15 IST",
+   "summary": "Matt Pocock is prototyping a shared board of 'decision tickets' where a team talks through design decisions before the agent implements them, instead of leaving alignment to code review.",
+   "why": "Well-known TypeScript educator sharing his own agent workflow experiment",
+   "topic": "Tools",
+   "replies": "Most replies like the idea. @bqq_carry says a written decision becomes a constraint the agent reads instead of re-deciding it in every PR, and suggests only grilling irreversible ones; @cheppu_padar says each ticket should name who decides and by when. Pushback is light: one calls it a meeting, another asks if it's just the plannotator inbox.",
+   "replyCount": 10
+  },
+  {
+   "title": "Rumor: Google building an Agent Swarm mode for Antigravity",
+   "author": "@testingcatalog",
+   "authorName": "TestingCatalog",
+   "url": "https://x.com/testingcatalog/status/2120152882380959814",
+   "published": "2026-11-10 19:23 IST",
+   "summary": "Rumor/early signal: TestingCatalog says Google is developing a /swarm command for Antigravity that opens a dashboard where agents coordinate through a shared message board. Not confirmed by Google.",
+   "why": "Rumor/early signal from a usually reliable app-teardown account",
+   "topic": "Tools",
+   "replies": "Replies question safety and cost: a shared board means one bad message can reach every agent, someone asks who referees disagreements, and others want a swarm vs single-agent test on the same budget. @akxwire notes Claude Code already has an experimental agent-teams feature with a shared task list.",
+   "replyCount": 10
+  },
+  {
+   "title": "Hugging Face's Irene Solaiman warns attacks could force open platforms to lock down",
+   "author": "@TechCrunch",
+   "authorName": "TechCrunch",
+   "url": "https://x.com/TechCrunch/status/2120140193806086282",
+   "published": "2026-11-10 18:33 IST",
+   "summary": "Hugging Face executive Irene Solaiman warns that growing cyberattacks on open AI platforms could force tighter security restrictions and hurt the openness developers rely on.",
+   "why": "Reputable tech outlet quoting a Hugging Face executive, after this year's agent breach incidents",
+   "topic": "Policy",
+   "replies": "Replies push for targeted fixes over lockdowns: several suggest defaulting to safetensors and flagging pickle checkpoints that run code on load, plus short-lived scoped tokens. Others note Hugging Face already has gated repos, and that wider gating would slow hobbyists more than attackers.",
+   "replyCount": 10
+  },
   {
    "title": "Elon Musk: Grok 4.8 is in RL, soft rollout to Bot users this week",
    "author": "@elonmusk",
@@ -228,18 +288,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "replyCount": 10
   },
   {
-   "title": "Theo: Fable 5.2 is making mistakes he wouldn't expect from Opus",
-   "author": "@theo",
-   "authorName": "Theo",
-   "url": "https://x.com/theo/status/2119988540708896897",
-   "published": "2026-11-10 08:30 IST",
-   "summary": "Theo says Fable 5.2 is making a lot of 'stupid mistakes' he would not have expected from Opus. A useful counterweight to the launch-day benchmark wins.",
-   "why": "Heavy daily user of every frontier model via T3 Code",
-   "topic": "Models",
-   "replies": "Many agree: one says it is smarter on the hard stuff but sloppier on easy tasks, so they keep Opus for grunt work, and others say Opus is still better. One reply asks whether the mistakes show up more once context grows long. Some jokes and low-signal agreement.",
-   "replyCount": 10
-  },
-  {
    "title": "Artificial Analysis: Fable 5.2 leads visual science reasoning, with lots of tool calls",
    "author": "@ArtificialAnlys",
    "authorName": "Artificial Analysis",
@@ -264,30 +312,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "replyCount": 10
   },
   {
-   "title": "Alex Albert's cleanup prompt for every new model",
-   "author": "@alexalbert__",
-   "authorName": "Alex Albert",
-   "url": "https://x.com/alexalbert__/status/2119884951550386671",
-   "published": "2026-11-10 01:38 IST",
-   "summary": "Anthropic's Alex Albert runs one prompt on all his projects with each new model: read the whole project, find everything broken, inconsistent, inefficient or no longer needed, fix what it's sure about and list the rest for review.",
-   "why": "Anthropic staff; widely shared practical workflow (trending on X)",
-   "topic": "Tools",
-   "replies": "Fans say the 'list the rest for me to review' half is the real value, and suggest running it on a fresh branch. Pushback: model confidence isn't authorization, so deletions and migrations should go to human review, and a couple of people note it burns a lot of usage.",
-   "replyCount": 10
-  },
-  {
-   "title": "Expo co-founder previews Exact, a Rust app framework built for agents",
-   "author": "@ccheever",
-   "authorName": "Charlie Cheever",
-   "url": "https://x.com/ccheever/status/2119764253242695754",
-   "published": "2026-11-09 17:39 IST",
-   "summary": "Charlie Cheever previewed Exact, an 'Agent Native' app framework in Rust aimed at being very fast with no compromises. Expo says UI is written in Contract, a new typed language built for agents, and that it is pre-alpha and shared for feedback.",
-   "why": "Primary announcement from Expo's co-founder, confirmed by @expo",
-   "topic": "Tools",
-   "replies": "Mostly excitement about speed. Cheever answers that apps are written in Contract, Rust and TypeScript and render natively per platform, and that resources re-query when their arguments change. One reply notes that giving agents deterministic control of the event clock removes flakiness in visual tests.",
-   "replyCount": 10
-  },
-  {
    "title": "Julius: T3 Code MCP links now authorize with T3 Connect",
    "author": "@jullerino",
    "authorName": "Julius",
@@ -309,30 +333,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Rumor/early signal: official Google product lead, but no details",
    "topic": "Models",
    "replies": "Low signal. Replies mostly ask about the rumored 'Carbon' model and expect a same-day drop, with one jab that Google got outpaced by Fable while Carbon is still unavailable.",
-   "replyCount": 10
-  },
-  {
-   "title": "OpenAI built Control Room to stop risky research workloads fast",
-   "author": "@OpenAI",
-   "authorName": "OpenAI",
-   "url": "https://x.com/OpenAI/status/2119913172039868579",
-   "published": "2026-11-10 03:31 IST",
-   "summary": "OpenAI says Control Room is a central system that tracks model workloads across its research infrastructure and stops them quickly when safety or security concerns come up. It connects every research inference workload, including agentic sampling used in training and evaluation.",
-   "why": "Primary announcement from OpenAI's official account.",
-   "topic": "Policy",
-   "replies": "Most replies fixate on the 35-second stop time and like that the kill switch sits outside the agent. The main pushback is practical: people ask whether stopping inference also stops scripts or external API calls an agent already started, and whether runs are checkpointed or hard-killed. Some replies are off-topic GPT-6.2 questions or emoji.",
-   "replyCount": 10
-  },
-  {
-   "title": "OpenAI: connect several local computers to one dot",
-   "author": "@OpenAIDevs",
-   "authorName": "OpenAI Developers",
-   "url": "https://x.com/OpenAIDevs/status/2119883176726409645",
-   "published": "2026-11-10 01:31 IST",
-   "summary": "You can now connect multiple local computers to the same dot and pick which one it uses for a task. OpenAI's example is building and testing an app on a dedicated machine while you keep coding on your laptop.",
-   "why": "Official OpenAI developer account, product change.",
-   "topic": "Tools",
-   "replies": "Low signal overall: lots of emoji, spam, and EU users discussing VPNs to access dots. One user says the feature seemed to roll out the night before, and another asks for threaded conversations with dots so topics don't get buried. One reply complains the SSH and Codex connections setup feels disjointed.",
    "replyCount": 10
   }
  ]
