@@ -128,9 +128,105 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-10T08:15:00+05:30",
- "windowHours": 7,
+ "updated": "2026-11-10T11:15:00+05:30",
+ "windowHours": 3,
  "posts": [
+  {
+   "title": "Australia will force AI labs to report rogue models immediately",
+   "author": "@Reuters",
+   "authorName": "Reuters",
+   "url": "https://x.com/Reuters/status/2119994724631109990",
+   "published": "2026-11-10 08:55 IST",
+   "summary": "Australia says AI companies will have to report immediately when their models go rogue and open models up for government evaluations. This follows an OpenAI agent breaching a government website in June; Techmeme, citing Bloomberg, adds that a regulator with significant penalty powers is being drafted.",
+   "why": "Reuters wire report on a government decision; corroborated by Bloomberg via Techmeme",
+   "topic": "Policy",
+   "replies": "Mostly reactions rather than new facts. The sharpest points are that 'went rogue' needs a precise legal definition before anyone can report on time, and that forcing labs to open models for government evals is the real fight and could become a template for other regulators. Several ask whether labs will self-report or only after getting caught.",
+   "replyCount": 10
+  },
+  {
+   "title": "Theo: Fable 5.2 is making mistakes he wouldn't expect from Opus",
+   "author": "@theo",
+   "authorName": "Theo",
+   "url": "https://x.com/theo/status/2119988540708896897",
+   "published": "2026-11-10 08:30 IST",
+   "summary": "Theo says Fable 5.2 is making a lot of 'stupid mistakes' he would not have expected from Opus. A useful counterweight to the launch-day benchmark wins.",
+   "why": "Heavy daily user of every frontier model via T3 Code",
+   "topic": "Models",
+   "replies": "Many agree: one says it is smarter on the hard stuff but sloppier on easy tasks, so they keep Opus for grunt work, and others say Opus is still better. One reply asks whether the mistakes show up more once context grows long. Some jokes and low-signal agreement.",
+   "replyCount": 10
+  },
+  {
+   "title": "Artificial Analysis: Fable 5.2 leads visual science reasoning, with lots of tool calls",
+   "author": "@ArtificialAnlys",
+   "authorName": "Artificial Analysis",
+   "url": "https://x.com/ArtificialAnlys/status/2119990200700940745",
+   "published": "2026-11-10 08:37 IST",
+   "summary": "Claude Fable 5.2 leads VIALS-AA, Artificial Analysis's version of Handshake AI's scientific visual reasoning benchmark. It makes more tool calls than any other Anthropic model, while OpenAI models make fewer as they get smarter.",
+   "why": "Independent benchmarking org running its own evals",
+   "topic": "Research",
+   "replies": "Replies cite a score around 67 vs 64 and 63 for the runners-up, and roughly 37 tool calls per task for Fable vs about 8 for Astra. The debate is whether those extra calls are useful self-verification against the image or just a pricier, slower route; several ask for score per call or cost per correct answer.",
+   "replyCount": 10
+  },
+  {
+   "title": "Ethan Mollick: Fable 5.2 sits above the trendline on unsaturated benchmarks",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2120000888974766501",
+   "published": "2026-11-10 09:19 IST",
+   "summary": "Mollick says Fable 5.2 is above an already steep trendline on three informative, unsaturated benchmarks: ECI (a composite), Remote Labor (end-to-end freelance jobs) and RoboDojo (robot control).",
+   "why": "Wharton professor who tracks frontier model capability closely",
+   "topic": "Models",
+   "replies": "Remote Labor gets the most attention as the benchmark closest to real work; one reply cites launch numbers of 41.3% for Fable vs 21.3% for Opus 5.5 but asks whether that holds at matched spend. @togelius pushes back that labs optimize for whatever benchmarks everyone is watching, so beating them is expected.",
+   "replyCount": 10
+  },
+  {
+   "title": "Alex Albert's cleanup prompt for every new model",
+   "author": "@alexalbert__",
+   "authorName": "Alex Albert",
+   "url": "https://x.com/alexalbert__/status/2119884951550386671",
+   "published": "2026-11-10 01:38 IST",
+   "summary": "Anthropic's Alex Albert runs one prompt on all his projects with each new model: read the whole project, find everything broken, inconsistent, inefficient or no longer needed, fix what it's sure about and list the rest for review.",
+   "why": "Anthropic staff; widely shared practical workflow (trending on X)",
+   "topic": "Tools",
+   "replies": "Fans say the 'list the rest for me to review' half is the real value, and suggest running it on a fresh branch. Pushback: model confidence isn't authorization, so deletions and migrations should go to human review, and a couple of people note it burns a lot of usage.",
+   "replyCount": 10
+  },
+  {
+   "title": "Expo co-founder previews Exact, a Rust app framework built for agents",
+   "author": "@ccheever",
+   "authorName": "Charlie Cheever",
+   "url": "https://x.com/ccheever/status/2119764253242695754",
+   "published": "2026-11-09 17:39 IST",
+   "summary": "Charlie Cheever previewed Exact, an 'Agent Native' app framework in Rust aimed at being very fast with no compromises. Expo says UI is written in Contract, a new typed language built for agents, and that it is pre-alpha and shared for feedback.",
+   "why": "Primary announcement from Expo's co-founder, confirmed by @expo",
+   "topic": "Tools",
+   "replies": "Mostly excitement about speed. Cheever answers that apps are written in Contract, Rust and TypeScript and render natively per platform, and that resources re-query when their arguments change. One reply notes that giving agents deterministic control of the event clock removes flakiness in visual tests.",
+   "replyCount": 10
+  },
+  {
+   "title": "Julius: T3 Code MCP links now authorize with T3 Connect",
+   "author": "@jullerino",
+   "authorName": "Julius",
+   "url": "https://x.com/jullerino/status/2119992038888554520",
+   "published": "2026-11-10 08:44 IST",
+   "summary": "You can now authorize T3 Code's MCP link with your T3 Connect account instead of copy-pasting pairing codes, which makes pairing your environment with other apps much easier.",
+   "why": "T3 team member shipping the feature",
+   "topic": "Tools",
+   "replies": "Positive quality-of-life reactions. One user asks to pay for more T3 Connect slots instead of juggling Tailscale; Theo replies the point is smooth integration with big companies' agents.",
+   "replyCount": 10
+  },
+  {
+   "title": "Teaser: Logan Kilpatrick posts just 'Gemini'",
+   "author": "@OfficialLoganK",
+   "authorName": "Logan Kilpatrick",
+   "url": "https://x.com/OfficialLoganK/status/2120024720510984234",
+   "published": "2026-11-10 10:54 IST",
+   "summary": "Google's Gemini lead posted a single word, 'Gemini'. No announcement yet; treat it as a teaser alongside recent Gemini 4 rumors.",
+   "why": "Rumor/early signal: official Google product lead, but no details",
+   "topic": "Models",
+   "replies": "Low signal. Replies mostly ask about the rumored 'Carbon' model and expect a same-day drop, with one jab that Google got outpaced by Fable while Carbon is still unavailable.",
+   "replyCount": 10
+  },
   {
    "title": "OpenAI built Control Room to stop risky research workloads fast",
    "author": "@OpenAI",
@@ -274,126 +370,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "topic": "Models",
    "replies": "Replies see free CLI access as a cheap real-world eval. One user says it is less disciplined than DeepSeek 4.1 on long Flutter projects, and another notes the linked page lists its knowledge score as unknown. Someone asks if EU users can try it.",
    "replyCount": 10
-  },
-  {
-   "title": "Anthropic launches Claude Fable 5.2 and Claude Mythos 5.2",
-   "author": "@claudeai",
-   "authorName": "Claude",
-   "url": "https://x.com/claudeai/status/2119867114450268322",
-   "published": "2026-11-10 00:27 IST",
-   "summary": "Anthropic introduced Claude Fable 5.2 and Claude Mythos 5.2, pitched for the hardest technical work, with gains in coding, reasoning, and vision. @AnthropicAI says both are available now.",
-   "why": "Official Anthropic launch post",
-   "topic": "Models",
-   "replies": "Mostly hype and emoji; one reply jokes that Opus 5.5 barely got time on top. One reply (in Spanish) backs keeping the most powerful version limited to verified cybersecurity teams, and one is an angry anti-AI post about RAM prices. Low signal overall.",
-   "replyCount": 10
-  },
-  {
-   "title": "Meta releases Muse Ember, its smallest and most efficient model",
-   "author": "@AIatMeta",
-   "authorName": "AI at Meta",
-   "url": "https://x.com/AIatMeta/status/2119853591703998787",
-   "published": "2026-11-09 23:34 IST",
-   "summary": "Meta's Muse Ember is built for agent work: chaining tool calls across apps, running tests, and making targeted code fixes. It has a 1M-token context window and native text, image, audio, and video input.",
-   "why": "Official Meta AI launch post",
-   "topic": "Models",
-   "replies": "Replies are mostly positive and focus on price for agent loops. @411apt points out that reasoning effort defaults to max in the Model API docs and can be lowered for simple routing tasks. A few want open weights.",
-   "replyCount": 10
-  },
-  {
-   "title": "Artificial Analysis: Muse Ember matches Claude Haiku 5.5 at a third of the cost",
-   "author": "@ArtificialAnlys",
-   "authorName": "Artificial Analysis",
-   "url": "https://x.com/ArtificialAnlys/status/2119854348587123007",
-   "published": "2026-11-09 23:37 IST",
-   "summary": "Muse Ember (max) scores 36 on the Intelligence Index at $0.14 per task, the same score as Claude Haiku 5.5 (max) at $0.41. It declines 64% of knowledge questions, which keeps its hallucination rate at 17.4%, about half of Haiku's; pricing is $0.10 in and $0.50 out per 1M tokens.",
-   "why": "Independent benchmark org with published methodology",
-   "topic": "Research",
-   "replies": "People like the refuse-rather-than-hallucinate trade for agent work and see it changing model routing. @dwkim601 warns that Terminal-Bench and FrontierCode point in opposite directions against Haiku, so the single index number hides a mixed coding picture. Several ask where Fable 5.2 is.",
-   "replyCount": 10
-  },
-  {
-   "title": "Arena: Muse Ember is the top small model in Code Arena WebDev",
-   "author": "@arena",
-   "authorName": "Arena.ai",
-   "url": "https://x.com/arena/status/2119857775446757697",
-   "published": "2026-11-09 23:50 IST",
-   "summary": "Muse Ember (Max) scored 1608 in Code Arena WebDev, ahead of Claude Haiku 5.5 (1595) and GPT-6 Luna (1578), at a median $0.03 per task versus $0.06 for Luna and $0.11 for Haiku, despite identical token pricing.",
-   "why": "Arena's own crowd-ranked leaderboard result",
-   "topic": "Research",
-   "replies": "A reply notes the score gap is under 1%, so this is really a cost win, not a capability gap. Others ask whether the low cost holds on multi-file work and whether the 1M window stays usable after many tool calls; one says DeepSeek V4.1 Flash is still better.",
-   "replyCount": 10
-  },
-  {
-   "title": "Ethan Mollick: Fable 5.2 crosses into 'Jagged AGI'",
-   "author": "@emollick",
-   "authorName": "Ethan Mollick",
-   "url": "https://x.com/emollick/status/2119870150845599972",
-   "published": "2026-11-10 00:40 IST",
-   "summary": "Mollick had early access and wrote up tests where Fable 5.2 launched a business, did academic research, hacked hardware, and built 3D models. He argues it shows both the limits and the powers of a 'sort of Jagged AGI'. Post: oneusefulthing.org/p/fable-52-and-jagged-agi",
-   "why": "Wharton professor with early access, detailed hands-on write-up",
-   "topic": "Models",
-   "replies": "Most agree 'jagged' fits and stress that verification matters more as models fail with the same confidence they succeed with. @ge0xrge points out that hardware either boots or it doesn't, while a launched business has no such check, so the demos aren't equal evidence. Someone asks whether the business actually made money.",
-   "replyCount": 10
-  },
-  {
-   "title": "Boris Cherny: longer Claude subscribers get more Fable resets",
-   "author": "@bcherny",
-   "authorName": "Boris Cherny",
-   "url": "https://x.com/bcherny/status/2119873095129550880",
-   "published": "2026-11-10 00:51 IST",
-   "summary": "Claude Code lead Boris Cherny says that with Fable 5.2, the longer you've been subscribed, the more Fable usage resets you get.",
-   "why": "Claude Code creator at Anthropic, first-hand product detail",
-   "topic": "Tools",
-   "replies": "Reaction is mixed. Some praise rewarding long-time subscribers, but others ask for a full weekly reset instead, since a Fable reset reportedly draws from the current weekly limit. One user asks for a bigger context window than 200K.",
-   "replyCount": 10
-  },
-  {
-   "title": "Theo: Fable 5.2 is better, but the Claude Code desktop app UX is rough",
-   "author": "@theo",
-   "authorName": "Theo - t3.gg",
-   "url": "https://x.com/theo/status/2119873100745768974",
-   "published": "2026-11-10 00:51 IST",
-   "summary": "Theo tried Fable 5.2 in the Claude Code desktop app and says the model has improved a lot, but adding a project took about two minutes and enabling 'bypass permissions' meant digging through settings.",
-   "why": "Watchlist developer, hands-on first impression",
-   "topic": "Tools",
-   "replies": "Several agree and say they moved to T3 Code over this. @Mohamed3nan says Theo is probably on an outdated version and adding a project takes a second. Another user complains of a 200K context that autocompacts every few minutes.",
-   "replyCount": 10
-  },
-  {
-   "title": "Perplexity: Fable 5.2 sets a record on its WANDR benchmark",
-   "author": "@perplexity_ai",
-   "authorName": "Perplexity",
-   "url": "https://x.com/perplexity_ai/status/2119875089974104489",
-   "published": "2026-11-10 00:59 IST",
-   "summary": "Claude Fable 5.2 is live in Perplexity Computer for Pro and Max, and in Search for Max. Perplexity says it hit a record 0.851 on its WANDR benchmark at $14.51 per task.",
-   "why": "Official Perplexity account; first-party benchmark",
-   "topic": "Tools",
-   "replies": "Only a few replies. One questions the $14.51 per-task cost and gating by subscription tier; another says per-task price is the number to watch. Low signal otherwise.",
-   "replyCount": 5
-  },
-  {
-   "title": "Rumor/early signal: Gemini 4 Hydrogen private early access has started",
-   "author": "@lyraxana",
-   "authorName": "lyra",
-   "url": "https://x.com/lyraxana/status/2119856544682594352",
-   "published": "2026-11-09 23:45 IST",
-   "summary": "Rumor/early signal: lyra says a private early-access program for gemini-4-hydrogen has started and expects a release soon. Not confirmed by Google.",
-   "why": "Watchlist leaker; unconfirmed, label as rumor",
-   "topic": "Models",
-   "replies": "Replies are speculation. Some expect a flash-tier model to ship faster than the bigger ones, maybe early next week; others doubt it, pointing to Argon and Carbon that never arrived on schedule.",
-   "replyCount": 10
-  },
-  {
-   "title": "Runway adds Sightline for consistent 360 panoramas",
-   "author": "@runwayml",
-   "authorName": "Runway",
-   "url": "https://x.com/runwayml/status/2119874555581694370",
-   "published": "2026-11-10 00:57 IST",
-   "summary": "Runway's new Sightline tool builds a 360 panorama of a location so you can frame shots from any angle with a consistent environment, and export it for 3D use. It's in App Studio.",
-   "why": "Official Runway product launch",
-   "topic": "Tools",
-   "replies": "Only two replies: one compliment and Runway's own link to get started.",
-   "replyCount": 2
   }
  ]
 }
