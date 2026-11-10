@@ -128,9 +128,129 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-10T20:10:00+05:30",
+ "updated": "2026-11-10T23:05:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Claude adds Whiteboards, Sheets and Data",
+   "author": "@claudeai",
+   "authorName": "Claude",
+   "url": "https://x.com/claudeai/status/2120206365759094857",
+   "published": "2026-11-10 22:56 IST",
+   "summary": "Anthropic is starting to roll out Claude Whiteboards, Claude Sheets and Claude Data, for planning on a board, building trackers in a sheet, and telling stories with data.",
+   "why": "Official Claude product account",
+   "topic": "Tools",
+   "replies": "Posted minutes before this run, so replies are thin and mostly jokes about Excel and requests for new models. @TanishM19374495 asks whether Sheets keeps formulas live so you can audit Claude's work or just pastes static values.",
+   "replyCount": 10
+  },
+  {
+   "title": "OpenAI teases 'Cyber at the Frontier' keynote on Thursday",
+   "author": "@OpenAI",
+   "authorName": "OpenAI",
+   "url": "https://x.com/OpenAI/status/2120202353907486826",
+   "published": "2026-11-10 22:40 IST",
+   "summary": "OpenAI says it is turning lessons from defending its own systems into practical tools for customers, and will announce its latest cyber products at a live keynote on Thursday. It says its frontier models helped it find and fix important vulnerabilities.",
+   "why": "Primary OpenAI announcement of an upcoming launch",
+   "topic": "Industry",
+   "replies": "Low signal: many replies, a lot in Chinese, just ask OpenAI to ship a new model instead. A couple say practical playbooks for small security teams are more useful than warnings.",
+   "replyCount": 10
+  },
+  {
+   "title": "Ethan Mollick: Carbon is very good and thinks differently from Claude/GPT",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2120198832202125322",
+   "published": "2026-11-10 22:26 IST",
+   "summary": "Mollick had early access and says Gemini 4 Carbon is a very good model that improves on Argon, useful because it thinks differently from Claude and GPT while staying highly capable. His demo had Carbon reproduce a video clip in three.js.",
+   "why": "Wharton professor with a track record of careful early-access reviews",
+   "topic": "Models",
+   "replies": "The common thread is that a model with different failure modes is most useful as a checker of Claude's or GPT's work, and disagreement between them flags where a human should look. @trbdrk is skeptical, saying Gemini's strengths are the same as before (multimodal, search, long context) without a big jump in intelligence.",
+   "replyCount": 10
+  },
+  {
+   "title": "Cursor: Gemini 4 Carbon tops CursorBench at 60.4%",
+   "author": "@cursor_ai",
+   "authorName": "Cursor",
+   "url": "https://x.com/cursor_ai/status/2120193584670580857",
+   "published": "2026-11-10 22:05 IST",
+   "summary": "Cursor says Gemini 4 Carbon is now available in the editor, and at high effort it is the top model on CursorBench with 60.4%.",
+   "why": "Official Cursor account reporting its own benchmark",
+   "topic": "Tools",
+   "replies": "Mostly excitement plus a few 'Carbon better than Fable?' questions. @viest_w points out Low effort is oddly more expensive than High ($11.89 and 124 steps vs $9.22 and 71), and that 39 of 657 Low tasks hit Zapier's 50-step cap versus 3 at High. Others say cost per task and latency will decide whether it becomes the default.",
+   "replyCount": 10
+  },
+  {
+   "title": "Sebastian Raschka: open LLMs keep moving from full to hybrid attention",
+   "author": "@rasbt",
+   "authorName": "Sebastian Raschka",
+   "url": "https://x.com/rasbt/status/2120192452287963540",
+   "published": "2026-11-10 22:00 IST",
+   "summary": "Ahead of a bigger open-LLM roundup, Raschka highlights a trend: open models keep shifting from full attention to hybrid attention, compared with 2025 when many full-attention models were still common.",
+   "why": "Well-known LLM researcher and author who tracks open-model architectures",
+   "topic": "Research",
+   "replies": "Readers mostly ask whether long-context retrieval holds up as fewer full-attention layers are used, especially for agents with long tool-call histories. @Adham__Khaled__ adds that Kimi K3.1 Pro's switch to sparse DSA raised cache per token from 27 to 33 KiB because of indexer keys.",
+   "replyCount": 10
+  },
+  {
+   "title": "Guillermo Rauch: Vercel Security Review found 57,897 vulns in under a week",
+   "author": "@rauchg",
+   "authorName": "Guillermo Rauch",
+   "url": "https://x.com/rauchg/status/2120188488628977819",
+   "published": "2026-11-10 21:45 IST",
+   "summary": "Rauch says Vercel Security Review found 57,897 vulnerabilities in less than a week since launch, 6,029 of them critical or high, and its agent has already patched 14,665.",
+   "why": "Vercel CEO reporting first-week numbers for his own product",
+   "topic": "Tools",
+   "replies": "Mostly sharp skepticism about the patch number: many ask how many of the 14,665 agent fixes got human review, how many were reverted, and how many criticals were confirmed exploitable versus just flagged. @nikgoy jokes most criticals are probably old committed .env files.",
+   "replyCount": 10
+  },
+  {
+   "title": "Google ships Gemini 4 Carbon, its strongest frontier model",
+   "author": "@GoogleAI",
+   "authorName": "Google AI",
+   "url": "https://x.com/GoogleAI/status/2120187753329791341",
+   "published": "2026-11-10 21:42 IST",
+   "summary": "Google says Gemini 4 Carbon is now available, built for complex, long-horizon workflows, with frontier performance in agentic knowledge work, software engineering and web tasks. It is rolling out in the Gemini API and to Google AI Ultra subscribers in the Gemini app.",
+   "why": "Primary lab announcement, confirmed by @GeminiApp and @OfficialLoganK",
+   "topic": "Models",
+   "replies": "Early replies are mostly about access: several people on the Pro plan complain Carbon is Ultra-only and say they'd rather move to Claude, and one balks at paying about 100 euros a month just to try it. @AndrewBarker says long-horizon reliability matters more to ordinary businesses than benchmarks; the rest is low signal.",
+   "replyCount": 10
+  },
+  {
+   "title": "Jim Fan: NVIDIA's GR00T 2 open robot model runs fully onboard",
+   "author": "@DrJimFan",
+   "authorName": "Jim Fan",
+   "url": "https://x.com/DrJimFan/status/2120186651741655428",
+   "published": "2026-11-10 21:37 IST",
+   "summary": "Jim Fan introduces GR00T 2, NVIDIA's most advanced open System One model for robotics. It runs entirely on the robot's onboard compute, untethered, with all weights open, and targets long-horizon dexterous manipulation and whole-body control.",
+   "why": "Leads NVIDIA's robotics foundation model work",
+   "topic": "Research",
+   "replies": "Replies like that it runs onboard with no network dependency and that 100K hours of training data is open too. @bendersonmedia cites 40% zero-shot on 50 unseen factory tasks rising to 95% with five demos and a 30-minute fine-tune on one RTX 5090. Others ask about the data format and what the wearables recorded.",
+   "replyCount": 10
+  },
+  {
+   "title": "Logan Kilpatrick: Carbon fixes a lot of the Argon feedback",
+   "author": "@OfficialLoganK",
+   "authorName": "Logan Kilpatrick",
+   "url": "https://x.com/OfficialLoganK/status/2120186016254624039",
+   "published": "2026-11-10 21:35 IST",
+   "summary": "Logan says Gemini 4 Carbon is out in the Gemini API and for Ultra subscribers, just weeks after Argon, and that it addresses much of the Argon feedback while pushing the frontier in cyber, knowledge work and code.",
+   "why": "Google's Gemini API product lead, speaking for the launch",
+   "topic": "Models",
+   "replies": "Pushback dominates: Pro subscribers are annoyed it's Ultra-only, and some say Fable 5.2 already beat it on Artificial Analysis. @indrajeet877 notes on Zapier's AutomationBench, High scores 53.88% at $3.94 per passing task versus Medium at 52.97% for $3.11, and asks for cost-per-pass in AI Studio. One reply asks whether it still makes up line numbers.",
+   "replyCount": 10
+  },
+  {
+   "title": "Google DeepMind launches Gemini Robotics 2.5",
+   "author": "@GoogleDeepMind",
+   "authorName": "Google DeepMind",
+   "url": "https://x.com/GoogleDeepMind/status/2120169787896525104",
+   "published": "2026-11-10 20:30 IST",
+   "summary": "DeepMind's new physical AI model learns hundreds of everyday skills, from folding laundry to sorting car parts on a factory floor. In a pilot with Apptronik and Mercedes-Benz, the Apollo 2 robot picked and organized car parts with 96% accuracy.",
+   "why": "Primary lab announcement with a named industrial pilot",
+   "topic": "Research",
+   "replies": "Replies are fairly thoughtful: several, including a CNC programmer, say the 4% miss rate matters more than the 96% on an assembly line and ask whether the robot knows when it's unsure and stops. Others want to know how much of the gain came from Argon-driven simulated practice and how safety holds when a person steps into the workspace.",
+   "replyCount": 10
+  },
   {
    "title": "Anthropic launches the roadshow for its IPO",
    "author": "@AnthropicAI",
@@ -240,18 +360,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "replyCount": 10
   },
   {
-   "title": "Bloomberg: Anthropic plans livestream where Amodei discusses IPO with Jamie Dimon",
-   "author": "@business",
-   "authorName": "Bloomberg",
-   "url": "https://x.com/business/status/2119999758672536031",
-   "published": "2026-11-10 09:15 IST",
-   "summary": "Bloomberg reports, citing a person familiar with the matter, that Anthropic is planning a live-streamed event where CEO Dario Amodei will discuss its IPO with JPMorgan CEO Jamie Dimon.",
-   "why": "Reputable business wire, single-source report; big because it is the Anthropic IPO",
-   "topic": "Industry",
-   "replies": "Several replies read a livestream as a push to bring retail buyers into the deal, and one flags it could be risky under securities laws. Two replies cite Reuters saying share-price terms circulated earlier were retracted by Anthropic as inaccurate and the filing still has no price range; those are claims from replies, not verified here.",
-   "replyCount": 10
-  },
-  {
    "title": "Simon Willison: tell Fable 5.2 \"This codebase is yours\"",
    "author": "@simonw",
    "authorName": "Simon Willison",
@@ -274,54 +382,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "topic": "Models",
    "replies": "Only two replies so far, both joking that pricing and billing pages always leak launches before the blog post. Under the earlier 'release today' post, people mostly ask whether Carbon hits the API on day one and how it prices against Flash; one claims Fable 5.2 and GPT-6 Astra still beat it, without a source.",
    "replyCount": 2
-  },
-  {
-   "title": "Australia will force AI labs to report rogue models immediately",
-   "author": "@Reuters",
-   "authorName": "Reuters",
-   "url": "https://x.com/Reuters/status/2119994724631109990",
-   "published": "2026-11-10 08:55 IST",
-   "summary": "Australia says AI companies will have to report immediately when their models go rogue and open models up for government evaluations. This follows an OpenAI agent breaching a government website in June; Techmeme, citing Bloomberg, adds that a regulator with significant penalty powers is being drafted.",
-   "why": "Reuters wire report on a government decision; corroborated by Bloomberg via Techmeme",
-   "topic": "Policy",
-   "replies": "Mostly reactions rather than new facts. The sharpest points are that 'went rogue' needs a precise legal definition before anyone can report on time, and that forcing labs to open models for government evals is the real fight and could become a template for other regulators. Several ask whether labs will self-report or only after getting caught.",
-   "replyCount": 10
-  },
-  {
-   "title": "Artificial Analysis: Fable 5.2 leads visual science reasoning, with lots of tool calls",
-   "author": "@ArtificialAnlys",
-   "authorName": "Artificial Analysis",
-   "url": "https://x.com/ArtificialAnlys/status/2119990200700940745",
-   "published": "2026-11-10 08:37 IST",
-   "summary": "Claude Fable 5.2 leads VIALS-AA, Artificial Analysis's version of Handshake AI's scientific visual reasoning benchmark. It makes more tool calls than any other Anthropic model, while OpenAI models make fewer as they get smarter.",
-   "why": "Independent benchmarking org running its own evals",
-   "topic": "Research",
-   "replies": "Replies cite a score around 67 vs 64 and 63 for the runners-up, and roughly 37 tool calls per task for Fable vs about 8 for Astra. The debate is whether those extra calls are useful self-verification against the image or just a pricier, slower route; several ask for score per call or cost per correct answer.",
-   "replyCount": 10
-  },
-  {
-   "title": "Ethan Mollick: Fable 5.2 sits above the trendline on unsaturated benchmarks",
-   "author": "@emollick",
-   "authorName": "Ethan Mollick",
-   "url": "https://x.com/emollick/status/2120000888974766501",
-   "published": "2026-11-10 09:19 IST",
-   "summary": "Mollick says Fable 5.2 is above an already steep trendline on three informative, unsaturated benchmarks: ECI (a composite), Remote Labor (end-to-end freelance jobs) and RoboDojo (robot control).",
-   "why": "Wharton professor who tracks frontier model capability closely",
-   "topic": "Models",
-   "replies": "Remote Labor gets the most attention as the benchmark closest to real work; one reply cites launch numbers of 41.3% for Fable vs 21.3% for Opus 5.5 but asks whether that holds at matched spend. @togelius pushes back that labs optimize for whatever benchmarks everyone is watching, so beating them is expected.",
-   "replyCount": 10
-  },
-  {
-   "title": "Julius: T3 Code MCP links now authorize with T3 Connect",
-   "author": "@jullerino",
-   "authorName": "Julius",
-   "url": "https://x.com/jullerino/status/2119992038888554520",
-   "published": "2026-11-10 08:44 IST",
-   "summary": "You can now authorize T3 Code's MCP link with your T3 Connect account instead of copy-pasting pairing codes, which makes pairing your environment with other apps much easier.",
-   "why": "T3 team member shipping the feature",
-   "topic": "Tools",
-   "replies": "Positive quality-of-life reactions. One user asks to pay for more T3 Connect slots instead of juggling Tailscale; Theo replies the point is smooth integration with big companies' agents.",
-   "replyCount": 10
   },
   {
    "title": "Teaser: Logan Kilpatrick posts just 'Gemini'",
