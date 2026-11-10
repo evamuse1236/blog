@@ -128,9 +128,33 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-10T11:15:00+05:30",
+ "updated": "2026-11-10T14:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Simon Willison: tell Fable 5.2 \"This codebase is yours\"",
+   "author": "@simonw",
+   "authorName": "Simon Willison",
+   "url": "https://x.com/simonw/status/2120029347948220500",
+   "published": "2026-11-10 11:12 IST",
+   "summary": "Simon points to Anthropic's updated prompting guide for Fable 5.2, which suggests telling the model \"This codebase is yours\" to make it less cautious when improving existing code.",
+   "why": "Long-time, careful LLM tooling writer quoting Anthropic's official prompting guide",
+   "topic": "Tools",
+   "replies": "Most replies find the tip funny but useful, framing it as giving the model permission rather than unlocking new capability, like onboarding notes for a new hire. The main pushback is whether less caution also means it starts refactoring code outside the task. Low on new facts beyond that.",
+   "replyCount": 10
+  },
+  {
+   "title": "Rumor: Gemini 4 Carbon shows up in the Google Cloud SKU catalog",
+   "author": "@testingcatalog",
+   "authorName": "TestingCatalog News",
+   "url": "https://x.com/testingcatalog/status/2120070242856575060",
+   "published": "2026-11-10 13:55 IST",
+   "summary": "Rumor/early signal: TestingCatalog says Gemini 4 Carbon is now listed in the GCP SKUs catalog and the gemini-4-carbon model slug may already respond; an earlier post from them expects a new Gemini model today. Google hasn't announced anything yet.",
+   "why": "Rumor/early signal from an app-teardown account with a decent track record; fits Logan Kilpatrick's one-word \"Gemini\" teaser this morning",
+   "topic": "Models",
+   "replies": "Only two replies so far, both joking that pricing and billing pages always leak launches before the blog post. Under the earlier 'release today' post, people mostly ask whether Carbon hits the API on day one and how it prices against Flash; one claims Fable 5.2 and GPT-6 Astra still beat it, without a source.",
+   "replyCount": 2
+  },
   {
    "title": "Australia will force AI labs to report rogue models immediately",
    "author": "@Reuters",
@@ -273,102 +297,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Official Cursor account reporting its own internal benchmark.",
    "topic": "Tools",
    "replies": "Mostly low signal: follow-for-follow spam and people asking about pricing and accounts. The one substantive reply asks when max effort is actually worth the extra cost over default for budget-conscious users.",
-   "replyCount": 10
-  },
-  {
-   "title": "Arena: Fable 5.2 lands #1 in Code Arena WebDev",
-   "author": "@arena",
-   "authorName": "Arena.ai",
-   "url": "https://x.com/arena/status/2119941204003770690",
-   "published": "2026-11-10 05:22 IST",
-   "summary": "Arena says Claude Fable 5.2 (xHigh) is #1 in Code Arena WebDev with 1832 points. It also says the update is up to 30% faster than Fable 5.1 and cheaper, at $8/$40 per million tokens, down from $10/$50.",
-   "why": "Arena (formerly LMArena) is the main crowd-voted model leaderboard.",
-   "topic": "Models",
-   "replies": "Replies note the lead over Opus 5.5 is only 14 points, while the gap to Gemini and GPT is bigger. Several push back on the price headline: one cites a SemiAnalysis measurement that it costs 31% more per task because it writes more tests, and another says Simon Willison found max effort ran out of thinking tokens on his SVG test, so xHigh looks safer. People are waiting for Agent Arena scores.",
-   "replyCount": 10
-  },
-  {
-   "title": "Claude: what Fable 5.2 and Mythos 5.2 built in pre-release testing",
-   "author": "@claudeai",
-   "authorName": "Claude",
-   "url": "https://x.com/claudeai/status/2119899459761131615",
-   "published": "2026-11-10 02:36 IST",
-   "summary": "Anthropic shared projects Fable 5.2 and Mythos 5.2 worked on during pre-release testing. One example: from a one-paragraph prompt, Fable 5.2 designed three working electronic devices, including a home voice assistant hub.",
-   "why": "Official Claude account, first-party launch material.",
-   "topic": "Models",
-   "replies": "Mostly cheers and short reactions. One reply argues the scarce skill is now deciding what should exist rather than building it. A self-described physics student calls one of the showcased papers amateur and unpublishable, but gives no specifics.",
-   "replyCount": 10
-  },
-  {
-   "title": "Theo: Claude Ultra gets far less Fable than Opus per dollar",
-   "author": "@theo",
-   "authorName": "Theo - t3.gg",
-   "url": "https://x.com/theo/status/2119960608816988596",
-   "published": "2026-11-10 06:39 IST",
-   "summary": "Theo says the $200 Claude Ultra plan gives about $15,000 of Opus 5.5 usage a month but only around $3,000 of Fable. He adds that Fable is capped at 50% of the weekly limit and still burns faster per dollar than Opus. (His post says 'Fable 5.5'; he later corrected it to Fable 5.2.)",
-   "why": "Watchlist: Theo runs T3 Code and tracks plan economics closely.",
-   "topic": "Industry",
-   "replies": "The common advice in replies is to keep Opus as the default and save Fable for hard tasks, judged by cost per accepted change. One reply flags the version typo, and another asks how he computed the dollar value of each weekly limit. Grok replies speculate about API margins, which is guesswork.",
-   "replyCount": 10
-  },
-  {
-   "title": "Theo: Opus 5.5 dominates Codex in T3 Code usage",
-   "author": "@theo",
-   "authorName": "Theo - t3.gg",
-   "url": "https://x.com/theo/status/2119970535056846996",
-   "published": "2026-11-10 07:18 IST",
-   "summary": "Theo charted the split between Codex and Claude in T3 Code over time and says Opus 5.5's dominance is hard to put into words.",
-   "why": "Watchlist: first-party usage data from his own coding tool.",
-   "topic": "Tools",
-   "replies": "Replies ask whether the gap comes from model quality or from how T3 Code routes tasks, and note his users are a self-selected audience. Some say heavy subsidies and low lock-in explain the shift; others wonder how much share Fable 5.2 will take from Opus next month.",
-   "replyCount": 10
-  },
-  {
-   "title": "Sholto Douglas: Fable 5.2 built a portal arena FPS worth playing",
-   "author": "@_sholtodouglas",
-   "authorName": "Sholto Douglas",
-   "url": "https://x.com/_sholtodouglas/status/2119935331499925557",
-   "published": "2026-11-10 04:59 IST",
-   "summary": "Sholto Douglas, an Anthropic researcher, says an arena FPS with portals is the first game from a model that passes his bar for seriously fun and beautiful. The team has playtested it against each other at the office.",
-   "why": "Watchlist: Anthropic researcher, hands-on demo.",
-   "topic": "Models",
-   "replies": "Many replies say it is a copy of the game Splitgate. Sholto replied that he never prompted that: he described an arena shooter's mechanics, weapons, and layout in detail. Others ask how sound was handled and praise the rocket effect.",
-   "replyCount": 10
-  },
-  {
-   "title": "Ethan Mollick: 25,000 agents built 450 portal-linked 3D worlds with Fable 5.2",
-   "author": "@emollick",
-   "authorName": "Ethan Mollick",
-   "url": "https://x.com/emollick/status/2119918307457577163",
-   "published": "2026-11-10 03:51 IST",
-   "summary": "Mollick asked Fable 5.2 to build an endless, hands-off journey through 3D worlds linked by portals. He says 25,000 agents created over 450 worlds inspired by books, art, and places, all in code, and shared a playable link and the GitHub repo.",
-   "why": "Watchlist: Wharton professor known for careful hands-on model tests.",
-   "topic": "Research",
-   "replies": "Replies latch onto a detail from his thread that the agents invented a bureaucracy to coordinate, which people find very human. Others ask what breaks first on a long walk, coherence or compute cost, and one points to Artificial Analysis's AA-3D result putting Fable 5.2 first for interactive 3D builds.",
-   "replyCount": 10
-  },
-  {
-   "title": "Dwarkesh Patel: Fable 5.2 still trails GPT-6 Astra at Blood on the Clocktower",
-   "author": "@dwarkesh_sp",
-   "authorName": "Dwarkesh Patel",
-   "url": "https://x.com/dwarkesh_sp/status/2119942657812451482",
-   "published": "2026-11-10 05:28 IST",
-   "summary": "Dwarkesh says Fable 5.2 is still worse than GPT-6 Astra at the social deduction game Blood on the Clocktower, though much better than Opus 5.5 or Fable 5.1.",
-   "why": "Watchlist: podcaster running his own model eval.",
-   "topic": "Research",
-   "replies": "Replies like social deduction as an eval because you can't memorize a bluff, and one calls it a good counterweight to launch charts. People ask whether Astra's edge shows up more when lying on the evil team. One user shares small-sample results where game rankings flip between chess and xiangqi.",
-   "replyCount": 10
-  },
-  {
-   "title": "Thinking Machines: Inkling 2 Small free for a limited time on opencode",
-   "author": "@thinkymachines",
-   "authorName": "Thinking Machines",
-   "url": "https://x.com/thinkymachines/status/2119896225315188993",
-   "published": "2026-11-10 02:23 IST",
-   "summary": "Thinking Machines says Inkling 2 Small is available free for a limited time on opencode. It was trained for agentic coding and knowledge work.",
-   "why": "Official Thinking Machines lab account.",
-   "topic": "Models",
-   "replies": "Replies see free CLI access as a cheap real-world eval. One user says it is less disciplined than DeepSeek 4.1 on long Flutter projects, and another notes the linked page lists its knowledge score as unknown. Someone asks if EU users can try it.",
    "replyCount": 10
   }
  ]
