@@ -128,9 +128,45 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-11T14:10:00+05:30",
+ "updated": "2026-11-11T17:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Baidu ships ERNIE 5.5 Flash Preview, open weights by Nov 25",
+   "author": "@Baidu_Inc",
+   "authorName": "Baidu Inc.",
+   "url": "https://x.com/Baidu_Inc/status/2120391732248637734",
+   "published": "2026-11-11 11:12 IST",
+   "summary": "Baidu released ERNIE 5.5 Flash Preview, an open-weight model in the ERNIE family built for efficient inference, pitched at coding, 3D modeling, knowledge work and content creation. Baidu's ERNIE account says it is 280B total / 14B active with 1M-token context, over 200 tokens/s per user on Qianfan, and weights open-sourced by November 25.",
+   "why": "Official Baidu account; specs confirmed by @Baidu_ERNIE and ERNIE team members.",
+   "topic": "Models",
+   "replies": "Replies are curious but mostly unbenchmarked: people ask whether anyone has tested it yet and say they'd deploy it if the open weights hold up. @LoayWithAI asks how much of the 200+ tokens/s survives once the 1M context is actually filled, and a few Chinese-language replies poke at the jump straight to the 5.5 version number.",
+   "replyCount": 10
+  },
+  {
+   "title": "Anthropic roadshow: Claude was brought up on AMD GPUs in days, not months",
+   "author": "@AndrewCurran_",
+   "authorName": "Andrew Curran",
+   "url": "https://x.com/AndrewCurran_/status/2120323074860179674",
+   "published": "2026-11-11 06:39 IST",
+   "summary": "Andrew Curran quotes Anthropic's IPO roadshow video: bringing up a new chip platform used to take dozens of engineers months, but this year Anthropic started on AMD GPUs for the first time and did it far faster. In a follow-up he quotes the same video saying revenue grew more than 45x over six quarters while compute costs grew 10x, and year-to-date gross margin is over 85%.",
+   "why": "Direct quotes from Anthropic's own roadshow video, via a reporter who tracks the labs closely.",
+   "topic": "Industry",
+   "replies": "Mostly hype (\"literal animal\", \"serious engineering flex\") plus a few readers saying it shows the software moat is gone for hardware. Pushback elsewhere in the thread says this is a good example of AI speeding up its own engineering but not proof of sustained self-improvement; the wider debate (e.g. @benitoz) argues that getting a model running on AMD in days does not mean NVIDIA's CUDA moat is gone.",
+   "replyCount": 10
+  },
+  {
+   "title": "DeepMind formally verifies Signal's production machine code with AlphaProof Code",
+   "author": "@pushmeet",
+   "authorName": "Pushmeet Kohli",
+   "url": "https://x.com/pushmeet/status/2120127611137634376",
+   "published": "2026-11-10 17:43 IST",
+   "summary": "Pushmeet Kohli announced his Google DeepMind team proved key security properties of the machine code underlying the Signal messaging protocol, calling it the first formal verification of the actual production code of a widely deployed protocol. Sundar Pichai said the work used Gemini 4 Carbon with AlphaProof Code agents and verified the protocol down to compiled device code.",
+   "why": "Primary announcement from DeepMind's VP of research, backed by Sundar Pichai and lead researcher @swarat. Missed in earlier runs.",
+   "topic": "Research",
+   "replies": "Replies are broadly impressed that production code, not a model of it, was verified, and several call it the security work that rarely gets headlines. The main pushback: @recursifist notes it is still bound by humans checking that the spec itself is complete, and others ask whether it scales to other protocols. Separately, @gakonst argues the real value would be reusable libraries of specs, not millions of lines of Lean to review.",
+   "replyCount": 10
+  },
   {
    "title": "Notion confirms Fireworks AI breach exposed some Notion AI chat transcripts",
    "author": "@TheHackersNews",
@@ -273,54 +309,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Official Stripe account, confirmed by CEO @patrickc",
    "topic": "Industry",
    "replies": "Fairly low signal: hype, support requests, and Argentinians asking for Stripe availability. The substantive takes read it as Stripe laying rails for agent purchasing, with @dstrausser83 arguing whoever owns token routing owns the toll booth on every model call.",
-   "replyCount": 10
-  },
-  {
-   "title": "Cursor rebuilds Projects for multiplayer agents",
-   "author": "@cursor_ai",
-   "authorName": "Cursor",
-   "url": "https://x.com/cursor_ai/status/2120295553309565139",
-   "published": "2026-11-11 04:50 IST",
-   "summary": "Cursor says agents can now coordinate with teammates' agents: Projects was rebuilt so every teammate and their agents work in one shared workspace.",
-   "why": "Official Cursor account",
-   "topic": "Tools",
-   "replies": "Developers say the hard part now is coordination: who owns a task, how agents hand off work without colliding, and showing which human asked for what during review. Grok, answering a user, cites Cursor's docs saying sharing a Project needs a team account. The rest is hype and spam.",
-   "replyCount": 10
-  },
-  {
-   "title": "Jason Wei's 'benchmark benchmark' of 2026 frontier evals",
-   "author": "@_jasonwei",
-   "authorName": "Jason Wei",
-   "url": "https://x.com/_jasonwei/status/2120283338640621826",
-   "published": "2026-11-11 04:01 IST",
-   "summary": "Jason Wei built a frequency chart of which benchmarks frontier labs reported in 2026. HLE, SWE-Bench Pro, DeepSWE and Terminal-Bench were used by everyone, and he notes Scale AI is behind two of those four.",
-   "why": "Well-known AI researcher with original analysis",
-   "topic": "Research",
-   "replies": "Positive overall. Useful pushback: adoption doesn't show whether a benchmark still discriminates, so people suggest adding saturation and variance checks, and one notes Terminal-Bench had several versions this year, which makes score comparisons tricky. Others link similar live trackers and ask about missing benchmarks.",
-   "replyCount": 10
-  },
-  {
-   "title": "Matt Pocock: use a 'Home Repo' for multi-repo agent work",
-   "author": "@mattpocockuk",
-   "authorName": "Matt Pocock",
-   "url": "https://x.com/mattpocockuk/status/2120260969750540327",
-   "published": "2026-11-11 02:33 IST",
-   "summary": "Matt Pocock keeps one home repo holding all his skills, steering files and wiki, runs his agent there, and uses AGENTS.md to point it at the other repos he works in.",
-   "why": "Watchlist practitioner sharing his own workflow",
-   "topic": "Tools",
-   "replies": "Many say they use the same pattern. Practical tips: tell the agent to pull before touching a pointed repo, scope write access per repo, and make updating AGENTS.md the last step of each task so it doesn't go stale. One user notes Antigravity workspaces can pick up per-repo rules automatically, and another hit a 90KB context load from 31 repos' instruction files.",
-   "replyCount": 10
-  },
-  {
-   "title": "T3 Code 2.3 ships on iOS and Android with voice",
-   "author": "@jullerino",
-   "authorName": "Julius (T3)",
-   "url": "https://x.com/jullerino/status/2120263836746060195",
-   "published": "2026-11-11 02:44 IST",
-   "summary": "T3 Code 2.3 is out on iOS and Android with talk-to-your-agents: on-device dictation (now on Android too), transcription on a paired computer, or opt-in cloud dictation using OpenAI, Grok or OpenRouter models.",
-   "why": "T3 team member announcing the release",
-   "topic": "Tools",
-   "replies": "Users like coding from their phone while out. Feature asks include showing project names again, a cite feature on iOS, non-English dictation, and choosing on-device vs cloud transcription per device. @iammutex argues the real bottleneck is reviewing big diffs quickly, not voice input.",
    "replyCount": 10
   }
  ]
