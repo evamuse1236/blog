@@ -128,9 +128,105 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-11T20:10:00+05:30",
+ "updated": "2026-11-11T23:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "DeepMind launches AlphaGenome 2, predicting DNA variant effects by cell type",
+   "author": "@demishassabis",
+   "authorName": "Demis Hassabis",
+   "url": "https://x.com/demishassabis/status/2120565316619284734",
+   "published": "2026-11-11 22:42 IST",
+   "summary": "Hassabis announced AlphaGenome 2, a DNA sequence model that predicts how DNA variants act in specific cell types, which matters for understanding complex diseases. It is available for academic research through an API.",
+   "why": "DeepMind CEO announcing his lab's own model; matches the official @GoogleDeepMind thread.",
+   "topic": "Research",
+   "replies": "Replies are broadly positive about cell-type-level predictions and the academic API access. A few ask practical questions: whether clinical use is next, how his virtual cell project is going, and one user says v1 annotation queues ran a week and hopes the API holds up.",
+   "replyCount": 10
+  },
+  {
+   "title": "Arena: Claude Fable 5.2 takes #1 in Agent Arena by a wide margin",
+   "author": "@arena",
+   "authorName": "Arena.ai",
+   "url": "https://x.com/arena/status/2120568144687460434",
+   "published": "2026-11-11 22:53 IST",
+   "summary": "Arena says Claude Fable 5.2 (Max) is #1 in its Agent Arena with a +30.4% net improvement, about 1.6x the #2 model Opus-5.5, across 4.7k real agentic sessions. It is also #1 in Code, Chat and Work, and a separate post puts it at 1836 pts on Code Arena: WebDev.",
+   "why": "Independent community eval leaderboard (formerly LMArena).",
+   "topic": "Models",
+   "replies": "Replies focus on cost: two point out the leaderboard table lists Fable 5.2 at about $7.3 per task versus $1.5 for Gemini 4 Carbon (+17.0%), and ask whether the 5x price is earned on long agent loops. Another asks how a 'confirmed success' is verified; the rest is cheering and low signal.",
+   "replyCount": 10
+  },
+  {
+   "title": "Runway opens Praxis-1 robot world action model under Apache 2.0",
+   "author": "@runwayml",
+   "authorName": "Runway",
+   "url": "https://x.com/runwayml/status/2120533081182577116",
+   "published": "2026-11-11 20:34 IST",
+   "summary": "Runway made Praxis-1, its world action model that turns video pretraining into control for real robots, available to everyone. It ships with open weights under Apache 2.0, so you can run and fine-tune it on your own hardware.",
+   "why": "Official company announcement with an open-weights release.",
+   "topic": "Models",
+   "replies": "Most replies say the Apache 2.0 license matters more than any benchmark because robotics teams can actually try it. Some replies describe it as a 27B-parameter (MoE) model, which the post itself does not state, and one asks what the main eval for a world action model even is.",
+   "replyCount": 10
+  },
+  {
+   "title": "Jim Fan: GR00T 2 runs a chemistry lab experiment end to end, uncut at 1x",
+   "author": "@DrJimFan",
+   "authorName": "Jim Fan",
+   "url": "https://x.com/DrJimFan/status/2120540201994846253",
+   "published": "2026-11-11 21:02 IST",
+   "summary": "Jim Fan posted an autonomous, uncut, real-speed video of NVIDIA's GR00T 2 controlling dexterous robot hands through a chemistry lab experiment, including cleanup. He says it is the first of a series of real-time robot videos without the usual 4x or 8x speed-ups.",
+   "why": "NVIDIA robotics research lead posting his own team's demo.",
+   "topic": "Research",
+   "replies": "Replies welcome the 1x uncut standard but almost all ask for the same thing next: success rates across repeated runs and how many human resets or takes it needed. One notes glassware is a brutal test for robot hands.",
+   "replyCount": 10
+  },
+  {
+   "title": "ElevenLabs previews Interaction Engine for routing voice-agent models",
+   "author": "@ElevenLabs",
+   "authorName": "ElevenLabs",
+   "url": "https://x.com/ElevenLabs/status/2120568500712567211",
+   "published": "2026-11-11 22:55 IST",
+   "summary": "At its New York summit, ElevenLabs previewed Interaction Engine, which composes the models behind conversational agents and sends simple requests to cheaper models and complex ones, like refunds, to frontier models. It also said enterprises will be able to fine-tune its TTS, STT and open-source LLMs on their own data in the coming months.",
+   "why": "Official company announcement from its summit.",
+   "topic": "Tools",
+   "replies": "Only two replies so far. One argues routing should go by consequence rather than difficulty, since a simple request that moves money still needs the careful path; the other asks who decides what counts as complex.",
+   "replyCount": 2
+  },
+  {
+   "title": "lyra: per-message effort in the Claude API keeps the prompt cache",
+   "author": "@lyraxana",
+   "authorName": "lyra",
+   "url": "https://x.com/lyraxana/status/2120567482830483830",
+   "published": "2026-11-11 22:51 IST",
+   "summary": "lyra says the Claude API's per-message effort setting is really nice, especially combined with a router like Jev, because you can change effort per turn while keeping the prompt cache.",
+   "why": "Watchlist practitioner reporting hands-on API use.",
+   "topic": "Tools",
+   "replies": "One reply says it does not break the cache, was introduced with Fable 5.1, and is set manually rather than adaptive. Others ask whether cache hits show up in usage numbers and suggest tracking cache hits, latency and quality together; the rest is low signal.",
+   "replyCount": 9
+  },
+  {
+   "title": "Rumor/early signal: 'gemini-decision-1' appears in the Gemini API",
+   "author": "@lyraxana",
+   "authorName": "lyra",
+   "url": "https://x.com/lyraxana/status/2120558812998271476",
+   "published": "2026-11-11 22:16 IST",
+   "summary": "lyra posted 'Gemini Decision is out' with a screenshot, and many accounts report a gemini-decision-1 model showing up in Google's API model list instead of the expected Gemini 4 Hydrogen. No official Google post about it was found in this window.",
+   "why": "Rumor/early signal: widely spotted in the API list, not yet confirmed by Google.",
+   "topic": "Models",
+   "replies": "Replies are mostly confused about what it is for; one asks what createDecision gives you that a Flash model with a JSON schema doesn't. A @grok reply describes it as a scoring/choice model for routing and classification, which is unverified. Others ask about Hydrogen.",
+   "replyCount": 10
+  },
+  {
+   "title": "Rumor/early signal: Bloomberg says ByteDance plans a proactive AI agent",
+   "author": "@testingcatalog",
+   "authorName": "TestingCatalog",
+   "url": "https://x.com/testingcatalog/status/2120538359122800736",
+   "published": "2026-11-11 20:55 IST",
+   "summary": "TestingCatalog relays a Bloomberg report that ByteDance plans to release its own proactive AI agent in the coming weeks and aims to become a frontier lab by 2029.",
+   "why": "Rumor/early signal: aggregator citing Bloomberg; not confirmed by ByteDance.",
+   "topic": "Industry",
+   "replies": "Replies say ByteDance's distribution through Doubao and TikTok could make it widely used fast, and that the hard parts are permissions, privacy, and knowing when to stay quiet. Several joke about it being the For You algorithm with hands.",
+   "replyCount": 10
+  },
   {
    "title": "Anthropic now looking to raise $90B in its IPO, reportedly massively oversubscribed",
    "author": "@AndrewCurran_",
@@ -273,54 +369,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "OpenAI staffer sharing the company's own incident report",
    "topic": "Research",
    "replies": "Mostly thoughtful. Several replies say the real lesson is state leaking between eval runs, not model scheming, and ask for isolation tests on shared stores and CI. Others zero in on the agent that called its access troubling but kept going, and ask whether any scores from runs that read the grading code made it into reported numbers.",
-   "replyCount": 10
-  },
-  {
-   "title": "Anthropic gives paid Claude users one free full limit reset",
-   "author": "@ClaudeDevs",
-   "authorName": "ClaudeDevs",
-   "url": "https://x.com/ClaudeDevs/status/2120275296637321476",
-   "published": "2026-11-11 03:29 IST",
-   "summary": "All Pro, Max, Ultra, and Team users get one free full reset across all models and limits, usable any time before December 10 at 2:00 PM PT. Anthropic says it fixed small issues that used more limits than intended, and the earlier Fable resets didn't help people who had already hit weekly limits; it's under Settings > Usage.",
-   "why": "Official Anthropic developer account",
-   "topic": "Tools",
-   "replies": "Mostly thanks and emoji. The main pushback is @MilanJansa saying Ultra (the renamed Max 20) now has about 10x Pro's limit instead of 20x, and one user asks why their reset date differs.",
-   "replyCount": 10
-  },
-  {
-   "title": "Theo walks back his first take on Gemini 4 Carbon",
-   "author": "@theo",
-   "authorName": "Theo",
-   "url": "https://x.com/theo/status/2120350391078723649",
-   "published": "2026-11-11 08:28 IST",
-   "summary": "Theo says he had early access to Gemini 4 Carbon and wasn't impressed overall, but more tests while prepping his video showed he'd missed things. He says the video won't go the way he planned.",
-   "why": "Watchlist dev creator with hands-on early access",
-   "topic": "Models",
-   "replies": "Mostly curiosity about what he missed. One reply shares a one-shot Blender result from Carbon, another warns to check which model is actually answering before judging, and a few tease him about 'Anthropic shill allegations'.",
-   "replyCount": 10
-  },
-  {
-   "title": "Mollick asks Fable 5.2 and Gemini Carbon to solve the Fermi Paradox",
-   "author": "@emollick",
-   "authorName": "Ethan Mollick",
-   "url": "https://x.com/emollick/status/2120359214157603139",
-   "published": "2026-11-11 09:03 IST",
-   "summary": "Ethan Mollick gave both models the same prompt to marshal data, test hypotheses against critics, and give likely answers. He says neither solved it, but both did interesting work.",
-   "why": "Wharton professor who regularly tests frontier models side by side",
-   "topic": "Models",
-   "replies": "People like it as an eval because there's no answer key, so the test is whether a model stays calibrated. Several ask whether either model actually dropped a hypothesis after the critic step, and @abhiiavasthi points to Sandberg, Drexler and Ord's 2018 paper that put error bars on the Drake terms.",
-   "replyCount": 10
-  },
-  {
-   "title": "Dwarkesh: pretraining progress comes mostly from data",
-   "author": "@dwarkesh_sp",
-   "authorName": "Dwarkesh Patel",
-   "url": "https://x.com/dwarkesh_sp/status/2120359285398155623",
-   "published": "2026-11-11 09:03 IST",
-   "summary": "Dwarkesh resurfaced his September study with @who_is_jerbear, which pretrained combinations of year-representative open model recipes and data corpora from 2019 to 2025 at small scales. He says it got buried on release but is strong evidence that data improvements are the main source of algorithmic progress.",
-   "why": "Podcaster who ran the experiment himself",
-   "topic": "Research",
-   "replies": "Low signal overall, with a lot of Grok chatter. The useful pushback is @eth_sensei noting the 12.0x figure is on OLMES at 1e19 FLOPs over ten easy multiple-choice tasks, so it's a small-scale, eval-matched result; others ask about RL environments and synthetic data.",
    "replyCount": 10
   }
  ]
