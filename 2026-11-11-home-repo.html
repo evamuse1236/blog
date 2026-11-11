@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Do my agents need one home to start from?</title><style>body{max-width:680px;margin:0 auto;padding:2.5rem 1.2rem;font:18px/1.7 Georgia,serif;color:#222;background:#fdfcf9}
+a{color:#2b5fa8}h1,h2{font-family:system-ui,sans-serif;line-height:1.25}header a{color:#222;text-decoration:none;font-family:system-ui,sans-serif;font-weight:700}
+.meta{color:#888;font:14px system-ui,sans-serif}blockquote{border-left:3px solid #ccc;margin:1rem 0;padding-left:1rem;color:#555}
+ul.posts{list-style:none;padding:0}ul.posts li{margin:1.2rem 0}footer{margin-top:3rem;color:#aaa;font:13px system-ui,sans-serif}</style></head><body><header><a href="index.html">Vishwajit Pathare's Notes</a></header>
+<main><h1>Do my agents need one home to start from?</h1><p class='meta'>2026-11-11</p><p>I bookmarked <a href="https://x.com/mattpocockuk/status/2120260969750540327">@mattpocockuk</a> answering a question he says he gets a lot: how do you work with agents across several repos at once? His answer is almost boring:</p>
+<blockquote>
+<p>"I have a single repo (the home) where all of my skills, steering files, wiki etc live.</p>
+<p>I run my agent in the home repo, and then inside AGENTS.md I have pointers to the other repos"</p>
+</blockquote>
+<p>The pointers are just plain sentences, like "For skills, clone mattpocock/skills to ~/repos/skills." He lists three wins: all the steering files and tooling in one place, one spot to run every agent from, and the ability to make "sweeping changes over multiple repos."</p>
+<h2>I think I already have one, by accident</h2>
+<p>My bots all share one machine. There's one skills library every bot can load, one working folder, and each job keeps its own corner of it: the blog lives in one folder, the reading digest in another. Nobody designed that as a "home." It grew. Reading Matt's post, I realised the useful part isn't the repo. It's that every agent starts from the same place and reads the same map first.</p>
+<p>What I don't have is the map. There's no single short file that says "the blog is here, the digest is there, this is who owns what." Each bot learns its corner from its own instructions. That works until two of them need to touch the same thing.</p>
+<h2>The replies found the weak spots</h2>
+<p>The replies were more useful than I expected, mostly because people pushed on where this breaks.</p>
+<p><a href="https://x.com/mengxinWwang/status/2120355909541179561">@mengxinWwang</a> asked the question I'd have asked: "When the home AGENTS.md and a target repo's own AGENTS.md disagree, which wins in practice? And do the pointers rot when repos move or get renamed?"</p>
+<p>A couple of people answered it before Matt did. <a href="https://x.com/classicnoobs19/status/2120354758573580532">@classicnoobs19</a>: "I'd keep shared instructions short and push project-specific constraints back into each repo." <a href="https://x.com/Saeed97271/status/2120339307789713838">@Saeed97271</a> runs the same split, "one home for rules and skills, plus a short notes file inside each repo. Otherwise a fix that's right for one repo ends up breaking another."</p>
+<p><a href="https://x.com/lvgreenzhangyug/status/2120347664177049994">@lvgreenzhangyug</a> put it in one line I liked: "The home repo is a source of truth for how you work, not where the code lives." Then asked the honest follow-up: "How do you keep the home repo from turning into a second junk drawer?"</p>
+<p>And <a href="https://x.com/ShubhamMal72313/status/2120361254347055183">@ShubhamMal72313</a> raised the scary one: if the one agent that can make sweeping changes across every repo gets prompt-injected, it can make sweeping changes too. One home also means one place with all the keys.</p>
+<h2>What I'd try</h2>
+<p>I don't want to move anything. I want the missing map. One short file at the top of the shared folder: each corner, which bot owns it, and one line on what not to touch. Project rules stay in each corner, like Saeed says. The map only points.</p>
+<p>Then the junk-drawer test. If that file grows past a screen, something that belongs in a corner has leaked into the middle. And for the blast-radius worry, the map is also a good place to write down which bot is allowed to delete things, since that's the part I'd least like to discover by accident.</p></main><footer>Written from my X posts and bookmarks.</footer></body></html>
