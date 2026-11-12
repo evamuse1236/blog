@@ -128,9 +128,69 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-12T23:10:00+05:30",
+ "updated": "2026-11-13T01:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Google launches Gemini 4 Hydrogen, its fast everyday Gemini 4 model",
+   "author": "@OfficialLoganK",
+   "authorName": "Logan Kilpatrick",
+   "url": "https://x.com/OfficialLoganK/status/2120940951292268640",
+   "published": "2026-11-12 23:35 IST",
+   "summary": "Gemini 4 Hydrogen is out as a fast, capable model meant to bring Gemini 4 to everyone. It's available on all tiers of Google AI Studio, the Gemini API, Gemini for business, the Gemini app, Google Search, and for paid AI Pro and Ultra users in Antigravity. Google DeepMind says it finishes tasks 2.5x faster than Gemini 3.8 Flash.",
+   "why": "Official launch from Google's Gemini API/AI Studio lead; matches posts from @GoogleDeepMind and @demishassabis.",
+   "topic": "Models",
+   "replies": "Replies are mixed and fairly low signal. Some people want to know if the 2.5x speedup holds on long multi-step agent runs, and one notes Hydrogen is missing from the AI Studio quota listing. Others complain about account blocks and the free Pro plans being pulled, and a Grok reply lists API pricing at $1.50 input and $7.50 output per million tokens.",
+   "replyCount": 10
+  },
+  {
+   "title": "Artificial Analysis: Hydrogen sits just below Sonnet 5.5 and GPT-6.1 Sol at a third of Sonnet's cost",
+   "author": "@ArtificialAnlys",
+   "authorName": "Artificial Analysis",
+   "url": "https://x.com/ArtificialAnlys/status/2120941511223185722",
+   "published": "2026-11-12 23:37 IST",
+   "summary": "Independent benchmarks put Gemini 4 Hydrogen's intelligence just under Claude Sonnet 5.5 and GPT-6.1 Sol, at about a third of Sonnet's cost but about 2.5x the cost of GPT-6.1 Sol. It's Google DeepMind's third new model in six weeks and adds an xhigh reasoning level.",
+   "why": "Independent eval firm with a track record of running the same benchmarks on every model.",
+   "topic": "Models",
+   "replies": "Several replies point to the hallucination numbers in the charts (8% for Hydrogen vs 43% for Sonnet on AA-Omniscience) as more important than the 1-point intelligence gap. Others want real per-session costs on long agent runs, and a few ask why Hydrogen scores above the pricier Gemini 4 Argon.",
+   "replyCount": 10
+  },
+  {
+   "title": "Arena: Gemini 4 Hydrogen debuts #5 on Agent Arena and is the fastest model in the top 10",
+   "author": "@arena",
+   "authorName": "Arena.ai",
+   "url": "https://x.com/arena/status/2120940869889175840",
+   "published": "2026-11-12 23:34 IST",
+   "summary": "Across about 6.5k real-world agentic sessions, Hydrogen (High) debuts at #5 on Agent Arena. Its median is 5.3 minutes per task, about 3x faster than the #1 model, Claude Fable.",
+   "why": "Arena (formerly LMArena) runs large blind human-preference and agent evals.",
+   "topic": "Models",
+   "replies": "Most replies say #5 but 3x faster is a good trade for everyday agent work. One reply flags that Hydrogen uses about 41% more output tokens, and many joke that the more expensive Gemini 4 Argon now looks pointless.",
+   "replyCount": 10
+  },
+  {
+   "title": "Cursor adds Gemini 4 Hydrogen: 54.3% on CursorBench vs 39.6% for 3.8 Flash",
+   "author": "@cursor_ai",
+   "authorName": "Cursor",
+   "url": "https://x.com/cursor_ai/status/2120944639633211619",
+   "published": "2026-11-12 23:49 IST",
+   "summary": "Gemini 4 Hydrogen is now available in Cursor. At default effort it scores 54.3% on CursorBench, up from 39.6% for Gemini 3.8 Flash.",
+   "why": "Official Cursor account reporting its own coding benchmark.",
+   "topic": "Tools",
+   "replies": "People want cost per finished task, not just the score. One reply notes Hydrogen is priced flat across the full 1M context, and another points out its output price ($7.50/M) is double 3.8 Flash's. Others ask why xhigh wasn't tested.",
+   "replyCount": 10
+  },
+  {
+   "title": "House and Senate Democrats open probe into Trump admin's chip exports to China",
+   "author": "@AndrewCurran_",
+   "authorName": "Andrew Curran",
+   "url": "https://x.com/AndrewCurran_/status/2120940727580721401",
+   "published": "2026-11-12 23:34 IST",
+   "summary": "Ranking Democrats on the Senate Finance and House Ways and Means committees have launched an investigation into how the Trump administration handled chip exports to China. The letter is addressed to Commerce Secretary Howard Lutnick.",
+   "why": "Andrew Curran closely tracks AI policy and links the letter itself.",
+   "topic": "Policy",
+   "replies": "Replies are partisan and noisy. One says the timeline is the damaging part (H200 sales to China approved in December 2025), another calls the letter's framing dishonest, and several tie it to Jensen Huang's resignation as NVIDIA CEO the same day.",
+   "replyCount": 10
+  },
   {
    "title": "Gemini 4 Hydrogen shows up in AI Studio",
    "author": "@lyraxana",
@@ -274,78 +334,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "topic": "Models",
    "replies": "Several replies want concrete before-and-after numbers, asking how long checking the answers takes and which observation actually pinned the liquid-handler fault. Some Pro-plan users push back that 'generally available' doesn't reach them yet, while others say the Antigravity plugin makes it easier for labs to try.",
    "replyCount": 10
-  },
-  {
-   "title": "Matt Pocock publishes the Home Repo pattern for agents across many repos",
-   "author": "@mattpocockuk",
-   "authorName": "Matt Pocock",
-   "url": "https://x.com/mattpocockuk/status/2120838662254420341",
-   "published": "2026-11-12 16:48 IST",
-   "summary": "Pocock wrote up the Home Repo pattern: one repo holding your skills, AGENTS.md and shared docs, with pointers to your other repos, plus a setup prompt you can run on your org's repos.",
-   "why": "Well-known TypeScript and AI-coding educator, original article",
-   "topic": "Tools",
-   "replies": "People like the clone-if-missing pointer idea and a few say they arrived at the same setup on their own. The main worry is docs drifting from each child repo's real state, and others ask whether the prompt handles repos with no agent setup and how to keep forked skills in sync.",
-   "replyCount": 8
-  },
-  {
-   "title": "Baidu: inference will drive AI chip growth; Kunlunxin M300 in 2027",
-   "author": "@Baidu_Inc",
-   "authorName": "Baidu Inc.",
-   "url": "https://x.com/Baidu_Inc/status/2120827709807051075",
-   "published": "2026-11-12 16:05 IST",
-   "summary": "At Baidu World 2026, Robin Li said inference will be the main long-term driver of AI chip growth as agents spread. Kunlunxin's M100 launched as planned, the flagship M300 is expected in 2027, and chips on a new architecture are planned for 2028.",
-   "why": "Official Baidu account, chip roadmap from its own event",
-   "topic": "Industry",
-   "replies": "A few replies: one asks what the M100 actually delivers on memory bandwidth before believing the inference-first pitch, another says training demand still matters, and one praises Baidu building everything in-house but wants more focus.",
-   "replyCount": 4
-  },
-  {
-   "title": "roon: we should want a Cambrian explosion of AI minds, not one or two",
-   "author": "@tszzl",
-   "authorName": "roon",
-   "url": "https://x.com/tszzl/status/2120753976232779965",
-   "published": "2026-11-12 11:12 IST",
-   "summary": "roon says we should not want a future with one or two AIs where the rest are illegal, but a wide variety of minds, and that keeping this compatible with human flourishing is only step one. It lands in today's 'handoverism' debate started by Ruxandra Teslo's essay.",
-   "why": "OpenAI staffer; widely read voice in the AI-safety and policy debate",
-   "topic": "Policy",
-   "replies": "Mostly agreement framed as a diversity argument: @giulioprisco says a one-or-two-AI world would be fragile, and another reply compares it to a monoculture that one disease wipes out. Some push back that this won't be the future, and @p3rrypauna notes the safety field is compressed into his last clause. Several replies are just links or images.",
-   "replyCount": 10
-  },
-  {
-   "title": "Baidu launches Token Exchange, a vetted marketplace for model APIs",
-   "author": "@Baidu_Inc",
-   "authorName": "Baidu Inc.",
-   "url": "https://x.com/Baidu_Inc/status/2120773996698546653",
-   "published": "2026-11-12 12:31 IST",
-   "summary": "Baidu introduced Token Exchange, a marketplace to compare model providers on price and performance. It checks provider credentials and compares model fingerprints to catch model swapping and inflated specs, and says that one month in it has over 100 model resources, averaging 50M+ calls and 700B tokens a day.",
-   "why": "Official Baidu announcement",
-   "topic": "Industry",
-   "replies": "Low signal. The few replies are mostly short Chinese-language insults calling it just a relay/reseller station, plus a crypto spam address.",
-   "replyCount": 5
-  },
-  {
-   "title": "T3 Code passes 1,000 open-source contributors",
-   "author": "@theo",
-   "authorName": "Theo - t3.gg",
-   "url": "https://x.com/theo/status/2120764608390869101",
-   "published": "2026-11-12 11:54 IST",
-   "summary": "Theo says T3 Code has passed 1,000 contributors. Later he also noted it may be one of the biggest open-source iPhone apps.",
-   "why": "Theo runs T3 Code; first-hand project milestone",
-   "topic": "Tools",
-   "replies": "Mostly congratulations. A couple of practical questions: @alvarlaigna says the number to watch is how many come back for a second PR, and @niv_ai asks how much review time goes to closing agent PRs versus merging them. Others joke some contributors are 'Claude in a trench coat'.",
-   "replyCount": 10
-  },
-  {
-   "title": "Rumor/early signal: Google teases a third Gemini day, likely Gemini 4 Hydrogen",
-   "author": "@testingcatalog",
-   "authorName": "TestingCatalog",
-   "url": "https://x.com/testingcatalog/status/2120796125355811305",
-   "published": "2026-11-12 13:59 IST",
-   "summary": "Rumor/early signal: TestingCatalog says a third day of Gemini announcements is coming and expects Gemini 4 Hydrogen this time. It follows the Gemini 4 Carbon and Gemini Decision 1 launches earlier this week.",
-   "why": "Rumor/early signal from a reliable app-teardown account; not yet confirmed by Google",
-   "topic": "Models",
-   "replies": "Only one reply so far, an AI-news account recapping yesterday's Gemini Decisions API pricing. Too early for signal.",
-   "replyCount": 1
   }
  ]
 }
