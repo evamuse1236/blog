@@ -128,9 +128,81 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-12T20:10:00+05:30",
+ "updated": "2026-11-12T23:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Gemini 4 Hydrogen shows up in AI Studio",
+   "author": "@lyraxana",
+   "authorName": "lyraxana",
+   "url": "https://x.com/lyraxana/status/2120908020947337704",
+   "published": "2026-11-12 21:24 IST",
+   "summary": "Gemini 4 Hydrogen, the expected Flash-tier Gemini 4 model, has been added to Google AI Studio. Andrew Curran says it is also live in the Gemini app under the codename, and TestingCatalog reports it rolling out in Antigravity; no formal Google announcement yet.",
+   "why": "Watchlist account; corroborated by @AndrewCurran_ and @testingcatalog sightings plus earlier Vertex/billing listings.",
+   "topic": "Models",
+   "replies": "Replies are mostly jokes about Google's periodic-table names and people confirming it is live, including in Antigravity. One thoughtful pushback says the codename tells little and the real story will be pricing and context limits, since Google usually wins with a cheap fast tier.",
+   "replyCount": 10
+  },
+  {
+   "title": "Gemini comes to intelligent eyewear, pre-orders open",
+   "author": "@GeminiApp",
+   "authorName": "Google Gemini",
+   "url": "https://x.com/GeminiApp/status/2120901953505177996",
+   "published": "2026-11-12 21:00 IST",
+   "summary": "Google opened pre-orders for intelligent eyewear collections with Gemini built in: say \"Hey Gemini\" to ask about what you see, translate in real time, or check your calendar. TestingCatalog notes the frames are from Warby Parker ($395) and Gentle Monster, built with Samsung.",
+   "why": "Official Google Gemini account.",
+   "topic": "Tools",
+   "replies": "Replies are curious but skeptical about real-world use: will live translation hold up on a noisy street, does it show subtitles or speak in your ear, and what is battery life with the camera on. Little hard information beyond the post.",
+   "replyCount": 10
+  },
+  {
+   "title": "Salesforce's SOV-Transcribe-1 is the new #1 open-weights speech-to-text model",
+   "author": "@ArtificialAnlys",
+   "authorName": "Artificial Analysis",
+   "url": "https://x.com/ArtificialAnlys/status/2120917242439409788",
+   "published": "2026-11-12 22:00 IST",
+   "summary": "Artificial Analysis says Salesforce's SOV-Transcribe-1 scores 2.3% on its AA-WER index with 4.6B active parameters, ranking #1 among open-weights models and #7 of 44 overall, including proprietary ones.",
+   "why": "Independent benchmark org with its own eval.",
+   "topic": "Models",
+   "replies": "Repliers find 2.3% WER from an open model a big deal for self-hosted voice features, and many are surprised it came from Salesforce. One notes it is 26.6B total parameters, so you still need memory for all of it; most want to see results on accents and noisy audio.",
+   "replyCount": 10
+  },
+  {
+   "title": "Raschka: the tension between training chains of thought and keeping them monitorable",
+   "author": "@rasbt",
+   "authorName": "Sebastian Raschka",
+   "url": "https://x.com/rasbt/status/2120895037064020406",
+   "published": "2026-11-12 20:32 IST",
+   "summary": "Sebastian Raschka writes about the long-running tension in reasoning-model work between optimizing chains of thought and leaving them untouched so we can still check what the model is doing, such as whether it cheats.",
+   "why": "Well-known LLM researcher and author; watchlist.",
+   "topic": "Research",
+   "replies": "Most replies side with leaving the reasoning trace out of the reward, arguing a trained trace learns to look good to the grader rather than stay honest. One adds that OpenAI reported controllability rose during RL even without training on the CoT, so they'd track monitorability per checkpoint; another asks how big the performance cost of not optimizing actually is.",
+   "replyCount": 10
+  },
+  {
+   "title": "Raschka: Nemotron's open data and recipes would be hard to replace",
+   "author": "@rasbt",
+   "authorName": "Sebastian Raschka",
+   "url": "https://x.com/rasbt/status/2120899453510942743",
+   "published": "2026-11-12 20:50 IST",
+   "summary": "Reacting to NVIDIA's CEO change, Raschka says he hopes Nemotron keeps going: open-weight LLMs have alternatives, but Nemotron's open data and full training recipes would be much harder to replace.",
+   "why": "Respected open-model researcher; adds a concrete angle to the Jensen news.",
+   "topic": "Industry",
+   "replies": "Replies broadly agree: weights get replaced fast, but published data mixes and SFT/RL recipes are what let small teams reproduce and learn from a release, and most labs still don't ship them. Little pushback.",
+   "replyCount": 10
+  },
+  {
+   "title": "Rumor/early signal: Anthropic is building a \"Brush\" tool for the Claude composer",
+   "author": "@testingcatalog",
+   "authorName": "TestingCatalog News",
+   "url": "https://x.com/testingcatalog/status/2120913030787813475",
+   "published": "2026-11-12 21:44 IST",
+   "summary": "TestingCatalog spotted a \"Brush\" feature marked Beta in the Claude prompt composer, still in development, and wonders if it revives the earlier \"Sketch\" feature. Rumor/early signal.",
+   "why": "Rumor/early signal; TestingCatalog does its own app teardowns, but Anthropic hasn't confirmed.",
+   "topic": "Tools",
+   "replies": "Repliers like the idea of circling the exact thing to change instead of describing it, especially for UI work. Two point out it appears to be Anthropic-internal only for now, and others ask whether it does anything yet or is just a menu item.",
+   "replyCount": 10
+  },
   {
    "title": "NVIDIA announces CEO transition: Jensen Huang resigns",
    "author": "@nvidianewsroom",
@@ -274,54 +346,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "topic": "Models",
    "replies": "Only one reply so far, an AI-news account recapping yesterday's Gemini Decisions API pricing. Too early for signal.",
    "replyCount": 1
-  },
-  {
-   "title": "Open-weight models are under 0.5% of T3 Code traffic",
-   "author": "@theo",
-   "authorName": "Theo",
-   "url": "https://x.com/theo/status/2120732020036993066",
-   "published": "2026-11-12 09:44 IST",
-   "summary": "Theo says open-weight models make up less than 0.5% of T3 Code traffic, and notes his post on this drew almost no backlash compared with three months ago.",
-   "why": "T3 Code founder sharing usage data from his own product.",
-   "topic": "Tools",
-   "replies": "Replies split: some agree local models still lag for serious software work and hosted subscriptions are too cheap to beat, while others push back that small open models are getting genuinely useful. A few note open models are a fallback when frontier models block certain security work; the rest is jabs at Theo.",
-   "replyCount": 10
-  },
-  {
-   "title": "Gemini 4 Carbon broke a robot arm gripper in AA-Robotics",
-   "author": "@ArtificialAnlys",
-   "authorName": "Artificial Analysis",
-   "url": "https://x.com/ArtificialAnlys/status/2120729548719309223",
-   "published": "2026-11-12 09:35 IST",
-   "summary": "Artificial Analysis says Gemini 4 Carbon spent 7 hours 33 minutes in its AA-Robotics v0.1 lab and bashed the arm hard enough to break a gripper; they gave it a retry on that task.",
-   "why": "Independent eval lab reporting from its own robotics benchmark.",
-   "topic": "Research",
-   "replies": "Repliers mostly want the methodology spelled out: whether the broken run still scored, whether the 7h33m includes the retry, and whether wall time and collision events will be reported alongside scores. Several point out that a model persistent enough to break hardware is a different failure mode from one that just fails.",
-   "replyCount": 10
-  },
-  {
-   "title": "Mollick: intellectual craft is meeting its powerloom",
-   "author": "@emollick",
-   "authorName": "Ethan Mollick",
-   "url": "https://x.com/emollick/status/2120706817584234858",
-   "published": "2026-11-12 08:04 IST",
-   "summary": "Mollick argues many intellectual tasks that were pure craft, and so could never be industrialized, may soon follow the logic of industrialization, and that this won't be an easy change.",
-   "why": "Wharton professor who studies AI and work; consistent, careful commentator.",
-   "topic": "Industry",
-   "replies": "Most replies extend the analogy: the craft moves rather than vanishes, into designing, monitoring, and fixing the machine, as happened with loan officers and credit scorecards. Pushback centres on the transition, with people warning tacit skills erode before the automation matures and that taste still has to be taught.",
-   "replyCount": 10
-  },
-  {
-   "title": "ChatGPT Finances comes to the desktop app",
-   "author": "@ChatGPT",
-   "authorName": "ChatGPT",
-   "url": "https://x.com/ChatGPT/status/2120604108893896965",
-   "published": "2026-11-12 01:16 IST",
-   "summary": "OpenAI's ChatGPT account says Finances is now in the desktop app: see spending, understand investments, and build custom financial tools. It is available to Free, Go, Plus and Pro users (US, per TestingCatalog).",
-   "why": "Official OpenAI product account",
-   "topic": "Tools",
-   "replies": "Replies single out the 'build custom financial tools' part as the real change. The main pushback is trust: people doubt users will hand over live bank data unless it beats their bank app and stays private, and some ask for non-US timelines. Rest is jokes and #keep4o spam.",
-   "replyCount": 10
   }
  ]
 }
