@@ -128,9 +128,45 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-12T08:10:00+05:30",
- "windowHours": 7,
+ "updated": "2026-11-12T11:10:00+05:30",
+ "windowHours": 3,
  "posts": [
+  {
+   "title": "Open-weight models are under 0.5% of T3 Code traffic",
+   "author": "@theo",
+   "authorName": "Theo",
+   "url": "https://x.com/theo/status/2120732020036993066",
+   "published": "2026-11-12 09:44 IST",
+   "summary": "Theo says open-weight models make up less than 0.5% of T3 Code traffic, and notes his post on this drew almost no backlash compared with three months ago.",
+   "why": "T3 Code founder sharing usage data from his own product.",
+   "topic": "Tools",
+   "replies": "Replies split: some agree local models still lag for serious software work and hosted subscriptions are too cheap to beat, while others push back that small open models are getting genuinely useful. A few note open models are a fallback when frontier models block certain security work; the rest is jabs at Theo.",
+   "replyCount": 10
+  },
+  {
+   "title": "Gemini 4 Carbon broke a robot arm gripper in AA-Robotics",
+   "author": "@ArtificialAnlys",
+   "authorName": "Artificial Analysis",
+   "url": "https://x.com/ArtificialAnlys/status/2120729548719309223",
+   "published": "2026-11-12 09:35 IST",
+   "summary": "Artificial Analysis says Gemini 4 Carbon spent 7 hours 33 minutes in its AA-Robotics v0.1 lab and bashed the arm hard enough to break a gripper; they gave it a retry on that task.",
+   "why": "Independent eval lab reporting from its own robotics benchmark.",
+   "topic": "Research",
+   "replies": "Repliers mostly want the methodology spelled out: whether the broken run still scored, whether the 7h33m includes the retry, and whether wall time and collision events will be reported alongside scores. Several point out that a model persistent enough to break hardware is a different failure mode from one that just fails.",
+   "replyCount": 10
+  },
+  {
+   "title": "Mollick: intellectual craft is meeting its powerloom",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2120706817584234858",
+   "published": "2026-11-12 08:04 IST",
+   "summary": "Mollick argues many intellectual tasks that were pure craft, and so could never be industrialized, may soon follow the logic of industrialization, and that this won't be an easy change.",
+   "why": "Wharton professor who studies AI and work; consistent, careful commentator.",
+   "topic": "Industry",
+   "replies": "Most replies extend the analogy: the craft moves rather than vanishes, into designing, monitoring, and fixing the machine, as happened with loan officers and credit scorecards. Pushback centres on the transition, with people warning tacit skills erode before the automation matures and that taste still has to be taught.",
+   "replyCount": 10
+  },
   {
    "title": "ChatGPT Finances comes to the desktop app",
    "author": "@ChatGPT",
@@ -273,150 +309,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Rumor/early signal: app-tracking account; no Google announcement seen",
    "topic": "Tools",
    "replies": "Replies see classic Google product overlap and some want Chrome, Antigravity and Gemini unified. One notes that since v2.31 (Nov 9) the browser agent asks approval before downloading files; another complains of long server-side delays on Antigravity Carbon.",
-   "replyCount": 10
-  },
-  {
-   "title": "Google launches Gemini Decision 1, a fast multimodal decision model, in the Gemini API",
-   "author": "@OfficialLoganK",
-   "authorName": "Logan Kilpatrick",
-   "url": "https://x.com/OfficialLoganK/status/2120581433639198885",
-   "published": "2026-11-11 23:46 IST",
-   "summary": "Logan Kilpatrick announced Gemini Decision 1, a new 'decision' model in the Gemini API at $0.10 per 1M input tokens, taking image, audio, video and PDF natively with a 256K context and up to 1K questions per call. Google's Omar Sanseviero adds it answers in 150–250 ms end to end via a new Gemini Decisions API. This confirms the gemini-decision-1 API sighting from the last run.",
-   "why": "Official Google AI Studio product lead announcement",
-   "topic": "Models",
-   "replies": "Mixed: some ask what a 'decision model' even is or call it a letdown next to hopes for a bigger Gemini launch, and one complains about no Batch API support. A @grok reply recaps Google's latency figures (150–250 ms, flat from 1 to 100 questions), and @testingcatalog teases 'One more Gemini tomorrow?'.",
-   "replyCount": 10
-  },
-  {
-   "title": "Artificial Analysis: Gemini Decision 1 scores 66 on its Decision Index, leads knowledge and reasoning",
-   "author": "@ArtificialAnlys",
-   "authorName": "Artificial Analysis",
-   "url": "https://x.com/ArtificialAnlys/status/2120582049522127205",
-   "published": "2026-11-11 23:48 IST",
-   "summary": "Artificial Analysis says Google's first decision model scores 66 on its Decision Index v2.1 and leads its knowledge and reasoning benchmarks.",
-   "why": "Independent eval shop with a standing benchmark suite",
-   "topic": "Models",
-   "replies": "Repliers question calibration: one notes Brier scores mix calibration with plain accuracy, another calls an index named and scored by the same group a closed loop, and one says it 'still trails by 7'. A reply says it is pricier than competing decision models but native audio and video may justify it.",
-   "replyCount": 10
-  },
-  {
-   "title": "AWS ships AWS Emulator: free local AWS for agents and CI, built entirely by AI agents",
-   "author": "@awsdevelopers",
-   "authorName": "AWS Developers",
-   "url": "https://x.com/awsdevelopers/status/2120597422929760676",
-   "published": "2026-11-12 00:49 IST",
-   "summary": "AWS made AWS Emulator generally available: build and test AWS apps on your own machine or in CI with no deployments and no AWS account. AWS's Marc Brooker separately says it was developed entirely by autonomous agents with no human in the loop, gated by fidelity tests and reviewer agents.",
-   "why": "Official AWS developer account; agent-built detail from AWS engineer Marc Brooker",
-   "topic": "Tools",
-   "replies": "Only AWS's own thread replies so far: no extra service fee, runs on Linux and in Docker on macOS/Windows, each instance gets its own port, keys and state, and coding agents can set it up via an emulator skill in Agent Toolkit for AWS.",
-   "replyCount": 3
-  },
-  {
-   "title": "SpaceX Super Intelligence (xAI) launches Grok Bot 1.0 with shareable, collaborative bots",
-   "author": "@SpaceXSI",
-   "authorName": "SpaceX Super Intelligence",
-   "url": "https://x.com/SpaceXSI/status/2120584928983441826",
-   "published": "2026-11-12 00:00 IST",
-   "summary": "xAI's account announced Grok Bot 1.0: bots can now be shared and are more collaborative and capable. @testingcatalog adds that bots can now join Slack and take part in video calls.",
-   "why": "Official xAI account",
-   "topic": "Tools",
-   "replies": "Mostly light: jokes and congrats, plus a couple of users confused by the 1.0 label since their app already shows higher version numbers. Several replies are self-promotion; low signal overall.",
-   "replyCount": 10
-  },
-  {
-   "title": "Perplexity red-teams its SPACE agent sandbox with 12 models; finds CTF framing misleads",
-   "author": "@perplexity_ai",
-   "authorName": "Perplexity",
-   "url": "https://x.com/perplexity_ai/status/2120582674549203004",
-   "published": "2026-11-11 23:51 IST",
-   "summary": "Perplexity published research on red-teaming SPACE, its VM sandbox for computer agents: 12 models were asked to escape the VM to grab a host credential and to bypass the network policy to reach a blocked URL. It reports the standard capture-the-flag setup steered agents away from the real boundary being tested.",
-   "why": "Primary research from the company running the sandbox",
-   "topic": "Research",
-   "replies": "Repliers praise publishing failure cases and ask whether a boundary-focused prompt ever produced a real escape, and whether CTF vs normal-work framing was compared head to head. Practical advice: keep real credentials off the VM and use a network allowlist.",
-   "replyCount": 10
-  },
-  {
-   "title": "Theo: Gemini 4 Carbon is 'unacceptably slow' in real use, 22m vs 9.5m for Opus 5.5",
-   "author": "@theo",
-   "authorName": "Theo - t3.gg",
-   "url": "https://x.com/theo/status/2120597586298261543",
-   "published": "2026-11-12 00:50 IST",
-   "summary": "Theo says Gemini 4 Carbon is unacceptably slow in real-world use, timing a task at 22m21s on Carbon low vs 9m33s on Opus 5.5 high. In a companion video post he calls it slow and hallucination-prone but says Google made real progress with some useful hidden capabilities.",
-   "why": "Hands-on developer testing from a watchlist practitioner",
-   "topic": "Models",
-   "replies": "Broad agreement that latency now dominates the workflow, including users on the Antigravity CLI. One notes the AA index excludes tool-call time, so more tool calls means more wall time; a few say to give Google time to catch up.",
-   "replyCount": 10
-  },
-  {
-   "title": "Andrew Curran: United Airlines bans personal AI assistants from its systems and bookings",
-   "author": "@AndrewCurran_",
-   "authorName": "Andrew Curran",
-   "url": "https://x.com/AndrewCurran_/status/2120597929664909483",
-   "published": "2026-11-12 00:51 IST",
-   "summary": "Andrew Curran reports United Airlines has banned all personal AI assistants from its systems and from booking flights, linking a source.",
-   "why": "Reliable AI-industry tracker linking a source; not yet confirmed by United on X",
-   "topic": "Policy",
-   "replies": "One reply says United's policy page states agent bookings made before Nov 11 won't be canceled and check-in still needs a human; others joke that the classic agent demo is now off-limits, and one says they'll move company travel to another carrier.",
-   "replyCount": 10
-  },
-  {
-   "title": "ElevenLabs adds Memory and Routines to ElevenAgents",
-   "author": "@ElevenLabs",
-   "authorName": "ElevenLabs",
-   "url": "https://x.com/ElevenLabs/status/2120572500148936910",
-   "published": "2026-11-11 23:10 IST",
-   "summary": "ElevenLabs is bringing Memory to ElevenAgents so voice agents remember details mentioned in passing, plus Routines that handle work before and after calls, like pre-screening an applicant and calling back within minutes.",
-   "why": "Official company announcement from its Summit",
-   "topic": "Tools",
-   "replies": "Repliers like it but the main question is visibility and deletion: how users see or correct what the agent remembered, since one misheard word in voice can become a permanent fact. Others call memory the biggest gap in enterprise agents.",
-   "replyCount": 6
-  },
-  {
-   "title": "Lauren Tan (poteto) gives her AI Engineer keynote on working agentically",
-   "author": "@poteto",
-   "authorName": "lauren",
-   "url": "https://x.com/poteto/status/2120577296277119129",
-   "published": "2026-11-11 23:30 IST",
-   "summary": "Lauren Tan livestreamed her AI Engineer keynote; @swyx posted that it was standing room only.",
-   "why": "Watchlist practitioner, conference keynote",
-   "topic": "Tools",
-   "replies": "Mostly congrats; one reply shares notes, one calls it the go-to piece for developers working agentically and asks her to share the 'poteto pyramid' slide, and another credits pstack with improving their dev workflow.",
-   "replyCount": 10
-  },
-  {
-   "title": "DeepMind launches AlphaGenome 2, predicting DNA variant effects by cell type",
-   "author": "@demishassabis",
-   "authorName": "Demis Hassabis",
-   "url": "https://x.com/demishassabis/status/2120565316619284734",
-   "published": "2026-11-11 22:42 IST",
-   "summary": "Hassabis announced AlphaGenome 2, a DNA sequence model that predicts how DNA variants act in specific cell types, which matters for understanding complex diseases. It is available for academic research through an API.",
-   "why": "DeepMind CEO announcing his lab's own model; matches the official @GoogleDeepMind thread.",
-   "topic": "Research",
-   "replies": "Replies are broadly positive about cell-type-level predictions and the academic API access. A few ask practical questions: whether clinical use is next, how his virtual cell project is going, and one user says v1 annotation queues ran a week and hopes the API holds up.",
-   "replyCount": 10
-  },
-  {
-   "title": "Arena: Claude Fable 5.2 takes #1 in Agent Arena by a wide margin",
-   "author": "@arena",
-   "authorName": "Arena.ai",
-   "url": "https://x.com/arena/status/2120568144687460434",
-   "published": "2026-11-11 22:53 IST",
-   "summary": "Arena says Claude Fable 5.2 (Max) is #1 in its Agent Arena with a +30.4% net improvement, about 1.6x the #2 model Opus-5.5, across 4.7k real agentic sessions. It is also #1 in Code, Chat and Work, and a separate post puts it at 1836 pts on Code Arena: WebDev.",
-   "why": "Independent community eval leaderboard (formerly LMArena).",
-   "topic": "Models",
-   "replies": "Replies focus on cost: two point out the leaderboard table lists Fable 5.2 at about $7.3 per task versus $1.5 for Gemini 4 Carbon (+17.0%), and ask whether the 5x price is earned on long agent loops. Another asks how a 'confirmed success' is verified; the rest is cheering and low signal.",
-   "replyCount": 10
-  },
-  {
-   "title": "Runway opens Praxis-1 robot world action model under Apache 2.0",
-   "author": "@runwayml",
-   "authorName": "Runway",
-   "url": "https://x.com/runwayml/status/2120533081182577116",
-   "published": "2026-11-11 20:34 IST",
-   "summary": "Runway made Praxis-1, its world action model that turns video pretraining into control for real robots, available to everyone. It ships with open weights under Apache 2.0, so you can run and fine-tune it on your own hardware.",
-   "why": "Official company announcement with an open-weights release.",
-   "topic": "Models",
-   "replies": "Most replies say the Apache 2.0 license matters more than any benchmark because robotics teams can actually try it. Some replies describe it as a 27B-parameter (MoE) model, which the post itself does not state, and one asks what the main eval for a world action model even is.",
    "replyCount": 10
   }
  ]
