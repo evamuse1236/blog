@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Do my bots and I even use the same words?</title><style>body{max-width:680px;margin:0 auto;padding:2.5rem 1.2rem;font:18px/1.7 Georgia,serif;color:#222;background:#fdfcf9}
+a{color:#2b5fa8}h1,h2{font-family:system-ui,sans-serif;line-height:1.25}header a{color:#222;text-decoration:none;font-family:system-ui,sans-serif;font-weight:700}
+.meta{color:#888;font:14px system-ui,sans-serif}blockquote{border-left:3px solid #ccc;margin:1rem 0;padding-left:1rem;color:#555}
+ul.posts{list-style:none;padding:0}ul.posts li{margin:1.2rem 0}footer{margin-top:3rem;color:#aaa;font:13px system-ui,sans-serif}</style></head><body><header><a href="index.html">Vishwajit Pathare's Notes</a></header>
+<main><h1>Do my bots and I even use the same words?</h1><p class='meta'>2026-11-12</p><p>I bookmarked <a href="https://x.com/mattpocockuk/status/2120503390333768170">@mattpocockuk</a> saying the thing blowing people's minds in his course isn't the agent stuff. It's an old idea:</p>
+<blockquote>
+<p>"It's the DDD stuff - domain-driven design.</p>
+<p>Building a ubiquitous language, using it with the agent, and refactoring the code to use it.</p>
+<p>Just bonkers how good it is"</p>
+</blockquote>
+<p>"Ubiquitous language" just means everyone, people and code, uses the same word for the same thing. In a reply he added that he likes "having a canonical GLOSSARY.md file too." So: one file of agreed words, and the code renamed to match it.</p>
+<h2>The replies said it more plainly</h2>
+<p><a href="https://x.com/alijlari/status/2120709224095490443">@alijlari</a>: "Half of the bad output is you and the model using different words for the same thing."</p>
+<p><a href="https://x.com/agentwalletlab/status/2120696413608882483">@agentwalletlab</a>: "once the domain terms are pinned the agent stops guessing and the diff stays small."</p>
+<p><a href="https://x.com/FeildenStuart/status/2120628410284191970">@FeildenStuart</a> took it outside code: "define what terms like 'customer' or 'done' mean, add examples, and update them as the work changes." And <a href="https://x.com/kalapowered/status/2120630857446617284">@kalapowered</a> had the realistic version: "the first meeting about what 'customer' means is going to need snacks."</p>
+<p>Not everyone bought it. <a href="https://x.com/agentalpha_xyz/status/2120667917897322894">@agentalpha_xyz</a> called DDD "just plumbing." <a href="https://x.com/pwmcintyre/status/2120649631591972973">@pwmcintyre</a> had the take I agree with more: agents keep rewarding "the previous generation of good practise", like tests, reproducible setups, and docs.</p>
+<h2>My bots probably don't share words with me</h2>
+<p>I don't have code to rename, but I do have bots, and I give them instructions in loose words. "Digest." "Quiet if nothing changed." "Worth posting." "Vetted." Each one makes sense to me. I've never checked that every bot reads them the same way.</p>
+<p>"Quiet if nothing changed" is the one I'd bet drifts. Changed since when? Since the last run, or since I last read it? Does a small new item count as a change? Every bot that has that line is making its own call, and I only notice when one of them is too chatty or too silent.</p>
+<p>Two questions from the replies are the ones I'd need to answer first. <a href="https://x.com/techsensei008/status/2120641462765584719">@techsensei008</a> asked: "Do you write the domain terms yourself first, or let the agent pull them out of the existing code and then correct it?" And <a href="https://x.com/lvgreenzhangyug/status/2120719708395606225">@lvgreenzhangyug</a> asked whether you rename everything "in one big pass, or rename as they go?"</p>
+<h2>What I'd try</h2>
+<p>Let the bots pull the words out first. Ask each one to list the five words in its own instructions that it's least sure about, and what it thinks each means. Where two bots disagree, that's the glossary entry. Then a short shared glossary, ten words at most, each with one example, like Stuart says.</p>
+<p>And rename as I go, not in one pass. Next time I touch a bot's instructions, I swap the loose word for the glossary word. If after a month the bots argue with me less about what "done" means, that's the proof.</p></main><footer>Written from my X posts and bookmarks.</footer></body></html>
