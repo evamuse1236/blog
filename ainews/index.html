@@ -128,9 +128,153 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-13T01:10:00+05:30",
+ "updated": "2026-11-13T08:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Anthropic launches Claude Meetings: Claude joins your video call and builds docs while you talk",
+   "author": "@claudeai",
+   "authorName": "Claude",
+   "url": "https://x.com/claudeai/status/2120973994191094179",
+   "published": "2026-11-13 01:46 IST",
+   "summary": "You can now add Claude to a team video call, and it builds docs, whiteboards, and other artifacts with you during the conversation. It's starting to roll out in beta on Team and Enterprise plans.",
+   "why": "Official Anthropic product account; launch also confirmed by @testingcatalog.",
+   "topic": "Tools",
+   "replies": "Replies are mostly hype and low signal. One thoughtful reply likes that Claude is a visible participant rather than a hidden notetaker and says the real test is six people talking over each other; another asks whether this replaces Zoom or Teams or is just an add-on.",
+   "replyCount": 10
+  },
+  {
+   "title": "OpenAI announces Daybreak Defense Factory and Daybreak Red Team cyber products",
+   "author": "@gdb",
+   "authorName": "Greg Brockman",
+   "url": "https://x.com/gdb/status/2121004237413142656",
+   "published": "2026-11-13 03:46 IST",
+   "summary": "OpenAI's president announced two new cybersecurity products, Daybreak Defense Factory and Daybreak Red Team, which he says make it much easier to put frontier cyber capabilities to work defending companies. Codex lead @thsottiaux separately described them as tools for automated patching and automated red teaming.",
+   "why": "OpenAI co-founder and president announcing his company's product; corroborated by @thsottiaux.",
+   "topic": "Tools",
+   "replies": "Security-minded replies ask who gets Red Team access and how OpenAI checks customers only point it at their own systems, and who gets the call when an agent finds something at 3am. One notes finding bugs was never the bottleneck, triaging and merging fixes was. Others grumble that access is limited and ask where GPT-6.2 is.",
+   "replyCount": 10
+  },
+  {
+   "title": "Thinking Machines releases Inkling 2 Small open weights under Apache 2.0",
+   "author": "@thinkymachines",
+   "authorName": "Thinking Machines",
+   "url": "https://x.com/thinkymachines/status/2120982625582195011",
+   "published": "2026-11-13 02:20 IST",
+   "summary": "Inkling 2 Small's weights are now on Hugging Face under an Apache 2.0 license. @arena says it is now the #1 US open model in both Code Arena WebDev and Agent Arena, and #2 among all open models in Agent Arena.",
+   "why": "Official lab account; rankings from @arena.",
+   "topic": "Models",
+   "replies": "Replies are welcoming, calling it a big gift to builders and the only frontier open-weight model from the US. A Chinese-language reply points out the model card says the main checkpoint needs at least 500GB of aggregate GPU memory, and a Grok reply says it trails DeepSeek-V4.1-Flash on coding benchmarks. One account already claims an 'uncensored' fine-tune.",
+   "replyCount": 10
+  },
+  {
+   "title": "OpenAI joins Anthropic in backing bipartisan chip export controls",
+   "author": "@AndrewCurran_",
+   "authorName": "Andrew Curran",
+   "url": "https://x.com/AndrewCurran_/status/2121003182931542309",
+   "published": "2026-11-13 03:42 IST",
+   "summary": "Andrew Curran reports that OpenAI is joining Anthropic in backing the push for bipartisan chip export control legislation, aiming to get it passed before the end of the year.",
+   "why": "Track-record AI policy reporter; links the underlying report.",
+   "topic": "Policy",
+   "replies": "Replies split between people calling it a monopoly move and people who find Altman and Amodei agreeing on anything the bigger headline. A Chinese-language reply doubts it passes before year end, and one critic frames it as a step toward restricting open weights.",
+   "replyCount": 10
+  },
+  {
+   "title": "TSMC confirms employee data leak via an outside cloud provider",
+   "author": "@AndrewCurran_",
+   "authorName": "Andrew Curran",
+   "url": "https://x.com/AndrewCurran_/status/2121053887398601075",
+   "published": "2026-11-13 07:03 IST",
+   "summary": "Andrew Curran flagged that TSMC has been hacked. Other posts citing TSMC's Form 6-K say personal data of some current and former employees appeared on an external site, linked to an outside cloud provider, and TSMC says it found no sign its own systems were compromised.",
+   "why": "Reporter post corroborated by multiple accounts citing TSMC's SEC Form 6-K filing; details beyond employee data are unconfirmed.",
+   "topic": "Industry",
+   "replies": "Replies are noisy, with a lot of China-war talk. The useful ones stress that what leaked was employee HR data from a cloud vendor, not fab or process systems, and one pushes back that the post makes it sound worse for the company than the evidence shows.",
+   "replyCount": 10
+  },
+  {
+   "title": "Simon Willison: Gemini 4 pricing is confusing, and Hydrogen's pelicans are worse",
+   "author": "@simonw",
+   "authorName": "Simon Willison",
+   "url": "https://x.com/simonw/status/2121039423441981444",
+   "published": "2026-11-13 06:06 IST",
+   "summary": "Simon Willison says Gemini 4 Argon and Carbon cost the same per token, and Hydrogen is only a 25% discount on that, though Carbon and Argon double in price on December 1. He also found Hydrogen's pelican-on-a-bicycle drawings notably worse.",
+   "why": "Independent developer known for careful hands-on model testing.",
+   "topic": "Models",
+   "replies": "Most replies say the December 1 price doubling is the real headline and teams should budget for it now. One points out that per-token price hides things: on his table Hydrogen at high effort costs about 4 cents versus 17 to 20 cents for Argon and Carbon because it uses far fewer output tokens. Others warn the discount vanishes if it needs more retries.",
+   "replyCount": 10
+  },
+  {
+   "title": "Wharton's Generative AI Lab releases Primer: talk through a lesson, get a playable simulation",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2121001056637431873",
+   "published": "2026-11-13 03:33 IST",
+   "summary": "Ethan Mollick's Generative AI Lab released Primer, an agent-driven system where a teacher talks through a lesson and gets back a playable simulation for students, grounded in pedagogy. The paper, prompts, and code are open.",
+   "why": "Researcher announcing his own lab's open release.",
+   "topic": "Research",
+   "replies": "Replies are positive, especially about it being model-agnostic so a school could run it on a local model. One suggests an automated check that each simulation behaves as the lesson intends, since teachers can't review the generated code, and a teacher suggests starting with tiny single-variable simulations.",
+   "replyCount": 10
+  },
+  {
+   "title": "Microsoft's MAI-Transcribe-2 is generally available at $0.10 per hour of audio",
+   "author": "@MicrosoftAI",
+   "authorName": "Microsoft AI",
+   "url": "https://x.com/MicrosoftAI/status/2121005429744447647",
+   "published": "2026-11-13 03:51 IST",
+   "summary": "Microsoft AI says MAI-Transcribe-2 is now generally available in Microsoft Foundry for production use, priced at $0.10 per hour of audio. It also teased new models and demos at Microsoft Ignite starting November 17.",
+   "why": "Official Microsoft AI account; the 'best in the world' claim is theirs.",
+   "topic": "Models",
+   "replies": "Few replies. People ask about word-level timestamps, speaker labels, and how it handles crosstalk and heavy accents, and one reports a 'Provider returned 400' error on OpenRouter.",
+   "replyCount": 6
+  },
+  {
+   "title": "ChatGPT dots get faster replies, less jargon, and custom instructions",
+   "author": "@ChatGPT",
+   "authorName": "ChatGPT",
+   "url": "https://x.com/ChatGPT/status/2120970988796170275",
+   "published": "2026-11-13 01:34 IST",
+   "summary": "OpenAI says dots now reply faster, use less jargon, follow through better, and can follow custom instructions given in the thread, such as how to behave or which actions need your go-ahead.",
+   "why": "Official ChatGPT account; also reported by @testingcatalog.",
+   "topic": "Tools",
+   "replies": "Replies are mostly impatient: people ask where GPT-6.2 is and complain about Plus limits. One wants dots to get their own voice, and another says their first instruction would be to show a draft before sending anything.",
+   "replyCount": 10
+  },
+  {
+   "title": "ByteDance's Seedance 2.5 Flash: near-2.5 quality, about twice as fast",
+   "author": "@lyraxana",
+   "authorName": "lyra",
+   "url": "https://x.com/lyraxana/status/2121060479913394506",
+   "published": "2026-11-13 07:30 IST",
+   "summary": "lyra reports Seedance 2.5 Flash is close to Seedance 2.5 in quality, roughly twice as fast and about a third cheaper, with videos up to 30 seconds in 480p and 720p. API access opens Sunday, November 15, and @runwayml says it's already available on Runway.",
+   "why": "Watchlist account; availability confirmed by @runwayml.",
+   "topic": "Models",
+   "replies": "Only a handful of replies. One plans to rough out shots with Flash and rerun the keepers on full 2.5 and wonders whether 30 seconds holds character consistency; another wishes it were open weights.",
+   "replyCount": 7
+  },
+  {
+   "title": "roon: all major Chinese models are being trained on Blackwell-class chips",
+   "author": "@tszzl",
+   "authorName": "roon",
+   "url": "https://x.com/tszzl/status/2120993573231538502",
+   "published": "2026-11-13 03:04 IST",
+   "summary": "Reacting to a quoted post, OpenAI's roon says all major Chinese models are being trained on Blackwell-class chips and calls it 'really bad.' Later he also said Chinese labs have earned enormous global goodwill with their open-source models.",
+   "why": "Prominent OpenAI researcher; the underlying claim comes from the post he quoted and isn't independently verified here.",
+   "topic": "Policy",
+   "replies": "Low signal: the thread turned into a political shouting match about the US and China. The one relevant point raised is that China manufactures the hardware, so blocking access was always going to be hard.",
+   "replyCount": 10
+  },
+  {
+   "title": "Rumor/early signal: Anthropic is sending Claude Duet invites",
+   "author": "@testingcatalog",
+   "authorName": "TestingCatalog News",
+   "url": "https://x.com/testingcatalog/status/2121018480757797299",
+   "published": "2026-11-13 04:43 IST",
+   "summary": "Rumor/early signal: TestingCatalog says Anthropic started sending invites for Claude Duet, with 3 invites per user and a free month of Claude Pro for eligible users. It's still US only.",
+   "why": "Rumor/early signal: reliable teardown account, not yet confirmed by Anthropic.",
+   "topic": "Tools",
+   "replies": "Replies mostly compare it to Gmail's old invite playbook and call it a growth loop rather than a launch. People ask what Duet is actually good at and beg for invites.",
+   "replyCount": 10
+  },
   {
    "title": "Google launches Gemini 4 Hydrogen, its fast everyday Gemini 4 model",
    "author": "@OfficialLoganK",
@@ -273,66 +417,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Primary company release; confirmed by Reuters, Bloomberg, WSJ and CNBC.",
    "topic": "Industry",
    "replies": "Low signal: mostly shock, jokes and \"hire him back\" reactions. A few ask whether NVIDIA can manage without him, and one hopes this cools GPU, RAM and SSD prices.",
-   "replyCount": 10
-  },
-  {
-   "title": "Nathan Lambert: Jensen's exit is bad news for US open models",
-   "author": "@natolambert",
-   "authorName": "Nathan Lambert",
-   "url": "https://x.com/natolambert/status/2120880836488913049",
-   "published": "2026-11-12 19:36 IST",
-   "summary": "Lambert quoted his own post from yesterday saying Jensen no longer being CEO \"would be very very bad for the open model cause in the US\", adding \"Rip. Now I have to explain why. Lots of work ahead.\"",
-   "why": "Ai2 researcher who tracks the US open-model ecosystem closely.",
-   "topic": "Industry",
-   "replies": "@MisterFigs argues Jensen was the only big US AI leader whose incentives lined up with open models, unlike Sam, Dario or Zuck. Others wonder if he'll back open models in a new venture; the rest is low signal.",
-   "replyCount": 6
-  },
-  {
-   "title": "ElevenLabs opens a Marketplace for agents and apps",
-   "author": "@ElevenLabs",
-   "authorName": "ElevenLabs",
-   "url": "https://x.com/ElevenLabs/status/2120886297820819938",
-   "published": "2026-11-12 19:57 IST",
-   "summary": "ElevenLabs launched a Marketplace that collects agents and applications built on its platform for healthcare, financial services, insurance, education, retail and other industries.",
-   "why": "Official company launch announcement.",
-   "topic": "Tools",
-   "replies": "Only one reply so far, calling it a growing ecosystem for practical AI agents.",
-   "replyCount": 1
-  },
-  {
-   "title": "Runway adds 3D model generation and 3D references",
-   "author": "@runwayml",
-   "authorName": "Runway",
-   "url": "https://x.com/runwayml/status/2120883301833400668",
-   "published": "2026-11-12 19:45 IST",
-   "summary": "Runway now generates 3D models from text or images using Tripo H3.1, or takes your own upload. You can pick any angle as a reference for your next image or video and export the model to other 3D tools.",
-   "why": "Official product announcement.",
-   "topic": "Tools",
-   "replies": "Early replies point out the 3D part is Tripo H3.1 under the hood and say angle-locked references beat rerolling the same character shot. People are most interested in export to other 3D tools and whether consistency holds across angles.",
-   "replyCount": 5
-  },
-  {
-   "title": "Anthropic files for its IPO",
-   "author": "@AnthropicAI",
-   "authorName": "Anthropic",
-   "url": "https://x.com/AnthropicAI/status/2120841731302154708",
-   "published": "2026-11-12 17:00 IST",
-   "summary": "Anthropic posted its initial public offering page (ipo.anthropic.com) and says it has filed a registration statement with a prospectus with the SEC, with Goldman Sachs and Morgan Stanley named for prospectus copies.",
-   "why": "Official Anthropic account, links the SEC filing",
-   "topic": "Industry",
-   "replies": "Brand-new post, so replies are mostly congratulations, 'it's happening' reactions and ticker jokes. One retail investor says they can't see the appeal without millions to put in, and one user complains Fable 5.2 burns tokens. Low signal so far.",
-   "replyCount": 10
-  },
-  {
-   "title": "Pushmeet Kohli: Gemini 4 Carbon is now generally available for science",
-   "author": "@pushmeet",
-   "authorName": "Pushmeet Kohli",
-   "url": "https://x.com/pushmeet/status/2120814064863461440",
-   "published": "2026-11-12 15:10 IST",
-   "summary": "DeepMind's science lead says Gemini 4 Carbon is generally available and, with an updated Antigravity Science plugin, has helped his team trace anomalous assay results to a faulty liquid handler and reagent carryover, mine large datasets for AlphaFold 3 work, and cut cheminformatics tasks from weeks to hours.",
-   "why": "VP of science at Google DeepMind, first-hand team usage",
-   "topic": "Models",
-   "replies": "Several replies want concrete before-and-after numbers, asking how long checking the answers takes and which observation actually pinned the liquid-handler fault. Some Pro-plan users push back that 'generally available' doesn't reach them yet, while others say the Antigravity plugin makes it easier for labs to try.",
    "replyCount": 10
   }
  ]
