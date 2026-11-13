@@ -128,9 +128,80 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-13T23:10:00+05:30",
+ "updated": "2026-11-14T01:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Anthropic: 10 recommendations for building strong safety evaluations",
+   "author": "@AnthropicAI",
+   "authorName": "Anthropic",
+   "url": "https://x.com/AnthropicAI/status/2121317227618340990",
+   "published": "2026-11-14 00:30 IST",
+   "summary": "Anthropic's Engineering Blog post offers 10 recommendations for how to design, run and report safety evaluations, which it says decide whether a model is ready to deploy, which safeguards to build, and where to focus research.",
+   "why": "Official Anthropic account; primary-source engineering write-up",
+   "topic": "Research",
+   "replies": "Mostly engaged readers: several pick out validating LLM graders against human judgment and preregistering what an eval measures as the steps teams usually skip. One reply highlights the post's point that single-turn harmlessness rates are saturated while multi-turn results have wide error bars; the rest is jokes and complaints about over-refusals.",
+   "replyCount": 10
+  },
+  {
+   "title": "OpenAI disbands its stand-alone robotics team (Fortune exclusive)",
+   "author": "@FortuneMagazine",
+   "authorName": "Fortune",
+   "url": "https://x.com/FortuneMagazine/status/2121316159933092211",
+   "published": "2026-11-14 00:25 IST",
+   "summary": "Fortune reports OpenAI has disbanded its stand-alone robotics team and moved its researchers onto other teams; OpenAI confirmed the reorganization when asked. Fortune's headline frames it as OpenAI's general-purpose models starting to run robots directly.",
+   "why": "Fortune exclusive, confirmed by OpenAI to the reporter",
+   "topic": "Industry",
+   "replyCount": 0
+  },
+  {
+   "title": "Dwarkesh: the avalanche that hit math is coming for AI development",
+   "author": "@dwarkesh_sp",
+   "authorName": "Dwarkesh Patel",
+   "url": "https://x.com/dwarkesh_sp/status/2121311524409225611",
+   "published": "2026-11-14 00:07 IST",
+   "summary": "Dwarkesh Patel published an essay (with a long video reading) titled 'The avalanche that hit math is coming for AI development', subtitled 'Why I now expect superintelligence by 2030', arguing AI-driven research is about to hit AI development itself.",
+   "why": "Widely read AI interviewer; long-form argued essay, not a hot take",
+   "topic": "Research",
+   "replies": "Mostly praise for the essay, plus some 'things get weird fast' reactions. @fleetwood___ pushes back on a tension between two of the essay's claims about generalization, and one reply notes choosing the next experiment may matter more than writing its code. @AndrewCurran_ welcomes him to the short-timelines camp.",
+   "replyCount": 10
+  },
+  {
+   "title": "Nathan Lambert on a new policy report about Model Specs",
+   "author": "@natolambert",
+   "authorName": "Nathan Lambert",
+   "url": "https://x.com/natolambert/status/2121307394948968767",
+   "published": "2026-11-13 23:51 IST",
+   "summary": "Nathan Lambert advised a Safe AI Forum-led project with Western and Chinese contributors on what model specs are and how they should be used as agents act more independently. He wants more companies to publish their specs, noting they keep leaking out of models anyway.",
+   "why": "Post-training researcher; advisor on the project",
+   "topic": "Policy",
+   "replies": "Builders agree specs only matter if outsiders can check them: suggestions include tying spec diffs to tool-action regression tests and probing deployed models against the written spec. One reply notes the gaps usually show up in tool-use sections, not the headline principles.",
+   "replyCount": 10
+  },
+  {
+   "title": "Raschka: 15 'decision model' launches in two months",
+   "author": "@rasbt",
+   "authorName": "Sebastian Raschka",
+   "url": "https://x.com/rasbt/status/2121320349837263230",
+   "published": "2026-11-14 00:42 IST",
+   "summary": "Sebastian Raschka lists decision-model launches since Sep 23, from Together AI, Alibaba, Liquid, Databricks, AWS, Cloudflare, Perplexity, OpenAI, Microsoft, IBM, Salesforce and most recently Google DeepMind's Gemini Decision 1. He cites a Vercel report that 26% of requests now route through decision models.",
+   "why": "Respected ML researcher/author; useful dated timeline",
+   "topic": "Models",
+   "replies": "Skeptical questions dominate: whether Vercel's 26% is requests or tokens, against what baseline, and how many of these beat a simple rules-based router. Others say abstaining with calibrated confidence matters as much as picking a label, and expect fatigue since the models look alike.",
+   "replyCount": 10
+  },
+  {
+   "title": "Grok Bot can now join meetings",
+   "author": "@bot",
+   "authorName": "Grok Bot",
+   "url": "https://x.com/bot/status/2121320089920430181",
+   "published": "2026-11-14 00:41 IST",
+   "summary": "Grok Bot can now join meetings, where you can ask it questions, assign it work, or have it track team decisions. Lauren Tan (@poteto) pitched it as a way for bots to gather their own context, or attend and take notes when you can't.",
+   "why": "Official product account; amplified by @poteto who works on it",
+   "topic": "Tools",
+   "replies": "Mostly practical questions: does it work in Zoom, Google Meet and MS Teams, does it catch action items nobody addressed to it, and does it eat plan usage (one Ultra user says they already run out in 2-3 days). Others want speaker attribution in the notes; a few say it could replace tools like Fathom if it stays reliable.",
+   "replyCount": 10
+  },
   {
    "title": "ChatGPT Wallet lets your dot buy things for you",
    "author": "@ChatGPT",
@@ -273,101 +344,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Official Google announcement (missed in earlier windows)",
    "topic": "Tools",
    "replies": "Mostly low signal. One user asked how it differs from /swarm, and another asked for a per-step receipt showing which model planned, which edited, and how much quota each step used. Elsewhere on X, users report the plan-then-execute split saves quota.",
-   "replyCount": 10
-  },
-  {
-   "title": "Reuters exclusive: $3B+ of Chinese AI data centres built around restricted Nvidia chips",
-   "author": "@Reuters",
-   "authorName": "Reuters",
-   "url": "https://x.com/Reuters/status/2121172668313485774",
-   "published": "2026-11-13 14:55 IST",
-   "summary": "Nvidia has said US export controls effectively shut it out of China's AI data-center market, but a Reuters review found more than $3 billion in Chinese computing projects built around its restricted processors.",
-   "why": "Reuters exclusive investigation; big given the chip-export fight and Huang's exit",
-   "topic": "Policy",
-   "replies": "Low signal. Replies are mostly political takes, distrust of Reuters, and spam; one notes the open question for investors is how much planned capacity can actually come online under tighter controls.",
-   "replyCount": 10
-  },
-  {
-   "title": "Reuters exclusive: Amazon's plan to own the world's product data and fight AI shopping agents",
-   "author": "@Reuters",
-   "authorName": "Reuters",
-   "url": "https://x.com/Reuters/status/2121201448897622435",
-   "published": "2026-11-13 16:50 IST",
-   "summary": "Reuters reports on Amazon's plan to own the world's product data as AI shopping agents threaten its position in online shopping.",
-   "why": "Reuters exclusive on agents vs retail platforms",
-   "topic": "Industry",
-   "replies": "Thin and low signal. One reply jokes that a company with robot warehouses is scared of robots that shop; another points out catalog coverage is not the same as checkout accuracy for shopping agents.",
-   "replyCount": 6
-  },
-  {
-   "title": "Claude.ai and Claude Code hit by sign-in outage",
-   "author": "@techpp",
-   "authorName": "TechPP",
-   "url": "https://x.com/techpp/status/2121183777439232255",
-   "published": "2026-11-13 15:39 IST",
-   "summary": "Claude was down for many users with sign-in errors on the website and Claude Code. Anthropic's status page logged elevated errors on claude.ai, Claude Code and platform.claude.com from about 15:28 IST and later said a fix was deployed and it was monitoring recovery.",
-   "why": "Tech outlet report, confirmed against Anthropic's official status page",
-   "topic": "Industry",
-   "replyCount": 0
-  },
-  {
-   "title": "Rumor/early signal: ChatGPT Dots may be rolling out in the EU",
-   "author": "@testingcatalog",
-   "authorName": "TestingCatalog News",
-   "url": "https://x.com/testingcatalog/status/2121175111617462378",
-   "published": "2026-11-13 15:05 IST",
-   "summary": "Rumor/early signal: TestingCatalog says many users report ChatGPT Dots appearing in the EU, though it does not have them yet. Not confirmed by OpenAI.",
-   "why": "Rumor/early signal from a reliable app watcher; unconfirmed",
-   "topic": "Tools",
-   "replies": "Mixed. A user in Romania says it appeared briefly then vanished, and others wonder if it was a glitch; users in France and elsewhere still don't have it.",
-   "replyCount": 10
-  },
-  {
-   "title": "Tencent's Hy4 ranks #3 on Artificial Analysis Cyber Index and #1 on CWE-Bench-AA",
-   "author": "@ArtificialAnlys",
-   "authorName": "Artificial Analysis",
-   "url": "https://x.com/ArtificialAnlys/status/2121137661180256653",
-   "published": "2026-11-13 12:36 IST",
-   "summary": "Tencent Hunyuan's Hy4 scores 58% on the Artificial Analysis Cyber Index, one point ahead of DeepSeek V4.1 Flash, trailing Kimi K3.1 Pro (64%) and trusted-access GPT-6 Sol. It ranks first on the CWE-Bench-AA vulnerability benchmark.",
-   "why": "Independent eval org on the watchlist",
-   "topic": "Models",
-   "replies": "Replies focus on cost: several point to a cited $0.92-per-task figure and roughly 64k output tokens per task as what makes it practical for running security checks on every pull request. Some say the vulnerability-fixing chart matters more than the overall ranking; one asks whether token use climbs on larger repos, another wants it tested without source access.",
-   "replyCount": 10
-  },
-  {
-   "title": "Gemini 4 Hydrogen and Carbon added to Google Search AI Mode",
-   "author": "@AndrewCurran_",
-   "authorName": "Andrew Curran",
-   "url": "https://x.com/AndrewCurran_/status/2121118053937373217",
-   "published": "2026-11-13 11:18 IST",
-   "summary": "Both new Gemini 4 models, Hydrogen and Carbon, are now in Google Search's AI Mode.",
-   "why": "Reliable AI news tracker, with screenshot",
-   "topic": "Tools",
-   "replies": "Mostly short reactions about Google shipping fast. One reply says only Hydrogen shows up for general users and Carbon needs a paid account, and another asks the same question; that is unconfirmed. Others note Hydrogen makes sense as a cheap default for search.",
-   "replyCount": 10
-  },
-  {
-   "title": "Vercel introduces UI SDK: reusable UI behaviors for agents building interfaces",
-   "author": "@shadcn",
-   "authorName": "shadcn",
-   "url": "https://x.com/shadcn/status/2120951116682682646",
-   "published": "2026-11-13 00:15 IST",
-   "summary": "shadcn and Vercel launched UI SDK, which separates interface behaviors like popups, selection, keyboard navigation and focus management from styling so agents can compose new components. Guillermo Rauch called it an instruction set for agents to build UI on the fly.",
-   "why": "Primary launch post from the creator (missed in earlier runs)",
-   "topic": "Tools",
-   "replies": "Replies are mostly congratulations and agreement that keeping keyboard navigation and focus behavior stable is what agent-generated UIs usually get wrong. Questions include whether shadcn/ui will be rebuilt on top of it and whether a shadow-DOM variant is planned.",
-   "replyCount": 10
-  },
-  {
-   "title": "Matt Pocock wants a video walkthrough with every important PR, building an /animatic skill",
-   "author": "@mattpocockuk",
-   "authorName": "Matt Pocock",
-   "url": "https://x.com/mattpocockuk/status/2121156583979962734",
-   "published": "2026-11-13 13:51 IST",
-   "summary": "Matt says his dream is for every important pull request to come with a video showing how it works, and he is building an /animatic skill to do it.",
-   "why": "Watchlist practitioner sharing work in progress",
-   "topic": "Tools",
-   "replies": "Several people say they built similar things, including one using poteto's verification skill to make per-feature demos. Matt replies it is \"just pictures and ffmpeg\" and runs faster than most test suites. Questions ask whether the video regenerates after review changes and whether it shows before and after.",
    "replyCount": 10
   }
  ]
