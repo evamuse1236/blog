@@ -128,9 +128,105 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-14T20:05:00+05:30",
+ "updated": "2026-11-14T23:05:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "poteto: quick fixes considered harmful for agent-written code",
+   "author": "@poteto",
+   "authorName": "Lauren Tan",
+   "url": "https://x.com/poteto/status/2121646643124809848",
+   "published": "2026-11-14 22:19 IST",
+   "summary": "Asking agents for the smallest or quickest possible change can make them write worse code: a harmless-looking bandaid gets copied by the next agent until the pattern has spread.",
+   "why": "Practitioner take from a watchlist engineer who writes a lot about agent workflows.",
+   "topic": "Tools",
+   "replies": "Replies mostly agree and share fixes: make the agent find the root cause and lay out options before coding, ask for 'highest confidence' instead of 'quick', and back the rule with a CI grep for suppressors like bare excepts and type: ignore. A few note agents keep stacking bandaids instead of questioning the design.",
+   "replyCount": 10
+  },
+  {
+   "title": "Dwarkesh: the 'broadly deployed intelligence explosion'",
+   "author": "@dwarkesh_sp",
+   "authorName": "Dwarkesh Patel",
+   "url": "https://x.com/dwarkesh_sp/status/2121654724227408319",
+   "published": "2026-11-14 22:51 IST",
+   "summary": "Patel argues even superintelligence will need real-world experience to match top experts, but AIs will learn from all their parallel deployed experience and so should outclass expert humans within months of deployment. He calls this the broadly deployed intelligence explosion (with a ~2 min video).",
+   "why": "Follow-up from the author of yesterday's RSI/superintelligence-by-2030 essay; opinion, not news.",
+   "topic": "Research",
+   "replies": "Only a handful of early replies: some say AI will need its own sensors because written knowledge covers little of reality, one notes labs currently buy that real-world detail from paid human experts, another says agents still need humans to pick which problem matters. Low signal so far.",
+   "replyCount": 4
+  },
+  {
+   "title": "AI Futures Project pulls superhuman AI researcher forecast to late 2027",
+   "author": "@theinformation",
+   "authorName": "The Information",
+   "url": "https://x.com/theinformation/status/2121641828512301545",
+   "published": "2026-11-14 22:00 IST",
+   "summary": "The AI Futures Project now expects superhuman AI researchers by late 2027, earlier than its original forecast of 2029 or later. Its head, ex-OpenAI researcher Daniel Kokotajlo, said: \"We're at the beginning of the takeoff period.\"",
+   "why": "Reputable tech outlet reporting a named forecaster's updated timeline.",
+   "topic": "Research",
+   "replies": "Replies ask what 'superhuman' actually means and which new evidence moved the forecast; others note forecasts only ever move earlier and raise who checks AI research work and who shares the upside. Some spam and non-English filler.",
+   "replyCount": 8
+  },
+  {
+   "title": "Ethan Mollick: Fable 5.2 research agents are relentless, and that's a lot of traffic",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2121641417483169934",
+   "published": "2026-11-14 21:58 IST",
+   "summary": "Mollick had Fable 5.2 reconstruct W.H. Auden's 1941 poetry class; it found an obscure book on the Internet Archive and read it a line at a time via repeated full-text searches. He warns agent-swarm research traffic will be large.",
+   "why": "Wharton professor known for hands-on frontier model testing.",
+   "topic": "Tools",
+   "replies": "Replies focus on load: one request per line where one download would do, so archives and small sites' docs will feel it first. People ask whether research agents should identify themselves and respect rate limits like good crawlers, or get blocked; one suggests a rate-limited 'read this item' path.",
+   "replyCount": 10
+  },
+  {
+   "title": "Harrison Chase: design agent goals around what you can give feedback on",
+   "author": "@hwchase17",
+   "authorName": "Harrison Chase",
+   "url": "https://x.com/hwchase17/status/2121635683999883577",
+   "published": "2026-11-14 21:35 IST",
+   "summary": "The LangChain CEO wrote with @mgarimella on lessons for agents that work on goals; in a follow-up he says the key insight is to design goals around what users can easily give feedback on, since feedback is the hardest thing to extract.",
+   "why": "LangChain founder sharing production lessons; blog link in post.",
+   "topic": "Tools",
+   "replies": "Replies mostly agree the real question is whether you can check 'done' cheaply; otherwise the agent picks its own definition or games the feedback. Several share that agents claimed 'finished' when files didn't exist, so they verify with scripts. One reader found the piece not concrete enough.",
+   "replyCount": 10
+  },
+  {
+   "title": "Rumor/early signal: Grok Bot gets 7% more usage on paid plans, up to 15% on scheduled runs",
+   "author": "@testingcatalog",
+   "authorName": "TestingCatalog News",
+   "url": "https://x.com/testingcatalog/status/2121636249903710411",
+   "published": "2026-11-14 21:37 IST",
+   "summary": "TestingCatalog reports, citing the Grok Bot team, that Grok Bot now gives 7% more usage on paid plans and up to 15% more on scheduled runs after optimisations.",
+   "why": "Rumor/early signal: aggregator citing the product team; not confirmed from an official account here.",
+   "topic": "Tools",
+   "replies": "Replies are mostly users saying the scheduled-run bump is the one they'll feel, plus questions on whether it applies to existing routines and whether it comes from faster or cheaper runs. Some spam.",
+   "replyCount": 10
+  },
+  {
+   "title": "Helen Toner: 'we're screwed' if AI safety rests on trusting one person",
+   "author": "@verge",
+   "authorName": "The Verge",
+   "url": "https://x.com/verge/status/2121619798102778172",
+   "published": "2026-11-14 20:32 IST",
+   "summary": "The Verge interviews CSET's Helen Toner, who says we're screwed if the AI safety plan depends on any one person being trusted to get it right.",
+   "why": "Reputable outlet interviewing a well-known AI policy researcher and ex-OpenAI board member.",
+   "topic": "Policy",
+   "replies": "Replies broadly agree a one-person plan is a single point of failure and call for separation of duties, audit logs and a second key holder. Several recall Toner was on the OpenAI board that fired Sam Altman in 2023. Some jokes and off-topic replies.",
+   "replyCount": 10
+  },
+  {
+   "title": "Sebastian Raschka on Inkling 2 Small's architecture",
+   "author": "@rasbt",
+   "authorName": "Sebastian Raschka",
+   "url": "https://x.com/rasbt/status/2121613812990095543",
+   "published": "2026-11-14 20:08 IST",
+   "summary": "Raschka finished his look at Inkling 2 Small and finds it more interesting than expected: it uses attention residuals like Kimi K3 but without the linear-attention hybrid. He flags it for his year-end architecture trends analysis.",
+   "why": "Well-known LLM architecture researcher and author; diagram in post.",
+   "topic": "Research",
+   "replies": "Replies discuss why the linear-attention hybrid was dropped; one says skipping it helps exact symbol recall past 32k for code, another that the split makes it easier to tell which part did the work in Kimi K3. Several joke about a 594B model being called 'Small'.",
+   "replyCount": 10
+  },
   {
    "title": "SpaceX guts the team behind Grok Imagine",
    "author": "@theinformation",
@@ -273,42 +369,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Official company post-incident update.",
    "topic": "Tools",
    "replies": "Replies summarise the write-up: the chain reportedly began with an access key Cursor had issued to Fireworks and ended with tampered Claude Code extension builds (2.1.312/2.1.313) in Cursor's marketplace. Most replies praise the transparency; some ask what exactly changed so teams can audit their own setups.",
-   "replyCount": 10
-  },
-  {
-   "title": "Artificial Analysis Coding Agent Index v2.1: Claude Fable 5.2 and Opus 5.5 tie at 58",
-   "author": "@ArtificialAnlys",
-   "authorName": "Artificial Analysis",
-   "url": "https://x.com/ArtificialAnlys/status/2121393821955334328",
-   "published": "2026-11-14 05:34 IST",
-   "summary": "Artificial Analysis upgraded its Coding Agent Index (FrontierCode 1.1 to 2.0, plus Terminal-Bench), which scores models inside agent harnesses. Claude Fable 5.2 and Claude Opus 5.5 share the lead at 58.",
-   "why": "Independent eval org, primary announcement.",
-   "topic": "Models",
-   "replies": "The dominant reaction is about cost: replies cite a ~30x spread, e.g. Codex with GPT-6.1 Sol at 52 for about $1.51 a task vs Claude Code with Fable 5.2 at 56 for about $44, and ask for a score-per-dollar view. Others welcome grading on whether a maintainer would merge the change and ask who makes that call.",
-   "replyCount": 10
-  },
-  {
-   "title": "Thinking Machines details native 4-bit training for Inkling 2 Small",
-   "author": "@thinkymachines",
-   "authorName": "Thinking Machines",
-   "url": "https://x.com/thinkymachines/status/2121353292878110868",
-   "published": "2026-11-14 02:53 IST",
-   "summary": "A new Connectionism post explains how Inkling 2 Small was trained with a native 4-bit forward pass from the first pretraining step through the final RL rollout. NVIDIA separately said the 594B model was pretrained in 68 hours with NVFP4 on GB300 NVL72 racks.",
-   "why": "Lab's own technical write-up, corroborated by @NVIDIAAI.",
-   "topic": "Research",
-   "replies": "Technical replies frame it as QAT-like (4-bit forward, higher-precision backward) and say throughput vs train loss is the key metric; others ask whether the 4-bit model runs on consumer RTX cards and which signals showed the run was still learning. One user complains the free version takes actions beyond what was asked.",
-   "replyCount": 10
-  },
-  {
-   "title": "Andrew Curran: Anthropic saw a sudden jump in robotics capability with Fable 5.2",
-   "author": "@AndrewCurran_",
-   "authorName": "Andrew Curran",
-   "url": "https://x.com/AndrewCurran_/status/2121337915087433772",
-   "published": "2026-11-14 01:52 IST",
-   "summary": "Curran notes Anthropic reported a sudden, unusual jump in robotics capabilities with Fable 5.2, and argues general frontier models are increasingly surpassing specialized training.",
-   "why": "Tracked AI reporter citing Anthropic's own reporting; the generalisation claim is his take.",
-   "topic": "Research",
-   "replies": "Replies split between 'generalist models will eat robot-only startups' and skeptics who say the labs are obviously training on robotics RL environments anyway. Some point out the model still bungles simple chart labels. Mostly speculation, low new info.",
    "replyCount": 10
   }
  ]
