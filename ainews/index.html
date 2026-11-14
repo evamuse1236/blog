@@ -128,9 +128,129 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-14T01:10:00+05:30",
- "windowHours": 3,
+ "updated": "2026-11-14T08:15:00+05:30",
+ "windowHours": 7,
  "posts": [
+  {
+   "title": "Cursor publishes full update on its extension-marketplace security incident",
+   "author": "@cursor_ai",
+   "authorName": "Cursor",
+   "url": "https://x.com/cursor_ai/status/2121411147714970092",
+   "published": "2026-11-14 06:43 IST",
+   "summary": "Cursor posted a detailed overview of what happened in its recent security incident and the remediation steps it took.",
+   "why": "Official company post-incident update.",
+   "topic": "Tools",
+   "replies": "Replies summarise the write-up: the chain reportedly began with an access key Cursor had issued to Fireworks and ended with tampered Claude Code extension builds (2.1.312/2.1.313) in Cursor's marketplace. Most replies praise the transparency; some ask what exactly changed so teams can audit their own setups.",
+   "replyCount": 10
+  },
+  {
+   "title": "Artificial Analysis Coding Agent Index v2.1: Claude Fable 5.2 and Opus 5.5 tie at 58",
+   "author": "@ArtificialAnlys",
+   "authorName": "Artificial Analysis",
+   "url": "https://x.com/ArtificialAnlys/status/2121393821955334328",
+   "published": "2026-11-14 05:34 IST",
+   "summary": "Artificial Analysis upgraded its Coding Agent Index (FrontierCode 1.1 to 2.0, plus Terminal-Bench), which scores models inside agent harnesses. Claude Fable 5.2 and Claude Opus 5.5 share the lead at 58.",
+   "why": "Independent eval org, primary announcement.",
+   "topic": "Models",
+   "replies": "The dominant reaction is about cost: replies cite a ~30x spread, e.g. Codex with GPT-6.1 Sol at 52 for about $1.51 a task vs Claude Code with Fable 5.2 at 56 for about $44, and ask for a score-per-dollar view. Others welcome grading on whether a maintainer would merge the change and ask who makes that call.",
+   "replyCount": 10
+  },
+  {
+   "title": "Thinking Machines details native 4-bit training for Inkling 2 Small",
+   "author": "@thinkymachines",
+   "authorName": "Thinking Machines",
+   "url": "https://x.com/thinkymachines/status/2121353292878110868",
+   "published": "2026-11-14 02:53 IST",
+   "summary": "A new Connectionism post explains how Inkling 2 Small was trained with a native 4-bit forward pass from the first pretraining step through the final RL rollout. NVIDIA separately said the 594B model was pretrained in 68 hours with NVFP4 on GB300 NVL72 racks.",
+   "why": "Lab's own technical write-up, corroborated by @NVIDIAAI.",
+   "topic": "Research",
+   "replies": "Technical replies frame it as QAT-like (4-bit forward, higher-precision backward) and say throughput vs train loss is the key metric; others ask whether the 4-bit model runs on consumer RTX cards and which signals showed the run was still learning. One user complains the free version takes actions beyond what was asked.",
+   "replyCount": 10
+  },
+  {
+   "title": "Andrew Curran: Anthropic saw a sudden jump in robotics capability with Fable 5.2",
+   "author": "@AndrewCurran_",
+   "authorName": "Andrew Curran",
+   "url": "https://x.com/AndrewCurran_/status/2121337915087433772",
+   "published": "2026-11-14 01:52 IST",
+   "summary": "Curran notes Anthropic reported a sudden, unusual jump in robotics capabilities with Fable 5.2, and argues general frontier models are increasingly surpassing specialized training.",
+   "why": "Tracked AI reporter citing Anthropic's own reporting; the generalisation claim is his take.",
+   "topic": "Research",
+   "replies": "Replies split between 'generalist models will eat robot-only startups' and skeptics who say the labs are obviously training on robotics RL environments anyway. Some point out the model still bungles simple chart labels. Mostly speculation, low new info.",
+   "replyCount": 10
+  },
+  {
+   "title": "Ethan Mollick: the big outages this week were not caused by AI",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2121426404349030584",
+   "published": "2026-11-14 07:44 IST",
+   "summary": "Mollick pushes back on people assuming the recent big outages were caused by AI, offensively or by AI errors. He says they were not, while noting the next one might be.",
+   "why": "Wharton professor, careful AI commentator.",
+   "topic": "Industry",
+   "replies": "Replies largely agree and add context: one says the FAA ground stop traced to its FTI telecom network mid-migration, and another quotes Microsoft saying its outage was 'not related to cyber or AI / agents'. A few warn that blaming AI by reflex will make people ignore a real AI-caused failure.",
+   "replyCount": 10
+  },
+  {
+   "title": "T3 Connect adds opt-in approval before clients can reach your machine",
+   "author": "@jullerino",
+   "authorName": "Julius (T3)",
+   "url": "https://x.com/jullerino/status/2121392207215407404",
+   "published": "2026-11-14 05:28 IST",
+   "summary": "The next T3 Code update lets you opt in to enhanced security for T3 Connect, requiring approval before a client connects, so a compromised account still can't reach your machine without your OK.",
+   "why": "Builder at T3 announcing his own product feature.",
+   "topic": "Tools",
+   "replies": "Replies are positive ('2FA for your own machine'). Julius confirms the preference is set per machine; others ask where the approval prompt happens, since it should be on a device an attacker can't approve from.",
+   "replyCount": 10
+  },
+  {
+   "title": "poteto: don't ask if you should do the thing, do it and come back with a demo",
+   "author": "@poteto",
+   "authorName": "Lauren Tan",
+   "url": "https://x.com/poteto/status/2121417335055831368",
+   "published": "2026-11-14 07:08 IST",
+   "summary": "Lauren Tan says a lesson from this year helped her follow through on ideas: instead of asking whether to do something, do it and come back with a demo or something tangible.",
+   "why": "Watchlist practitioner take.",
+   "topic": "Industry",
+   "replies": "Replies mostly agree: a demo gets a yes faster than a meeting, and iterating costs less than the indecision. One reply adds the caveat that the risk calculation still has to make sense.",
+   "replyCount": 10
+  },
+  {
+   "title": "Reuters: Nvidia approaches Arm CEO Rene Haas as employees seek Huang's return",
+   "author": "@Reuters",
+   "authorName": "Reuters",
+   "url": "https://x.com/Reuters/status/2121377682415845805",
+   "published": "2026-11-14 04:30 IST",
+   "summary": "Reuters, citing media reports, says Nvidia has approached Arm CEO Haas as it looks for a new chief, while employees push for Jensen Huang to return.",
+   "why": "Reuters wire; it relays media reports, not a confirmed hire. Included because the Nvidia leadership story is genuinely big.",
+   "topic": "Industry",
+   "replies": "Replies are mostly opinions and petitions for Huang's return. One useful correction: Nvidia's own release only says the board is starting a search with no timetable, so any candidate is a rumor until a filing names one.",
+   "replyCount": 10
+  },
+  {
+   "title": "Rumor/early signal: Claude Code desktop gets custom themes you describe in a prompt",
+   "author": "@testingcatalog",
+   "authorName": "TestingCatalog News",
+   "url": "https://x.com/testingcatalog/status/2121399402141233334",
+   "published": "2026-11-14 05:56 IST",
+   "summary": "TestingCatalog reports Claude Code on desktop now supports custom themes: you tell Claude how the app should look and it builds the theme.",
+   "why": "Rumor/early signal: aggregator report, not an Anthropic post.",
+   "topic": "Tools",
+   "replies": "Replies add practical details (unverified): backdrops reportedly need Claude Code 2.1.319+, draw in the desktop/mobile app rather than the terminal, and a theme-examples plugin offers presets. Most reactions are about vibes rather than productivity.",
+   "replyCount": 10
+  },
+  {
+   "title": "Rumor/early signal: US Gemini users can connect Google Wallet and link bank accounts via Plaid",
+   "author": "@testingcatalog",
+   "authorName": "TestingCatalog News",
+   "url": "https://x.com/testingcatalog/status/2121352761379860628",
+   "published": "2026-11-14 02:51 IST",
+   "summary": "TestingCatalog says all US Gemini users can now connect Google Wallet to Gemini, with an option to link cards and banks via Plaid for deeper spending insights. It follows ChatGPT's similar wallet move.",
+   "why": "Rumor/early signal: aggregator report, not a Google post.",
+   "topic": "Tools",
+   "replies": "Replies focus on trust: permissions need to stay narrow and revocable, and one recalls Mint offering the same thing before being shut down. Others ask whether it will launch outside the US and joke about Gemini hallucinating balances.",
+   "replyCount": 10
+  },
   {
    "title": "Anthropic: 10 recommendations for building strong safety evaluations",
    "author": "@AnthropicAI",
@@ -273,78 +393,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "topic": "Tools",
    "replies": "Only a few replies yet. They focus on the hard part being teammates handing work to each other and who breaks ties, and one notes the pricing looks like hiring seats rather than paying per call.",
    "replyCount": 4
-  },
-  {
-   "title": "Ai2's XYBench: do LLMs catch the real problem behind your question?",
-   "author": "@allen_ai",
-   "authorName": "Ai2",
-   "url": "https://x.com/allen_ai/status/2121294715941277777",
-   "published": "2026-11-13 23:00 IST",
-   "summary": "XYBench has 8K+ questions where users ask about an approach that won't fully solve their problem. Across 5 frontier LLMs, answers steered users away from mistaken approaches less often than expert human answers, even when the user's goal was spelled out. It won Best Resource at EMNLP 2026.",
-   "why": "Ai2 research lab, award-winning paper",
-   "topic": "Research",
-   "replies": "Only Ai2's own thread so far, which explains the benchmark design and results and links the blog post. No outside replies yet.",
-   "replyCount": 6
-  },
-  {
-   "title": "Rumor/early signal: Meta's Muse is getting a Chrome extension agent",
-   "author": "@testingcatalog",
-   "authorName": "TestingCatalog News",
-   "url": "https://x.com/testingcatalog/status/2121260921435623813",
-   "published": "2026-11-13 20:46 IST",
-   "summary": "TestingCatalog spotted a Chrome Web Store listing for a Muse extension described as 'your personal AI agent in Chrome' that can act on open web pages. Not announced by Meta yet.",
-   "why": "Rumor/early signal: TestingCatalog app teardown, store listing",
-   "topic": "Tools",
-   "replies": "Replies focus on safety: the approve-before-acting step and activity log are seen as key, and some note moving from a sandboxed VM to your own logged-in Chrome is a big jump in what it can touch.",
-   "replyCount": 10
-  },
-  {
-   "title": "DeepSeek opens its full app feature set through the API",
-   "author": "@deepseek_ai",
-   "authorName": "DeepSeek",
-   "url": "https://x.com/deepseek_ai/status/2121247896918253875",
-   "published": "2026-11-13 19:54 IST",
-   "summary": "DeepSeek says the capabilities behind its app (search, files, links, safety and voice) are now available through its API, either as built-in features toggled with a few parameters or as standalone OCR, ASR and TTS APIs.",
-   "why": "Official DeepSeek account announcing its own product",
-   "topic": "Tools",
-   "replies": "Replies are mixed and fairly low signal. A few builders like getting OCR, speech-to-text and TTS as standalone APIs and ask about rate limits and pricing for built-in search; others ask for a coding plan or a newer model, plus some anti-China trolling.",
-   "replyCount": 10
-  },
-  {
-   "title": "Google DeepMind releases PARDIG and SatWeave, the datasets behind WeatherNext 3",
-   "author": "@GoogleDeepMind",
-   "authorName": "Google DeepMind",
-   "url": "https://x.com/GoogleDeepMind/status/2121229774865527097",
-   "published": "2026-11-13 18:42 IST",
-   "summary": "Google DeepMind is releasing PARDIG and SatWeave, the foundational observation datasets behind its WeatherNext 3 forecasting model, so researchers and developers can build their own climate applications.",
-   "why": "Official Google DeepMind account announcing its own release",
-   "topic": "Research",
-   "replies": "Most replies say releasing the input data matters more than another model, especially for regions with no ground radar and for flood alerts. @xxxaarr notes that PARDIG-NRT's 15-minute figure is the spacing between estimates, while delivery is every 6 hours with about 5 hours of latency. Others ask about the license and how far back the archive goes.",
-   "replyCount": 10
-  },
-  {
-   "title": "Bessent blames Lutnick over the Nvidia/Megaspeed chip mess",
-   "author": "@CNBC",
-   "authorName": "CNBC",
-   "url": "https://x.com/CNBC/status/2121246355301495159",
-   "published": "2026-11-13 19:48 IST",
-   "summary": "Treasury Secretary Scott Bessent blamed Commerce Secretary Howard Lutnick over the Nvidia chip scandal, saying Treasury, War, USTR and State had favored putting Megaspeed on the entity list for months.",
-   "why": "CNBC reporting an on-record quote from the Treasury Secretary; follows Jensen Huang's resignation",
-   "topic": "Policy",
-   "replies": "Mostly partisan noise and low signal. One reply frames it as a known policy split rather than a surprise and ties it to Nvidia's drop after Huang's exit; a couple of accounts defend the administration.",
-   "replyCount": 9
-  },
-  {
-   "title": "Google rolls out Orchestrator in Antigravity: Carbon plans, a fast model executes",
-   "author": "@Google",
-   "authorName": "Google",
-   "url": "https://x.com/Google/status/2120982566891356279",
-   "published": "2026-11-13 02:20 IST",
-   "summary": "Google is rolling out Orchestrator in Antigravity to Google AI Ultra subscribers, so one session can run multiple models instead of sending the whole task to one. Gemini 4 Carbon sets the plan and hands execution to a fast model (Hydrogen); enterprises get it in Gemini for business.",
-   "why": "Official Google announcement (missed in earlier windows)",
-   "topic": "Tools",
-   "replies": "Mostly low signal. One user asked how it differs from /swarm, and another asked for a per-step receipt showing which model planned, which edited, and how much quota each step used. Elsewhere on X, users report the plan-then-execute split saves quota.",
-   "replyCount": 10
   }
  ]
 }
