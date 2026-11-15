@@ -128,9 +128,33 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-15T14:10:00+05:30",
+ "updated": "2026-11-15T20:05:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Understanding Positional Embeddings in Modern LLMs",
+   "author": "@rasbt",
+   "authorName": "Sebastian Raschka",
+   "url": "https://x.com/rasbt/status/2121958665989083253",
+   "published": "2026-11-15 18:59 IST",
+   "summary": "Raschka published a from-scratch RoPE tutorial for his LLM building-blocks series, plus a tour of what recent architectures do instead (NoPE, partial RoPE, hybrids).",
+   "why": "Well-known LLM educator and author; primary write-up.",
+   "topic": "Research",
+   "replies": "Mostly thanks from readers who wanted a clear partial-RoPE breakdown, and some surprise that NoPE layers work at all. @omnigeeker pushed back that partial RoPE's memory win is easy to overread because it doesn't shrink the KV cache, only the cos/sin tables. One reader asked how to catch a broken RoPE setup when loss still goes down.",
+   "replyCount": 10
+  },
+  {
+   "title": "SBF misses ~$40bn as Anthropic heads to IPO next week",
+   "author": "@FT",
+   "authorName": "Financial Times",
+   "url": "https://x.com/FT/status/2121958924278444315",
+   "published": "2026-11-15 19:00 IST",
+   "summary": "The FT reports Sam Bankman-Fried will miss a windfall of close to $40bn when Anthropic goes public next week, after he was forced to give up his stake in 2024.",
+   "why": "FT reporting; ties to the Anthropic IPO timing.",
+   "topic": "Industry",
+   "replies": "Mostly jokes about the 'worst trade in history' and some low-signal noise. @LT0424 added context: the ~$40bn is the FT's math on the stake Alameda bought for $500m in 2021, while the FTX estate sold the diluted holding in two 2024 trades for about $1.34bn.",
+   "replyCount": 10
+  },
   {
    "title": "Tibo (OpenAI): Cyber team wants feedback on Daybreak",
    "author": "@thsottiaux",
@@ -274,30 +298,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "topic": "Models",
    "replies": "Best reply: SimpleQA Verified's headline metric is an F1 over correct vs attempted answers, so better abstention can lift it without new knowledge; another asks the same about calibration. Others debate Fable 5.2 vs Opus 5.5 for daily work; the rest is low signal.",
    "replyCount": 10
-  },
-  {
-   "title": "Exclusive: DeepSeek's $92B round drew Tencent, CATL and alleged black-market chip suppliers",
-   "author": "@theinformation",
-   "authorName": "The Information",
-   "url": "https://x.com/theinformation/status/2121717317478281569",
-   "published": "2026-11-15 03:00 IST",
-   "summary": "The Information reports DeepSeek's $92 billion valuation round drew Tencent, CATL and a group of companies that had been pitched as a major source of black-market Nvidia chips.",
-   "why": "Exclusive from a reporting outlet with a strong AI track record.",
-   "topic": "Industry",
-   "replies": "Only a few replies. One summarises the story as companies linked to a woman US officials suspect is a Chinese intelligence asset investing in DeepSeek; another says the AI moat is now compute, capital and distribution. The rest is bot filler.",
-   "replyCount": 4
-  },
-  {
-   "title": "Commerce plans to close the overseas data-center loophole for Nvidia chips",
-   "author": "@theinformation",
-   "authorName": "The Information",
-   "url": "https://x.com/theinformation/status/2121702216880849338",
-   "published": "2026-11-15 02:00 IST",
-   "summary": "The Information reports the Commerce Department is preparing to close a loophole that lets Chinese AI firms use restricted Nvidia chips through overseas data centers, citing people familiar with the process.",
-   "why": "Sourced policy reporting; directly affects China's compute access.",
-   "topic": "Policy",
-   "replies": "Mixed and short. One reply notes the rule isn't published yet and says Chinese firms are already rushing to reserve overseas capacity; another says export rules always targeted chips, not rented compute, and enforcement (verifying who rents) is the hard part. Rest is one-word reactions.",
-   "replyCount": 7
   }
  ]
 }
