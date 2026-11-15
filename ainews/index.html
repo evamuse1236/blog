@@ -128,9 +128,33 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-15T23:10:00+05:30",
+ "updated": "2026-11-16T01:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Fable & Opus rebuild the Starship catch in interactive 3D from one prompt",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2122036763468214711",
+   "published": "2026-11-16 00:09 IST",
+   "summary": "Mollick shares a demo from a single prompt asking Fable and Opus to find video of the Starship catch and render the last ~40 seconds in 3D with three.js, with switchable views. He says it would have seemed impossible a few months ago.",
+   "why": "Wharton professor who tests frontier models hands-on; demo with playable link.",
+   "topic": "Models",
+   "replies": "Replies are impressed by the chain of steps: find footage, choose the clip, build an interactive scene. Pushback asks how many follow-ups it took, whether the descent timing is accurate from footage alone, and several warn that agents downloading and running web files need sandboxes and separate accounts. Low on concrete corrections.",
+   "replyCount": 10
+  },
+  {
+   "title": "Rumor/early signal: Bloomberg says Siri AI is the centrepiece of Apple's smart-glasses push",
+   "author": "@testingcatalog",
+   "authorName": "TestingCatalog News",
+   "url": "https://x.com/testingcatalog/status/2122006928826257731",
+   "published": "2026-11-15 22:10 IST",
+   "summary": "Relaying Bloomberg: Siri AI integrations are the centrepiece of Apple's upcoming smart glasses, and Apple now treats AI as a more serious priority. The glasses are not coming soon.",
+   "why": "Rumor/early signal: aggregator relaying a Bloomberg report; no launch timing.",
+   "topic": "Industry",
+   "replies": "Replies are skeptical that Siri can carry a product, joking it still can't handle two timers, and several say Meta's Ray-Ban glasses have a head start. Others note that glasses make voice the main interface, so first-try accuracy, latency, and privacy will decide it.",
+   "replyCount": 10
+  },
   {
    "title": "Rumor/early signal: Claude Code Projects let you set separate models for Coordinator and Threads",
    "author": "@testingcatalog",
@@ -273,30 +297,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Watchlist researcher (Wharton); his own data project, not a repost.",
    "topic": "Research",
    "replies": "Useful pushback: one reply says the sample is biased because labs cite benchmarks they already win, and another says counting only independent runs gives 24% (per the post's footnote). Others raise test leakage into training data and say rerunning a few of your own real tasks beats leaderboards.",
-   "replyCount": 10
-  },
-  {
-   "title": "Jason Wei: authoring a TerminalBench task may beat a Nature paper",
-   "author": "@_jasonwei",
-   "authorName": "Jason Wei",
-   "url": "https://x.com/_jasonwei/status/2121691386043089133",
-   "published": "2026-11-15 01:17 IST",
-   "summary": "Jason Wei notes TerminalBench v4.1 has only 66 problems and every frontier lab tracks it, so writing one of its problems could soon be more prestigious and impactful than a Nature or Science paper.",
-   "why": "Watchlist frontier-lab researcher on how evals shape lab work.",
-   "topic": "Research",
-   "replies": "Mostly jokes about submitting problems to v5 and 'embedding your name in the weights'. The most-liked pushback (@dnnssl2) says data companies already have 10,000 TerminalBench 4.1-style tasks; one team says it plans to audit v4.1 for tasks agents can pass without a full solve. Some low-signal and abusive replies.",
-   "replyCount": 10
-  },
-  {
-   "title": "Simon Willison: Claude chat's auto mode reads your messages for permission",
-   "author": "@simonw",
-   "authorName": "Simon Willison",
-   "url": "https://x.com/simonw/status/2121695097674981849",
-   "published": "2026-11-15 01:31 IST",
-   "summary": "Simon Willison says regular Claude chat now uses 'auto mode', so it sometimes refuses to run things. Telling the permission system in plain text that he grants the session permission seemed to unblock it, because auto mode takes your messages into account.",
-   "why": "Watchlist practitioner; first-hand hands-on test.",
-   "topic": "Tools",
-   "replies": "Most replies flag the same risk: if permission is inferred from free text, text from a pasted doc or fetched page might count too, which looks like a prompt-injection path. Several prefer an explicit, logged approval or per-folder trust; one asks whether the grant survives context compaction.",
    "replyCount": 10
   }
  ]
