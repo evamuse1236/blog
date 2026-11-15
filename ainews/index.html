@@ -128,9 +128,69 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-15T08:15:00+05:30",
- "windowHours": 7,
+ "updated": "2026-11-15T11:10:00+05:30",
+ "windowHours": 3,
  "posts": [
+  {
+   "title": "roon: open models made outside mechinterp research possible",
+   "author": "@tszzl",
+   "authorName": "roon",
+   "url": "https://x.com/tszzl/status/2121837529486024941",
+   "published": "2026-11-15 10:57 IST",
+   "summary": "roon (OpenAI) says he is glad for open source, because Nick Cammarata and others could not have done their mechanistic interpretability research without a modern Qwen model. He hopes the offense-defense balance lets open models stay around for a long time.",
+   "why": "Watchlist OpenAI researcher backing open weights for safety research, a notable stance from inside a closed lab.",
+   "topic": "Research",
+   "replies": "Only 3 replies so far. They agree that looking inside models is how trust gets earned. One reply asks OpenAI and Anthropic to release small open-weights models too, so the field isn't left to Chinese labs.",
+   "replyCount": 3
+  },
+  {
+   "title": "Rauch: Gemini Argon + UI SDK build a full web-components app in two prompts",
+   "author": "@rauchg",
+   "authorName": "Guillermo Rauch",
+   "url": "https://x.com/rauchg/status/2121804295381377342",
+   "published": "2026-11-15 08:45 IST",
+   "summary": "Vercel's CEO built an app with two prompts of fx plus Gemini Argon on @uisdk, using pure Web Components and no framework. He says the agent reused 14 UI SDK behaviors out of the box, including window resizing, drag, typeahead, roving toolbar focus, scoped hotkeys, ARIA and WebMCP agent control. Source is linked from the post.",
+   "why": "Watchlist builder (Vercel CEO) with a hands-on demo and linked source, not a benchmark claim.",
+   "topic": "Tools",
+   "replies": "Most replies say the real win is the agent reusing tested interaction primitives (focus, typeahead, a11y) instead of inventing its own. One user posted an iPod clone built the same way with Claude Code on Fable 5.2. A few want the prompt, and one reply just says it doesn't believe it.",
+   "replyCount": 10
+  },
+  {
+   "title": "How Claude Code's new Code Mode runs: node:vm inside Bun",
+   "author": "@RhysSullivan",
+   "authorName": "Rhys",
+   "url": "https://x.com/RhysSullivan/status/2121787604215664891",
+   "published": "2026-11-15 07:39 IST",
+   "summary": "Claude Code added an experimental opt-in Code Mode where Claude writes a small JavaScript script that runs several tool calls in parallel and returns only the output it needs. Rhys Sullivan notes Claude Code runs it in node:vm in-process in Bun, while Codex uses v8, OpenCode a custom interpreter and Pi uses quickjs.",
+   "why": "Dev-tools builder comparing real implementations across agents; Code Mode itself is widely reported this week (v2.1.323).",
+   "topic": "Tools",
+   "replies": "Many replies repeat that node:vm isn't a security boundary. @jarredsumner (Bun) replied that Claude says that whenever node:vm comes up, regardless of implementation details, and others note bash already has no boundary anyway. One reply points out Code Mode needs version 2.1.323 or later.",
+   "replyCount": 10
+  },
+  {
+   "title": "Patrick Collison asks AI optimists to describe the post-work society, not just the individual",
+   "author": "@patrickc",
+   "authorName": "Patrick Collison",
+   "url": "https://x.com/patrickc/status/2121771165912064379",
+   "published": "2026-11-15 06:34 IST",
+   "summary": "Stripe's CEO asks how society keeps the incentives that produced people like Mozart and Dickens, who were commercially motivated, if AI makes human labor redundant. He wants AI proponents to spell out the general equilibrium of the maximalist case: what people do, why, and which institutions sustain excellence.",
+   "why": "Long-form original essay from a major tech founder; a serious question, not a hot take.",
+   "topic": "Policy",
+   "replies": "Replies range widely: small family enterprises renting robots, people pursuing evolved desires like politics or religion, and the view that we have long been post-scarcity and will always compete. One suggests apprenticeships where someone truly depends on your judgment. Some replies are gloomy or off-topic.",
+   "replyCount": 10
+  },
+  {
+   "title": "FT: data-centre construction stocks lose $4.2tn as AI trade unravels",
+   "author": "@FT",
+   "authorName": "Financial Times",
+   "url": "https://x.com/FT/status/2121834199325737421",
+   "published": "2026-11-15 10:44 IST",
+   "summary": "The Financial Times reports that data-centre construction stocks have lost $4.2tn as the AI trade boom unravels. The post links to the full article.",
+   "why": "Reputable wire; included because the size of the drop is genuinely big for the AI build-out.",
+   "topic": "Industry",
+   "replies": "Only 4 replies. One compares it to the dot-com bust; another adds an FT-cited estimate that planned US data-centre builds would cost about 3.6% of GDP a year through 2032. One pushes back that GPU rental prices are still rising.",
+   "replyCount": 4
+  },
   {
    "title": "SatBench: 63% of lab-cited AI benchmarks are now saturated",
    "author": "@emollick",
@@ -273,126 +333,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Watchlist practitioner; first-hand talk on her own team's process.",
    "topic": "Tools",
    "replies": "Mostly people asking the @bot account to transcribe or walk them through the talk, plus a few cheers. One skeptical reply argues that shipping fast 'without compromise' usually just moves the cost to review load, test debt or on-call, and asks which one the team pays.",
-   "replyCount": 10
-  },
-  {
-   "title": "Theo: Claude Code themes landed the same day as T3 Code's",
-   "author": "@theo",
-   "authorName": "Theo",
-   "url": "https://x.com/theo/status/2121680917391700227",
-   "published": "2026-11-15 00:35 IST",
-   "summary": "Theo quoted Anthropic's announcement that Claude Code on desktop now supports custom themes via mods (colors, animated backgrounds, a theme-examples plugin), asking if they accidentally shipped the same thing as T3 Code at the same time.",
-   "why": "Watchlist practitioner quoting an official Claude Code announcement.",
-   "topic": "Tools",
-   "replies": "Mostly jokes about 'makeover day for coding apps'. Useful bits: one asks whether themes extend to syntax highlighting, another warns that pastel themes could hide diff red/green, and one says the feature had been discussed earlier.",
-   "replyCount": 10
-  },
-  {
-   "title": "swyx: OpenAI's dot can now auto-solve captchas",
-   "author": "@swyx",
-   "authorName": "swyx",
-   "url": "https://x.com/swyx/status/2121681368224797014",
-   "published": "2026-11-15 00:37 IST",
-   "summary": "swyx shared a screenshot saying OpenAI's dot agent now has a setting to just solve all captchas from then on.",
-   "why": "Watchlist practitioner; screenshot of the product setting, not independently confirmed.",
-   "topic": "Tools",
-   "replies": "Replies say captchas only proved a human was present, so bot control shifts to rate limits, per-account checks and accountability for whose agent it is. Some worry about losing the last 'dumb brake' on agents and about prompt injection via captcha images; one notes ChatGPT Wallet still asks for a check on every purchase while captchas get a forever toggle.",
-   "replyCount": 10
-  },
-  {
-   "title": "FBI: attackers are weaponizing ARTEX, an open-source LLM agent platform",
-   "author": "@FBICyberBranch",
-   "authorName": "FBI Cyber Division",
-   "url": "https://x.com/FBICyberBranch/status/2121317398305186287",
-   "published": "2026-11-14 00:30 IST",
-   "summary": "The FBI Cyber Division warns that threat actors are using ARTEX, an open-source LLM-driven agentic platform, to automate several phases of cyber intrusions at machine speed, with campaigns since at least August 2026.",
-   "why": "Primary source: official FBI account; not covered in earlier digests.",
-   "topic": "Policy",
-   "replies": "Mostly low signal (jokes, off-topic arguments). One reply warns that backdoored copies of the tool circulate; another summarizes the FBI FLASH-20261113-001 alert details (written in Go, six sub-agents, under 3h to privileged access), which I could not verify beyond that reply.",
-   "replyCount": 10
-  },
-  {
-   "title": "poteto: quick fixes considered harmful for agent-written code",
-   "author": "@poteto",
-   "authorName": "Lauren Tan",
-   "url": "https://x.com/poteto/status/2121646643124809848",
-   "published": "2026-11-14 22:19 IST",
-   "summary": "Asking agents for the smallest or quickest possible change can make them write worse code: a harmless-looking bandaid gets copied by the next agent until the pattern has spread.",
-   "why": "Practitioner take from a watchlist engineer who writes a lot about agent workflows.",
-   "topic": "Tools",
-   "replies": "Replies mostly agree and share fixes: make the agent find the root cause and lay out options before coding, ask for 'highest confidence' instead of 'quick', and back the rule with a CI grep for suppressors like bare excepts and type: ignore. A few note agents keep stacking bandaids instead of questioning the design.",
-   "replyCount": 10
-  },
-  {
-   "title": "Dwarkesh: the 'broadly deployed intelligence explosion'",
-   "author": "@dwarkesh_sp",
-   "authorName": "Dwarkesh Patel",
-   "url": "https://x.com/dwarkesh_sp/status/2121654724227408319",
-   "published": "2026-11-14 22:51 IST",
-   "summary": "Patel argues even superintelligence will need real-world experience to match top experts, but AIs will learn from all their parallel deployed experience and so should outclass expert humans within months of deployment. He calls this the broadly deployed intelligence explosion (with a ~2 min video).",
-   "why": "Follow-up from the author of yesterday's RSI/superintelligence-by-2030 essay; opinion, not news.",
-   "topic": "Research",
-   "replies": "Only a handful of early replies: some say AI will need its own sensors because written knowledge covers little of reality, one notes labs currently buy that real-world detail from paid human experts, another says agents still need humans to pick which problem matters. Low signal so far.",
-   "replyCount": 4
-  },
-  {
-   "title": "AI Futures Project pulls superhuman AI researcher forecast to late 2027",
-   "author": "@theinformation",
-   "authorName": "The Information",
-   "url": "https://x.com/theinformation/status/2121641828512301545",
-   "published": "2026-11-14 22:00 IST",
-   "summary": "The AI Futures Project now expects superhuman AI researchers by late 2027, earlier than its original forecast of 2029 or later. Its head, ex-OpenAI researcher Daniel Kokotajlo, said: \"We're at the beginning of the takeoff period.\"",
-   "why": "Reputable tech outlet reporting a named forecaster's updated timeline.",
-   "topic": "Research",
-   "replies": "Replies ask what 'superhuman' actually means and which new evidence moved the forecast; others note forecasts only ever move earlier and raise who checks AI research work and who shares the upside. Some spam and non-English filler.",
-   "replyCount": 8
-  },
-  {
-   "title": "Ethan Mollick: Fable 5.2 research agents are relentless, and that's a lot of traffic",
-   "author": "@emollick",
-   "authorName": "Ethan Mollick",
-   "url": "https://x.com/emollick/status/2121641417483169934",
-   "published": "2026-11-14 21:58 IST",
-   "summary": "Mollick had Fable 5.2 reconstruct W.H. Auden's 1941 poetry class; it found an obscure book on the Internet Archive and read it a line at a time via repeated full-text searches. He warns agent-swarm research traffic will be large.",
-   "why": "Wharton professor known for hands-on frontier model testing.",
-   "topic": "Tools",
-   "replies": "Replies focus on load: one request per line where one download would do, so archives and small sites' docs will feel it first. People ask whether research agents should identify themselves and respect rate limits like good crawlers, or get blocked; one suggests a rate-limited 'read this item' path.",
-   "replyCount": 10
-  },
-  {
-   "title": "Harrison Chase: design agent goals around what you can give feedback on",
-   "author": "@hwchase17",
-   "authorName": "Harrison Chase",
-   "url": "https://x.com/hwchase17/status/2121635683999883577",
-   "published": "2026-11-14 21:35 IST",
-   "summary": "The LangChain CEO wrote with @mgarimella on lessons for agents that work on goals; in a follow-up he says the key insight is to design goals around what users can easily give feedback on, since feedback is the hardest thing to extract.",
-   "why": "LangChain founder sharing production lessons; blog link in post.",
-   "topic": "Tools",
-   "replies": "Replies mostly agree the real question is whether you can check 'done' cheaply; otherwise the agent picks its own definition or games the feedback. Several share that agents claimed 'finished' when files didn't exist, so they verify with scripts. One reader found the piece not concrete enough.",
-   "replyCount": 10
-  },
-  {
-   "title": "Rumor/early signal: Grok Bot gets 7% more usage on paid plans, up to 15% on scheduled runs",
-   "author": "@testingcatalog",
-   "authorName": "TestingCatalog News",
-   "url": "https://x.com/testingcatalog/status/2121636249903710411",
-   "published": "2026-11-14 21:37 IST",
-   "summary": "TestingCatalog reports, citing the Grok Bot team, that Grok Bot now gives 7% more usage on paid plans and up to 15% more on scheduled runs after optimisations.",
-   "why": "Rumor/early signal: aggregator citing the product team; not confirmed from an official account here.",
-   "topic": "Tools",
-   "replies": "Replies are mostly users saying the scheduled-run bump is the one they'll feel, plus questions on whether it applies to existing routines and whether it comes from faster or cheaper runs. Some spam.",
-   "replyCount": 10
-  },
-  {
-   "title": "Helen Toner: 'we're screwed' if AI safety rests on trusting one person",
-   "author": "@verge",
-   "authorName": "The Verge",
-   "url": "https://x.com/verge/status/2121619798102778172",
-   "published": "2026-11-14 20:32 IST",
-   "summary": "The Verge interviews CSET's Helen Toner, who says we're screwed if the AI safety plan depends on any one person being trusted to get it right.",
-   "why": "Reputable outlet interviewing a well-known AI policy researcher and ex-OpenAI board member.",
-   "topic": "Policy",
-   "replies": "Replies broadly agree a one-person plan is a single point of failure and call for separation of duties, audit logs and a second key holder. Several recall Toner was on the OpenAI board that fired Sam Altman in 2023. Some jokes and off-topic replies.",
    "replyCount": 10
   }
  ]
