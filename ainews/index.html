@@ -128,9 +128,81 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-16T17:10:00+05:30",
+ "updated": "2026-11-16T20:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "US Commerce issues interim rule limiting remote access to advanced AI chips",
+   "author": "@business",
+   "authorName": "Bloomberg",
+   "url": "https://x.com/business/status/2122326334101754355",
+   "published": "2026-11-16 19:20 IST",
+   "summary": "The US Commerce Department issued an interim rule to limit remote access to advanced AI chips and servers from certain countries. It follows more scrutiny after an alleged espionage scandal involving Nvidia; NYT and CNBC also report it as closing the third-country cloud loophole.",
+   "why": "Bloomberg wire, corroborated by NYT and CNBC within the hour",
+   "topic": "Policy",
+   "replies": "Low signal, with spam and off-topic rants mixed in. A few replies make real points: @JustinC2Invests says policing data and compute flows is hard and calls the rule ill-fated long term, and @bytebreakdaily notes it targets people renting chips in third-country data centers. A Chinese-language reply says cloud providers will now have to vet who rents compute.",
+   "replyCount": 10
+  },
+  {
+   "title": "Matt Pocock on poteto's AIE Code talk: \"nuance tends to lead to slop\"",
+   "author": "@mattpocockuk",
+   "authorName": "Matt Pocock",
+   "url": "https://x.com/mattpocockuk/status/2122316570852487441",
+   "published": "2026-11-16 18:41 IST",
+   "summary": "Matt Pocock calls @poteto's AIE Code talk excellent and picks out one idea: \"nuance tends to lead to slop\". To raise quality, design APIs and automated checks that remove nuance from agents' decisions: ban useEffect, ban most explanatory comments, and hide complexity behind APIs.",
+   "why": "Well-known TypeScript educator highlighting Lauren Tan's (poteto) talk; both on watchlist",
+   "topic": "Tools",
+   "replies": "Mostly agreement that deterministic checks beat prompt rules. @vinicius2prg writes \"lint errors >>> AGENTS.md line\", and @yourtowhid explains how to ban useEffect with core ESLint rules. Pushback from @clhdev, who asks how you tell a harmful comment from one that prevents a bad refactor and calls \"banning 99%\" a guess.",
+   "replyCount": 10
+  },
+  {
+   "title": "Mollick: no Fable-class open model 8+ months after Fable/Mythos",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2122308260325720127",
+   "published": "2026-11-16 18:08 IST",
+   "summary": "Ethan Mollick says that, against many expectations, no open model has reached Fable class more than 8 months after Fable/Mythos was first made public. He quotes Artificial Analysis's Qwen4 Max results.",
+   "why": "Wharton professor who tracks frontier models closely; sparked a debate with Nathan Lambert",
+   "topic": "Models",
+   "replies": "A real debate. @natolambert pushes back (\"Selectively ignoring kimi\") and says Agent Arena may be the best measure; Mollick replies \"Kimi is good. It is not Fable though. Brittle outside of coding in my experience.\" Others say the gap may come from labs shielding reasoning traces from distillation, and @cthorrez notes a new Qwen passes Fable 5 on Arena.",
+   "replyCount": 10
+  },
+  {
+   "title": "Artificial Analysis: top Progress Index score doubled since first GTA VI trailer",
+   "author": "@ArtificialAnlys",
+   "authorName": "Artificial Analysis",
+   "url": "https://x.com/ArtificialAnlys/status/2122305411659497870",
+   "published": "2026-11-16 17:56 IST",
+   "summary": "Since the first GTA VI trailer in December 2023, the top score on the Artificial Analysis Progress Index went from 160 to 358. The top score was beaten on 23 separate days by OpenAI, Google DeepMind, SpaceX AI and Anthropic models, and GPT-4 Turbo, the leader on trailer day, would now rank 379th.",
+   "why": "Independent benchmark org, first-party data from its own index",
+   "topic": "Research",
+   "replies": "Light, mostly amused. Several replies say the GPT-4 Turbo drop to 379th is the striking stat, and @mrank_ai works out the pace of new top scores: one every 92 days in 2024, 41 in 2025, 32 in 2026. @alkaidzhuang warns a new #1 can mean the test changed, not just the model.",
+   "replyCount": 10
+  },
+  {
+   "title": "Raschka: open-source LLMs need a building-block API",
+   "author": "@rasbt",
+   "authorName": "Sebastian Raschka",
+   "url": "https://x.com/rasbt/status/2122336040899711282",
+   "published": "2026-11-16 19:58 IST",
+   "summary": "Sebastian Raschka argues the open-source ecosystem needs a well-engineered API for swapping LLM components (GQA vs MLA, dense FFN vs MoE, attention vs Mamba2 or Gated DeltaNet) for experiments and ablations. He says torchtitan, torchtune, Megatron Core and OLMo-core point that way but are not quite at that level of abstraction.",
+   "why": "LLM researcher and author of Build a Large Language Model (From Scratch)",
+   "topic": "Research",
+   "replies": "Early and supportive. @harden_369741 says the glue code for an attention swap outgrew the model, and @harrisonju asks whether the API would own the KV cache when moving from GQA to Mamba2's fixed-size state. @hakimieiqbal asks whether it would sit above PyTorch or replace model definitions.",
+   "replyCount": 6
+  },
+  {
+   "title": "Amazon decoys catch AI agents hunting LLM gateway API keys",
+   "author": "@TheHackersNews",
+   "authorName": "The Hacker News",
+   "url": "https://x.com/TheHackersNews/status/2122232175529766932",
+   "published": "2026-11-16 13:05 IST",
+   "summary": "Amazon's captured logs show AI agents probing LiteLLM, Dify and other AI apps to steal API keys, then using those keys to power more attacks. The outlet notes the campaign's reported results remain unverified.",
+   "why": "Established security news outlet citing Amazon's own honeypot logs",
+   "topic": "Industry",
+   "replies": "Replies focus on hygiene rather than novelty: the entry point is default credentials such as LiteLLM's master key, not a clever zero-day. Common advice is to put admin UIs behind VPN or SSO, scope keys per app with spend caps, and rotate any exposed key. Some spam mixed in.",
+   "replyCount": 10
+  },
   {
    "title": "A brief history of AI coding since Nov 2025",
    "author": "@mattpocockuk",
@@ -273,78 +345,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Wharton professor and widely followed AI-and-work researcher.",
    "topic": "Industry",
    "replies": "Replies mostly agree and riff on elevator operators lasting decades. @MikeXia61658986 points to Bessen's 2015 paper as the stat's source and notes 37 other 1950 occupations vanished through collapsing demand rather than automation. Others argue job titles survive while the work underneath changes, and that trust, not capability, was the elevator bottleneck.",
-   "replyCount": 10
-  },
-  {
-   "title": "Rauch introduces xeet: a hermetic X post renderer in Rust/wasm",
-   "author": "@rauchg",
-   "authorName": "Guillermo Rauch",
-   "url": "https://x.com/rauchg/status/2122184794209714368",
-   "published": "2026-11-16 09:57 IST",
-   "summary": "Vercel's CEO released xeet, a pixel-perfect X post renderer in safe Rust/wasm with no browser, network, filesystem or system fonts. It renders a post to PNG in about 1 ms.",
-   "why": "Vercel CEO; new open tool shipped by the author.",
-   "topic": "Tools",
-   "replies": "Devs like the deterministic output for screenshot tests (no font drift between CI and laptops). Several say the agent 'autorepo' verification loop is the real launch and the renderer is the demo. One asks how emoji and non-Latin scripts work without system fonts; another notes the CLI can resolve media first, then render offline.",
-   "replyCount": 10
-  },
-  {
-   "title": "Julius (T3): averaging 5 Claude sessions started per minute in T3 Code",
-   "author": "@jullerino",
-   "authorName": "Julius",
-   "url": "https://x.com/jullerino/status/2122154571275641167",
-   "published": "2026-11-16 07:57 IST",
-   "summary": "Replying to questions about whether T3 Code users run one agent at a time, Julius checked his own stats: he starts on average 5 Claude sessions a minute.",
-   "why": "T3 team member sharing his own usage data on Theo's coding tool.",
-   "topic": "Tools",
-   "replies": "Some back-and-forth: one user says session starts don't show how many overlap, and Julius replies he's not asking it to say hello 5 times a minute. Others joke about the 'T3 doesn't have agent orchestration' crowd; the rest is low signal.",
-   "replyCount": 10
-  },
-  {
-   "title": "Thariq shows a new arena and two new characters in his side-project game",
-   "author": "@trq212",
-   "authorName": "Thariq",
-   "url": "https://x.com/trq212/status/2122154124024381828",
-   "published": "2026-11-16 07:55 IST",
-   "summary": "Thariq posted a video update on the personal video-game prototype he started earlier, showing a new arena and two new characters. His original thread framed it as using AI to help realize his own vision rather than outsourcing the creative work.",
-   "why": "Anthropic Claude Code team member; hands-on AI-assisted building.",
-   "topic": "Tools",
-   "replies": "Almost all enthusiasm (wishlists, 'insane progress'). One fan suggests attack ideas for the characters, another guesses pro-bending arena inspiration; low signal otherwise.",
-   "replyCount": 10
-  },
-  {
-   "title": "Qwen4-Max launches: new MoE, native vision, 1M context",
-   "author": "@Alibaba_Qwen",
-   "authorName": "Qwen",
-   "url": "https://x.com/Alibaba_Qwen/status/2122148127520289151",
-   "published": "2026-11-16 07:31 IST",
-   "summary": "Alibaba's Qwen says Qwen4-Max beats Qwen3.8-Max with up to ~50% fewer tokens and over 60% lower average cost per task in its internal evals. Pricing is $1.5/M input, $4.5/M output, $0.075/M cached; API is live on QwenCloud.",
-   "why": "Official Alibaba Qwen lab account; primary announcement.",
-   "topic": "Models",
-   "replies": "Mostly excited; one user says it's much better than 3.8 in Qoder IDE, another flags ~40 tokens/sec on the token plan as slow. People ask for total/active MoE parameter counts and keep requesting Qwen 4 27B and Flash; one reply passes on Model Studio docs settings for running it in Claude Code.",
-   "replyCount": 10
-  },
-  {
-   "title": "Arena: Qwen4-Max is #1 Chinese model, #14 on Agent Arena",
-   "author": "@arena",
-   "authorName": "Arena.ai",
-   "url": "https://x.com/arena/status/2122153116959482051",
-   "published": "2026-11-16 07:51 IST",
-   "summary": "Arena says Qwen4-Max debuts at #14 overall on Agent Arena (up from #39 for Qwen3.8-Max), with +7.5% net improvement over 14.7k agentic sessions, putting Alibaba as #5 lab behind Anthropic, Google, OpenAI and Meta. A separate post has it at #6 in Code Arena WebDev (1750, preliminary).",
-   "why": "Independent eval leaderboard (formerly LMArena); early third-party read on the launch.",
-   "topic": "Models",
-   "replies": "Low signal and few replies. One argues Chinese labs are falling behind the frontier since distillation access got harder; others just want the smaller 27B model.",
-   "replyCount": 6
-  },
-  {
-   "title": "OpenAI science blog: physicist + GPT-6 Astra on a lattice Standard Model",
-   "author": "@OpenAI",
-   "authorName": "OpenAI",
-   "url": "https://x.com/OpenAI/status/2122123437141553630",
-   "published": "2026-11-16 05:53 IST",
-   "summary": "OpenAI's first science-blog post has UCSB physicist Nathaniel Craig describing how he worked with GPT-6 Astra to develop a candidate lattice definition of the Standard Model. Greg Brockman also shared it.",
-   "why": "Official OpenAI account; first-person account from the named physicist.",
-   "topic": "Research",
-   "replies": "The useful replies stress it's a candidate, not a finished method: one quotes Craig calling it \"far more an answer in principle than an answer in practice,\" and another notes reflection positivity at finite lattice spacing is still open. Others ask exactly what Astra contributed versus Craig, and how it gets validated.",
    "replyCount": 10
   }
  ]
