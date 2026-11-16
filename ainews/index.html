@@ -128,9 +128,81 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-16T08:10:00+05:30",
- "windowHours": 7,
+ "updated": "2026-11-16T11:05:00+05:30",
+ "windowHours": 3,
  "posts": [
+  {
+   "title": "Artificial Analysis: Qwen4 Max scores 43, +9 over Qwen3.8 Max",
+   "author": "@ArtificialAnlys",
+   "authorName": "Artificial Analysis",
+   "url": "https://x.com/ArtificialAnlys/status/2122161629592953032",
+   "published": "2026-11-16 08:25 IST",
+   "summary": "Independent benchmark: Qwen4 Max (xhigh reasoning effort) scores 43 on the Artificial Analysis Intelligence Index, 9 points over Qwen3.8 Max. It lands 3 points behind Kimi K3.1 Pro at about 11% lower cost per task.",
+   "why": "Independent eval org; third-party check on Alibaba's own launch claims.",
+   "topic": "Models",
+   "replies": "Mostly generic praise for the cost/score combo. One useful correction from @shuishui1223: the 43 is at xhigh, while Qwen's docs default reasoning effort to high, so out-of-the-box API use may score lower. Others ask where Gemini 4 Argon sits (a reply says ~50) and hope smaller Qwen4 models jump similarly.",
+   "replyCount": 10
+  },
+  {
+   "title": "WSJ: Trump administration to name Nvidia, OpenAI, Anthropic and others AI 'national champions'",
+   "author": "@WSJTech",
+   "authorName": "WSJ Tech",
+   "url": "https://x.com/WSJTech/status/2122178216630632584",
+   "published": "2026-11-16 09:31 IST",
+   "summary": "Nvidia will be one of more than two dozen companies designated AI \"national champions\" as part of a Trump administration effort to help AI firms win business overseas. Zerohedge's WSJ headlines add Amazon, Microsoft, OpenAI and Anthropic to the list.",
+   "why": "WSJ report; big US AI export-policy move naming the major labs.",
+   "topic": "Policy",
+   "replies": "Only 2 replies, low signal: one calls it regulatory capture, one says to save the post for later.",
+   "replyCount": 2
+  },
+  {
+   "title": "Mollick: we've lived through an unusually stable socio-technical period",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2122176524610884061",
+   "published": "2026-11-16 09:24 IST",
+   "summary": "Mollick notes only 1 of 270 jobs in the 1950 census is now obsolete (elevator operator), and that 2026 resembles 1957 in a way 1969 did not resemble 1900. His point: that stability may be about to change.",
+   "why": "Wharton professor and widely followed AI-and-work researcher.",
+   "topic": "Industry",
+   "replies": "Replies mostly agree and riff on elevator operators lasting decades. @MikeXia61658986 points to Bessen's 2015 paper as the stat's source and notes 37 other 1950 occupations vanished through collapsing demand rather than automation. Others argue job titles survive while the work underneath changes, and that trust, not capability, was the elevator bottleneck.",
+   "replyCount": 10
+  },
+  {
+   "title": "Rauch introduces xeet: a hermetic X post renderer in Rust/wasm",
+   "author": "@rauchg",
+   "authorName": "Guillermo Rauch",
+   "url": "https://x.com/rauchg/status/2122184794209714368",
+   "published": "2026-11-16 09:57 IST",
+   "summary": "Vercel's CEO released xeet, a pixel-perfect X post renderer in safe Rust/wasm with no browser, network, filesystem or system fonts. It renders a post to PNG in about 1 ms.",
+   "why": "Vercel CEO; new open tool shipped by the author.",
+   "topic": "Tools",
+   "replies": "Devs like the deterministic output for screenshot tests (no font drift between CI and laptops). Several say the agent 'autorepo' verification loop is the real launch and the renderer is the demo. One asks how emoji and non-Latin scripts work without system fonts; another notes the CLI can resolve media first, then render offline.",
+   "replyCount": 10
+  },
+  {
+   "title": "Julius (T3): averaging 5 Claude sessions started per minute in T3 Code",
+   "author": "@jullerino",
+   "authorName": "Julius",
+   "url": "https://x.com/jullerino/status/2122154571275641167",
+   "published": "2026-11-16 07:57 IST",
+   "summary": "Replying to questions about whether T3 Code users run one agent at a time, Julius checked his own stats: he starts on average 5 Claude sessions a minute.",
+   "why": "T3 team member sharing his own usage data on Theo's coding tool.",
+   "topic": "Tools",
+   "replies": "Some back-and-forth: one user says session starts don't show how many overlap, and Julius replies he's not asking it to say hello 5 times a minute. Others joke about the 'T3 doesn't have agent orchestration' crowd; the rest is low signal.",
+   "replyCount": 10
+  },
+  {
+   "title": "Thariq shows a new arena and two new characters in his side-project game",
+   "author": "@trq212",
+   "authorName": "Thariq",
+   "url": "https://x.com/trq212/status/2122154124024381828",
+   "published": "2026-11-16 07:55 IST",
+   "summary": "Thariq posted a video update on the personal video-game prototype he started earlier, showing a new arena and two new characters. His original thread framed it as using AI to help realize his own vision rather than outsourcing the creative work.",
+   "why": "Anthropic Claude Code team member; hands-on AI-assisted building.",
+   "topic": "Tools",
+   "replies": "Almost all enthusiasm (wishlists, 'insane progress'). One fan suggests attack ideas for the characters, another guesses pro-bending arena inspiration; low signal otherwise.",
+   "replyCount": 10
+  },
   {
    "title": "Qwen4-Max launches: new MoE, native vision, 1M context",
    "author": "@Alibaba_Qwen",
@@ -273,114 +345,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Rumor/early signal: TestingCatalog does its own app teardowns and is usually reliable; Anthropic hasn't announced this.",
    "topic": "Tools",
    "replies": "Most replies treat it as a cost lever: put the strong model on the coordinator and a cheaper one on the threads, which make most of the calls. Some ask whether threads get their own effort level and whether the coordinator checks thread work. One reply warns the savings disappear if thread output often has to be redone.",
-   "replyCount": 10
-  },
-  {
-   "title": "Rumor/early signal: 'Gemini 4 Oxygen', said to be the next Flash model, spotted routing in Arena",
-   "author": "@LuminaBench",
-   "authorName": "LuminaBench",
-   "url": "https://x.com/LuminaBench/status/2122002025198051463",
-   "published": "2026-11-15 21:51 IST",
-   "summary": "LuminaBench posted the same prompt side by side: Gemini 4 Hydrogen on xhigh, and an unnamed model that was routing in Arena. They label the Arena model 'Gemini 4 Oxygen (the next flash model)' and say the output is noticeably different.",
-   "why": "Rumor/early signal: an Arena tester's comparison, not a Google source. Other testers use the same name, but nothing official confirms it.",
-   "topic": "Models",
-   "replies": "Replies are mixed and fairly low on signal. Some say the gap is visible but they're not sold on the 'Oxygen' label. Others say a Flash model should be judged on latency and cost per task, not one screenshot, and a few joke about Google running out of elements.",
-   "replyCount": 10
-  },
-  {
-   "title": "Understanding Positional Embeddings in Modern LLMs",
-   "author": "@rasbt",
-   "authorName": "Sebastian Raschka",
-   "url": "https://x.com/rasbt/status/2121958665989083253",
-   "published": "2026-11-15 18:59 IST",
-   "summary": "Raschka published a from-scratch RoPE tutorial for his LLM building-blocks series, plus a tour of what recent architectures do instead (NoPE, partial RoPE, hybrids).",
-   "why": "Well-known LLM educator and author; primary write-up.",
-   "topic": "Research",
-   "replies": "Mostly thanks from readers who wanted a clear partial-RoPE breakdown, and some surprise that NoPE layers work at all. @omnigeeker pushed back that partial RoPE's memory win is easy to overread because it doesn't shrink the KV cache, only the cos/sin tables. One reader asked how to catch a broken RoPE setup when loss still goes down.",
-   "replyCount": 10
-  },
-  {
-   "title": "SBF misses ~$40bn as Anthropic heads to IPO next week",
-   "author": "@FT",
-   "authorName": "Financial Times",
-   "url": "https://x.com/FT/status/2121958924278444315",
-   "published": "2026-11-15 19:00 IST",
-   "summary": "The FT reports Sam Bankman-Fried will miss a windfall of close to $40bn when Anthropic goes public next week, after he was forced to give up his stake in 2024.",
-   "why": "FT reporting; ties to the Anthropic IPO timing.",
-   "topic": "Industry",
-   "replies": "Mostly jokes about the 'worst trade in history' and some low-signal noise. @LT0424 added context: the ~$40bn is the FT's math on the stake Alameda bought for $500m in 2021, while the FTX estate sold the diluted holding in two 2024 trades for about $1.34bn.",
-   "replyCount": 10
-  },
-  {
-   "title": "Tibo (OpenAI): Cyber team wants feedback on Daybreak",
-   "author": "@thsottiaux",
-   "authorName": "Tibo",
-   "url": "https://x.com/thsottiaux/status/2121845965997101118",
-   "published": "2026-11-15 11:31 IST",
-   "summary": "Tibo says OpenAI's Cyber team wants feedback on Daybreak, its cyber program, across models, Codex plugins, blue/red access, documentation, red teaming and the 'defense factory'. The post drew 1,200+ replies within hours.",
-   "why": "Watchlist OpenAI Codex lead asking publicly; the reply thread is a live read on how security users find Daybreak.",
-   "topic": "Tools",
-   "replies": "Access is the loudest complaint: people say Blue is too restricted and Red is near impossible to get, with one saying they fall back to unlocked GLM or Kimi to test. Others ask for GPT-6 Astra and GPT-6.1 Sol in Daybreak Blue. Many replies ignore Daybreak and push for usage resets or new models; overall mixed signal.",
-   "replyCount": 10
-  },
-  {
-   "title": "Gemini 4 Carbon on Low thinking spills pages of scratchpad into the answer",
-   "author": "@alonamit",
-   "authorName": "Alon Amit",
-   "url": "https://x.com/alonamit/status/2121751642005721122",
-   "published": "2026-11-15 05:16 IST",
-   "summary": "Mathematician Alon Amit asked Gemini 4 Carbon a math question with Thinking left on Low. It answered at once, and after six screenfuls of math it started writing raw self-talk into the reply, going on 'for pages and pages' (screenshots in the post).",
-   "why": "First-hand report with screenshots from a known math writer; it went viral today as a look at Carbon's low-effort mode.",
-   "topic": "Models",
-   "replies": "Mostly jokes about the model sounding panicked. One reply from @LH says this is why LLM providers now hide thinking from users, since it is usually false starts and corrections. Low signal overall.",
-   "replyCount": 10
-  },
-  {
-   "title": "roon: open models made outside mechinterp research possible",
-   "author": "@tszzl",
-   "authorName": "roon",
-   "url": "https://x.com/tszzl/status/2121837529486024941",
-   "published": "2026-11-15 10:57 IST",
-   "summary": "roon (OpenAI) says he is glad for open source, because Nick Cammarata and others could not have done their mechanistic interpretability research without a modern Qwen model. He hopes the offense-defense balance lets open models stay around for a long time.",
-   "why": "Watchlist OpenAI researcher backing open weights for safety research, a notable stance from inside a closed lab.",
-   "topic": "Research",
-   "replies": "Only 3 replies so far. They agree that looking inside models is how trust gets earned. One reply asks OpenAI and Anthropic to release small open-weights models too, so the field isn't left to Chinese labs.",
-   "replyCount": 3
-  },
-  {
-   "title": "Rauch: Gemini Argon + UI SDK build a full web-components app in two prompts",
-   "author": "@rauchg",
-   "authorName": "Guillermo Rauch",
-   "url": "https://x.com/rauchg/status/2121804295381377342",
-   "published": "2026-11-15 08:45 IST",
-   "summary": "Vercel's CEO built an app with two prompts of fx plus Gemini Argon on @uisdk, using pure Web Components and no framework. He says the agent reused 14 UI SDK behaviors out of the box, including window resizing, drag, typeahead, roving toolbar focus, scoped hotkeys, ARIA and WebMCP agent control. Source is linked from the post.",
-   "why": "Watchlist builder (Vercel CEO) with a hands-on demo and linked source, not a benchmark claim.",
-   "topic": "Tools",
-   "replies": "Most replies say the real win is the agent reusing tested interaction primitives (focus, typeahead, a11y) instead of inventing its own. One user posted an iPod clone built the same way with Claude Code on Fable 5.2. A few want the prompt, and one reply just says it doesn't believe it.",
-   "replyCount": 10
-  },
-  {
-   "title": "How Claude Code's new Code Mode runs: node:vm inside Bun",
-   "author": "@RhysSullivan",
-   "authorName": "Rhys",
-   "url": "https://x.com/RhysSullivan/status/2121787604215664891",
-   "published": "2026-11-15 07:39 IST",
-   "summary": "Claude Code added an experimental opt-in Code Mode where Claude writes a small JavaScript script that runs several tool calls in parallel and returns only the output it needs. Rhys Sullivan notes Claude Code runs it in node:vm in-process in Bun, while Codex uses v8, OpenCode a custom interpreter and Pi uses quickjs.",
-   "why": "Dev-tools builder comparing real implementations across agents; Code Mode itself is widely reported this week (v2.1.323).",
-   "topic": "Tools",
-   "replies": "Many replies repeat that node:vm isn't a security boundary. @jarredsumner (Bun) replied that Claude says that whenever node:vm comes up, regardless of implementation details, and others note bash already has no boundary anyway. One reply points out Code Mode needs version 2.1.323 or later.",
-   "replyCount": 10
-  },
-  {
-   "title": "Patrick Collison asks AI optimists to describe the post-work society, not just the individual",
-   "author": "@patrickc",
-   "authorName": "Patrick Collison",
-   "url": "https://x.com/patrickc/status/2121771165912064379",
-   "published": "2026-11-15 06:34 IST",
-   "summary": "Stripe's CEO asks how society keeps the incentives that produced people like Mozart and Dickens, who were commercially motivated, if AI makes human labor redundant. He wants AI proponents to spell out the general equilibrium of the maximalist case: what people do, why, and which institutions sustain excellence.",
-   "why": "Long-form original essay from a major tech founder; a serious question, not a hot take.",
-   "topic": "Policy",
-   "replies": "Replies range widely: small family enterprises renting robots, people pursuing evolved desires like politics or religion, and the view that we have long been post-scarcity and will always compete. One suggests apprenticeships where someone truly depends on your judgment. Some replies are gloomy or off-topic.",
    "replyCount": 10
   }
  ]
