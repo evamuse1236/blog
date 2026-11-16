@@ -128,9 +128,117 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-16T23:10:00+05:30",
+ "updated": "2026-11-17T01:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "OpenRouter is now built into Hugging Face",
+   "author": "@huggingface",
+   "authorName": "Hugging Face",
+   "url": "https://x.com/huggingface/status/2122393775314264519",
+   "published": "2026-11-16 23:48 IST",
+   "summary": "Hugging Face integrated OpenRouter directly: same token, same endpoint, plus live model stats on the Hub and a redesigned inference widget built together.",
+   "why": "Official Hugging Face announcement",
+   "topic": "Tools",
+   "replies": "Mostly positive; builders like the single key/endpoint and say live usage stats on the Hub are what they'd open first. Some ask for tool-call testing in the widget and caution that the same endpoint doesn't make models interchangeable in production (version pinning and fallbacks still matter). One crypto spam reply.",
+   "replyCount": 10
+  },
+  {
+   "title": "ChatGPT for Healthcare gets computer-use agents for care teams",
+   "author": "@thekaransinghal",
+   "authorName": "Karan Singhal",
+   "url": "https://x.com/thekaransinghal/status/2122365535228961220",
+   "published": "2026-11-16 21:55 IST",
+   "summary": "OpenAI's health lead shared ChatGPT improvements aimed at the admin work care teams do: tracking down records, re-entering data across systems and following up. X News reports these include computer-use agents that move between EHRs and insurer portals.",
+   "why": "OpenAI health AI lead, primary thread",
+   "topic": "Tools",
+   "replies": "Health-IT people welcome it but ask practical questions: has it been tested on real EHRs, does it use FHIR, and where does staff review an action before it changes the record. One reply argues interface-driving agents are a workaround and the durable fix is real interoperability; another wants the unsafe-rated eval cases published.",
+   "replyCount": 10
+  },
+  {
+   "title": "Databricks AI Index: open-weight models gaining fast in enterprise",
+   "author": "@pwendell",
+   "authorName": "Patrick Wendell",
+   "url": "https://x.com/pwendell/status/2122377960132940170",
+   "published": "2026-11-16 22:45 IST",
+   "summary": "Databricks published an AI Index built on usage from more than 10,000 companies on its Unity Gateway, saying enterprise AI consumption is shifting. X News summarises the headline as open/open-weight token share rising from 7.3% to 30.9%.",
+   "why": "Databricks co-founder; first-party usage data",
+   "topic": "Industry",
+   "replies": "Readers find it more realistic than Ramp or OpenRouter indices and tie the open-model jump to cheap batch and coding workloads. Pushback: token share isn't spend share, and some question the model rankings (e.g. Gemini low, Opus 5.5 below DeepSeek/GLM). Wendell notes the user analysis likely excludes service principals.",
+   "replyCount": 10
+  },
+  {
+   "title": "Rauch: Traces are the new primitive of software development",
+   "author": "@rauchg",
+   "authorName": "Guillermo Rauch",
+   "url": "https://x.com/rauchg/status/2122391135129858507",
+   "published": "2026-11-16 23:37 IST",
+   "summary": "Rauch argues agent traces (intent, prompts, reasoning, skills) will matter more than git did, because they capture what happened upstream of the code delta.",
+   "why": "Vercel CEO; people-lane take",
+   "topic": "Tools",
+   "replies": "Reviewers like seeing why an agent took a path next to the diff. Pushback: traces are noisy (retry loops), need a 'squash' and a way to find which one to read, may leak secrets so need access controls, and aren't replayable like git since sampling isn't deterministic.",
+   "replyCount": 10
+  },
+  {
+   "title": "Harrison Chase: agents are moving from tasks to goals",
+   "author": "@hwchase17",
+   "authorName": "Harrison Chase",
+   "url": "https://x.com/hwchase17/status/2122391663889039828",
+   "published": "2026-11-16 23:39 IST",
+   "summary": "LangChain's CEO says more capable models are shifting agents from doing tasks to pursuing goals, which changes how agents are built, what they need and how we interact with them; links a blog on it.",
+   "why": "LangChain CEO; people-lane take",
+   "topic": "Research",
+   "replies": "Replies converge on stop conditions as the hard part: a task ends, a goal keeps spending tokens. Others stress checkpoints for supervision, persisting pending questions across heartbeats, and spelling out what the agent must not touch.",
+   "replyCount": 10
+  },
+  {
+   "title": "Mollick: OpenAI's Dot falling behind Muse and Duet on interface",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2122405206184829341",
+   "published": "2026-11-17 00:33 IST",
+   "summary": "Mollick says Dot is capable but harder to use than Muse and Duet: a single-threaded conversation, no inline generative flourishes like maps, and no view of what tasks it has been assigned.",
+   "why": "Wharton professor; hands-on comparison",
+   "topic": "Tools",
+   "replies": "Most agree task visibility is the key gap: without seeing the queue people won't let it run in the background. One reply says single-threading also leaks context between projects; another says Dot's bigger token budget is its main advantage.",
+   "replyCount": 10
+  },
+  {
+   "title": "Arena: Meta's Muse Ember reshapes Code Arena WebDev Pareto frontier",
+   "author": "@arena",
+   "authorName": "Arena",
+   "url": "https://x.com/arena/status/2122407974115353086",
+   "published": "2026-11-17 00:44 IST",
+   "summary": "Arena says Muse Ember from Meta has moved the price-performance Pareto frontier on Code Arena: WebDev, following its earlier April–October frontier write-up.",
+   "why": "Official LMArena eval account",
+   "topic": "Models",
+   "replies": "Replies focus on cost: several cite about 3 cents an answer at a 1608 score versus 1438 for a rival at similar price, and ask whether Meta is breaking into the sub-$1 range. One asks whether weights will be released.",
+   "replyCount": 5
+  },
+  {
+   "title": "Nemotron 3.5 Transcribe tops new Diarization Index",
+   "author": "@NVIDIAAI",
+   "authorName": "NVIDIA AI",
+   "url": "https://x.com/NVIDIAAI/status/2122392904115327213",
+   "published": "2026-11-16 23:44 IST",
+   "summary": "NVIDIA says Nemotron 3.5 Transcribe took #1 on Artificial Analysis's new Diarization Index, which tests identifying who said what in conversations with 2–8 speakers.",
+   "why": "Official NVIDIA account citing third-party eval",
+   "topic": "Models",
+   "replies": "Low signal: mostly 'bring Jensen back' jokes about NVIDIA's leadership turmoil and image replies. One notes eight speakers is where most diarization models fail.",
+   "replyCount": 6
+  },
+  {
+   "title": "Google TIG: first autonomous AI framework turning patches into exploits",
+   "author": "@Techmeme",
+   "authorName": "Techmeme",
+   "url": "https://x.com/Techmeme/status/2122339091488579814",
+   "published": "2026-11-16 20:10 IST",
+   "summary": "Google's Threat Intelligence Group reports the first observed case of attackers using an autonomous AI framework, with no human in the loop, to turn security patches into exploits (via SiliconANGLE).",
+   "why": "Techmeme citing Google GTIG report",
+   "topic": "Research",
+   "replies": "Replies say the patch-to-exploit window is shrinking from days to hours, so internet-facing systems need same-day patching; one notes GTIG says the tool diffed code before and after updates, making each release a target list.",
+   "replyCount": 4
+  },
   {
    "title": "OpenAI gives Apollo, METR, Transluce and Goodfire deep access for 'embedded assessments'",
    "author": "@OpenAI",
@@ -273,126 +381,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "topic": "Tools",
    "replies": "Mostly agreement that deterministic checks beat prompt rules. @vinicius2prg writes \"lint errors >>> AGENTS.md line\", and @yourtowhid explains how to ban useEffect with core ESLint rules. Pushback from @clhdev, who asks how you tell a harmful comment from one that prevents a bad refactor and calls \"banning 99%\" a guess.",
    "replyCount": 10
-  },
-  {
-   "title": "Mollick: no Fable-class open model 8+ months after Fable/Mythos",
-   "author": "@emollick",
-   "authorName": "Ethan Mollick",
-   "url": "https://x.com/emollick/status/2122308260325720127",
-   "published": "2026-11-16 18:08 IST",
-   "summary": "Ethan Mollick says that, against many expectations, no open model has reached Fable class more than 8 months after Fable/Mythos was first made public. He quotes Artificial Analysis's Qwen4 Max results.",
-   "why": "Wharton professor who tracks frontier models closely; sparked a debate with Nathan Lambert",
-   "topic": "Models",
-   "replies": "A real debate. @natolambert pushes back (\"Selectively ignoring kimi\") and says Agent Arena may be the best measure; Mollick replies \"Kimi is good. It is not Fable though. Brittle outside of coding in my experience.\" Others say the gap may come from labs shielding reasoning traces from distillation, and @cthorrez notes a new Qwen passes Fable 5 on Arena.",
-   "replyCount": 10
-  },
-  {
-   "title": "Artificial Analysis: top Progress Index score doubled since first GTA VI trailer",
-   "author": "@ArtificialAnlys",
-   "authorName": "Artificial Analysis",
-   "url": "https://x.com/ArtificialAnlys/status/2122305411659497870",
-   "published": "2026-11-16 17:56 IST",
-   "summary": "Since the first GTA VI trailer in December 2023, the top score on the Artificial Analysis Progress Index went from 160 to 358. The top score was beaten on 23 separate days by OpenAI, Google DeepMind, SpaceX AI and Anthropic models, and GPT-4 Turbo, the leader on trailer day, would now rank 379th.",
-   "why": "Independent benchmark org, first-party data from its own index",
-   "topic": "Research",
-   "replies": "Light, mostly amused. Several replies say the GPT-4 Turbo drop to 379th is the striking stat, and @mrank_ai works out the pace of new top scores: one every 92 days in 2024, 41 in 2025, 32 in 2026. @alkaidzhuang warns a new #1 can mean the test changed, not just the model.",
-   "replyCount": 10
-  },
-  {
-   "title": "Raschka: open-source LLMs need a building-block API",
-   "author": "@rasbt",
-   "authorName": "Sebastian Raschka",
-   "url": "https://x.com/rasbt/status/2122336040899711282",
-   "published": "2026-11-16 19:58 IST",
-   "summary": "Sebastian Raschka argues the open-source ecosystem needs a well-engineered API for swapping LLM components (GQA vs MLA, dense FFN vs MoE, attention vs Mamba2 or Gated DeltaNet) for experiments and ablations. He says torchtitan, torchtune, Megatron Core and OLMo-core point that way but are not quite at that level of abstraction.",
-   "why": "LLM researcher and author of Build a Large Language Model (From Scratch)",
-   "topic": "Research",
-   "replies": "Early and supportive. @harden_369741 says the glue code for an attention swap outgrew the model, and @harrisonju asks whether the API would own the KV cache when moving from GQA to Mamba2's fixed-size state. @hakimieiqbal asks whether it would sit above PyTorch or replace model definitions.",
-   "replyCount": 6
-  },
-  {
-   "title": "Amazon decoys catch AI agents hunting LLM gateway API keys",
-   "author": "@TheHackersNews",
-   "authorName": "The Hacker News",
-   "url": "https://x.com/TheHackersNews/status/2122232175529766932",
-   "published": "2026-11-16 13:05 IST",
-   "summary": "Amazon's captured logs show AI agents probing LiteLLM, Dify and other AI apps to steal API keys, then using those keys to power more attacks. The outlet notes the campaign's reported results remain unverified.",
-   "why": "Established security news outlet citing Amazon's own honeypot logs",
-   "topic": "Industry",
-   "replies": "Replies focus on hygiene rather than novelty: the entry point is default credentials such as LiteLLM's master key, not a clever zero-day. Common advice is to put admin UIs behind VPN or SSO, scope keys per app with spend caps, and rotate any exposed key. Some spam mixed in.",
-   "replyCount": 10
-  },
-  {
-   "title": "A brief history of AI coding since Nov 2025",
-   "author": "@mattpocockuk",
-   "authorName": "Matt Pocock",
-   "url": "https://x.com/mattpocockuk/status/2122287575557706226",
-   "published": "2026-11-16 16:46 IST",
-   "summary": "Month-by-month timeline from Opus 4.5 and Ralph loops through the skills explosion, 'software factory' talks and Grok Bot manager threads, to this month's no-slop manifesto. His TL;DR: no-one is writing code anymore, and we are still figuring out what that means.",
-   "why": "Watchlist practitioner; well-known TypeScript educator",
-   "topic": "Tools",
-   "replies": "Mostly agreement plus jokes about review becoming the job (\"Standup is now a book club\"). @tommy5dollar pushed back on the Oct/Nov entries, saying the SDLC is running 2-3x faster; Pocock replied that it depends on defect rate and you slow back to 1x if you don't stay on top of bugs.",
-   "replyCount": 10
-  },
-  {
-   "title": "Theo: \"I think we have an answer to this now\" on when to stop reading code",
-   "author": "@theo",
-   "authorName": "Theo - t3.gg",
-   "url": "https://x.com/theo/status/2122245713048527282",
-   "published": "2026-11-16 13:59 IST",
-   "summary": "Theo quotes his own July question, \"How much better do the models have to get before you'll stop reading the code?\", and says he thinks there's an answer now (the post itself doesn't spell it out).",
-   "why": "Watchlist practitioner; T3 Code builder",
-   "topic": "Tools",
-   "replies": "Split: some say they already skim CRUD code but still read anything touching money or hardware; others warn that reading 0% of code lets entropy kill a codebase. One reply argues market pressure will push teams to stop reading regardless. Some low-signal one-liners.",
-   "replyCount": 10
-  },
-  {
-   "title": "Bessent urges 'dramatic' Nvidia leadership shakeup ahead of earnings",
-   "author": "@business",
-   "authorName": "Bloomberg",
-   "url": "https://x.com/business/status/2122262586016125011",
-   "published": "2026-11-16 15:06 IST",
-   "summary": "US Treasury Secretary Scott Bessent is urging Nvidia to make a \"dramatic\" leadership shakeup as interim CEO Colette Kress leads the company into its quarterly results.",
-   "why": "Bloomberg; big follow-up to the Jensen Huang resignation",
-   "topic": "Industry",
-   "replies": "Replies mostly find it unusual for a Treasury Secretary to weigh in on a public company's C-suite a day before earnings, and note how much of the AI trade now rides on one stock. Few replies; low on new info.",
-   "replyCount": 6
-  },
-  {
-   "title": "US and allies sign pact to protect AI tech and infrastructure",
-   "author": "@Reuters",
-   "authorName": "Reuters",
-   "url": "https://x.com/Reuters/status/2122268554657399223",
-   "published": "2026-11-16 15:30 IST",
-   "summary": "Reuters reports the US and allies are teaming up to protect AI technology and infrastructure amid the rivalry with China.",
-   "why": "Reuters wire; major policy move",
-   "topic": "Policy",
-   "replies": "Replies name it the San Francisco Declaration, signed Sunday by the US plus Australia, India, Israel, Japan, South Korea, Qatar, Singapore, the UAE and the UK; one cites an FT report that the Netherlands, Germany, Sweden and the European Commission may sign next week. Others say controls now cover the whole stack, not just chips. Several off-topic replies.",
-   "replyCount": 10
-  },
-  {
-   "title": "Fed's Barr: autonomous AI agents could speed bank runs",
-   "author": "@business",
-   "authorName": "Bloomberg",
-   "url": "https://x.com/business/status/2122274737820753956",
-   "published": "2026-11-16 15:55 IST",
-   "summary": "Federal Reserve Governor Michael Barr warned that autonomous AI agents could speed destabilizing stampedes out of banks.",
-   "why": "Bloomberg; Fed governor on agent risk",
-   "topic": "Policy",
-   "replies": "Replies largely agree agents compress SVB-style runs from hours to seconds, since they react to the same signals at once. One says Barr also noted banks already see agents acting in retail accounts without verifiable consent; others suggest heavy checks on money moves only.",
-   "replyCount": 10
-  },
-  {
-   "title": "South Korea to inspect exam candidates' glasses after AI cheating scandal",
-   "author": "@Reuters",
-   "authorName": "Reuters",
-   "url": "https://x.com/Reuters/status/2122258386578288773",
-   "published": "2026-11-16 14:50 IST",
-   "summary": "South Korea will inspect glasses worn by exam candidates after an AI cheating scandal.",
-   "why": "Reuters wire; concrete real-world AI-device policy",
-   "topic": "Policy",
-   "replies": "Replies say every pair of glasses will be checked at this week's CSAT with smart-device monitors at each centre, following a tax-accountant exam scandal. Common take: next year it's a ring or earpiece, so exams need redesign rather than device checks. Plenty of jokes and emoji.",
-   "replyCount": 9
   }
  ]
 }
