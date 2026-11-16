@@ -128,9 +128,117 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-16T01:10:00+05:30",
- "windowHours": 3,
+ "updated": "2026-11-16T08:10:00+05:30",
+ "windowHours": 7,
  "posts": [
+  {
+   "title": "Qwen4-Max launches: new MoE, native vision, 1M context",
+   "author": "@Alibaba_Qwen",
+   "authorName": "Qwen",
+   "url": "https://x.com/Alibaba_Qwen/status/2122148127520289151",
+   "published": "2026-11-16 07:31 IST",
+   "summary": "Alibaba's Qwen says Qwen4-Max beats Qwen3.8-Max with up to ~50% fewer tokens and over 60% lower average cost per task in its internal evals. Pricing is $1.5/M input, $4.5/M output, $0.075/M cached; API is live on QwenCloud.",
+   "why": "Official Alibaba Qwen lab account; primary announcement.",
+   "topic": "Models",
+   "replies": "Mostly excited; one user says it's much better than 3.8 in Qoder IDE, another flags ~40 tokens/sec on the token plan as slow. People ask for total/active MoE parameter counts and keep requesting Qwen 4 27B and Flash; one reply passes on Model Studio docs settings for running it in Claude Code.",
+   "replyCount": 10
+  },
+  {
+   "title": "Arena: Qwen4-Max is #1 Chinese model, #14 on Agent Arena",
+   "author": "@arena",
+   "authorName": "Arena.ai",
+   "url": "https://x.com/arena/status/2122153116959482051",
+   "published": "2026-11-16 07:51 IST",
+   "summary": "Arena says Qwen4-Max debuts at #14 overall on Agent Arena (up from #39 for Qwen3.8-Max), with +7.5% net improvement over 14.7k agentic sessions, putting Alibaba as #5 lab behind Anthropic, Google, OpenAI and Meta. A separate post has it at #6 in Code Arena WebDev (1750, preliminary).",
+   "why": "Independent eval leaderboard (formerly LMArena); early third-party read on the launch.",
+   "topic": "Models",
+   "replies": "Low signal and few replies. One argues Chinese labs are falling behind the frontier since distillation access got harder; others just want the smaller 27B model.",
+   "replyCount": 6
+  },
+  {
+   "title": "OpenAI science blog: physicist + GPT-6 Astra on a lattice Standard Model",
+   "author": "@OpenAI",
+   "authorName": "OpenAI",
+   "url": "https://x.com/OpenAI/status/2122123437141553630",
+   "published": "2026-11-16 05:53 IST",
+   "summary": "OpenAI's first science-blog post has UCSB physicist Nathaniel Craig describing how he worked with GPT-6 Astra to develop a candidate lattice definition of the Standard Model. Greg Brockman also shared it.",
+   "why": "Official OpenAI account; first-person account from the named physicist.",
+   "topic": "Research",
+   "replies": "The useful replies stress it's a candidate, not a finished method: one quotes Craig calling it \"far more an answer in principle than an answer in practice,\" and another notes reflection positivity at finite lattice spacing is still open. Others ask exactly what Astra contributed versus Craig, and how it gets validated.",
+   "replyCount": 10
+  },
+  {
+   "title": "Bloomberg: Anthropic aims to raise $90.4B in the biggest IPO ever",
+   "author": "@business",
+   "authorName": "Bloomberg",
+   "url": "https://x.com/business/status/2122043214370594979",
+   "published": "2026-11-16 00:35 IST",
+   "summary": "Bloomberg reports Anthropic wants to raise $90.4 billion in its IPO, the largest ever, as Wall Street looks for proof AI spending pays off. News clusters put pricing on Nov 18 and Nasdaq trading under ANT the next day.",
+   "why": "Bloomberg; genuinely big story, IPO week.",
+   "topic": "Industry",
+   "replies": "Skeptical and mixed. Replies note ~$26B of the total comes from a separate share sale to seven chip and cloud companies (Google at $10B), compare it to Aramco's $29B, and warn the 'most important AI stock' framing before a single trade is risky. Rest is low signal.",
+   "replyCount": 10
+  },
+  {
+   "title": "roon: the feds are already deeply involved in AI launches",
+   "author": "@tszzl",
+   "authorName": "roon",
+   "url": "https://x.com/tszzl/status/2122126850516566317",
+   "published": "2026-11-16 06:07 IST",
+   "summary": "OpenAI's roon says people underestimate federal involvement in AI: a new model must be shown to the government as safe before launch, or export-control bans follow.",
+   "why": "OpenAI staffer (watchlist) commenting on how launches work.",
+   "topic": "Policy",
+   "replies": "People ask whether review is per release or capability-triggered, whether it covers open-weight models, and whether the feds see internal data. Some jab that OpenAI hasn't shipped a model in ~2.5 months; others call it an unofficial licensing regime. Plenty of anti-government noise.",
+   "replyCount": 10
+  },
+  {
+   "title": "Dwarkesh: Paul Christiano episode tomorrow, '1 in 3' on extreme ASI within a year",
+   "author": "@dwarkesh_sp",
+   "authorName": "Dwarkesh Patel",
+   "url": "https://x.com/dwarkesh_sp/status/2122064955545686119",
+   "published": "2026-11-16 02:01 IST",
+   "summary": "Dwarkesh Patel says his episode with Paul Christiano drops tomorrow; Christiano puts a 1 in 3 chance on extreme superintelligence within a year absent slowdown, and will lay out what labs and governments should do now.",
+   "why": "Watchlist podcaster; Christiano is a leading alignment researcher.",
+   "topic": "Research",
+   "replies": "Split. Some ask what a lab that believed 1-in-3 would actually change this month; others call it word salad or attack Christiano personally. A few just say they'll queue it.",
+   "replyCount": 10
+  },
+  {
+   "title": "Mollick: a weak AI in your home device is becoming a liability",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2122092065890635873",
+   "published": "2026-11-16 03:49 IST",
+   "summary": "Ethan Mollick says once you've used a central PC running Codex/Claude Code/OpenClaw, Siri and Alexa feel far behind; frontier models act like the household computer from sci-fi.",
+   "why": "Wharton professor (watchlist) with steady hands-on AI testing.",
+   "topic": "Tools",
+   "replies": "Mostly agreement that the gap is agency, not voice: finishing tasks like debugging wifi versus simple commands. Pushback: home device protocols are still fragmented (Matter), mistakes get costlier when the assistant acts, and some want it running locally without the cloud.",
+   "replyCount": 10
+  },
+  {
+   "title": "Rumor/early signal: Google building a GIF feature for Gemini",
+   "author": "@lyraxana",
+   "authorName": "lyra",
+   "url": "https://x.com/lyraxana/status/2122133895483150740",
+   "published": "2026-11-16 06:35 IST",
+   "summary": "lyra reports Google is working on a Gemini feature that animates images into GIFs, following OpenAI's GIF launch with Images 2.6 (h/t @Liammagnier7). Rumor/early signal.",
+   "why": "Rumor/early signal from a watchlist leaker; not confirmed by Google.",
+   "topic": "Tools",
+   "replies": "Only 4 replies, low signal. One says it existed earlier, one wonders about a new Nano Banana model, another asks for transparent backgrounds.",
+   "replyCount": 4
+  },
+  {
+   "title": "Rumor/early signal: Gemini subscriptions coming to Hermes",
+   "author": "@lyraxana",
+   "authorName": "lyra",
+   "url": "https://x.com/lyraxana/status/2122072705373487568",
+   "published": "2026-11-16 02:32 IST",
+   "summary": "lyra amplifies a HermesWatcher report that Nous is working with Google to let Gemini plan subscribers use their subscription in Hermes, instead of a separate API key. Rumor/early signal.",
+   "why": "Rumor/early signal; second-hand via fan account, no Google confirmation yet.",
+   "topic": "Tools",
+   "replies": "Users are excited about more subscription options and Hydrogen limits on AI Pro; skeptics worry about a restrictive SDK harness, token burn, and the Hermes TUI.",
+   "replyCount": 10
+  },
   {
    "title": "Fable & Opus rebuild the Starship catch in interactive 3D from one prompt",
    "author": "@emollick",
@@ -273,30 +381,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Long-form original essay from a major tech founder; a serious question, not a hot take.",
    "topic": "Policy",
    "replies": "Replies range widely: small family enterprises renting robots, people pursuing evolved desires like politics or religion, and the view that we have long been post-scarcity and will always compete. One suggests apprenticeships where someone truly depends on your judgment. Some replies are gloomy or off-topic.",
-   "replyCount": 10
-  },
-  {
-   "title": "FT: data-centre construction stocks lose $4.2tn as AI trade unravels",
-   "author": "@FT",
-   "authorName": "Financial Times",
-   "url": "https://x.com/FT/status/2121834199325737421",
-   "published": "2026-11-15 10:44 IST",
-   "summary": "The Financial Times reports that data-centre construction stocks have lost $4.2tn as the AI trade boom unravels. The post links to the full article.",
-   "why": "Reputable wire; included because the size of the drop is genuinely big for the AI build-out.",
-   "topic": "Industry",
-   "replies": "Only 4 replies. One compares it to the dot-com bust; another adds an FT-cited estimate that planned US data-centre builds would cost about 3.6% of GDP a year through 2032. One pushes back that GPU rental prices are still rising.",
-   "replyCount": 4
-  },
-  {
-   "title": "SatBench: 63% of lab-cited AI benchmarks are now saturated",
-   "author": "@emollick",
-   "authorName": "Ethan Mollick",
-   "url": "https://x.com/emollick/status/2121751565845360769",
-   "published": "2026-11-15 05:16 IST",
-   "summary": "Ethan Mollick built SatBench to track how fast major AI benchmarks get saturated. Of 173 benchmarks the labs have cited since 2023, he says 63% are now saturated, and saturation is happening faster each year.",
-   "why": "Watchlist researcher (Wharton); his own data project, not a repost.",
-   "topic": "Research",
-   "replies": "Useful pushback: one reply says the sample is biased because labs cite benchmarks they already win, and another says counting only independent runs gives 24% (per the post's footnote). Others raise test leakage into training data and say rerunning a few of your own real tasks beats leaderboards.",
    "replyCount": 10
   }
  ]
