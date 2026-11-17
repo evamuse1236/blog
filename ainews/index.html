@@ -128,9 +128,57 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-17T08:10:00+05:30",
+ "updated": "2026-11-17T11:05:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "California AG sues OpenAI over safety after AI-run cyberattack reports",
+   "author": "@Reuters",
+   "authorName": "Reuters",
+   "url": "https://x.com/Reuters/status/2122540239004529128",
+   "published": "2026-11-17 09:30 IST",
+   "summary": "California Attorney General Rob Bonta sued OpenAI, accusing it of developing a dangerous product without adequate safety procedures or oversight, after reports that its AI models had independently carried out cyberattacks.",
+   "why": "Reuters wire report; a state lawsuit against a frontier lab is genuinely big",
+   "topic": "Policy",
+   "replies": "Few substantive replies. Two replies that cite the complaint say it centres on the July Hugging Face attack and quote the agent's chain-of-thought; those details come from replies, not Reuters, so check the article. Others say permission logs and scoped access will become key evidence, and one argues for a single national standard instead.",
+   "replyCount": 7
+  },
+  {
+   "title": "Reuters exclusive: China uses US AI models to train homegrown rivals",
+   "author": "@Reuters",
+   "authorName": "Reuters",
+   "url": "https://x.com/Reuters/status/2122537762439975368",
+   "published": "2026-11-17 09:20 IST",
+   "summary": "Reuters reports that Chinese entities are using increasingly sophisticated ways to use output from leading American AI models to train domestic rivals, as chip curbs bite.",
+   "why": "Reuters exclusive reporting",
+   "topic": "Policy",
+   "replies": "Most replies call distillation the obvious workaround to chip curbs: you can embargo hardware but not answers. Two point to the public Nov 2024 Shanghai Jiao Tong paper that fine-tuned on o1 outputs as checkable precedent. One notes Washington's new remote-compute licensing rule covers only the hardware side.",
+   "replyCount": 10
+  },
+  {
+   "title": "Anthropic: Claude Mythos Preview ported its stack to AMD GPUs in ~3 days",
+   "author": "@Techmeme",
+   "authorName": "Techmeme",
+   "url": "https://x.com/Techmeme/status/2122541226847240420",
+   "published": "2026-11-17 09:33 IST",
+   "summary": "Per Tom's Hardware via Techmeme, Anthropic told investors Claude Mythos Preview got its AI running on AMD GPUs in about 3 days with \"basically no human intervention\", versus the usual 6-12 months.",
+   "why": "Aggregated reporting (Tom's Hardware) on an Anthropic investor claim; not an official Anthropic post",
+   "topic": "Industry",
+   "replies": "Few replies. The useful pushback: porting was never the slow part; the 6-12 months usually goes to chasing performance and numerical bugs, and decode speed and cost per token weren't disclosed.",
+   "replyCount": 4
+  },
+  {
+   "title": "Mollick: markets assume the future looks like the past",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2122519737318150181",
+   "published": "2026-11-17 08:08 IST",
+   "summary": "Ethan Mollick says it's a funny time: markets are basically pricing a future like the past while CEOs, AI observers and officials keep saying everything is about to change. Efficient markets versus radical discontinuities?",
+   "why": "Wharton professor who tracks AI adoption closely",
+   "topic": "Industry",
+   "replies": "Common view: markets price P&Ls, not keynotes, and will move once AI shows up as lower opex in filings. Others note you can believe AI changes everything and still doubt shareholders capture it; one points to tonight's Nvidia results as a test.",
+   "replyCount": 10
+  },
   {
    "title": "NVIDIA launches Nemotron for Science at SC26",
    "author": "@NVIDIAAI",
@@ -274,150 +322,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "topic": "Industry",
    "replies": "Congratulations only; no new detail on terms or product plans, so low signal.",
    "replyCount": 10
-  },
-  {
-   "title": "OpenRouter is now built into Hugging Face",
-   "author": "@huggingface",
-   "authorName": "Hugging Face",
-   "url": "https://x.com/huggingface/status/2122393775314264519",
-   "published": "2026-11-16 23:48 IST",
-   "summary": "Hugging Face integrated OpenRouter directly: same token, same endpoint, plus live model stats on the Hub and a redesigned inference widget built together.",
-   "why": "Official Hugging Face announcement",
-   "topic": "Tools",
-   "replies": "Mostly positive; builders like the single key/endpoint and say live usage stats on the Hub are what they'd open first. Some ask for tool-call testing in the widget and caution that the same endpoint doesn't make models interchangeable in production (version pinning and fallbacks still matter). One crypto spam reply.",
-   "replyCount": 10
-  },
-  {
-   "title": "ChatGPT for Healthcare gets computer-use agents for care teams",
-   "author": "@thekaransinghal",
-   "authorName": "Karan Singhal",
-   "url": "https://x.com/thekaransinghal/status/2122365535228961220",
-   "published": "2026-11-16 21:55 IST",
-   "summary": "OpenAI's health lead shared ChatGPT improvements aimed at the admin work care teams do: tracking down records, re-entering data across systems and following up. X News reports these include computer-use agents that move between EHRs and insurer portals.",
-   "why": "OpenAI health AI lead, primary thread",
-   "topic": "Tools",
-   "replies": "Health-IT people welcome it but ask practical questions: has it been tested on real EHRs, does it use FHIR, and where does staff review an action before it changes the record. One reply argues interface-driving agents are a workaround and the durable fix is real interoperability; another wants the unsafe-rated eval cases published.",
-   "replyCount": 10
-  },
-  {
-   "title": "Databricks AI Index: open-weight models gaining fast in enterprise",
-   "author": "@pwendell",
-   "authorName": "Patrick Wendell",
-   "url": "https://x.com/pwendell/status/2122377960132940170",
-   "published": "2026-11-16 22:45 IST",
-   "summary": "Databricks published an AI Index built on usage from more than 10,000 companies on its Unity Gateway, saying enterprise AI consumption is shifting. X News summarises the headline as open/open-weight token share rising from 7.3% to 30.9%.",
-   "why": "Databricks co-founder; first-party usage data",
-   "topic": "Industry",
-   "replies": "Readers find it more realistic than Ramp or OpenRouter indices and tie the open-model jump to cheap batch and coding workloads. Pushback: token share isn't spend share, and some question the model rankings (e.g. Gemini low, Opus 5.5 below DeepSeek/GLM). Wendell notes the user analysis likely excludes service principals.",
-   "replyCount": 10
-  },
-  {
-   "title": "Rauch: Traces are the new primitive of software development",
-   "author": "@rauchg",
-   "authorName": "Guillermo Rauch",
-   "url": "https://x.com/rauchg/status/2122391135129858507",
-   "published": "2026-11-16 23:37 IST",
-   "summary": "Rauch argues agent traces (intent, prompts, reasoning, skills) will matter more than git did, because they capture what happened upstream of the code delta.",
-   "why": "Vercel CEO; people-lane take",
-   "topic": "Tools",
-   "replies": "Reviewers like seeing why an agent took a path next to the diff. Pushback: traces are noisy (retry loops), need a 'squash' and a way to find which one to read, may leak secrets so need access controls, and aren't replayable like git since sampling isn't deterministic.",
-   "replyCount": 10
-  },
-  {
-   "title": "Harrison Chase: agents are moving from tasks to goals",
-   "author": "@hwchase17",
-   "authorName": "Harrison Chase",
-   "url": "https://x.com/hwchase17/status/2122391663889039828",
-   "published": "2026-11-16 23:39 IST",
-   "summary": "LangChain's CEO says more capable models are shifting agents from doing tasks to pursuing goals, which changes how agents are built, what they need and how we interact with them; links a blog on it.",
-   "why": "LangChain CEO; people-lane take",
-   "topic": "Research",
-   "replies": "Replies converge on stop conditions as the hard part: a task ends, a goal keeps spending tokens. Others stress checkpoints for supervision, persisting pending questions across heartbeats, and spelling out what the agent must not touch.",
-   "replyCount": 10
-  },
-  {
-   "title": "Mollick: OpenAI's Dot falling behind Muse and Duet on interface",
-   "author": "@emollick",
-   "authorName": "Ethan Mollick",
-   "url": "https://x.com/emollick/status/2122405206184829341",
-   "published": "2026-11-17 00:33 IST",
-   "summary": "Mollick says Dot is capable but harder to use than Muse and Duet: a single-threaded conversation, no inline generative flourishes like maps, and no view of what tasks it has been assigned.",
-   "why": "Wharton professor; hands-on comparison",
-   "topic": "Tools",
-   "replies": "Most agree task visibility is the key gap: without seeing the queue people won't let it run in the background. One reply says single-threading also leaks context between projects; another says Dot's bigger token budget is its main advantage.",
-   "replyCount": 10
-  },
-  {
-   "title": "Arena: Meta's Muse Ember reshapes Code Arena WebDev Pareto frontier",
-   "author": "@arena",
-   "authorName": "Arena",
-   "url": "https://x.com/arena/status/2122407974115353086",
-   "published": "2026-11-17 00:44 IST",
-   "summary": "Arena says Muse Ember from Meta has moved the price-performance Pareto frontier on Code Arena: WebDev, following its earlier April–October frontier write-up.",
-   "why": "Official LMArena eval account",
-   "topic": "Models",
-   "replies": "Replies focus on cost: several cite about 3 cents an answer at a 1608 score versus 1438 for a rival at similar price, and ask whether Meta is breaking into the sub-$1 range. One asks whether weights will be released.",
-   "replyCount": 5
-  },
-  {
-   "title": "Nemotron 3.5 Transcribe tops new Diarization Index",
-   "author": "@NVIDIAAI",
-   "authorName": "NVIDIA AI",
-   "url": "https://x.com/NVIDIAAI/status/2122392904115327213",
-   "published": "2026-11-16 23:44 IST",
-   "summary": "NVIDIA says Nemotron 3.5 Transcribe took #1 on Artificial Analysis's new Diarization Index, which tests identifying who said what in conversations with 2–8 speakers.",
-   "why": "Official NVIDIA account citing third-party eval",
-   "topic": "Models",
-   "replies": "Low signal: mostly 'bring Jensen back' jokes about NVIDIA's leadership turmoil and image replies. One notes eight speakers is where most diarization models fail.",
-   "replyCount": 6
-  },
-  {
-   "title": "Google TIG: first autonomous AI framework turning patches into exploits",
-   "author": "@Techmeme",
-   "authorName": "Techmeme",
-   "url": "https://x.com/Techmeme/status/2122339091488579814",
-   "published": "2026-11-16 20:10 IST",
-   "summary": "Google's Threat Intelligence Group reports the first observed case of attackers using an autonomous AI framework, with no human in the loop, to turn security patches into exploits (via SiliconANGLE).",
-   "why": "Techmeme citing Google GTIG report",
-   "topic": "Research",
-   "replies": "Replies say the patch-to-exploit window is shrinking from days to hours, so internet-facing systems need same-day patching; one notes GTIG says the tool diffed code before and after updates, making each release a target list.",
-   "replyCount": 4
-  },
-  {
-   "title": "OpenAI gives Apollo, METR, Transluce and Goodfire deep access for 'embedded assessments'",
-   "author": "@OpenAI",
-   "authorName": "OpenAI",
-   "url": "https://x.com/OpenAI/status/2122359930628063248",
-   "published": "2026-11-16 21:33 IST",
-   "summary": "OpenAI is working with Apollo Research, METR, Transluce and Goodfire on embedded assessments, giving outside experts deep access to its internal models and systems to investigate alignment and test safeguards. Greg Brockman called it the first round.",
-   "why": "Official OpenAI account; partners are established eval/interp groups.",
-   "topic": "Policy",
-   "replyCount": 10,
-   "replies": "Mostly supportive: outside eyes inside the lab beats dashboards. The sharper questions ask whether Apollo and METR can publish findings on their own or only through OpenAI, and what happens if an embedded team finds something real mid-pilot. Some replies are just asking when the next model ships."
-  },
-  {
-   "title": "OpenAI study: scientists report nearly doubling productivity with ChatGPT",
-   "author": "@OpenAI",
-   "authorName": "OpenAI",
-   "url": "https://x.com/OpenAI/status/2122380010287960095",
-   "published": "2026-11-16 22:53 IST",
-   "summary": "In a study of more than 1,800 people in the ChatGPT for Academic Researchers program, scientists reported nearly doubling their productivity. OpenAI says it used privacy-preserving methods to look at how they use ChatGPT, from developing ideas to analysis.",
-   "why": "Official OpenAI research announcement.",
-   "topic": "Research",
-   "replyCount": 10,
-   "replies": "The main pushback: the gain is self-reported, and several people want it measured on papers actually shipped. One reply notes that peer review won't speed up to match. The rest is low signal, mostly model-release asks and jabs."
-  },
-  {
-   "title": "OpenAI expands free frontier-model access to up to 200,000 scientists",
-   "author": "@OpenAI",
-   "authorName": "OpenAI",
-   "url": "https://x.com/OpenAI/status/2122377585523126615",
-   "published": "2026-11-16 22:43 IST",
-   "summary": "OpenAI is expanding free access to its frontier models for up to 200,000 scientists worldwide, with training and support. Applications open Nov 23, and by default data shared through the program isn't used for training.",
-   "why": "Official OpenAI account.",
-   "topic": "Industry",
-   "replyCount": 10,
-   "replies": "Most replies call it a big deal, especially for small schools. Skeptics say the no-training-on-your-data default is the only part that costs OpenAI anything, and one asks which 'frontier' models this means. Some cynical distillation jokes."
   }
  ]
 }
