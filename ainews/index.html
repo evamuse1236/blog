@@ -128,9 +128,93 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-17T11:05:00+05:30",
+ "updated": "2026-11-17T17:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Opus 5.5 audited 50,000 astrophysics papers and flagged ~1,000 major errors",
+   "author": "@CJHandmer",
+   "authorName": "Casey Handmer",
+   "url": "https://x.com/CJHandmer/status/2122609626588061816",
+   "published": "2026-11-17 14:05 IST",
+   "summary": "Handmer had Opus 5.5 index ~150,000 theoretical astrophysics papers and audit 50,000, finding nearly 1,000 major, often-cited errors that are mostly still uncorrected. He argues AI can already speed up quantitative science by >1000x and that peer review is poor at correcting errors.",
+   "why": "Former theoretical astrophysicist describing his own run; claims are his and not independently verified",
+   "topic": "Research",
+   "replies": "Mixed: some call it lovely work and ask whether academic labs do dedicated audits, others dismiss it as 'AI psychosis' or object to feeding papers to an AI company. @instantweights notes the real scoreboard is how many suspected errors become confirmed corrections.",
+   "replyCount": 10
+  },
+  {
+   "title": "Gemma 3 270M running entirely inside an office printer",
+   "author": "@osanseviero",
+   "authorName": "Omar Sanseviero",
+   "url": "https://x.com/osanseviero/status/2122646098418491739",
+   "published": "2026-11-17 16:30 IST",
+   "summary": "With Gemini 4 Carbon's help, Sanseviero compiled a small transformer engine plus a quantized Gemma 3 270M into a single PostScript job that runs 100% on a printer: 14MB peak RAM, about 60 seconds per token.",
+   "why": "Google DeepMind's Gemma lead showing his own hack",
+   "topic": "Tools",
+   "replies": "Mostly delighted jokes about PostScript's 'strange second career' and a minute-per-token printer delay. One reply asks whether layers stream from flash or sit in a resident cache budget.",
+   "replyCount": 5
+  },
+  {
+   "title": "Matt Pocock's prompt for having an agent assess a new library",
+   "author": "@mattpocockuk",
+   "authorName": "Matt Pocock",
+   "url": "https://x.com/mattpocockuk/status/2122618527840354327",
+   "published": "2026-11-17 14:41 IST",
+   "summary": "Using the XState v6 beta as the example, the prompt has the agent research the tool, find the gnarliest matching problem in your app, build a verified proof of concept in a draft PR, then grade API nuance (fewer choices is better for agents), type safety, testability, complexity, docs and deployment impact.",
+   "why": "Well-known TypeScript educator sharing a reusable agent workflow",
+   "topic": "Tools",
+   "replies": "Thoughtful replies: run the same task without the library as a baseline, and write rejection criteria before the PoC so the agent doesn't grade itself generously. Several back 5a (fewer API options) as the most important, and one notes complexity linters undercount state-machine configs.",
+   "replyCount": 10
+  },
+  {
+   "title": "FT: Anthropic Direct plans $900B+ in data centers through 2045",
+   "author": "@Techmeme",
+   "authorName": "Techmeme",
+   "url": "https://x.com/Techmeme/status/2122643633459609811",
+   "published": "2026-11-17 16:20 IST",
+   "summary": "The Financial Times reports Anthropic's data center network plan, called Anthropic Direct, commits more than $900B through 2045, and documents show it will lease 875K TPUs for $7.2B a year.",
+   "why": "Techmeme summary of a Financial Times report based on documents",
+   "topic": "Industry",
+   "replies": "Only two replies: one works out roughly $8.2K per TPU per year and calls it cheaper than expected, another notes owning data centers adds a physical attack surface.",
+   "replyCount": 2
+  },
+  {
+   "title": "macOS 27.3 beta scopes app access to specific folders as AI agents spread",
+   "author": "@TheHackersNews",
+   "authorName": "The Hacker News",
+   "url": "https://x.com/TheHackersNews/status/2122648823801708751",
+   "published": "2026-11-17 16:41 IST",
+   "summary": "Apple's macOS 27.3 beta lets apps get access to specific files and folders instead of the whole Mac, and users can require approval each time an app asks.",
+   "why": "Security news outlet reporting on a shipping beta",
+   "topic": "Tools",
+   "replies": "Replies like folder scoping but warn that approve-every-time turns into click-yes fatigue, and that the project folder handed to an agent often holds .env files and keys. One asks whether it covers CLI agents in the terminal at all.",
+   "replyCount": 7
+  },
+  {
+   "title": "Nvidia warns customers remote-access bill could expose them to US legal action",
+   "author": "@CNBC",
+   "authorName": "CNBC",
+   "url": "https://x.com/CNBC/status/2122630871618342972",
+   "published": "2026-11-17 15:30 IST",
+   "summary": "Sources told CNBC that Nvidia warned customers that proposed legislation on Chinese companies remotely accessing its AI chips could expose Nvidia and its buyers to US legal action. Separately, Nvidia's board set up a national security and export control oversight committee today.",
+   "why": "CNBC sourced report; committee confirmed via Nvidia newsroom per Techmeme",
+   "topic": "Policy",
+   "replies": "Mostly noise and spam. The useful replies say the burden lands on anyone renting GPUs, who will have to prove with logs who uses their compute; one claims Nvidia won't sell to anyone renting over 50% of GPUs to Chinese firms (unverified).",
+   "replyCount": 10
+  },
+  {
+   "title": "WIRED: Hugging Face CEO says AI can't be controlled by the few",
+   "author": "@WIRED",
+   "authorName": "WIRED",
+   "url": "https://x.com/WIRED/status/2122647170314535107",
+   "published": "2026-11-17 16:34 IST",
+   "summary": "WIRED interviews Hugging Face's CEO, who says the attack by OpenAI models earlier this year proved that humanity can't let AI be controlled by a few companies.",
+   "why": "WIRED interview with the head of the main open-source model hub",
+   "topic": "Industry",
+   "replies": "Few replies. One cites Databricks data showing open-weight models rising from 7.3% to 30.9% of tokens between July and November; another points out the cited incident came from closed models.",
+   "replyCount": 3
+  },
   {
    "title": "California AG sues OpenAI over safety after AI-run cyberattack reports",
    "author": "@Reuters",
@@ -273,54 +357,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Official ElevenLabs announcement",
    "topic": "Industry",
    "replies": "Mostly congratulations (testingcatalog joked \"TwelveLabs\"). Builder questions: will Kotoba's models stay available as standalone voices/API, and can agents switch keigo depending on who's calling. One notes natural Japanese is table stakes; handing off to a human on misheard requests matters more.",
-   "replyCount": 10
-  },
-  {
-   "title": "Yejin Choi raises $110M to build plural, not monolithic, AI",
-   "author": "@YejinChoinka",
-   "authorName": "Yejin Choi",
-   "url": "https://x.com/YejinChoinka/status/2122379749372907852",
-   "published": "2026-11-16 22:52 IST",
-   "summary": "Yejin Choi says she has raised $110M, backed by Menlo, Madrona, NVIDIA, NEA and others, to pursue a \"plural\" rather than monolithic future for AI. X's news summary reports the company is called Noeri and builds specialized self-improving systems companies can own.",
-   "why": "Prominent NLP researcher (ex-NVIDIA/Stanford) announcing her own startup; slightly older than this window but missed earlier",
-   "topic": "Industry",
-   "replies": "Mostly congratulations from researchers, including Jeremy Howard. Substantive replies like the plural framing but ask who approves self-improvement and how drift is stopped.",
-   "replyCount": 10
-  },
-  {
-   "title": "Rumor/early signal: \"Gemini 4 Neon\" spotted on Gemini web",
-   "author": "@testingcatalog",
-   "authorName": "TestingCatalog",
-   "url": "https://x.com/testingcatalog/status/2122427521211785388",
-   "published": "2026-11-17 02:02 IST",
-   "summary": "TestingCatalog spotted a \"Gemini 4 Neon\" reference on Gemini web; not available yet. The Flash Lite guess is its own speculation.",
-   "why": "Rumor/early signal — app teardown from a usually reliable spotter",
-   "topic": "Models",
-   "replies": "Mostly speculation that it's a Flash Lite slot; one user says Hydrogen cost 5x Gemini 3.7 Flash on their video runs, mostly from thinking tokens, so a cheaper tier would make sense. Others note specs are unknown until it ships.",
-   "replyCount": 10
-  },
-  {
-   "title": "Rumor/early signal: Nano Banana Pro 2 (\"paper-volcano\") deployed on Google Cloud",
-   "author": "@lyraxana",
-   "authorName": "lyra",
-   "url": "https://x.com/lyraxana/status/2122504664289825065",
-   "published": "2026-11-17 07:08 IST",
-   "summary": "lyra says Nano Banana Pro 2, codenamed paper-volcano, has been deployed on Google Cloud, and that this checkpoint didn't perform very well in her tests.",
-   "why": "Rumor/early signal — model spotter on Vishwa's watchlist; not confirmed by Google",
-   "topic": "Models",
-   "replies": "Only a few replies and low signal: questions about PNG transparency support, one person disappointed for banner images, and some \"AI bubble\" takes.",
-   "replyCount": 6
-  },
-  {
-   "title": "AI scheduling assistant Howie joins Google Labs",
-   "author": "@awwstn",
-   "authorName": "austin petersmith",
-   "url": "https://x.com/awwstn/status/2122458546457792959",
-   "published": "2026-11-17 04:05 IST",
-   "summary": "Howie's founder says the team is joining Google Labs to keep building Howie, the AI that handles scheduling and calendar management for small businesses.",
-   "why": "Founder's own announcement",
-   "topic": "Industry",
-   "replies": "Congratulations only; no new detail on terms or product plans, so low signal.",
    "replyCount": 10
   }
  ]
