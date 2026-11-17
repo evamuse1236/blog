@@ -128,9 +128,153 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-17T01:10:00+05:30",
+ "updated": "2026-11-17T08:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "NVIDIA launches Nemotron for Science at SC26",
+   "author": "@NVIDIAAI",
+   "authorName": "NVIDIA AI",
+   "url": "https://x.com/NVIDIAAI/status/2122479807858680178",
+   "published": "2026-11-17 05:29 IST",
+   "summary": "NVIDIA announced Nemotron for Science at SC26: a collection of open models, datasets, tools and post-training recipes to help researchers build more accurate and efficient AI agents for science.",
+   "why": "Official NVIDIA AI announcement",
+   "topic": "Models",
+   "replies": "Replies are mostly off-topic anger about NVIDIA leadership (\"bring back Jensen\") and chip-supply doom posts, so low signal. The few substantive ones point to the open ~50k-question chemistry dataset (LitmusBench v0.2) and post-training recipes as the useful part, more than another model drop.",
+   "replyCount": 10
+  },
+  {
+   "title": "Answer.AI releases SolveIt to the public",
+   "author": "@jeremyphoward",
+   "authorName": "Jeremy Howard",
+   "url": "https://x.com/jeremyphoward/status/2122487017137398256",
+   "published": "2026-11-17 05:58 IST",
+   "summary": "Jeremy Howard says SolveIt, the tool Answer.AI built internally to learn, explore and develop mastery with AI, is being released to the public for the first time.",
+   "why": "fast.ai / Answer.AI founder announcing his own product",
+   "topic": "Tools",
+   "replies": "Warm reception; past course users say they still use the SolveIt approach and understand what they ship better. People like editing the AI's reply instead of arguing with it. Open questions: does it remember a learner's past mistakes across sessions, and how does it help when you're stuck mid-problem.",
+   "replyCount": 10
+  },
+  {
+   "title": "The external sandbox pattern for coding agents",
+   "author": "@simonw",
+   "authorName": "Simon Willison",
+   "url": "https://x.com/simonw/status/2122500307557265651",
+   "published": "2026-11-17 06:51 IST",
+   "summary": "Simon Willison describes running coding agents on your Mac while executing their code in a WebAssembly, QEMU or Apple Container sandbox, with demos for Claude Code, Codex and Pi.",
+   "why": "Long-running, careful practitioner writing on agent security",
+   "topic": "Tools",
+   "replies": "Builders like the split (agent on the Mac, commands in a sandbox, API keys on a proxy) and the credential swap. Key caveat raised: for Claude Code only bash goes in the box; its Read/Edit tools still touch your Mac under Claude's own permissions. Others ask whether the credential swap covers git-over-ssh and suggest iptables instead of a proxy.",
+   "replyCount": 10
+  },
+  {
+   "title": "Theo: Fable 5.2 knows which feedback to ignore",
+   "author": "@theo",
+   "authorName": "Theo",
+   "url": "https://x.com/theo/status/2122429147289206976",
+   "published": "2026-11-17 02:08 IST",
+   "summary": "Theo says Fable 5.2 is the first model that consistently ignores unimportant feedback; several times Opus ran in circles on a thread and switching to Fable got a \"this is fine, just ship it\" outcome.",
+   "why": "Hands-on report from a heavy daily coding-agent user",
+   "topic": "Models",
+   "replies": "Many agree that chasing every nitpick wastes more time than real bugs. Pushback: where is the line between skipping a naming nit and dismissing a failing test, and one user says it also ignores feedback that later hurts it, then overcorrects. A couple of replies still prefer Opus 5.5 on long tasks.",
+   "replyCount": 10
+  },
+  {
+   "title": "Thariq: software factories are a temporary problem",
+   "author": "@trq212",
+   "authorName": "Thariq",
+   "url": "https://x.com/trq212/status/2122438326431154210",
+   "published": "2026-11-17 02:45 IST",
+   "summary": "Thariq argues software factories are temporary because models will learn to build them, and the more interesting question is how to build a workspace where agents collaborate with you.",
+   "why": "Anthropic Claude Code engineer on where agent tooling is heading",
+   "topic": "Tools",
+   "replies": "Thariq adds in-thread that there won't be one \"workspace app\"; he wants people to bring their own pieces. Replies suggest pinning build IDs and timestamps in feedback, MCP events, and a shared context layer; one notes the core problem is still authorization (which agent may do what, where).",
+   "replyCount": 10
+  },
+  {
+   "title": "Fable 5.2 is more direct and shorter than 5.1 on AA-PersonalityBench",
+   "author": "@ArtificialAnlys",
+   "authorName": "Artificial Analysis",
+   "url": "https://x.com/ArtificialAnlys/status/2122475355902546307",
+   "published": "2026-11-17 05:12 IST",
+   "summary": "Artificial Analysis says Claude Fable 5.2 is more direct than 5.1, writes notably shorter responses with almost no em dashes, and ranks higher on Direct and Answer First but lower on Informativeness and Conviction.",
+   "why": "Independent benchmark org",
+   "topic": "Research",
+   "replies": "People welcome the shorter, em-dash-free style but flag the steep Informativeness drop as the real trade; some ask whether the bench just rewards brevity. One coder says in sessions 5.2 starts writing and stops telling you which file it's about to change.",
+   "replyCount": 10
+  },
+  {
+   "title": "Seedream 5.5 and Canva Craft reshape the text-to-image price frontier",
+   "author": "@ArtificialAnlys",
+   "authorName": "Artificial Analysis",
+   "url": "https://x.com/ArtificialAnlys/status/2122445489736122633",
+   "published": "2026-11-17 03:13 IST",
+   "summary": "On AA-Image-T2I v2.1, Seedream 5.5 is now the best model under $30 per 1k images (at $20), and Canva Craft becomes the cheapest model in its band; previously nothing between $10 and $34 ranked above Muse Image.",
+   "why": "Independent benchmark org",
+   "topic": "Models",
+   "replies": "Replies focus on Seedream 5.5 at $20/1k as the one to test first, and ask whether quality is actually close to Muse Image. One calls Canva Craft the sleeper because it plans layout before rendering; another says cost per accepted image matters more than per generated image.",
+   "replyCount": 10
+  },
+  {
+   "title": "Japanese voice AI lab Kotoba joins ElevenLabs",
+   "author": "@ElevenLabs",
+   "authorName": "ElevenLabs",
+   "url": "https://x.com/ElevenLabs/status/2122420600408866844",
+   "published": "2026-11-17 01:34 IST",
+   "summary": "ElevenLabs says Kotoba, a voice AI lab in Japan, is joining it, and Kotoba's Japanese voice research will go into ElevenAgents so businesses can serve customers naturally in Japanese.",
+   "why": "Official ElevenLabs announcement",
+   "topic": "Industry",
+   "replies": "Mostly congratulations (testingcatalog joked \"TwelveLabs\"). Builder questions: will Kotoba's models stay available as standalone voices/API, and can agents switch keigo depending on who's calling. One notes natural Japanese is table stakes; handing off to a human on misheard requests matters more.",
+   "replyCount": 10
+  },
+  {
+   "title": "Yejin Choi raises $110M to build plural, not monolithic, AI",
+   "author": "@YejinChoinka",
+   "authorName": "Yejin Choi",
+   "url": "https://x.com/YejinChoinka/status/2122379749372907852",
+   "published": "2026-11-16 22:52 IST",
+   "summary": "Yejin Choi says she has raised $110M, backed by Menlo, Madrona, NVIDIA, NEA and others, to pursue a \"plural\" rather than monolithic future for AI. X's news summary reports the company is called Noeri and builds specialized self-improving systems companies can own.",
+   "why": "Prominent NLP researcher (ex-NVIDIA/Stanford) announcing her own startup; slightly older than this window but missed earlier",
+   "topic": "Industry",
+   "replies": "Mostly congratulations from researchers, including Jeremy Howard. Substantive replies like the plural framing but ask who approves self-improvement and how drift is stopped.",
+   "replyCount": 10
+  },
+  {
+   "title": "Rumor/early signal: \"Gemini 4 Neon\" spotted on Gemini web",
+   "author": "@testingcatalog",
+   "authorName": "TestingCatalog",
+   "url": "https://x.com/testingcatalog/status/2122427521211785388",
+   "published": "2026-11-17 02:02 IST",
+   "summary": "TestingCatalog spotted a \"Gemini 4 Neon\" reference on Gemini web; not available yet. The Flash Lite guess is its own speculation.",
+   "why": "Rumor/early signal — app teardown from a usually reliable spotter",
+   "topic": "Models",
+   "replies": "Mostly speculation that it's a Flash Lite slot; one user says Hydrogen cost 5x Gemini 3.7 Flash on their video runs, mostly from thinking tokens, so a cheaper tier would make sense. Others note specs are unknown until it ships.",
+   "replyCount": 10
+  },
+  {
+   "title": "Rumor/early signal: Nano Banana Pro 2 (\"paper-volcano\") deployed on Google Cloud",
+   "author": "@lyraxana",
+   "authorName": "lyra",
+   "url": "https://x.com/lyraxana/status/2122504664289825065",
+   "published": "2026-11-17 07:08 IST",
+   "summary": "lyra says Nano Banana Pro 2, codenamed paper-volcano, has been deployed on Google Cloud, and that this checkpoint didn't perform very well in her tests.",
+   "why": "Rumor/early signal — model spotter on Vishwa's watchlist; not confirmed by Google",
+   "topic": "Models",
+   "replies": "Only a few replies and low signal: questions about PNG transparency support, one person disappointed for banner images, and some \"AI bubble\" takes.",
+   "replyCount": 6
+  },
+  {
+   "title": "AI scheduling assistant Howie joins Google Labs",
+   "author": "@awwstn",
+   "authorName": "austin petersmith",
+   "url": "https://x.com/awwstn/status/2122458546457792959",
+   "published": "2026-11-17 04:05 IST",
+   "summary": "Howie's founder says the team is joining Google Labs to keep building Howie, the AI that handles scheduling and calendar management for small businesses.",
+   "why": "Founder's own announcement",
+   "topic": "Industry",
+   "replies": "Congratulations only; no new detail on terms or product plans, so low signal.",
+   "replyCount": 10
+  },
   {
    "title": "OpenRouter is now built into Hugging Face",
    "author": "@huggingface",
@@ -274,113 +418,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "topic": "Industry",
    "replyCount": 10,
    "replies": "Most replies call it a big deal, especially for small schools. Skeptics say the no-training-on-your-data default is the only part that costs OpenAI anything, and one asks which 'frontier' models this means. Some cynical distillation jokes."
-  },
-  {
-   "title": "OpenAI releases free CSAM detection classifier to vetted organizations",
-   "author": "@OpenAINewsroom",
-   "authorName": "OpenAI Newsroom",
-   "url": "https://x.com/OpenAINewsroom/status/2122375519853559954",
-   "published": "2026-11-16 22:35 IST",
-   "summary": "OpenAI is giving vetted organizations a free tool to help detect child sexual abuse material, including AI-generated images. It is also adding ChatGPT warnings, publishing guidance for developers, and supporting child safety investigators.",
-   "why": "Official OpenAI Newsroom account.",
-   "topic": "Policy",
-   "replyCount": 10,
-   "replies": "Reaction is mostly positive. One reply notes why this matters: hash matching only catches known images, so you need a classifier for new AI-generated ones. A few people are skeptical about how it was trained, and many replies are off-topic model-release questions."
-  },
-  {
-   "title": "Perplexity launches Frontier Research, aiming at autonomous research",
-   "author": "@perplexity_ai",
-   "authorName": "Perplexity",
-   "url": "https://x.com/perplexity_ai/status/2122352071295009156",
-   "published": "2026-11-16 21:02 IST",
-   "summary": "Perplexity launched Perplexity Frontier Research, whose stated goal is a system that can do autonomous research. The work will cover multi-agent orchestration, RL, continual learning, systems and pre-training.",
-   "why": "Official Perplexity account.",
-   "topic": "Research",
-   "replyCount": 10,
-   "replies": "Replies are mostly hype. The useful pushback is about grading: an automated researcher is only as good as its checker. One reply cites a scaling study where multi-agent setups did worse than a single agent on step-by-step tasks."
-  },
-  {
-   "title": "DeepMind shows Gemini 4 Carbon doing multi-step lab science in Antigravity",
-   "author": "@GoogleDeepMind",
-   "authorName": "Google DeepMind",
-   "url": "https://x.com/GoogleDeepMind/status/2122366992376107167",
-   "published": "2026-11-16 22:01 IST",
-   "summary": "Google DeepMind says researchers are using Gemini 4 Carbon in Google Antigravity on multi-step problems in physics, math and the life sciences.",
-   "why": "Official Google DeepMind account.",
-   "topic": "Research",
-   "replyCount": 10,
-   "replies": "Repliers want numbers: how often its flagged lab-notebook errors were real and how it checks its own work. One reply (@xxxaarr) says a headline 40-fold gain is about retrieving protein relatives, not structure-prediction accuracy. The rest is mostly hype."
-  },
-  {
-   "title": "Liquid AI's d1.2-ultra tops Artificial Analysis Decision Index",
-   "author": "@ArtificialAnlys",
-   "authorName": "Artificial Analysis",
-   "url": "https://x.com/ArtificialAnlys/status/2122350577766338883",
-   "published": "2026-11-16 20:56 IST",
-   "summary": "Liquid AI released d1.2-ultra and d1.2, updates to its decision models. Artificial Analysis ranks d1.2-ultra #1 on its Decision Index v2.1 and on AA-Paperclip, with d1.2 at #6.",
-   "why": "Independent benchmark org (Artificial Analysis).",
-   "topic": "Models",
-   "replyCount": 10,
-   "replies": "Replies like the cost profile for high-volume routing and extraction. They also ask for wall-clock times, a split between extraction and decision errors, and whether ultra's lead is spread across tasks. One reply flags a gap: Liquid claims audio input, but the AA card lists only text and image."
-  },
-  {
-   "title": "New MKA benchmark: agents produce decks, docs and sheets for 3–8 hour expert tasks",
-   "author": "@osanseviero",
-   "authorName": "Omar Sanseviero",
-   "url": "https://x.com/osanseviero/status/2122360073171411039",
-   "published": "2026-11-16 21:34 IST",
-   "summary": "Omar Sanseviero announced MKA (Multimodal Knowledge Agent), a benchmark built with Artificial Analysis. It has 200 tasks across 83 occupations, each 3–8 hours of expert work, with blueprints, schemas and charts as input. Agents output decks, docs and sheets, and the open harness and sample tasks are on Hugging Face.",
-   "why": "Watchlist researcher (Google); co-built with Artificial Analysis.",
-   "topic": "Research",
-   "replyCount": 10,
-   "replies": "Nearly every substantive reply asks the same question: who grades an 8-hour deck, experts or a judge model? People like that it tests real-length jobs and charts and schemas beyond OCR."
-  },
-  {
-   "title": "Rumor/early signal: new MAI models expected at Microsoft Ignite Nov 17",
-   "author": "@testingcatalog",
-   "authorName": "🚨 AI News | TestingCatalog",
-   "url": "https://x.com/testingcatalog/status/2122380991750607319",
-   "published": "2026-11-16 22:57 IST",
-   "summary": "TestingCatalog spotted a redesigned MAI Playground UI ahead of Microsoft Ignite. It says it expects new MAI models to be announced on Nov 17.",
-   "why": "Rumor/early signal: TestingCatalog's own app finding; new models not confirmed by Microsoft.",
-   "topic": "Industry",
-   "replyCount": 0
-  },
-  {
-   "title": "Cohere adds Video Intelligence to Compass (private preview)",
-   "author": "@cohere",
-   "authorName": "Cohere",
-   "url": "https://x.com/cohere/status/2122378588167270740",
-   "published": "2026-11-16 22:47 IST",
-   "summary": "Cohere introduced Video Intelligence in Compass, which makes moments in video libraries searchable with timestamped results. It's in private preview.",
-   "why": "Official Cohere account.",
-   "topic": "Tools",
-   "replyCount": 7,
-   "replies": "Few outside replies. One asks how the claimed 4.4-point nDCG@10 lead holds up on only the six public datasets, since five of the eleven are internal. The rest of the thread is Cohere's own follow-ups."
-  },
-  {
-   "title": "US Commerce issues interim rule limiting remote access to advanced AI chips",
-   "author": "@business",
-   "authorName": "Bloomberg",
-   "url": "https://x.com/business/status/2122326334101754355",
-   "published": "2026-11-16 19:20 IST",
-   "summary": "The US Commerce Department issued an interim rule to limit remote access to advanced AI chips and servers from certain countries. It follows more scrutiny after an alleged espionage scandal involving Nvidia; NYT and CNBC also report it as closing the third-country cloud loophole.",
-   "why": "Bloomberg wire, corroborated by NYT and CNBC within the hour",
-   "topic": "Policy",
-   "replies": "Low signal, with spam and off-topic rants mixed in. A few replies make real points: @JustinC2Invests says policing data and compute flows is hard and calls the rule ill-fated long term, and @bytebreakdaily notes it targets people renting chips in third-country data centers. A Chinese-language reply says cloud providers will now have to vet who rents compute.",
-   "replyCount": 10
-  },
-  {
-   "title": "Matt Pocock on poteto's AIE Code talk: \"nuance tends to lead to slop\"",
-   "author": "@mattpocockuk",
-   "authorName": "Matt Pocock",
-   "url": "https://x.com/mattpocockuk/status/2122316570852487441",
-   "published": "2026-11-16 18:41 IST",
-   "summary": "Matt Pocock calls @poteto's AIE Code talk excellent and picks out one idea: \"nuance tends to lead to slop\". To raise quality, design APIs and automated checks that remove nuance from agents' decisions: ban useEffect, ban most explanatory comments, and hide complexity behind APIs.",
-   "why": "Well-known TypeScript educator highlighting Lauren Tan's (poteto) talk; both on watchlist",
-   "topic": "Tools",
-   "replies": "Mostly agreement that deterministic checks beat prompt rules. @vinicius2prg writes \"lint errors >>> AGENTS.md line\", and @yourtowhid explains how to ban useEffect with core ESLint rules. Pushback from @clhdev, who asks how you tell a harmful comment from one that prevents a bad refactor and calls \"banning 99%\" a guess.",
-   "replyCount": 10
   }
  ]
 }
