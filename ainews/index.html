@@ -128,9 +128,68 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-17T17:10:00+05:30",
+ "updated": "2026-11-17T20:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Isomorphic Labs raises $5B to design drugs with AI",
+   "author": "@demishassabis",
+   "authorName": "Demis Hassabis",
+   "url": "https://x.com/demishassabis/status/2122662616367853670",
+   "published": "2026-11-17 17:36 IST",
+   "summary": "Hassabis announced $5B in funding for Isomorphic Labs to push its mission to 'Solve All Disease' by reimagining drug design with AI to cut the time and cost of finding new medicines. Other reports put it as a Series C from Greenoaks, Sequoia and a16z with Alphabet continuing.",
+   "why": "Founder's own announcement",
+   "topic": "Industry",
+   "replies": "Mostly congratulations. The substantive replies say wet-lab throughput and human trials, not model ideas, will set the pace, and that $5B only looks cheap if AI-designed molecules really reach trials faster.",
+   "replyCount": 10
+  },
+  {
+   "title": "Mollick: Anthropic's advice for one capable agent beats a sprawl of subagents",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2122664990624641421",
+   "published": "2026-11-17 17:45 IST",
+   "summary": "Mollick shares an Anthropic piece he calls both right and a condemnation of many company 'agentic solutions': instead of specialized subagents built by different teams, one agent doing it all is often better and cheaper.",
+   "why": "Wharton professor who tracks AI adoption in companies, pointing at Anthropic guidance",
+   "topic": "Tools",
+   "replies": "Mostly agreement. Pushback says small single-job models still make sense for in-loop checks like PII or guardrails, and that per-team subagents were about org ownership, not tech. @rzrgrv suggests building an end-to-end eval first and keeping a subagent only if folding it in scores worse.",
+   "replyCount": 10
+  },
+  {
+   "title": "Matt Pocock's /constrain idea: harsh lint rules to box agents in",
+   "author": "@mattpocockuk",
+   "authorName": "Matt Pocock",
+   "url": "https://x.com/mattpocockuk/status/2122659341685694586",
+   "published": "2026-11-17 17:23 IST",
+   "summary": "Following on from 'too much choice is bad for agents', Pocock proposes making extremely constrained versions of tools, for example React with all state forced into Zustand/useReducer, enforced by very strict lint rules. He's thinking of calling it /constrain.",
+   "why": "TypeScript educator; follow-up to his earlier library-assessment prompt",
+   "topic": "Tools",
+   "replies": "Mostly supportive ('agents treat every option you give them as a dare'). Practical concerns: block the agent from just adding eslint-disable, and keep explicit escape hatches so it doesn't hack around rules. Some suggest only locking risky boundaries and testing the rest.",
+   "replyCount": 10
+  },
+  {
+   "title": "Nathan Lambert on how Amodei's open-source warning is framed",
+   "author": "@natolambert",
+   "authorName": "Nathan Lambert",
+   "url": "https://x.com/natolambert/status/2122663336903147953",
+   "published": "2026-11-17 17:39 IST",
+   "summary": "Lambert says Amodei's comments on the state of the technology are largely agreeable, but he pairs them with forecasts of what comes next that experts don't agree on, which is a persuasive way of talking.",
+   "why": "Ai2 researcher and open-model advocate responding to Amodei's Senate remarks on open models",
+   "topic": "Policy",
+   "replies": "Replies mostly agree that a settled read of today's tech is being bundled with an unsettled forecast, and suggest splitting the two claims. A minority side with Amodei that uncontrolled open models are risky; some replies are just partisan jabs.",
+   "replyCount": 10
+  },
+  {
+   "title": "The Information: Altman eyed Nick Cammarata's interpretability work in Goodfire talks",
+   "author": "@theinformation",
+   "authorName": "The Information",
+   "url": "https://x.com/theinformation/status/2122698792164085798",
+   "published": "2026-11-17 20:00 IST",
+   "summary": "Exclusive: during OpenAI's talks to buy interpretability startup Goodfire, Sam Altman was especially interested in researcher Nick Cammarata, a former OpenAI staffer whose essay on mechanistic interpretability went viral last month.",
+   "why": "The Information exclusive; reveals OpenAI was in talks to acquire Goodfire",
+   "topic": "Industry",
+   "replyCount": 0
+  },
   {
    "title": "Opus 5.5 audited 50,000 astrophysics papers and flagged ~1,000 major errors",
    "author": "@CJHandmer",
@@ -273,90 +332,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Official NVIDIA AI announcement",
    "topic": "Models",
    "replies": "Replies are mostly off-topic anger about NVIDIA leadership (\"bring back Jensen\") and chip-supply doom posts, so low signal. The few substantive ones point to the open ~50k-question chemistry dataset (LitmusBench v0.2) and post-training recipes as the useful part, more than another model drop.",
-   "replyCount": 10
-  },
-  {
-   "title": "Answer.AI releases SolveIt to the public",
-   "author": "@jeremyphoward",
-   "authorName": "Jeremy Howard",
-   "url": "https://x.com/jeremyphoward/status/2122487017137398256",
-   "published": "2026-11-17 05:58 IST",
-   "summary": "Jeremy Howard says SolveIt, the tool Answer.AI built internally to learn, explore and develop mastery with AI, is being released to the public for the first time.",
-   "why": "fast.ai / Answer.AI founder announcing his own product",
-   "topic": "Tools",
-   "replies": "Warm reception; past course users say they still use the SolveIt approach and understand what they ship better. People like editing the AI's reply instead of arguing with it. Open questions: does it remember a learner's past mistakes across sessions, and how does it help when you're stuck mid-problem.",
-   "replyCount": 10
-  },
-  {
-   "title": "The external sandbox pattern for coding agents",
-   "author": "@simonw",
-   "authorName": "Simon Willison",
-   "url": "https://x.com/simonw/status/2122500307557265651",
-   "published": "2026-11-17 06:51 IST",
-   "summary": "Simon Willison describes running coding agents on your Mac while executing their code in a WebAssembly, QEMU or Apple Container sandbox, with demos for Claude Code, Codex and Pi.",
-   "why": "Long-running, careful practitioner writing on agent security",
-   "topic": "Tools",
-   "replies": "Builders like the split (agent on the Mac, commands in a sandbox, API keys on a proxy) and the credential swap. Key caveat raised: for Claude Code only bash goes in the box; its Read/Edit tools still touch your Mac under Claude's own permissions. Others ask whether the credential swap covers git-over-ssh and suggest iptables instead of a proxy.",
-   "replyCount": 10
-  },
-  {
-   "title": "Theo: Fable 5.2 knows which feedback to ignore",
-   "author": "@theo",
-   "authorName": "Theo",
-   "url": "https://x.com/theo/status/2122429147289206976",
-   "published": "2026-11-17 02:08 IST",
-   "summary": "Theo says Fable 5.2 is the first model that consistently ignores unimportant feedback; several times Opus ran in circles on a thread and switching to Fable got a \"this is fine, just ship it\" outcome.",
-   "why": "Hands-on report from a heavy daily coding-agent user",
-   "topic": "Models",
-   "replies": "Many agree that chasing every nitpick wastes more time than real bugs. Pushback: where is the line between skipping a naming nit and dismissing a failing test, and one user says it also ignores feedback that later hurts it, then overcorrects. A couple of replies still prefer Opus 5.5 on long tasks.",
-   "replyCount": 10
-  },
-  {
-   "title": "Thariq: software factories are a temporary problem",
-   "author": "@trq212",
-   "authorName": "Thariq",
-   "url": "https://x.com/trq212/status/2122438326431154210",
-   "published": "2026-11-17 02:45 IST",
-   "summary": "Thariq argues software factories are temporary because models will learn to build them, and the more interesting question is how to build a workspace where agents collaborate with you.",
-   "why": "Anthropic Claude Code engineer on where agent tooling is heading",
-   "topic": "Tools",
-   "replies": "Thariq adds in-thread that there won't be one \"workspace app\"; he wants people to bring their own pieces. Replies suggest pinning build IDs and timestamps in feedback, MCP events, and a shared context layer; one notes the core problem is still authorization (which agent may do what, where).",
-   "replyCount": 10
-  },
-  {
-   "title": "Fable 5.2 is more direct and shorter than 5.1 on AA-PersonalityBench",
-   "author": "@ArtificialAnlys",
-   "authorName": "Artificial Analysis",
-   "url": "https://x.com/ArtificialAnlys/status/2122475355902546307",
-   "published": "2026-11-17 05:12 IST",
-   "summary": "Artificial Analysis says Claude Fable 5.2 is more direct than 5.1, writes notably shorter responses with almost no em dashes, and ranks higher on Direct and Answer First but lower on Informativeness and Conviction.",
-   "why": "Independent benchmark org",
-   "topic": "Research",
-   "replies": "People welcome the shorter, em-dash-free style but flag the steep Informativeness drop as the real trade; some ask whether the bench just rewards brevity. One coder says in sessions 5.2 starts writing and stops telling you which file it's about to change.",
-   "replyCount": 10
-  },
-  {
-   "title": "Seedream 5.5 and Canva Craft reshape the text-to-image price frontier",
-   "author": "@ArtificialAnlys",
-   "authorName": "Artificial Analysis",
-   "url": "https://x.com/ArtificialAnlys/status/2122445489736122633",
-   "published": "2026-11-17 03:13 IST",
-   "summary": "On AA-Image-T2I v2.1, Seedream 5.5 is now the best model under $30 per 1k images (at $20), and Canva Craft becomes the cheapest model in its band; previously nothing between $10 and $34 ranked above Muse Image.",
-   "why": "Independent benchmark org",
-   "topic": "Models",
-   "replies": "Replies focus on Seedream 5.5 at $20/1k as the one to test first, and ask whether quality is actually close to Muse Image. One calls Canva Craft the sleeper because it plans layout before rendering; another says cost per accepted image matters more than per generated image.",
-   "replyCount": 10
-  },
-  {
-   "title": "Japanese voice AI lab Kotoba joins ElevenLabs",
-   "author": "@ElevenLabs",
-   "authorName": "ElevenLabs",
-   "url": "https://x.com/ElevenLabs/status/2122420600408866844",
-   "published": "2026-11-17 01:34 IST",
-   "summary": "ElevenLabs says Kotoba, a voice AI lab in Japan, is joining it, and Kotoba's Japanese voice research will go into ElevenAgents so businesses can serve customers naturally in Japanese.",
-   "why": "Official ElevenLabs announcement",
-   "topic": "Industry",
-   "replies": "Mostly congratulations (testingcatalog joked \"TwelveLabs\"). Builder questions: will Kotoba's models stay available as standalone voices/API, and can agents switch keigo depending on who's calling. One notes natural Japanese is table stakes; handing off to a human on misheard requests matters more.",
    "replyCount": 10
   }
  ]
