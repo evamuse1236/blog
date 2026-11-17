@@ -128,9 +128,141 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-17T23:15:00+05:30",
+ "updated": "2026-11-18T01:05:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "OpenAI ships GPT-6.2 Astra and GPT-6.2 Sol",
+   "author": "@OpenAI",
+   "authorName": "OpenAI",
+   "url": "https://x.com/OpenAI/status/2122750124543926515",
+   "published": "2026-11-17 23:24 IST",
+   "summary": "GPT-6.2 Astra (frontier, hardest projects) and GPT-6.2 Sol (efficient everyday model) are out in ChatGPT, Codex and the API. OpenAI's post says Astra scores 5.2 points above GPT-6 Astra on Agents' Last Exam at under a third of the cost, with API prices 20% lower ($8 in / $40 out per M tokens).",
+   "why": "Primary lab announcement with linked launch post",
+   "topic": "Models",
+   "replies": "Mostly low signal: jokes about the ad and repeated asks for a usage-limit reset. One reply gives a plain-English recap (Astra for hard projects, Sol for everyday work, both use fewer tokens); another notes API pricing doesn't matter on subscription plans.",
+   "replyCount": 10
+  },
+  {
+   "title": "Microsoft AI launches seven MAI models at Ignite",
+   "author": "@MicrosoftAI",
+   "authorName": "Microsoft AI",
+   "url": "https://x.com/MicrosoftAI/status/2122762037927322044",
+   "published": "2026-11-18 00:11 IST",
+   "summary": "Microsoft announced new MAI models at Ignite, pitched as frontier performance at a fraction of current prices. The linked blog lists MAI Code 2 and Code 2 Flash, MAI Cyber 2 Flash, MAI Image 2.7, MAI Realtime 1, Decision 1.1 and Dragon Copilot Transcribe, plus the Maia 200 chip in production.",
+   "why": "Official Microsoft AI account; benchmark claims are Microsoft's own",
+   "topic": "Models",
+   "replies": "Skeptical: one reply says part of the low pricing is promotional and the benchmarks are self-picked; another asks Microsoft to submit to Artificial Analysis instead of quoting its own numbers. Others ask about EU availability and long-run drift, and whether 96% of Opus quality at 5% of the price is good enough for everyday fixes.",
+   "replyCount": 10
+  },
+  {
+   "title": "Theo: GPT-6.2 Astra is \"the worst model OpenAI has ever released\"",
+   "author": "@theo",
+   "authorName": "Theo - t3.gg",
+   "url": "https://x.com/theo/status/2122757647170703550",
+   "published": "2026-11-17 23:53 IST",
+   "summary": "Theo, who had early access, says he thinks 6.2 Astra is the worst model OpenAI has ever released and promises more detail soon. In follow-ups he says he's heard many OpenAI engineers use 6.2 Sol Ultrafast day to day instead.",
+   "why": "Early tester with a large dev audience; a strong opinion, not yet backed by evidence",
+   "topic": "Models",
+   "replies": "Split and noisy: some say 6.1 was already bad, others ask how 6.2 Sol compares or whether it's really worse than 6.1. A few accuse him of bias; several just wish him well.",
+   "replyCount": 10
+  },
+  {
+   "title": "Mollick: GPT-6.2 Astra is uneven and weird, but strong on big builds",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2122755693191287009",
+   "published": "2026-11-17 23:46 IST",
+   "summary": "Mollick used Astra before launch and found it harder to steer than other models. Given an ambitious project (a space elevator ride built from scratch in Blender and Unity), it delivered well.",
+   "why": "Wharton professor and frequent early tester of frontier models",
+   "topic": "Models",
+   "replies": "Many agree it feels like 'hard to steer, great on big tasks'. One reply points to Artificial Analysis numbers showing max effort takes much longer than xhigh for the same score, so some weirdness may be overthinking. @goodside warns that negative pre-release reviews can cost you future invites; others suggest letting Astra plan and a cheaper model build.",
+   "replyCount": 10
+  },
+  {
+   "title": "GPT-6.2 Astra tops AA-Robotics on a real robot arm",
+   "author": "@ArtificialAnlys",
+   "authorName": "Artificial Analysis",
+   "url": "https://x.com/ArtificialAnlys/status/2122757022710104131",
+   "published": "2026-11-17 23:51 IST",
+   "summary": "Artificial Analysis says GPT-6.2 Astra leads AA-Robotics v0.1 with 79, up 10 on GPT-6 Astra, ahead of GPT-6.2 Sol (78), Claude Fable 5.2 (75) and Gemini 4 Hydrogen (58). Controlling a real arm through Codex, it passed six of eight physical tasks.",
+   "why": "Independent benchmark org with published methodology",
+   "topic": "Research",
+   "replies": "Replies note that with only eight tasks, 79 vs 78 is basically a tie and the Gemini gap matters more. One points out Astra is flat on AA's coding-agent index, so the gain looks like planning and tool use. People want to know which two tasks failed (failing to measure a box drew jokes).",
+   "replyCount": 10
+  },
+  {
+   "title": "DeepMind adds a robotics plugin to Antigravity with Gemini 4 Hydrogen",
+   "author": "@GoogleDeepMind",
+   "authorName": "Google DeepMind",
+   "url": "https://x.com/GoogleDeepMind/status/2122767521925230896",
+   "published": "2026-11-18 00:33 IST",
+   "summary": "With Gemini 4 Hydrogen and a new robotics plugin for Google Antigravity, you can connect a supported arm, practice in MuJoCo simulation, and then run tasks on the real robot using plain conversation.",
+   "why": "Official Google DeepMind announcement",
+   "topic": "Tools",
+   "replies": "Mostly questions: which arms are supported (e.g. SO-101), whether hobbyists can try the sim without hardware, and how big the sim-to-real gap is. Skeptics say 'plain conversation' is doing a lot of work and that demos are always one clean arm and one cube.",
+   "replyCount": 10
+  },
+  {
+   "title": "Replit launches Missions, a budgeted agent-swarm harness",
+   "author": "@amasad",
+   "authorName": "Amjad Masad",
+   "url": "https://x.com/amasad/status/2122754439886905593",
+   "published": "2026-11-17 23:41 IST",
+   "summary": "Replit's CEO says agents often misunderstand goals and waste tokens; Missions is a swarm harness meant to accomplish a goal within a set budget. Replit calls it the world's first.",
+   "why": "Replit CEO announcing his company's product",
+   "topic": "Tools",
+   "replies": "Most like the hard budget cap as what makes swarms usable. Pushback: one reply says Factory shipped a similar missions feature in February, so 'world's first' is a stretch; another notes from the blog that if the budget runs out, work stops unresolved. Others ask how parallel agents test their pieces.",
+   "replyCount": 10
+  },
+  {
+   "title": "Vercel's eve agent framework hits 1.0",
+   "author": "@rauchg",
+   "authorName": "Guillermo Rauch",
+   "url": "https://x.com/rauchg/status/2122771609261879478",
+   "published": "2026-11-18 00:49 IST",
+   "summary": "Rauch announced eve 1.0, pitched as making building and deploying a production agent as easy as using one. He says it's at 2.4 million downloads a week after 142 days.",
+   "why": "Vercel CEO on his own product; download figures are his claim",
+   "topic": "Tools",
+   "replies": "Mostly upbeat with some ribbing about the Next.js comparison. Skeptics note downloads aren't paying users and joke that agents can now be 'confidently wrong in production'; one reply asks about durable long-running tasks surviving restarts.",
+   "replyCount": 10
+  },
+  {
+   "title": "Cognition launches Devin Bots that lead teams of agents",
+   "author": "@cognition",
+   "authorName": "Cognition",
+   "url": "https://x.com/cognition/status/2122737511684587551",
+   "published": "2026-11-17 22:33 IST",
+   "summary": "Cognition introduced Devin Bots: a Devin Bot leads a team of agents on longer goals, from firmware to merging thousands of PRs a week.",
+   "why": "Official company announcement",
+   "topic": "Tools",
+   "replies": "The main theme is that thousands of PRs a week just moves the bottleneck to review and testing; several ask how bad PRs get caught before merge and whether teams still understand the code later. The rest is hype or jokes about the launch video.",
+   "replyCount": 10
+  },
+  {
+   "title": "MAI-Image-2.7 takes #1 in image editing at a sixth of the price",
+   "author": "@ArtificialAnlys",
+   "authorName": "Artificial Analysis",
+   "url": "https://x.com/ArtificialAnlys/status/2122754535206846610",
+   "published": "2026-11-17 23:41 IST",
+   "summary": "Artificial Analysis ranks Microsoft's MAI-Image-2.7 #1 in AA-Image-Editing v2.1 at one sixth the price of the next four models. MAI-Image-2.7 and the Flash version ($34.82 and $10.24 per 1,000 images) sit on the quality-vs-price frontier.",
+   "why": "Independent benchmark confirming one of Microsoft's Ignite claims",
+   "topic": "Models",
+   "replies": "Replies note OpenAI is no longer #1 at image editing and ask whether image tools are becoming a price race. One says the real test is keeping faces and brand colors consistent across edits; another prefers the Flash model for volume.",
+   "replyCount": 10
+  },
+  {
+   "title": "ElevenLabs Scribe v3 Live Medical for live calls",
+   "author": "@ElevenLabs",
+   "authorName": "ElevenLabs",
+   "url": "https://x.com/ElevenLabs/status/2122751891256058043",
+   "published": "2026-11-17 23:31 IST",
+   "summary": "Scribe v3 Live Medical brings medical transcription to live calls in ElevenAgents. Teams can add up to 10,000 custom terms like provider and drug names.",
+   "why": "Official product announcement",
+   "topic": "Tools",
+   "replies": "Only three replies: two generic praise, and one question about whether a human stays in the loop on live clinical calls.",
+   "replyCount": 3
+  },
   {
    "title": "OpenAI Daybreak for defending NATO and allied networks",
    "author": "@gdb",
@@ -273,125 +405,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "topic": "Tools",
    "replies": "Mostly agreement. Pushback says small single-job models still make sense for in-loop checks like PII or guardrails, and that per-team subagents were about org ownership, not tech. @rzrgrv suggests building an end-to-end eval first and keeping a subagent only if folding it in scores worse.",
    "replyCount": 10
-  },
-  {
-   "title": "Matt Pocock's /constrain idea: harsh lint rules to box agents in",
-   "author": "@mattpocockuk",
-   "authorName": "Matt Pocock",
-   "url": "https://x.com/mattpocockuk/status/2122659341685694586",
-   "published": "2026-11-17 17:23 IST",
-   "summary": "Following on from 'too much choice is bad for agents', Pocock proposes making extremely constrained versions of tools, for example React with all state forced into Zustand/useReducer, enforced by very strict lint rules. He's thinking of calling it /constrain.",
-   "why": "TypeScript educator; follow-up to his earlier library-assessment prompt",
-   "topic": "Tools",
-   "replies": "Mostly supportive ('agents treat every option you give them as a dare'). Practical concerns: block the agent from just adding eslint-disable, and keep explicit escape hatches so it doesn't hack around rules. Some suggest only locking risky boundaries and testing the rest.",
-   "replyCount": 10
-  },
-  {
-   "title": "Nathan Lambert on how Amodei's open-source warning is framed",
-   "author": "@natolambert",
-   "authorName": "Nathan Lambert",
-   "url": "https://x.com/natolambert/status/2122663336903147953",
-   "published": "2026-11-17 17:39 IST",
-   "summary": "Lambert says Amodei's comments on the state of the technology are largely agreeable, but he pairs them with forecasts of what comes next that experts don't agree on, which is a persuasive way of talking.",
-   "why": "Ai2 researcher and open-model advocate responding to Amodei's Senate remarks on open models",
-   "topic": "Policy",
-   "replies": "Replies mostly agree that a settled read of today's tech is being bundled with an unsettled forecast, and suggest splitting the two claims. A minority side with Amodei that uncontrolled open models are risky; some replies are just partisan jabs.",
-   "replyCount": 10
-  },
-  {
-   "title": "The Information: Altman eyed Nick Cammarata's interpretability work in Goodfire talks",
-   "author": "@theinformation",
-   "authorName": "The Information",
-   "url": "https://x.com/theinformation/status/2122698792164085798",
-   "published": "2026-11-17 20:00 IST",
-   "summary": "Exclusive: during OpenAI's talks to buy interpretability startup Goodfire, Sam Altman was especially interested in researcher Nick Cammarata, a former OpenAI staffer whose essay on mechanistic interpretability went viral last month.",
-   "why": "The Information exclusive; reveals OpenAI was in talks to acquire Goodfire",
-   "topic": "Industry",
-   "replyCount": 0
-  },
-  {
-   "title": "Opus 5.5 audited 50,000 astrophysics papers and flagged ~1,000 major errors",
-   "author": "@CJHandmer",
-   "authorName": "Casey Handmer",
-   "url": "https://x.com/CJHandmer/status/2122609626588061816",
-   "published": "2026-11-17 14:05 IST",
-   "summary": "Handmer had Opus 5.5 index ~150,000 theoretical astrophysics papers and audit 50,000, finding nearly 1,000 major, often-cited errors that are mostly still uncorrected. He argues AI can already speed up quantitative science by >1000x and that peer review is poor at correcting errors.",
-   "why": "Former theoretical astrophysicist describing his own run; claims are his and not independently verified",
-   "topic": "Research",
-   "replies": "Mixed: some call it lovely work and ask whether academic labs do dedicated audits, others dismiss it as 'AI psychosis' or object to feeding papers to an AI company. @instantweights notes the real scoreboard is how many suspected errors become confirmed corrections.",
-   "replyCount": 10
-  },
-  {
-   "title": "Gemma 3 270M running entirely inside an office printer",
-   "author": "@osanseviero",
-   "authorName": "Omar Sanseviero",
-   "url": "https://x.com/osanseviero/status/2122646098418491739",
-   "published": "2026-11-17 16:30 IST",
-   "summary": "With Gemini 4 Carbon's help, Sanseviero compiled a small transformer engine plus a quantized Gemma 3 270M into a single PostScript job that runs 100% on a printer: 14MB peak RAM, about 60 seconds per token.",
-   "why": "Google DeepMind's Gemma lead showing his own hack",
-   "topic": "Tools",
-   "replies": "Mostly delighted jokes about PostScript's 'strange second career' and a minute-per-token printer delay. One reply asks whether layers stream from flash or sit in a resident cache budget.",
-   "replyCount": 5
-  },
-  {
-   "title": "Matt Pocock's prompt for having an agent assess a new library",
-   "author": "@mattpocockuk",
-   "authorName": "Matt Pocock",
-   "url": "https://x.com/mattpocockuk/status/2122618527840354327",
-   "published": "2026-11-17 14:41 IST",
-   "summary": "Using the XState v6 beta as the example, the prompt has the agent research the tool, find the gnarliest matching problem in your app, build a verified proof of concept in a draft PR, then grade API nuance (fewer choices is better for agents), type safety, testability, complexity, docs and deployment impact.",
-   "why": "Well-known TypeScript educator sharing a reusable agent workflow",
-   "topic": "Tools",
-   "replies": "Thoughtful replies: run the same task without the library as a baseline, and write rejection criteria before the PoC so the agent doesn't grade itself generously. Several back 5a (fewer API options) as the most important, and one notes complexity linters undercount state-machine configs.",
-   "replyCount": 10
-  },
-  {
-   "title": "FT: Anthropic Direct plans $900B+ in data centers through 2045",
-   "author": "@Techmeme",
-   "authorName": "Techmeme",
-   "url": "https://x.com/Techmeme/status/2122643633459609811",
-   "published": "2026-11-17 16:20 IST",
-   "summary": "The Financial Times reports Anthropic's data center network plan, called Anthropic Direct, commits more than $900B through 2045, and documents show it will lease 875K TPUs for $7.2B a year.",
-   "why": "Techmeme summary of a Financial Times report based on documents",
-   "topic": "Industry",
-   "replies": "Only two replies: one works out roughly $8.2K per TPU per year and calls it cheaper than expected, another notes owning data centers adds a physical attack surface.",
-   "replyCount": 2
-  },
-  {
-   "title": "macOS 27.3 beta scopes app access to specific folders as AI agents spread",
-   "author": "@TheHackersNews",
-   "authorName": "The Hacker News",
-   "url": "https://x.com/TheHackersNews/status/2122648823801708751",
-   "published": "2026-11-17 16:41 IST",
-   "summary": "Apple's macOS 27.3 beta lets apps get access to specific files and folders instead of the whole Mac, and users can require approval each time an app asks.",
-   "why": "Security news outlet reporting on a shipping beta",
-   "topic": "Tools",
-   "replies": "Replies like folder scoping but warn that approve-every-time turns into click-yes fatigue, and that the project folder handed to an agent often holds .env files and keys. One asks whether it covers CLI agents in the terminal at all.",
-   "replyCount": 7
-  },
-  {
-   "title": "Nvidia warns customers remote-access bill could expose them to US legal action",
-   "author": "@CNBC",
-   "authorName": "CNBC",
-   "url": "https://x.com/CNBC/status/2122630871618342972",
-   "published": "2026-11-17 15:30 IST",
-   "summary": "Sources told CNBC that Nvidia warned customers that proposed legislation on Chinese companies remotely accessing its AI chips could expose Nvidia and its buyers to US legal action. Separately, Nvidia's board set up a national security and export control oversight committee today.",
-   "why": "CNBC sourced report; committee confirmed via Nvidia newsroom per Techmeme",
-   "topic": "Policy",
-   "replies": "Mostly noise and spam. The useful replies say the burden lands on anyone renting GPUs, who will have to prove with logs who uses their compute; one claims Nvidia won't sell to anyone renting over 50% of GPUs to Chinese firms (unverified).",
-   "replyCount": 10
-  },
-  {
-   "title": "WIRED: Hugging Face CEO says AI can't be controlled by the few",
-   "author": "@WIRED",
-   "authorName": "WIRED",
-   "url": "https://x.com/WIRED/status/2122647170314535107",
-   "published": "2026-11-17 16:34 IST",
-   "summary": "WIRED interviews Hugging Face's CEO, who says the attack by OpenAI models earlier this year proved that humanity can't let AI be controlled by a few companies.",
-   "why": "WIRED interview with the head of the main open-source model hub",
-   "topic": "Industry",
-   "replies": "Few replies. One cites Databricks data showing open-weight models rising from 7.3% to 30.9% of tokens between July and November; another points out the cited incident came from closed models.",
-   "replyCount": 3
   }
  ]
 }
