@@ -128,9 +128,81 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-18T14:05:00+05:30",
+ "updated": "2026-11-18T17:05:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Theo re-tests GPT-6.2 Astra: better, still 'directionally, very bad'",
+   "author": "@theo",
+   "authorName": "Theo",
+   "url": "https://x.com/theo/status/2122991778622263514",
+   "published": "2026-11-18 15:24 IST",
+   "summary": "After Tibo's note about late fixes, Theo re-ran his slow-worktree diagnosis on 6.2 Astra. He says it is more concise now but still buries the real cause (a slow virtual disk) under second-order details, while Opus led with 'Slow disk, made worse by VDO'. His point: Astra is thorough but doesn't know what matters.",
+   "why": "Watchlist practitioner with a fixed, repeatable test case.",
+   "topic": "Models",
+   "replies": "Mostly agreement. @jeremyphoward says OpenAI models have always been very thorough but not pragmatic, which is sometimes exactly what he wants. Others praise keeping one fixed example as an honest benchmark; a few push back that chat style is a small part of model quality.",
+   "replyCount": 10
+  },
+  {
+   "title": "Mollick: most people should be happy with the last two months of releases",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2122983239883317335",
+   "published": "2026-11-18 14:50 IST",
+   "summary": "Ethan Mollick says Google, OpenAI and Anthropic are at the point where, unless you switch between them often or test them actively, you are probably very happy with recent releases. Even the weaker releases are big capability gains.",
+   "why": "Wharton professor who tests frontier models closely.",
+   "topic": "Models",
+   "replies": "Broad agreement. Replies say the gap now is fit and tooling, not raw model quality, and suggest keeping 3-5 of your own tasks as a fixed test set. One pushback: agent setups still break quietly when a new model calls tools differently.",
+   "replyCount": 10
+  },
+  {
+   "title": "Theo: T3 Code's agent secrets feature is 'one of our biggest'",
+   "author": "@theo",
+   "authorName": "Theo",
+   "url": "https://x.com/theo/status/2122988211291255141",
+   "published": "2026-11-18 15:10 IST",
+   "summary": "Theo says a feature for passing secrets to agents in T3 Code was meant to be small but may be one of their biggest; he uses it several times a day.",
+   "why": "T3 Code founder on his own product.",
+   "topic": "Tools",
+   "replies": "Users like it and contrast it with clipboard workarounds in other tools. Good questions: can a secret be scoped to one task, and does it stay out of the model context or is it just masked in the UI? One reply warns a prompt injection could still aim a command using the secret at someone else's server.",
+   "replyCount": 10
+  },
+  {
+   "title": "FT: Son calls not backing Anthropic a 'mistake'",
+   "author": "@FT",
+   "authorName": "Financial Times",
+   "url": "https://x.com/FT/status/2122984531292561751",
+   "published": "2026-11-18 14:55 IST",
+   "summary": "SoftBank's Masayoshi Son says not backing Anthropic was a mistake, per the FT, on the day Anthropic is set to price its IPO.",
+   "why": "FT report; SoftBank is OpenAI's biggest backer.",
+   "topic": "Industry",
+   "replies": "Mostly jokes about hindsight. One reply notes it is hard to blame him given how fast a lab went from startup to a trillion-dollar IPO; another points out SoftBank had already put money into OpenAI.",
+   "replyCount": 10
+  },
+  {
+   "title": "US senators warn AI cyber threats are outpacing defenses",
+   "author": "@Reuters",
+   "authorName": "Reuters",
+   "url": "https://x.com/Reuters/status/2123005852248322160",
+   "published": "2026-11-18 16:20 IST",
+   "summary": "Reuters reports US senators have warned the White House that AI-enabled cyber threats are outpacing defenses. Comes two days after Google's threat report on autonomous AI exploit tools.",
+   "why": "Reuters wire on a policy move.",
+   "topic": "Policy",
+   "replies": "Low signal: a mix of shrugs that defenders are always behind, claims it is overblown, and spam.",
+   "replyCount": 10
+  },
+  {
+   "title": "Tencent misses on revenue as AI capex jumps 5x",
+   "author": "@Techmeme",
+   "authorName": "Techmeme",
+   "url": "https://x.com/Techmeme/status/2123004792331272445",
+   "published": "2026-11-18 16:16 IST",
+   "summary": "Tencent reported Q3 revenue up 8% to about $31.1B, below estimates, and its first operating profit decline in years (down 7%), as AI capex rose 5x to about $12B, per Bloomberg.",
+   "why": "Techmeme summary of Bloomberg; same lab that just opened Hy4 flash weights.",
+   "topic": "Industry",
+   "replies": "One reply for scale: it says Microsoft's capex in the same quarter was $39.4B, so Tencent still spends under a third of that (figure not checked here).",
+   "replyCount": 1
+  },
   {
    "title": "Tibo: early 6.2 reviews were of an older build",
    "author": "@thsottiaux",
@@ -273,78 +345,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Official ChatGPT account; product launch.",
    "topic": "Tools",
    "replies": "Low signal overall: a few coin-spam replies and generic praise. The useful ones ask about write-back into CRMs and suggest small teams pick one repeated task to automate first; one reply calls it expensive plugins instead of something more effective.",
-   "replyCount": 10
-  },
-  {
-   "title": "Sam Altman: 6.2 Sol and Astra are out, Sol ultrafast is the one to try",
-   "author": "@sama",
-   "authorName": "Sam Altman",
-   "url": "https://x.com/sama/status/2122798039899263456",
-   "published": "2026-11-18 02:34 IST",
-   "summary": "Altman says GPT-6.2 Sol and Astra are very token-efficient and singles out 6.2 Sol ultrafast as something people will really enjoy.",
-   "why": "OpenAI CEO on his own launch.",
-   "topic": "Models",
-   "replies": "Mostly hostile or off-topic. Several say the new models cost more and trail Opus 5.5 or feel worse to use; one app builder says being nice to work with is most of the product for builders.",
-   "replyCount": 10
-  },
-  {
-   "title": "Jason Wei leaves Meta TBD lab to be Mercor's Chief Scientist",
-   "author": "@_jasonwei",
-   "authorName": "Jason Wei",
-   "url": "https://x.com/_jasonwei/status/2122826605362127094",
-   "published": "2026-11-18 04:27 IST",
-   "summary": "Jason Wei says that after a year at Meta's TBD lab he is joining Mercor as Chief Scientist, arguing data will shape the next frontier as more companies train models.",
-   "why": "First-hand announcement from a well-known researcher (chain-of-thought paper author).",
-   "topic": "Industry",
-   "replies": "Almost all congratulations from fellow researchers; no new information.",
-   "replyCount": 10
-  },
-  {
-   "title": "Google AI Studio adds custom domains and Android app builds",
-   "author": "@OfficialLoganK",
-   "authorName": "Logan Kilpatrick",
-   "url": "https://x.com/OfficialLoganK/status/2122818500763009273",
-   "published": "2026-11-18 03:55 IST",
-   "summary": "Logan Kilpatrick lists AI Studio updates: buy custom domains inside AI Studio, build an Android app and install it via the Play Store (US only for now), and securely add AI to Android apps.",
-   "why": "Google AI Studio product lead announcing his own product.",
-   "topic": "Tools",
-   "replies": "Builders like that custom domains make prototypes shippable and note Gemini calls go through Firebase AI Logic and App Check instead of a key in the APK. Pushback: US-only Android, 'model unavailable' retry errors, a claim that unpublished apps free their subdomain for anyone, and reports of broken token counting.",
-   "replyCount": 10
-  },
-  {
-   "title": "Greg Brockman: GPT-6 Cyber helped Calif find a major Java flaw",
-   "author": "@gdb",
-   "authorName": "Greg Brockman",
-   "url": "https://x.com/gdb/status/2122819528858161322",
-   "published": "2026-11-18 03:59 IST",
-   "summary": "Brockman points to a major Java security flaw found by Calif with GPT-6 Cyber, as part of OpenAI's Patch the Planet initiative.",
-   "why": "OpenAI president; links the security write-up.",
-   "topic": "Research",
-   "replies": "Replies add detail from the write-up: an OpenJDK memory-corruption bug (CVE-2026-114938, AVX-512 Base64 decoder), found in about an hour with a first exploit in two more for under $200 of tokens, per Calif's own figures. The main pushback is that finding bugs only helps if patches reach old enterprise Java, and that attackers get the same speedup; one notes the link is paywalled.",
-   "replyCount": 10
-  },
-  {
-   "title": "Perplexity launches Orchestrator API for model and provider routing",
-   "author": "@perplexity_ai",
-   "authorName": "Perplexity",
-   "url": "https://x.com/perplexity_ai/status/2122785177135096053",
-   "published": "2026-11-18 01:43 IST",
-   "summary": "Perplexity's Orchestrator API picks the model for a task and automatically chooses the provider by availability, capacity and latency, with open-weight and proprietary models under one API and unified billing.",
-   "why": "Official Perplexity launch.",
-   "topic": "Tools",
-   "replies": "Developers like one key for many models but keep asking whether they can pin a model or provider, because automatic routing hurts reproducibility. Others want fallback order, per-task budgets, and to know where customer data goes.",
-   "replyCount": 10
-  },
-  {
-   "title": "roon: hated 5.6 Sol, loves the 'hated' 6.2 Astra",
-   "author": "@tszzl",
-   "authorName": "roon",
-   "url": "https://x.com/tszzl/status/2122840779710431664",
-   "published": "2026-11-18 05:24 IST",
-   "summary": "roon says he did not like 5.6 Sol, which became well loved, while he loves 6.2 Astra, which is starting out as a hated model.",
-   "why": "OpenAI staffer; a contrarian insider take on the launch reaction.",
-   "topic": "Models",
-   "replies": "Mixed and jokey ('RoonBench'). Some say the feel gap with Fable is about product vision more than capability; one guesses 6.2 is a sandbag before 6.3.",
    "replyCount": 10
   }
  ]
