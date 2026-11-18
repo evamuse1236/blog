@@ -128,9 +128,69 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-18T08:10:00+05:30",
- "windowHours": 7,
+ "updated": "2026-11-18T11:05:00+05:30",
+ "windowHours": 3,
  "posts": [
+  {
+   "title": "Claude Code adds experimental Code Mode",
+   "author": "@ClaudeDevs",
+   "authorName": "ClaudeDevs",
+   "url": "https://x.com/ClaudeDevs/status/2122801681939234950",
+   "published": "2026-11-18 02:48 IST",
+   "summary": "Claude Code's new experimental Code Mode lets Claude write scripts that chain your tools together, and it can answer you while long commands are still running. Opt in with CLAUDE_CODE_EXPERIMENTAL_CODE_MODE=1.",
+   "why": "Official Claude developer account; first-party feature launch.",
+   "topic": "Tools",
+   "replies": "Mostly excitement plus people asking what it actually does. One useful note from a hook user: PreToolUse rules that only match Bash miss the REPL tool's code input, and hook timeouts can block runs. A few say they already built this with their own scripts.",
+   "replyCount": 10
+  },
+  {
+   "title": "roon: Epoch and Anthropic indexes show a 1.7–2x trend break",
+   "author": "@tszzl",
+   "authorName": "roon",
+   "url": "https://x.com/tszzl/status/2122924317935898701",
+   "published": "2026-11-18 10:56 IST",
+   "summary": "roon says both Epoch's and Anthropic's capabilities indexes seem to show 1.7–2x faster progress after full coding automation around Q2 this year, and that it looks like a clean trend break rather than steady acceleration.",
+   "why": "OpenAI staffer reading two public capability indexes; his interpretation, not a paper.",
+   "topic": "Research",
+   "replies": "Only a few replies. roon adds that each line of code seems to be adding much less to capability-index gains; another reply suggests constant acceleration could show up as a series of trend breaks.",
+   "replyCount": 4
+  },
+  {
+   "title": "Theo: Claude's share in T3 Code didn't drop after GPT-6.2",
+   "author": "@theo",
+   "authorName": "Theo - t3.gg",
+   "url": "https://x.com/theo/status/2122915383787290649",
+   "published": "2026-11-18 10:20 IST",
+   "summary": "Theo says Claude's dominance in T3 Code usage did not take a hit from OpenAI's GPT-6.2 release, sharing a usage chart.",
+   "why": "Founder sharing his own product's usage data (self-reported, one app).",
+   "topic": "Industry",
+   "replies": "Replies mostly agree that coding tools are sticky and that launch-day benchmarks don't move real usage fast. One cites a 79.4% vs 20.6% Claude Code vs Codex split without a source; others point to switching costs mid-project.",
+   "replyCount": 10
+  },
+  {
+   "title": "Artificial Analysis: Fable 5.2 vs GPT-6.2 Astra build Vice City Miami",
+   "author": "@ArtificialAnlys",
+   "authorName": "Artificial Analysis",
+   "url": "https://x.com/ArtificialAnlys/status/2122904331276177768",
+   "published": "2026-11-18 09:36 IST",
+   "summary": "Artificial Analysis gave Claude Fable 5.2 and GPT-6.2 Astra one prompt each in its offline AA-3D sandbox to build Miami as Vice City. Both lined Ocean Drive with real hotels the prompt never named, like the Colony and the Avalon, and each scene can be explored by car, boat or blimp.",
+   "why": "Independent benchmark org showing side-by-side model output.",
+   "topic": "Models",
+   "replies": "People ask about token cost per scene and what decided the score gap. Some point out Astra tops AA-3D but scores lower than Fable on AA's overall intelligence index; others find recalling real hotels offline impressive.",
+   "replyCount": 10
+  },
+  {
+   "title": "Thinking Machines: John Schulman on recursive self-improvement",
+   "author": "@thinkymachines",
+   "authorName": "Thinking Machines",
+   "url": "https://x.com/thinkymachines/status/2122907913077612642",
+   "published": "2026-11-18 09:51 IST",
+   "summary": "Thinking Machines shared a conversation between John Schulman and Sarah Wang on RSI: how AI speeds up progress, how to measure it, and where human taste and intuition fit.",
+   "why": "Official lab account; Schulman is an OpenAI co-founder.",
+   "topic": "Research",
+   "replies": "Few replies. They mostly ask how taste can be measured without it turning into vibes, and say measurement is the part these talks usually skip.",
+   "replyCount": 4
+  },
   {
    "title": "ChatGPT for Sales launches with 30+ partner plugins",
    "author": "@ChatGPT",
@@ -273,138 +333,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Primary lab announcement with linked launch post",
    "topic": "Models",
    "replies": "Mostly low signal: jokes about the ad and repeated asks for a usage-limit reset. One reply gives a plain-English recap (Astra for hard projects, Sol for everyday work, both use fewer tokens); another notes API pricing doesn't matter on subscription plans.",
-   "replyCount": 10
-  },
-  {
-   "title": "Microsoft AI launches seven MAI models at Ignite",
-   "author": "@MicrosoftAI",
-   "authorName": "Microsoft AI",
-   "url": "https://x.com/MicrosoftAI/status/2122762037927322044",
-   "published": "2026-11-18 00:11 IST",
-   "summary": "Microsoft announced new MAI models at Ignite, pitched as frontier performance at a fraction of current prices. The linked blog lists MAI Code 2 and Code 2 Flash, MAI Cyber 2 Flash, MAI Image 2.7, MAI Realtime 1, Decision 1.1 and Dragon Copilot Transcribe, plus the Maia 200 chip in production.",
-   "why": "Official Microsoft AI account; benchmark claims are Microsoft's own",
-   "topic": "Models",
-   "replies": "Skeptical: one reply says part of the low pricing is promotional and the benchmarks are self-picked; another asks Microsoft to submit to Artificial Analysis instead of quoting its own numbers. Others ask about EU availability and long-run drift, and whether 96% of Opus quality at 5% of the price is good enough for everyday fixes.",
-   "replyCount": 10
-  },
-  {
-   "title": "Theo: GPT-6.2 Astra is \"the worst model OpenAI has ever released\"",
-   "author": "@theo",
-   "authorName": "Theo - t3.gg",
-   "url": "https://x.com/theo/status/2122757647170703550",
-   "published": "2026-11-17 23:53 IST",
-   "summary": "Theo, who had early access, says he thinks 6.2 Astra is the worst model OpenAI has ever released and promises more detail soon. In follow-ups he says he's heard many OpenAI engineers use 6.2 Sol Ultrafast day to day instead.",
-   "why": "Early tester with a large dev audience; a strong opinion, not yet backed by evidence",
-   "topic": "Models",
-   "replies": "Split and noisy: some say 6.1 was already bad, others ask how 6.2 Sol compares or whether it's really worse than 6.1. A few accuse him of bias; several just wish him well.",
-   "replyCount": 10
-  },
-  {
-   "title": "Mollick: GPT-6.2 Astra is uneven and weird, but strong on big builds",
-   "author": "@emollick",
-   "authorName": "Ethan Mollick",
-   "url": "https://x.com/emollick/status/2122755693191287009",
-   "published": "2026-11-17 23:46 IST",
-   "summary": "Mollick used Astra before launch and found it harder to steer than other models. Given an ambitious project (a space elevator ride built from scratch in Blender and Unity), it delivered well.",
-   "why": "Wharton professor and frequent early tester of frontier models",
-   "topic": "Models",
-   "replies": "Many agree it feels like 'hard to steer, great on big tasks'. One reply points to Artificial Analysis numbers showing max effort takes much longer than xhigh for the same score, so some weirdness may be overthinking. @goodside warns that negative pre-release reviews can cost you future invites; others suggest letting Astra plan and a cheaper model build.",
-   "replyCount": 10
-  },
-  {
-   "title": "GPT-6.2 Astra tops AA-Robotics on a real robot arm",
-   "author": "@ArtificialAnlys",
-   "authorName": "Artificial Analysis",
-   "url": "https://x.com/ArtificialAnlys/status/2122757022710104131",
-   "published": "2026-11-17 23:51 IST",
-   "summary": "Artificial Analysis says GPT-6.2 Astra leads AA-Robotics v0.1 with 79, up 10 on GPT-6 Astra, ahead of GPT-6.2 Sol (78), Claude Fable 5.2 (75) and Gemini 4 Hydrogen (58). Controlling a real arm through Codex, it passed six of eight physical tasks.",
-   "why": "Independent benchmark org with published methodology",
-   "topic": "Research",
-   "replies": "Replies note that with only eight tasks, 79 vs 78 is basically a tie and the Gemini gap matters more. One points out Astra is flat on AA's coding-agent index, so the gain looks like planning and tool use. People want to know which two tasks failed (failing to measure a box drew jokes).",
-   "replyCount": 10
-  },
-  {
-   "title": "DeepMind adds a robotics plugin to Antigravity with Gemini 4 Hydrogen",
-   "author": "@GoogleDeepMind",
-   "authorName": "Google DeepMind",
-   "url": "https://x.com/GoogleDeepMind/status/2122767521925230896",
-   "published": "2026-11-18 00:33 IST",
-   "summary": "With Gemini 4 Hydrogen and a new robotics plugin for Google Antigravity, you can connect a supported arm, practice in MuJoCo simulation, and then run tasks on the real robot using plain conversation.",
-   "why": "Official Google DeepMind announcement",
-   "topic": "Tools",
-   "replies": "Mostly questions: which arms are supported (e.g. SO-101), whether hobbyists can try the sim without hardware, and how big the sim-to-real gap is. Skeptics say 'plain conversation' is doing a lot of work and that demos are always one clean arm and one cube.",
-   "replyCount": 10
-  },
-  {
-   "title": "Replit launches Missions, a budgeted agent-swarm harness",
-   "author": "@amasad",
-   "authorName": "Amjad Masad",
-   "url": "https://x.com/amasad/status/2122754439886905593",
-   "published": "2026-11-17 23:41 IST",
-   "summary": "Replit's CEO says agents often misunderstand goals and waste tokens; Missions is a swarm harness meant to accomplish a goal within a set budget. Replit calls it the world's first.",
-   "why": "Replit CEO announcing his company's product",
-   "topic": "Tools",
-   "replies": "Most like the hard budget cap as what makes swarms usable. Pushback: one reply says Factory shipped a similar missions feature in February, so 'world's first' is a stretch; another notes from the blog that if the budget runs out, work stops unresolved. Others ask how parallel agents test their pieces.",
-   "replyCount": 10
-  },
-  {
-   "title": "Vercel's eve agent framework hits 1.0",
-   "author": "@rauchg",
-   "authorName": "Guillermo Rauch",
-   "url": "https://x.com/rauchg/status/2122771609261879478",
-   "published": "2026-11-18 00:49 IST",
-   "summary": "Rauch announced eve 1.0, pitched as making building and deploying a production agent as easy as using one. He says it's at 2.4 million downloads a week after 142 days.",
-   "why": "Vercel CEO on his own product; download figures are his claim",
-   "topic": "Tools",
-   "replies": "Mostly upbeat with some ribbing about the Next.js comparison. Skeptics note downloads aren't paying users and joke that agents can now be 'confidently wrong in production'; one reply asks about durable long-running tasks surviving restarts.",
-   "replyCount": 10
-  },
-  {
-   "title": "Cognition launches Devin Bots that lead teams of agents",
-   "author": "@cognition",
-   "authorName": "Cognition",
-   "url": "https://x.com/cognition/status/2122737511684587551",
-   "published": "2026-11-17 22:33 IST",
-   "summary": "Cognition introduced Devin Bots: a Devin Bot leads a team of agents on longer goals, from firmware to merging thousands of PRs a week.",
-   "why": "Official company announcement",
-   "topic": "Tools",
-   "replies": "The main theme is that thousands of PRs a week just moves the bottleneck to review and testing; several ask how bad PRs get caught before merge and whether teams still understand the code later. The rest is hype or jokes about the launch video.",
-   "replyCount": 10
-  },
-  {
-   "title": "MAI-Image-2.7 takes #1 in image editing at a sixth of the price",
-   "author": "@ArtificialAnlys",
-   "authorName": "Artificial Analysis",
-   "url": "https://x.com/ArtificialAnlys/status/2122754535206846610",
-   "published": "2026-11-17 23:41 IST",
-   "summary": "Artificial Analysis ranks Microsoft's MAI-Image-2.7 #1 in AA-Image-Editing v2.1 at one sixth the price of the next four models. MAI-Image-2.7 and the Flash version ($34.82 and $10.24 per 1,000 images) sit on the quality-vs-price frontier.",
-   "why": "Independent benchmark confirming one of Microsoft's Ignite claims",
-   "topic": "Models",
-   "replies": "Replies note OpenAI is no longer #1 at image editing and ask whether image tools are becoming a price race. One says the real test is keeping faces and brand colors consistent across edits; another prefers the Flash model for volume.",
-   "replyCount": 10
-  },
-  {
-   "title": "ElevenLabs Scribe v3 Live Medical for live calls",
-   "author": "@ElevenLabs",
-   "authorName": "ElevenLabs",
-   "url": "https://x.com/ElevenLabs/status/2122751891256058043",
-   "published": "2026-11-17 23:31 IST",
-   "summary": "Scribe v3 Live Medical brings medical transcription to live calls in ElevenAgents. Teams can add up to 10,000 custom terms like provider and drug names.",
-   "why": "Official product announcement",
-   "topic": "Tools",
-   "replies": "Only three replies: two generic praise, and one question about whether a human stays in the loop on live clinical calls.",
-   "replyCount": 3
-  },
-  {
-   "title": "OpenAI Daybreak for defending NATO and allied networks",
-   "author": "@gdb",
-   "authorName": "Greg Brockman",
-   "url": "https://x.com/gdb/status/2122740752556216515",
-   "published": "2026-11-17 22:46 IST",
-   "summary": "Brockman links OpenAI's announcement of Daybreak for defending NATO and allied networks. Others describe it as an OpenAI–NATO partnership that uses advanced AI models to protect allied cyber networks.",
-   "why": "OpenAI president sharing the company's own announcement",
-   "topic": "Policy",
-   "replies": "Low signal: mostly jokes about the name and 'just launch Astra'. One reply says the hard part across federated allied networks is the blast radius of patches, not finding vulnerabilities.",
    "replyCount": 10
   }
  ]
