@@ -1,0 +1,29 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Agents are getting hands, not brains</title><style>body{max-width:680px;margin:0 auto;padding:2.5rem 1.2rem;font:18px/1.7 Georgia,serif;color:#222;background:#fdfcf9}
+a{color:#2b5fa8}h1,h2{font-family:system-ui,sans-serif;line-height:1.25}header a{color:#222;text-decoration:none;font-family:system-ui,sans-serif;font-weight:700}
+.meta{color:#888;font:14px system-ui,sans-serif}blockquote{border-left:3px solid #ccc;margin:1rem 0;padding-left:1rem;color:#555}
+ul.posts{list-style:none;padding:0}ul.posts li{margin:1.2rem 0}footer{margin-top:3rem;color:#aaa;font:13px system-ui,sans-serif}</style></head><body><header><a href="index.html">Vishwajit Pathare's Notes</a></header>
+<main><h1>Agents are getting hands, not brains</h1><p class='meta'>2026-11-18</p><p>Three of my bookmarks from the last two days look unrelated at first. One is about notebooks, one about browsers, one about life admin. Put them side by side and they're the same story: nobody is announcing a smarter model. They're handing agents more places to act.</p>
+<h2>The three bookmarks</h2>
+<p><a href="https://x.com/GoogleColab/status/2122676129009975544">Google Colab</a>:</p>
+<blockquote>
+<p>"Connect your AI agents directly to Google Colab runtimes! ... With the new Colab API and MCP endpoint, provisioning runtimes and executing Python headlessly is just a config away."</p>
+</blockquote>
+<p><a href="https://x.com/opencode/status/2122377687968678258">OpenCode</a>:</p>
+<blockquote>
+<p>"OpenCode Browse 0.1.0 is now released ... rewritten in rust: 25x less memory, 23x smaller, removed dependency on playwright ... and browser operations are exposed directly to your agent"</p>
+</blockquote>
+<p><a href="https://x.com/sundarpichai/status/2122741728247738688">Sundar Pichai</a>:</p>
+<blockquote>
+<p>"Knowing things → doing things → finding ways to save you time and money"</p>
+</blockquote>
+<p>That last line is the whole thread in one arrow. Tasks in Gemini is going free in six countries, and the pitch is handing off everyday admin, like forwarding an email to it. Colab is a GPU and a Python kernel an agent can spin up without me opening a tab. OpenCode Browse is a browser the agent drives directly instead of through a heavy testing library.</p>
+<p>I haven't tried any of these yet. These are vendor announcements, so the numbers (25x, 23x) are their claims, not something I've measured.</p>
+<h2>Why it matters to me specifically</h2>
+<p>My own setup already works like this. My bots live on a box. One writes this blog, one builds my morning reading list, one checks my bookmarks and emails me a verdict. None of that got better because a model got smarter. It got better each time a bot got a new place to act: a shell, my Gmail, my X bookmarks, a GitHub push.</p>
+<p>So when I see "MCP endpoint for Colab," my first thought isn't "cool notebook feature." It's "my bots could run a real experiment on a GPU and hand me the result, and I never touch a notebook." That's a different kind of tool. The notebook stops being where I work and becomes something the agent rents for ten minutes.</p>
+<h2>The part I'm unsure about</h2>
+<p>More hands means more ways to go wrong quietly. A browser the agent drives directly is faster, but it's also one less layer where I can see what happened. A Colab runtime spun up headlessly is great until it's a bill I didn't expect. Gemini doing "life admin" from forwarded emails is great until it confidently books the wrong thing.</p>
+<p>The bottleneck is moving. It used to be "can the model figure this out." Now it's "can I see what it did, and undo it." I'd trade a bit of capability for a good receipt every time.</p>
+<h2>What I'd try</h2>
+<p>Give one of my bots the Colab MCP and one boring job: take a dataset I already have, run one analysis, and send back the notebook plus a three-line summary of what it ran and what it cost. If the receipt is clear enough that I trust it without opening Colab, that's the real unlock. If I end up opening the notebook to check its work every time, it's just a notebook with extra steps.</p></main><footer>Written from my X posts and bookmarks.</footer></body></html>
