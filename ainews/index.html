@@ -128,9 +128,104 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-19T20:10:00+05:30",
+ "updated": "2026-11-19T23:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Dario Amodei's remarks on Anthropic's IPO",
+   "author": "@AnthropicAI",
+   "authorName": "Anthropic",
+   "url": "https://x.com/AnthropicAI/status/2123461658890686863",
+   "published": "2026-11-19 22:31 IST",
+   "summary": "Anthropic posted Dario Amodei's IPO-day remarks. He says powerful AI working with humans could compress a century of scientific and medical progress into a decade, while stating the risks (misuse, economic disruption, losing control of AI systems) are real but avoidable.",
+   "why": "Official Anthropic account, CEO statement",
+   "topic": "Industry",
+   "replies": "Mostly low signal: insults, memes, and a thread asking Grok what happens if the IPO flops. One useful dev question: will Claude Code limits and API pricing get better or worse now that there's an earnings call every quarter.",
+   "replyCount": 10
+  },
+  {
+   "title": "Genie 4 world model lands in the Gemini API and AI Studio",
+   "author": "@OfficialLoganK",
+   "authorName": "Logan Kilpatrick",
+   "url": "https://x.com/OfficialLoganK/status/2123467449257623770",
+   "published": "2026-11-19 22:54 IST",
+   "summary": "Google made Genie 4, its first world model for developers, available in the Gemini API and AI Studio. Omar Sanseviero (Google) adds it generates worlds at 24fps with native audio from text or image, steerable live with WASD.",
+   "why": "Google AI Studio lead, primary announcement",
+   "topic": "Tools",
+   "replies": "People want pricing per minute of generated world before building anything past demos, plus deterministic resets. Several bet the real money is training robots or testing agents inside these worlds; one reported the link 404ing at first.",
+   "replyCount": 10
+  },
+  {
+   "title": "Theo: Prime Intellect inference endpoint was compromised",
+   "author": "@theo",
+   "authorName": "Theo - t3.gg",
+   "url": "https://x.com/theo/status/2123430257697157587",
+   "published": "2026-11-19 20:26 IST",
+   "summary": "Theo says Prime Intellect was compromised 'in a very strange way', disclosed by OpenRouter to affected users including him, with no public comms from Prime Intellect yet. Others relaying the disclosure say an attacker got admin access to model-serving machines and the affected cluster was taken offline.",
+   "why": "Watchlist dev, affected customer citing OpenRouter's disclosure",
+   "topic": "Industry",
+   "replies": "Split: some think it's a routing or test/prod mixup being overstated, others say the silence turns a breach into a trust problem. Practical tip from one reply: if your agents go through a router, pin the provider and run canary refusal prompts.",
+   "replyCount": 10
+  },
+  {
+   "title": "Arena launches a Coding Index for agents",
+   "author": "@arena",
+   "authorName": "Arena.ai",
+   "url": "https://x.com/arena/status/2123431957308871030",
+   "published": "2026-11-19 20:33 IST",
+   "summary": "Arena introduced a Coding Index measuring which agents do best at real coding work. GPT-6.2 Astra (Max) scored 1338 on it, #3, while landing #6 (1291) on the overall Agent Arena Index.",
+   "why": "Major public eval leaderboard",
+   "topic": "Research",
+   "replies": "Replies ask whether cost-per-task medians were measured on the same tasks and harness across Astra versions, and want latency alongside. One user says Astra codes well but communicates so badly they used Sol to explain its output.",
+   "replyCount": 10
+  },
+  {
+   "title": "Raschka on the Marin Mochi 535B-A23B open checkpoint drop",
+   "author": "@rasbt",
+   "authorName": "Sebastian Raschka",
+   "url": "https://x.com/rasbt/status/2123433827234111659",
+   "published": "2026-11-19 20:40 IST",
+   "summary": "Sebastian Raschka highlights Marin's Mochi (535B total, 23B active) checkpoint release with a tech report explaining component choices for training stability and GPU throughput, starting with a latent MoE design with an extra RMSNorm.",
+   "why": "Well-known LLM researcher/educator",
+   "topic": "Research",
+   "replies": "Technical and useful: readers note the release includes all 57 training checkpoints (good for teaching and probing), the 3:1 local/global attention split cuts long-context KV cost, and it ships bf16 only at about 1.07 TB, just out of reach for 256GB home setups at 4-bit.",
+   "replyCount": 10
+  },
+  {
+   "title": "Perplexity Brain now writes self-improving skills",
+   "author": "@perplexity_ai",
+   "authorName": "Perplexity",
+   "url": "https://x.com/perplexity_ai/status/2123449395882701224",
+   "published": "2026-11-19 21:42 IST",
+   "summary": "Perplexity's Computer agent 'Brain' now learns how you work from past sessions and memory, then automatically writes and updates personalized agent skills for future tasks.",
+   "why": "Official Perplexity account",
+   "topic": "Tools",
+   "replies": "Mostly 'right direction, but show me the diff': people want to review any self-rewritten skill and worry about drift or bad habits. Replies citing the write-up say it makes one change per skill per daily run, needs two occurrences before creating a skill, and has no internet or connector access.",
+   "replyCount": 10
+  },
+  {
+   "title": "Microsoft AI launches Canvas on MAI Image 2.7 Flash",
+   "author": "@MicrosoftAI",
+   "authorName": "Microsoft AI",
+   "url": "https://x.com/MicrosoftAI/status/2123462465740533910",
+   "published": "2026-11-19 22:34 IST",
+   "summary": "Microsoft AI released Canvas, an interactive workspace powered by MAI Image 2.7 Flash for turning sketches into diagrams and making precise image edits without starting over.",
+   "why": "Official Microsoft AI account",
+   "topic": "Tools",
+   "replies": "Few replies. People ask why MAI models aren't in Copilot, and one wants to see how it handles text labels in diagrams.",
+   "replyCount": 6
+  },
+  {
+   "title": "Jim Fan: GR00T 2 controlling real dexterous hands",
+   "author": "@DrJimFan",
+   "authorName": "Jim Fan",
+   "url": "https://x.com/DrJimFan/status/2123470587259732200",
+   "published": "2026-11-19 23:06 IST",
+   "summary": "NVIDIA's Jim Fan shared an autonomous, uncut, 1x-speed video of GR00T 2 controlling real dexterous robot hands end to end.",
+   "why": "NVIDIA robotics research lead, own lab's work",
+   "topic": "Research",
+   "replyCount": 0
+  },
   {
    "title": "Anthropic debuts on Nasdaq after record IPO",
    "author": "@Reuters",
@@ -273,102 +368,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Rumor/early signal: aggregator with decent hit rate; not an official announcement",
    "topic": "Models",
    "replies": "Mostly jokes about the periodic-table naming. One reply maps the names to Artificial Analysis index scores (Hydrogen fast at 54, Carbon 60, Neon 61). Low signal otherwise.",
-   "replyCount": 10
-  },
-  {
-   "title": "Anthropic becomes the largest public benefit corp on the US market",
-   "author": "@Techmeme",
-   "authorName": "Techmeme",
-   "url": "https://x.com/Techmeme/status/2123373454674268528",
-   "published": "2026-11-19 16:40 IST",
-   "summary": "Per the New York Times, Anthropic is set to be the US stock market's largest public benefit corporation by far, with the mandate overseen by a five-member Long-Term Benefit Trust.",
-   "why": "Techmeme summarizing NYT reporting (Cory Weinberg)",
-   "topic": "Industry",
-   "replies": "Only one reply, a joke about headline wording. Low signal.",
-   "replyCount": 1
-  },
-  {
-   "title": "Moonshot AI cancels $150M Nvidia chip rental in Indonesia after US rules",
-   "author": "@Techmeme",
-   "authorName": "Techmeme",
-   "url": "https://x.com/Techmeme/status/2123369665024205021",
-   "published": "2026-11-19 16:25 IST",
-   "summary": "Sources tell The Information that Moonshot AI cancelled a $150M contract with a Southeast Asian neocloud for Nvidia chips in an Indonesian data center, following US rules.",
-   "why": "Techmeme summarizing The Information sourcing",
-   "topic": "Policy",
-   "replies": "One low-signal reply. Little discussion yet.",
-   "replyCount": 1
-  },
-  {
-   "title": "Bezos' Prometheus building an end-to-end agentic engineering system",
-   "author": "@Techmeme",
-   "authorName": "Techmeme",
-   "url": "https://x.com/Techmeme/status/2123374766061199798",
-   "published": "2026-11-19 16:46 IST",
-   "summary": "Fast Company looks at Jeff Bezos' AI startup Prometheus, which raised $18B and has about 250 people; sources say it is building an end-to-end agentic AI engineering system.",
-   "why": "Techmeme summarizing Fast Company reporting",
-   "topic": "Industry",
-   "replies": "Two replies, both remarking on the money per head (about $72M per employee). Low signal.",
-   "replyCount": 2
-  },
-  {
-   "title": "Trump administration weighs 'name and shame' rule for Chinese open models",
-   "author": "@Jason",
-   "authorName": "Jason Calacanis",
-   "url": "https://x.com/Jason/status/2123165888673357850",
-   "published": "2026-11-19 02:56 IST",
-   "summary": "Citing Reuters, the administration is weighing a rule forcing companies to disclose on their websites when they use Chinese open-source AI models. It would not be a ban.",
-   "why": "Relays Reuters reporting (Alexandra Alper); missed in earlier runs",
-   "topic": "Policy",
-   "replies": "Replies are mostly hostile to the idea, saying it hurts open source and that Chinese open-weight models are better. Some argue the US should fund better American open models or restrict Nvidia chip sales instead.",
-   "replyCount": 10
-  },
-  {
-   "title": "Pelican test across Gemini 4 Carbon, Neon and Hydrogen effort levels",
-   "author": "@simonw",
-   "authorName": "Simon Willison",
-   "url": "https://x.com/simonw/status/2123305131206967571",
-   "published": "2026-11-19 12:09 IST",
-   "summary": "Simon Willison ran his pelican-riding-a-bicycle test on Gemini 4 Carbon, the new Gemini 4 Neon, and Gemini 4 Hydrogen at low, medium and high effort. He says its most useful role now is showing how models in one family differ by effort level.",
-   "why": "Simon Willison, independent dev who tests every model hands-on",
-   "topic": "Models",
-   "replies": "Replies mostly agree effort level matters more than which family model you pick, and that the pelican is easy for anyone to grade. One reply pulled numbers from his captions claiming Neon high was about 3.5x faster and cheaper than Carbon high; another asked whether high ever came out worse than medium.",
-   "replyCount": 10
-  },
-  {
-   "title": "Jeremy Howard: Gemini Neon is as good as everyone says",
-   "author": "@jeremyphoward",
-   "authorName": "Jeremy Howard",
-   "url": "https://x.com/jeremyphoward/status/2123315626639073332",
-   "published": "2026-11-19 12:51 IST",
-   "summary": "Jeremy Howard says Gemini Neon in the Gemini app is actually as good as people are claiming.",
-   "why": "fast.ai / Answer.AI founder; earlier today said his Solveit team reverted GPT-6.2",
-   "topic": "Models",
-   "replies": "Mostly agreement; @hendrycks adds it's great at writing. Others question long-agent-run stability and API cost, and one user reports Neon finishing more of a small CursorBench set than Carbon at lower cost per task (unverified).",
-   "replyCount": 10
-  },
-  {
-   "title": "Harrison Chase: build a knowledge factory, not just a software factory",
-   "author": "@hwchase17",
-   "authorName": "Harrison Chase",
-   "url": "https://x.com/hwchase17/status/2123293504164311419",
-   "published": "2026-11-19 11:23 IST",
-   "summary": "LangChain's Harrison Chase argues the hardest part of building agents is the context they have, so teams building agents should be building a 'knowledge factory'.",
-   "why": "LangChain CEO, builds agent tooling",
-   "topic": "Tools",
-   "replies": "Repliers agree but say the real problem is keeping that knowledge fresh, since stale context makes agents confidently wrong. Others raise trust boundaries (every doc fed to an agent is executable input) and suggest a short always-read index plus topic files.",
-   "replyCount": 10
-  },
-  {
-   "title": "Qwen4-Max available on Nous Portal",
-   "author": "@Alibaba_Qwen",
-   "authorName": "Qwen",
-   "url": "https://x.com/Alibaba_Qwen/status/2123328957022081036",
-   "published": "2026-11-19 13:44 IST",
-   "summary": "Alibaba's Qwen team invites people to try Qwen4-Max on Nous Research's Nous Portal.",
-   "why": "Official Alibaba Qwen account",
-   "topic": "Models",
-   "replies": "Mixed: some say it handles long-context and table-parsing work well, one says the new model is bad. Several mention a five-day free window (not stated in the post) and many ask for Qwen4 Flash or smaller open models.",
    "replyCount": 10
   }
  ]
