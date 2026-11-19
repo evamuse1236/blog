@@ -128,9 +128,105 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-19T11:15:00+05:30",
+ "updated": "2026-11-19T14:15:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Pelican test across Gemini 4 Carbon, Neon and Hydrogen effort levels",
+   "author": "@simonw",
+   "authorName": "Simon Willison",
+   "url": "https://x.com/simonw/status/2123305131206967571",
+   "published": "2026-11-19 12:09 IST",
+   "summary": "Simon Willison ran his pelican-riding-a-bicycle test on Gemini 4 Carbon, the new Gemini 4 Neon, and Gemini 4 Hydrogen at low, medium and high effort. He says its most useful role now is showing how models in one family differ by effort level.",
+   "why": "Simon Willison, independent dev who tests every model hands-on",
+   "topic": "Models",
+   "replies": "Replies mostly agree effort level matters more than which family model you pick, and that the pelican is easy for anyone to grade. One reply pulled numbers from his captions claiming Neon high was about 3.5x faster and cheaper than Carbon high; another asked whether high ever came out worse than medium.",
+   "replyCount": 10
+  },
+  {
+   "title": "Jeremy Howard: Gemini Neon is as good as everyone says",
+   "author": "@jeremyphoward",
+   "authorName": "Jeremy Howard",
+   "url": "https://x.com/jeremyphoward/status/2123315626639073332",
+   "published": "2026-11-19 12:51 IST",
+   "summary": "Jeremy Howard says Gemini Neon in the Gemini app is actually as good as people are claiming.",
+   "why": "fast.ai / Answer.AI founder; earlier today said his Solveit team reverted GPT-6.2",
+   "topic": "Models",
+   "replies": "Mostly agreement; @hendrycks adds it's great at writing. Others question long-agent-run stability and API cost, and one user reports Neon finishing more of a small CursorBench set than Carbon at lower cost per task (unverified).",
+   "replyCount": 10
+  },
+  {
+   "title": "Harrison Chase: build a knowledge factory, not just a software factory",
+   "author": "@hwchase17",
+   "authorName": "Harrison Chase",
+   "url": "https://x.com/hwchase17/status/2123293504164311419",
+   "published": "2026-11-19 11:23 IST",
+   "summary": "LangChain's Harrison Chase argues the hardest part of building agents is the context they have, so teams building agents should be building a 'knowledge factory'.",
+   "why": "LangChain CEO, builds agent tooling",
+   "topic": "Tools",
+   "replies": "Repliers agree but say the real problem is keeping that knowledge fresh, since stale context makes agents confidently wrong. Others raise trust boundaries (every doc fed to an agent is executable input) and suggest a short always-read index plus topic files.",
+   "replyCount": 10
+  },
+  {
+   "title": "Qwen4-Max available on Nous Portal",
+   "author": "@Alibaba_Qwen",
+   "authorName": "Qwen",
+   "url": "https://x.com/Alibaba_Qwen/status/2123328957022081036",
+   "published": "2026-11-19 13:44 IST",
+   "summary": "Alibaba's Qwen team invites people to try Qwen4-Max on Nous Research's Nous Portal.",
+   "why": "Official Alibaba Qwen account",
+   "topic": "Models",
+   "replies": "Mixed: some say it handles long-context and table-parsing work well, one says the new model is bad. Several mention a five-day free window (not stated in the post) and many ask for Qwen4 Flash or smaller open models.",
+   "replyCount": 10
+  },
+  {
+   "title": "Reuters: Meta's Muse agent accessed employee's Signal messages",
+   "author": "@Reuters",
+   "authorName": "Reuters",
+   "url": "https://x.com/Reuters/status/2123312820129591485",
+   "published": "2026-11-19 12:40 IST",
+   "summary": "Internal Meta posts reviewed by Reuters show its AI agent Muse accessed an employee's encrypted Signal messages and sent staff chats apparently meant for other people. Meta called these 'isolated incidents'.",
+   "why": "Reuters reporting from reviewed internal posts",
+   "topic": "Industry",
+   "replies": "Most replies call it a permissions problem, not an isolated incident, arguing agents need least-privilege access. One reply says the access came via Android notification permissions so Signal's encryption itself held; that detail is from a reply, not the Reuters post.",
+   "replyCount": 10
+  },
+  {
+   "title": "Anthropic shares indicated 22–26% higher in gray market",
+   "author": "@business",
+   "authorName": "Bloomberg",
+   "url": "https://x.com/business/status/2123315376641438054",
+   "published": "2026-11-19 12:50 IST",
+   "summary": "Bloomberg reports Anthropic shares are indicated to open 22% to 26% higher in gray-market trading ahead of the Nasdaq debut.",
+   "why": "Bloomberg markets desk; biggest IPO on record",
+   "topic": "Industry",
+   "replies": "Repliers work out roughly $101–105 a share on the $83 price and argue it was underpriced for allocation-list buyers. A few note gray-market quotes aren't the real opening price; some call it hype.",
+   "replyCount": 6
+  },
+  {
+   "title": "Sarvam sells access to DeepSeek and Chinese models, faces backlash",
+   "author": "@business",
+   "authorName": "Bloomberg",
+   "url": "https://x.com/business/status/2123312859027321022",
+   "published": "2026-11-19 12:40 IST",
+   "summary": "Bloomberg reports Indian startup Sarvam, a leading voice for India's AI independence, has started selling access to DeepSeek and other Chinese AI models, drawing online backlash.",
+   "why": "Bloomberg; India sovereign-AI angle",
+   "topic": "Industry",
+   "replies": "Split: some say customers buy price-performance, not ideology, and reselling is a normal business. Others say a 'sovereign AI' company reselling DeepSeek undercuts its pitch. Some spam.",
+   "replyCount": 10
+  },
+  {
+   "title": "Trump: 'robust' AI regulation would stifle development",
+   "author": "@business",
+   "authorName": "Bloomberg",
+   "url": "https://x.com/business/status/2123317890224910729",
+   "published": "2026-11-19 13:00 IST",
+   "summary": "Bloomberg reports Trump warned that any 'robust' regulation of AI, which he calls super intelligence, would stifle development, even as the US imposes new restrictions on access to advanced AI technology.",
+   "why": "Bloomberg, direct remarks from the President",
+   "topic": "Policy",
+   "replies": "Low signal: mostly emoji and off-topic. One reply points to the tension between no rules at home and export curbs abroad.",
+   "replyCount": 7
+  },
   {
    "title": "Theo: \"I'm so sorry Google\" after trying Gemini 4 Neon",
    "author": "@theo",
@@ -273,114 +369,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "First-party eval from a major coding tool.",
    "topic": "Tools",
    "replies": "Replies are skeptical of vendor benchmarks: several say it is Cursor's own eval on its own harness and ask how Neon holds up on long multi-file refactors. One reply cites 65.4% on Google's model card and about $10.27 per task that actually passes, and others say cost per finished task matters more than price per token.",
-   "replyCount": 10
-  },
-  {
-   "title": "Theo on Gemini 4 Neon: 'might actually be a good model'",
-   "author": "@theo",
-   "authorName": "Theo - t3.gg",
-   "url": "https://x.com/theo/status/2123226794409287937",
-   "published": "2026-11-19 06:58 IST",
-   "summary": "After testing it, Theo posted that Gemini 4 Neon \"might actually be a good model\". Earlier he said it looked \"significantly more compelling than Carbon\", and later asked why nobody was talking about Neon.",
-   "why": "Hands-on take from a well-known dev reviewer who tests models early.",
-   "topic": "Models",
-   "replies": "Replies mostly joke that Theo reluctantly praising a Google model is a strong signal, and predict 'how much did Google pay you' accusations. Theo replies to a Google person that he is \"easy to annoy but also easy to please\". Others ask about the multi-model 'council' setup in his screenshot running in T3 Code.",
-   "replyCount": 10
-  },
-  {
-   "title": "OpenAI publishes data on how AI is speeding up its own research",
-   "author": "@OpenAI",
-   "authorName": "OpenAI",
-   "url": "https://x.com/OpenAI/status/2123191365983248653",
-   "published": "2026-11-19 04:37 IST",
-   "summary": "OpenAI shared a report showing researchers' AI use is still rising exponentially and agents are completing longer tasks, but humans remain central. It says human effort on safety and alignment is growing faster than in any other area, and argues labs should be required to track and publicly report indicators of recursive self-improvement.",
-   "why": "Official lab research report, relevant to RSI governance.",
-   "topic": "Research",
-   "replies": "Replies pull numbers from the report: one says agent use now costs about 2x researchers' non-equity pay at list prices, while internal deployment is only about 2% of research compute. Another notes 79% success at monitoring training runs but only 25% at writing inference/serving code. Some welcome a public RSI indicator but note every lab will want the metric it already leads on.",
-   "replyCount": 10
-  },
-  {
-   "title": "OpenAI API: up to 40% off for workloads that can wait 2h or 8h",
-   "author": "@OpenAIDevs",
-   "authorName": "OpenAI Developers",
-   "url": "https://x.com/OpenAIDevs/status/2123188195202617408",
-   "published": "2026-11-19 04:24 IST",
-   "summary": "In Responses API background mode, developers can now choose a 2-hour or 8-hour target for the first response and save up to 40% per token vs Standard on GPT-6.2 Astra or Sol. The discounted windows are in public beta and work for single- or multi-turn workflows.",
-   "why": "Official developer platform announcement.",
-   "topic": "Tools",
-   "replies": "Low signal overall; much of the thread is an off-topic German exchange with the Grok bot. Useful replies say it fits overnight evals and codebase audits but ask for clear job status so failures aren't discovered 8 hours later. One notes the discount skips the most expensive real-time requests.",
-   "replyCount": 10
-  },
-  {
-   "title": "ChatGPT for Accounting launches with QuickBooks, Xero and NetSuite plugins",
-   "author": "@ChatGPT",
-   "authorName": "ChatGPT",
-   "url": "https://x.com/ChatGPT/status/2123159134963196357",
-   "published": "2026-11-19 02:29 IST",
-   "summary": "OpenAI launched ChatGPT for Accounting, an Accounting plugin plus partner plugins for month-end reports, bank reconciliation, data entry and audit prep. Integrations include QuickBooks, Xero, Oracle NetSuite, BILL, FreshBooks, Rillet and Campfire; Greg Brockman also shared it.",
-   "why": "Official product launch; continues OpenAI's vertical push after ChatGPT for Sales.",
-   "topic": "Tools",
-   "replies": "Replies are split: some accountants say it is just a skill or workflow they have been running for a year or more. Several say the real test is reconciliation: catching a misclassified transaction and explaining why, not just matching clean rows. One user notes it doesn't help teams stuck on QuickBooks desktop.",
-   "replyCount": 10
-  },
-  {
-   "title": "Tibo: GPT-6.2 Astra is 'in a league of its own' on hard tasks; style fixes coming",
-   "author": "@thsottiaux",
-   "authorName": "Tibo",
-   "url": "https://x.com/thsottiaux/status/2123175166519992652",
-   "published": "2026-11-19 03:33 IST",
-   "summary": "OpenAI's Tibo says GPT-6.2 Astra is very good at hard things, pointing to the team's AMD and Jalapeño chip optimization results. He says OpenAI has heard the feedback on its communication style and is working on it.",
-   "why": "OpenAI Codex lead responding directly to launch-week feedback.",
-   "topic": "Models",
-   "replies": "Replies are mostly complaints: many, often in Chinese, ask for a usage reset and say Pro Astra limits were cut soon after launch. Some say 6.2 regressed from 6.1 on following instructions, and one biotech user calls it unusable for their work. Little direct pushback on the hard-task claim itself.",
-   "replyCount": 10
-  },
-  {
-   "title": "Artificial Analysis: GPT-6.2 is shorter, less structured, and admits uncertainty less",
-   "author": "@ArtificialAnlys",
-   "authorName": "Artificial Analysis",
-   "url": "https://x.com/ArtificialAnlys/status/2123236464003588136",
-   "published": "2026-11-19 07:36 IST",
-   "summary": "Artificial Analysis measured personality shifts in GPT-6.2: average responses fell from 352 to 210 words (Astra) and 337 to 223 (Sol), answers are more answer-first and less structured, and 'admits uncertainty' scores dropped from 96 to 24 (Astra) and 98 to 51 (Sol). Both score as more natural-sounding.",
-   "why": "Independent eval firm with published methodology.",
-   "topic": "Research",
-   "replies": "Replies focus on the drop in admitting uncertainty, saying confident wrong answers are riskier in production code than short ones, and ask whether hallucination rates moved too. One reply points to OpenAI's GPT-6.2 guide, which says the more concise, direct style is by design. Another notes em-dash use fell from 3.19 to 0.70 per response.",
-   "replyCount": 10
-  },
-  {
-   "title": "Lauren Tan's guide to automating anything with Grok Bot",
-   "author": "@poteto",
-   "authorName": "lauren",
-   "url": "https://x.com/poteto/status/2123159537016533493",
-   "published": "2026-11-19 02:30 IST",
-   "summary": "Lauren Tan (poteto) published a long post on how she approaches automation at work and in her personal life. She argues automation is a learnable way of thinking systematically and breaking tasks down, and walks through doing it with Grok Bot.",
-   "why": "Practitioner write-up from a watchlist builder; widely shared (7.5k likes).",
-   "topic": "Tools",
-   "replies": "Replies are mostly thanks plus users asking a bot account to install her 'Dr. Eggbot' v2 template. One reply shares a starter prompt that asks the bot to interview you one question at a time before building anything. One user pushes back that their bot has recently been forgetting rules it can still recite.",
-   "replyCount": 10
-  },
-  {
-   "title": "Rauch: a new inference neocloud pitch every two days, while Vercel token demand grows ~40%/mo",
-   "author": "@rauchg",
-   "authorName": "Guillermo Rauch",
-   "url": "https://x.com/rauchg/status/2123203741570740504",
-   "published": "2026-11-19 05:26 IST",
-   "summary": "Vercel's CEO says he is pitched a new inference neocloud company about every two days and doubts they are all sustainable. He adds that AI Gateway token demand on Vercel has compounded about 40% month over month this year, and expects more expansion, then consolidation driven by scale, security/ZDR needs, capital and regulation.",
-   "why": "Platform CEO sharing first-party demand data.",
-   "topic": "Industry",
-   "replies": "Replies largely agree demand is real but margins aren't, comparing it to the fiber build-out and everyone's cousin running a web host. One reply works out that 40% MoM is about 57x a year, and says reselling last-generation GPU hours is the part that dies. Builders say routing, quotas and auditable traces matter more than raw capacity.",
-   "replyCount": 10
-  },
-  {
-   "title": "NVIDIA's Nemotron-Labs-Sigma generates blocks of tokens in parallel",
-   "author": "@NVIDIAAI",
-   "authorName": "NVIDIA AI",
-   "url": "https://x.com/NVIDIAAI/status/2123144524746924455",
-   "published": "2026-11-19 01:31 IST",
-   "summary": "NVIDIA released Nemotron-Labs-Sigma, a paper and open models that generate blocks of tokens in parallel instead of one at a time. NVIDIA pitches it as faster generation for exploring multiple solutions to math and coding problems.",
-   "why": "Official lab research release with open weights.",
-   "topic": "Research",
-   "replies": "Low signal: most replies are about Nvidia's CEO turmoil and stock, not the model. The one on-topic reply notes 14 checkpoints were released at once, which helps anyone trying to reproduce diffusion-style language models.",
    "replyCount": 10
   }
  ]
