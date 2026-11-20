@@ -128,9 +128,68 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-20T14:10:00+05:30",
+ "updated": "2026-11-20T17:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Brockman: GPT-6.2 Astra beats the human baseline on Blueprint-Bench 2",
+   "author": "@gdb",
+   "authorName": "Greg Brockman",
+   "url": "https://x.com/gdb/status/2123719297096990726",
+   "published": "2026-11-20 15:35 IST",
+   "summary": "Greg Brockman shared Andon Labs' result that GPT-6.2 Astra is the first model above the human baseline on Blueprint-Bench 2, where agents draw apartment floorplans from interior photos. Andon Labs ranks Astra #1 and GPT-6.2 Sol #3.",
+   "why": "OpenAI president on watchlist, citing a third-party eval from Andon Labs",
+   "topic": "Models",
+   "replies": "Mostly cheering, plus a few people noting floorplans-from-photos is a hard-to-fake 3D test. One reply pointed out the margin is tiny (about 0.61 vs a 0.59 human baseline, with Gemini 4 Carbon close behind), and another asked how it handles mirrors and hidden rooms. Someone also noted Astra 6.2 Pro still isn't in ChatGPT.",
+   "replyCount": 10
+  },
+  {
+   "title": "Theo: Neon is the first Gemini that deserves a working platform",
+   "author": "@theo",
+   "authorName": "Theo - t3.gg",
+   "url": "https://x.com/theo/status/2123720457551823008",
+   "published": "2026-11-20 15:39 IST",
+   "summary": "Theo quoted a report that Gemini 4 Neon burns Antigravity limits about 3x faster because prompt caching barely hits, and said he'll go back to pushing Google to fix its platform once the honeymoon fades. His view: Neon is the first Gemini model good enough to deserve a functioning platform.",
+   "why": "Theo (watchlist), hands-on with Neon in his own T3 Code product",
+   "topic": "Tools",
+   "replies": "Broad agreement that the model now feels ahead of Google's tooling, with a couple of people saying Gemini finally justifies a paid sub. Others flagged rate limits and cost as the catch, and one asked for benchmarks of Neon outside Antigravity. Some off-topic market chatter and memes.",
+   "replyCount": 10
+  },
+  {
+   "title": "Nathan Lambert: Gemini Neon in Antigravity feels like Claude Code and Codex",
+   "author": "@natolambert",
+   "authorName": "Nathan Lambert",
+   "url": "https://x.com/natolambert/status/2123737477101826152",
+   "published": "2026-11-20 16:47 IST",
+   "summary": "Nathan Lambert tried Gemini Neon in Antigravity and said it felt in distribution of Claude Code and Codex, in a good way. He said he's excited to learn more about the new models.",
+   "why": "Ai2 researcher (watchlist), first-hand impression",
+   "topic": "Models",
+   "replies": "Only two replies so far: one asked whether it holds up on real tasks you'd give Claude Code, not just demos, and another asked how fast Neon eats the Antigravity 5-hour limit.",
+   "replyCount": 2
+  },
+  {
+   "title": "Ex-Qwen head Junyang Lin's Pragmatik Labs valued at $5B",
+   "author": "@Techmeme",
+   "authorName": "Techmeme",
+   "url": "https://x.com/Techmeme/status/2123735816979787835",
+   "published": "2026-11-20 16:40 IST",
+   "summary": "Per Bloomberg via Techmeme, Shanghai-based Pragmatik Labs, founded by former Qwen head Junyang Lin, raised tens of millions of dollars at a $5B valuation, up from $2B in August.",
+   "why": "Techmeme summarising a sourced Bloomberg report",
+   "topic": "Industry",
+   "replyCount": 0
+  },
+  {
+   "title": "Signal will block screenshots by default to keep AI agents out of chats",
+   "author": "@Techmeme",
+   "authorName": "Techmeme",
+   "url": "https://x.com/Techmeme/status/2123733471441064161",
+   "published": "2026-11-20 16:31 IST",
+   "summary": "Per Reuters (Katie Paul) via Techmeme, Signal will restrict screenshots by default to stop AI agents from reading private chats on phones. Signal warns the new protections are \"incomplete\".",
+   "why": "Techmeme citing a named Reuters reporter",
+   "topic": "Policy",
+   "replies": "Two replies: one said the key word is \"incomplete\", since agents may still read the screen other ways; the other called default screenshot blocking a sensible move as screen-reading agents become a privacy risk.",
+   "replyCount": 2
+  },
   {
    "title": "Meta's Muse agent gets its own email address",
    "author": "@Muse",
@@ -273,90 +332,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Independent benchmarking firm",
    "topic": "Research",
    "replies": "Replies like that code scenes keep objects consistent and can be edited and re-rendered. Pushback: no cost comparison, and the LLM got an exact spec while the video model got a prompt, so it's not a like-for-like test.",
-   "replyCount": 10
-  },
-  {
-   "title": "ElevenLabs Scribe v3 ranks #2 on AA speech-to-text",
-   "author": "@ArtificialAnlys",
-   "authorName": "Artificial Analysis",
-   "url": "https://x.com/ArtificialAnlys/status/2123574381251375493",
-   "published": "2026-11-20 05:59 IST",
-   "summary": "Scribe v3 scores 1.95% WER on the AA-WER Index for non-streaming speech-to-text, up from Scribe v2's 2.18%, behind Alibaba's Fun-Realtime-ASR-preview (1.73%) and just ahead of Microsoft's MAI-Transcribe-2 (2.04%).",
-   "why": "Independent benchmark, not the vendor's own claim",
-   "topic": "Models",
-   "replies": "Replies say the gaps are near noise at this level and price and latency will decide it; one cites AA's follow-up at $0.20 per hour. Others ask for streaming numbers and long-meeting results.",
-   "replyCount": 10
-  },
-  {
-   "title": "Higgsfield GPU Harness lets Claude rent GPUs in chat",
-   "author": "@lyraxana",
-   "authorName": "lyra",
-   "url": "https://x.com/lyraxana/status/2123621436698845326",
-   "published": "2026-11-20 09:06 IST",
-   "summary": "Lyra says Higgsfield's GPU Harness is out: Claude can rent GPUs (L40S up to B300, up to 8 per machine) directly in chat, and her demo had it render a starling murmuration in Blender on 8x L40S. Note: many other posts about this launch are paid partnerships.",
-   "why": "Watchlist tracker; launch confirmed by Higgsfield's own posts",
-   "topic": "Tools",
-   "replies": "Mostly people asking about price; Grok's reply lists credit rates (L40S 71/hr, H100 120/hr, B300 197/hr). One reply frames it as agents becoming compute customers, the same wallet question as agent payments.",
-   "replyCount": 9
-  },
-  {
-   "title": "Rumor/early signal: Nano Banana Pro 2 spotted in Google Flow",
-   "author": "@lyraxana",
-   "authorName": "lyra",
-   "url": "https://x.com/lyraxana/status/2123590069013336465",
-   "published": "2026-11-20 07:01 IST",
-   "summary": "Rumor/early signal: Lyra says Nano Banana Pro 2 (codename paper-volcano) has been added to Google Flow. Google has not announced it.",
-   "why": "Watchlist model spotter; unconfirmed by Google",
-   "topic": "Models",
-   "replies": "Low signal: hype and 'when does it drop' questions. One notes her earlier tests found the model weak, and that in Flow it mostly matters as a first-frame generator for Veo.",
-   "replyCount": 10
-  },
-  {
-   "title": "OpenAI starts testing dots with ChatGPT Plus users",
-   "author": "@thsottiaux",
-   "authorName": "Tibo",
-   "url": "https://x.com/thsottiaux/status/2123556256392847657",
-   "published": "2026-11-20 04:47 IST",
-   "summary": "Tibo says OpenAI is starting to test dots, its proactive agents, with a small number of ChatGPT Plus users, and that feedback on proactivity has improved. In a follow-up he says a new ChatGPT mobile experience is coming, starting with Pro users; TestingCatalog reports dots are also going to all Business Standard users.",
-   "why": "OpenAI Codex/ChatGPT lead, first-party rollout note",
-   "topic": "Tools",
-   "replies": "Mostly people asking to be let in, plus usage-limit worries: one reply asks whether Plus limits will grow now that chat and Codex quota are merged and dots draw on it too. One asks if the underlying model was downgraded. Low technical signal.",
-   "replyCount": 10
-  },
-  {
-   "title": "GPT-Live-1.1 is now in the API",
-   "author": "@OpenAIDevs",
-   "authorName": "OpenAI Developers",
-   "url": "https://x.com/OpenAIDevs/status/2123506733524136446",
-   "published": "2026-11-20 01:30 IST",
-   "summary": "OpenAI's full-duplex voice model GPT-Live-1.1 is now available in the API, with more natural and consistent accents across languages, a new standby option to cut idle costs, and more reliable task completion.",
-   "why": "Official OpenAI developer account",
-   "topic": "Models",
-   "replies": "Builders single out standby as the real feature, since much of a live call is silence. One reply argues a 5-second standby is too aggressive for callers reading out long numbers and suggests 20-30s for phone trees. Others ask about Hindi/Hinglish code-switching and Thai support.",
-   "replyCount": 10
-  },
-  {
-   "title": "GPT-6.2 Responses API: reasoning now chained to conversation history",
-   "author": "@OpenAIDevs",
-   "authorName": "OpenAI Developers",
-   "url": "https://x.com/OpenAIDevs/status/2123566018866151579",
-   "published": "2026-11-20 05:26 IST",
-   "summary": "Agents using GPT-6.2 in the Responses API can build on earlier reasoning, using fewer tokens and getting more cache hits. Each reasoning item is now tied to the conversation history before it, so editing earlier messages drops the reasoning that followed.",
-   "why": "Official OpenAI developer account, API behavior change",
-   "topic": "Tools",
-   "replies": "Agent builders flag the catch: harnesses that compact, trim, or rewrite history now pay to regenerate reasoning, pushing toward append-only transcripts. One reply notes opencode's default local compaction counts as a prefix change and suggests switching to native compaction. Another complains reasoning summaries still aren't shown.",
-   "replyCount": 10
-  },
-  {
-   "title": "Gemini app for Mac gets computer use",
-   "author": "@GeminiApp",
-   "authorName": "Google Gemini",
-   "url": "https://x.com/GeminiApp/status/2123513203745538423",
-   "published": "2026-11-20 01:56 IST",
-   "summary": "Computer use in the Gemini Mac app can hand off tasks across folders, apps and the web, working in a live background window so your own screen and cursor stay free. The demo turns a sketch into a rigged 3D model in Blender.",
-   "why": "Official Google Gemini account",
-   "topic": "Tools",
-   "replies": "Replies point out the limits from Google's follow-up: US only, English, Plus/Pro/Ultra plans, Apple Silicon and macOS Sequoia 15+, with a staged rollout. People like that it runs in an isolated window; several ask when it reaches other countries.",
    "replyCount": 10
   }
  ]
