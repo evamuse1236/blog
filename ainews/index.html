@@ -128,9 +128,117 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-20T23:10:00+05:30",
+ "updated": "2026-11-21T01:05:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "OpenAI introduces MedChemBench, a medicinal chemistry reasoning benchmark",
+   "author": "@OpenAI",
+   "authorName": "OpenAI",
+   "url": "https://x.com/OpenAI/status/2123856316187975756",
+   "published": "2026-11-21 00:39 IST",
+   "summary": "OpenAI released MedChemBench, a new benchmark for AI reasoning in medicinal chemistry, saying it shows how far its frontier models have come at helping scientists identify promising drug candidates. Greg Brockman called it 'very strong progress'.",
+   "why": "Official OpenAI announcement with a write-up on openai.com",
+   "topic": "Research",
+   "replies": "Replies are mostly positive about AI moving into drug discovery. The pushback is about data contamination: one reply asks whether any of the set uses unpublished compounds, since a lot of SAR data sits in patents and papers. Another reply cites scores of 84.5% for GPT-6.2 Astra vs 58.2% for GPT-5.6 Sol, and notes that compound selection and property prediction are still the hardest parts.",
+   "replyCount": 10
+  },
+  {
+   "title": "ChatGPT Space comes to Plus users, with editing on mobile",
+   "author": "@ChatGPT",
+   "authorName": "ChatGPT",
+   "url": "https://x.com/ChatGPT/status/2123850912867471807",
+   "published": "2026-11-21 00:18 IST",
+   "summary": "Space, where people collaborate with ChatGPT on interactive pages, slides and sites that ChatGPT can keep updated, is now open to Plus users. OpenAI also added editing on mobile and says Space is smoother and more reliable.",
+   "why": "Official ChatGPT account; Greg Brockman also announced it",
+   "topic": "Tools",
+   "replies": "Mostly cheers that Plus finally gets something, plus a few people saying mobile editing matters more than the launch itself. One reply warns that self-updating pages can change a slide between presenting it and reviewing it. A Korean user says they went back to Notion because Space can't work with other AIs. The rest is low signal or spam.",
+   "replyCount": 10
+  },
+  {
+   "title": "Tibo: upgrade the ChatGPT desktop app, now faster and simpler",
+   "author": "@thsottiaux",
+   "authorName": "Tibo",
+   "url": "https://x.com/thsottiaux/status/2123861214644347122",
+   "published": "2026-11-21 00:59 IST",
+   "summary": "OpenAI's Tibo Sottiaux says the team is 'locked in' and asks people to upgrade the desktop app, calling it 'faster, simpler and a lot more pleasant to use'. The changelog he quoted lists a new visual design, rebuilt threads, faster pages and slides, a redesigned Space home and more reliable Codex.",
+   "why": "OpenAI Codex lead, on the watchlist",
+   "topic": "Tools",
+   "replies": "Replies are mostly Codex users asking for quota or 'banked' weekend resets, with one noting 6.2 is better on quota. A few ask whether the speedup also applies on Windows, and one complains that computer use fails while the machine is locked. Otherwise low signal.",
+   "replyCount": 10
+  },
+  {
+   "title": "Arena Alignment Index update: OpenAI holds the top seven spots",
+   "author": "@arena",
+   "authorName": "Arena.ai",
+   "url": "https://x.com/arena/status/2123835034532729205",
+   "published": "2026-11-20 23:15 IST",
+   "summary": "Arena changed how its Alignment Index detects agent failures (unauthorized actions, deceptive completion, false attribution) in real user sessions. OpenAI models now hold all seven top spots. Claude Fable 5.2 debuts at #8, Claude Opus 5.5 falls from #6 to #17, and Kimi K3.1 Pro at #9 is the best open model.",
+   "why": "LMArena's official account; data from real usage",
+   "topic": "Research",
+   "replies": "People are interested, but the methodology gets questioned. Several replies ask whether failure detection uses an LLM judge and how much the ranking would move with a different judge. Others point out that Opus 5.5 dropping from 6 to 17 on a methodology tweak means either the model got worse or the old signals missed things. One reply notes that the cheaper Fable 5.2 outranks the flagship.",
+   "replyCount": 10
+  },
+  {
+   "title": "Artificial Analysis launches AA-Millennium, tracking AI claims on Millennium Prize problems",
+   "author": "@ArtificialAnlys",
+   "authorName": "Artificial Analysis",
+   "url": "https://x.com/ArtificialAnlys/status/2123855432443957525",
+   "published": "2026-11-21 00:36 IST",
+   "summary": "AA-Millennium tracks the seven Millennium Prize problems. Only two labs score above zero: OpenAI for its September Navier-Stokes claim using an unreleased model, and Anthropic for Levent Alpöge's Riemann hypothesis claim found with Claude. Both are still awaiting independent verification, so scores are provisional.",
+   "why": "Independent evals org on the watchlist",
+   "topic": "Research",
+   "replies": "Replies stress the gap between 'claimed' and 'independently verified', and some ask whether anyone can just claim a solution. A few like that the honest baseline is near zero and ask how partial credit would be judged. There are jokes that the only human baseline is Perelman turning down the prize.",
+   "replyCount": 10
+  },
+  {
+   "title": "Sebastian Raschka: the harness is part of training, so models won't absorb it",
+   "author": "@rasbt",
+   "authorName": "Sebastian Raschka",
+   "url": "https://x.com/rasbt/status/2123853084216455549",
+   "published": "2026-11-21 00:26 IST",
+   "summary": "Raschka pushes back on the idea that LLMs will absorb agent harnesses. He says models are fine-tuned to work in specific harnesses with specific tools, so the harness is part of the training setup, 'a bit like the CPU/GPU absorbing the operating system'.",
+   "why": "Well-known LLM researcher and author, on the watchlist",
+   "topic": "Research",
+   "replies": "Practitioners mostly agree with anecdotes: swapping models in the same agent loop changes tool-call habits, and rewording a tool description shifts call accuracy. Several say leaderboard scores are really model plus harness scores. Raschka himself asks in the thread whether benchmarks should use each model's native harness or one common harness, noting that Artificial Analysis uses its own Stirrup harness.",
+   "replyCount": 10
+  },
+  {
+   "title": "WSJ: Lutnick ignored warnings that Nvidia AI chips were being smuggled to China, says Sen. Cotton",
+   "author": "@WSJ",
+   "authorName": "The Wall Street Journal",
+   "url": "https://x.com/WSJ/status/2123838285248164000",
+   "published": "2026-11-20 23:28 IST",
+   "summary": "In a WSJ exclusive, Senate Intelligence chair Tom Cotton says Commerce Secretary Howard Lutnick repeatedly ignored warnings that Nvidia AI chips were being smuggled to China before the recent Nvidia scandal became public.",
+   "why": "WSJ exclusive on AI chip export enforcement",
+   "topic": "Policy",
+   "replies": "Mostly partisan anger and calls for prosecution, so low signal. A few push back, asking whether the warnings were ignored or found to be false, and one says AMD's role is being left out.",
+   "replyCount": 10
+  },
+  {
+   "title": "METR adds judgment-heavy tasks to its time-horizon plot",
+   "author": "@Techmeme",
+   "authorName": "Techmeme",
+   "url": "https://x.com/Techmeme/status/2123855379113320766",
+   "published": "2026-11-21 00:35 IST",
+   "summary": "Techmeme, citing MIT Technology Review's Grace Huckins, reports that METR updated its time-horizon plot to include judgment-heavy tasks. Some AI capabilities still grow exponentially, but models lag at designing AI evaluations.",
+   "why": "Techmeme summarizing MIT Technology Review reporting on METR",
+   "topic": "Research",
+   "replies": "Only two replies. One explains that the time horizon measures how long a task (in human working time) agents can finish with 50% reliability. The other jokes that models struggling to design evals is good news for eval engineers.",
+   "replyCount": 2
+  },
+  {
+   "title": "The Information: AI researchers are switching jobs to diversify stock, a risk for Anthropic after its IPO",
+   "author": "@theinformation",
+   "authorName": "The Information",
+   "url": "https://x.com/theinformation/status/2123853968371490868",
+   "published": "2026-11-21 00:30 IST",
+   "summary": "The Information reports that some AI researchers have switched employers to diversify their personal stock holdings, a trend that could make it harder for Anthropic to keep talent after its IPO.",
+   "why": "The Information, reporter-sourced industry story",
+   "topic": "Industry",
+   "replies": "Only three replies, all agreeing. One argues that once pre-IPO equity is liquid it stops being a golden handcuff, and retention shifts to compute access, research freedom and colleagues.",
+   "replyCount": 3
+  },
   {
    "title": "Anthropic's seven co-founders tell the company's story so far",
    "author": "@AnthropicAI",
@@ -272,137 +380,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Reputable science outlet (Joseph Howlett, ex-Quanta) quoting Alpöge's own posted statement; still an unverified claim",
    "topic": "Research",
    "replyCount": 0
-  },
-  {
-   "title": "Buckmaster and Alpöge claim blow-up for unforced Navier-Stokes",
-   "author": "@scottnarmstrong",
-   "authorName": "Scott Armstrong",
-   "url": "https://x.com/scottnarmstrong/status/2123776968839630924",
-   "published": "2026-11-20 19:24 IST",
-   "summary": "Mathematician Scott Armstrong posted that Tristan and Levent (Buckmaster and Alpöge, per others sharing a tristanbuckmaster/navier-stokes GitHub repo) claim to have proved blow-up for the unforced Navier-Stokes equations, the same afternoon as the Riemann claim. Not yet verified; the post says nothing about AI's role.",
-   "why": "Working mathematician flagging a claim from named researchers; unverified",
-   "topic": "Research",
-   "replies": "Mostly jokes and reactions. A few readers call it a strong example of human-AI collaboration in math, and one argues it shows Anthropic and OpenAI are neck and neck on math internally; no technical checks yet.",
-   "replyCount": 10
-  },
-  {
-   "title": "Logan Kilpatrick: \"December 2nd we take the first step\" on Gemini subs in any harness",
-   "author": "@OfficialLoganK",
-   "authorName": "Logan Kilpatrick",
-   "url": "https://x.com/OfficialLoganK/status/2123657759896007035",
-   "published": "2026-11-20 11:30 IST",
-   "summary": "Replying to a request to let Gemini subscriptions work in any third-party coding harness, Google's Logan Kilpatrick wrote \"December 2nd we take the first step\". He gave no details on what ships that day.",
-   "why": "Google AI Studio/Gemini API lead, primary source; scope of the change not stated (earlier miss)",
-   "topic": "Tools",
-   "replies": "Developers welcome it and say they want to use Google models more, while some call it the bare minimum to win back goodwill. Others guess at an OpenCode partnership and complain Antigravity is slow to respond mid-task.",
-   "replyCount": 10
-  },
-  {
-   "title": "Cursor tells lawmakers it may phase out Chinese AI models",
-   "author": "@CNBC",
-   "authorName": "CNBC",
-   "url": "https://x.com/CNBC/status/2123780951549280572",
-   "published": "2026-11-20 19:40 IST",
-   "summary": "CNBC reports that Cursor, now a SpaceX subsidiary, told lawmakers it is considering phasing out Chinese AI models.",
-   "why": "Major business outlet; directly affects a tool many devs use",
-   "topic": "Policy",
-   "replies": "Replies point out that Cursor's Composer 2 model was built on Moonshot's Kimi K2.5, so this touches its own model, and joke about the SpaceX/Grok parent. The rest is low signal (stock rants).",
-   "replyCount": 8
-  },
-  {
-   "title": "Anthropic offering 30%+ discounts for bigger spend commitments",
-   "author": "@theinformation",
-   "authorName": "The Information",
-   "url": "https://x.com/theinformation/status/2123778514054750276",
-   "published": "2026-11-20 19:30 IST",
-   "summary": "The Information reports Anthropic is offering discounts of more than 30% to win larger AI spending commitments, and some customers must show invoices proving how much of their AI budget goes to Anthropic.",
-   "why": "Reporter-sourced scoop from an outlet with a strong AI-industry record",
-   "topic": "Industry",
-   "replies": "Only one reply so far, which singles out the invoice requirement as the detail to watch.",
-   "replyCount": 1
-  },
-  {
-   "title": "Greenshoe lifts Anthropic's IPO total to $93.5B",
-   "author": "@Techmeme",
-   "authorName": "Techmeme",
-   "url": "https://x.com/Techmeme/status/2123776132642439272",
-   "published": "2026-11-20 19:21 IST",
-   "summary": "Underwriters exercised the greenshoe overallotment, adding $12.2B and bringing Anthropic's total IPO raise to $93.5B, per CNBC's Ashley Capoot.",
-   "why": "Techmeme summary of CNBC reporting; closes out the IPO numbers",
-   "topic": "Industry",
-   "replies": "Replies do the math: base deal about $81.3B (980M shares at $83) plus a ~15% greenshoe. Some read it as demand holding up despite the wider AI sell-off.",
-   "replyCount": 4
-  },
-  {
-   "title": "Ideogram 4.6 is out, with open weights confirmed as coming",
-   "author": "@victormustar",
-   "authorName": "Victor Mustar",
-   "url": "https://x.com/victormustar/status/2123747178019439039",
-   "published": "2026-11-20 17:25 IST",
-   "summary": "Hugging Face's Victor Mustar shared Ideogram 4.6 samples, calling it a strong image model, and said open weights are confirmed to be coming. No release date given.",
-   "why": "Hugging Face head of product, close to open-model releases",
-   "topic": "Models",
-   "replies": "Mostly excitement and sample prompts; people want to run it locally and note Ideogram's strength at text in images. One skeptic asks if it's as \"confirmed coming\" as Krea 3's open weights.",
-   "replyCount": 10
-  },
-  {
-   "title": "Brockman: GPT-6.2 Astra beats the human baseline on Blueprint-Bench 2",
-   "author": "@gdb",
-   "authorName": "Greg Brockman",
-   "url": "https://x.com/gdb/status/2123719297096990726",
-   "published": "2026-11-20 15:35 IST",
-   "summary": "Greg Brockman shared Andon Labs' result that GPT-6.2 Astra is the first model above the human baseline on Blueprint-Bench 2, where agents draw apartment floorplans from interior photos. Andon Labs ranks Astra #1 and GPT-6.2 Sol #3.",
-   "why": "OpenAI president on watchlist, citing a third-party eval from Andon Labs",
-   "topic": "Models",
-   "replies": "Mostly cheering, plus a few people noting floorplans-from-photos is a hard-to-fake 3D test. One reply pointed out the margin is tiny (about 0.61 vs a 0.59 human baseline, with Gemini 4 Carbon close behind), and another asked how it handles mirrors and hidden rooms. Someone also noted Astra 6.2 Pro still isn't in ChatGPT.",
-   "replyCount": 10
-  },
-  {
-   "title": "Theo: Neon is the first Gemini that deserves a working platform",
-   "author": "@theo",
-   "authorName": "Theo - t3.gg",
-   "url": "https://x.com/theo/status/2123720457551823008",
-   "published": "2026-11-20 15:39 IST",
-   "summary": "Theo quoted a report that Gemini 4 Neon burns Antigravity limits about 3x faster because prompt caching barely hits, and said he'll go back to pushing Google to fix its platform once the honeymoon fades. His view: Neon is the first Gemini model good enough to deserve a functioning platform.",
-   "why": "Theo (watchlist), hands-on with Neon in his own T3 Code product",
-   "topic": "Tools",
-   "replies": "Broad agreement that the model now feels ahead of Google's tooling, with a couple of people saying Gemini finally justifies a paid sub. Others flagged rate limits and cost as the catch, and one asked for benchmarks of Neon outside Antigravity. Some off-topic market chatter and memes.",
-   "replyCount": 10
-  },
-  {
-   "title": "Nathan Lambert: Gemini Neon in Antigravity feels like Claude Code and Codex",
-   "author": "@natolambert",
-   "authorName": "Nathan Lambert",
-   "url": "https://x.com/natolambert/status/2123737477101826152",
-   "published": "2026-11-20 16:47 IST",
-   "summary": "Nathan Lambert tried Gemini Neon in Antigravity and said it felt in distribution of Claude Code and Codex, in a good way. He said he's excited to learn more about the new models.",
-   "why": "Ai2 researcher (watchlist), first-hand impression",
-   "topic": "Models",
-   "replies": "Only two replies so far: one asked whether it holds up on real tasks you'd give Claude Code, not just demos, and another asked how fast Neon eats the Antigravity 5-hour limit.",
-   "replyCount": 2
-  },
-  {
-   "title": "Ex-Qwen head Junyang Lin's Pragmatik Labs valued at $5B",
-   "author": "@Techmeme",
-   "authorName": "Techmeme",
-   "url": "https://x.com/Techmeme/status/2123735816979787835",
-   "published": "2026-11-20 16:40 IST",
-   "summary": "Per Bloomberg via Techmeme, Shanghai-based Pragmatik Labs, founded by former Qwen head Junyang Lin, raised tens of millions of dollars at a $5B valuation, up from $2B in August.",
-   "why": "Techmeme summarising a sourced Bloomberg report",
-   "topic": "Industry",
-   "replyCount": 0
-  },
-  {
-   "title": "Signal will block screenshots by default to keep AI agents out of chats",
-   "author": "@Techmeme",
-   "authorName": "Techmeme",
-   "url": "https://x.com/Techmeme/status/2123733471441064161",
-   "published": "2026-11-20 16:31 IST",
-   "summary": "Per Reuters (Katie Paul) via Techmeme, Signal will restrict screenshots by default to stop AI agents from reading private chats on phones. Signal warns the new protections are \"incomplete\".",
-   "why": "Techmeme citing a named Reuters reporter",
-   "topic": "Policy",
-   "replies": "Two replies: one said the key word is \"incomplete\", since agents may still read the screen other ways; the other called default screenshot blocking a sensible move as screen-reading agents become a privacy risk.",
-   "replyCount": 2
   }
  ]
 }
