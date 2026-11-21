@@ -128,9 +128,80 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-21T23:15:00+05:30",
+ "updated": "2026-11-22T01:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "The Information: Moonshot AI scraps $150M deal for Nvidia Blackwell access in Indonesia",
+   "author": "@theinformation",
+   "authorName": "The Information",
+   "url": "https://x.com/theinformation/status/2124223831363535125",
+   "published": "2026-11-22 01:00 IST",
+   "summary": "China's Moonshot AI (Kimi) has dropped a $150 million deal to use Nvidia Blackwell chips in Indonesia after new US restrictions. The Information says this threatens a key offshore compute source for Chinese AI developers.",
+   "why": "Tech outlet with a strong AI-industry scoop record; follows this week's new US export rules.",
+   "topic": "Policy",
+   "replyCount": 0
+  },
+  {
+   "title": "Gemini 4 Hydrogen on xhigh costs about 6x more than high, Simon Willison finds",
+   "author": "@simonw",
+   "authorName": "Simon Willison",
+   "url": "https://x.com/simonw/status/2124217876777464269",
+   "published": "2026-11-22 00:36 IST",
+   "summary": "Simon's pelican test of Gemini 4 Hydrogen: high effort cost 3.99 cents and 5,311 output tokens, xhigh cost 23.61 cents and 31,477 tokens, with a visibly different result. In a follow-up reply he posted a full grid for Gemini 4 Carbon, Neon and Hydrogen across all reasoning levels.",
+   "why": "Independent developer who runs the same hands-on test on every model, with real cost numbers.",
+   "topic": "Models",
+   "replies": "Several people did the math: cost and tokens both scaled about 5.9x, so per-token price is the same and xhigh is just a bigger thinking budget. Others ask which tasks actually justify 6x the spend; a few joke about the extra fish and sun in the xhigh pelican.",
+   "replyCount": 10
+  },
+  {
+   "title": "Greg Brockman: OpenAI is building models that are excellent at game dev",
+   "author": "@gdb",
+   "authorName": "Greg Brockman",
+   "url": "https://x.com/gdb/status/2124218429133754499",
+   "published": "2026-11-22 00:38 IST",
+   "summary": "Brockman says OpenAI is creating models that are excellent at game development, with the hope of lowering the barrier for anyone with a game idea. The post links a video; no product or model name is given in the text.",
+   "why": "OpenAI president; signals a focus area, but no concrete release details yet.",
+   "topic": "Models",
+   "replies": "Mostly warm reactions from people who got into coding to make games. One user on 6.2 Astra Max says models still miss physical errors like a hand clipping through a body in character work; others expect AI-driven NPCs next. Low on new info.",
+   "replyCount": 10
+  },
+  {
+   "title": "Matt Pocock: a swipe-style 'scorer' app to teach an agent your writing style",
+   "author": "@mattpocockuk",
+   "authorName": "Matt Pocock",
+   "url": "https://x.com/mattpocockuk/status/2124214098984370645",
+   "published": "2026-11-22 00:21 IST",
+   "summary": "Matt suggests getting an agent to write in your style by building a small app where the agent sends example sentences and you score them one at a time (1-4, or pick the better of two), swipe-left style.",
+   "why": "Well-known TypeScript educator on Vishwa's watchlist sharing a practical agent workflow idea.",
+   "topic": "Tools",
+   "replies": "People mostly like it and one asks for it as a skill. Pushback: pairwise picks only teach the agent which of its own sentences you dislike least, and a self-refining style profile may never converge without a fixed rubric. One reply suggests editing full articles instead works better.",
+   "replyCount": 10
+  },
+  {
+   "title": "Bloomberg: California's Nvidia China-chip probe includes possible criminal violations",
+   "author": "@business",
+   "authorName": "Bloomberg",
+   "url": "https://x.com/business/status/2124202717102875006",
+   "published": "2026-11-21 23:36 IST",
+   "summary": "California's investigation into whether Nvidia illegally sold advanced chips to China and misled investors is also looking at potential criminal violations of state law, Bloomberg reports.",
+   "why": "Bloomberg report; raises the stakes on a story that already moved AI stocks this week.",
+   "topic": "Policy",
+   "replies": "Few replies, mostly jokes. One reply notes California's Corporate Securities Law makes willful investor fraud a crime with large fines and prison terms; another says the criminal angle means personal liability, not just a compliance issue.",
+   "replyCount": 5
+  },
+  {
+   "title": "lyra: after 3 days, Gemini 4 Neon beats GPT-6.2 Astra and Claude Opus 5.5",
+   "author": "@lyraxana",
+   "authorName": "lyra",
+   "url": "https://x.com/lyraxana/status/2124206071988334890",
+   "published": "2026-11-21 23:49 IST",
+   "summary": "lyra says after testing Gemini 4 Neon for several days it beats GPT-6.2 Astra and Opus 5.5 easily, citing two native iOS apps built in one shot among other tasks. This is a personal hands-on take, not a benchmark.",
+   "why": "Watchlist tester with early Gemini reads; single-user opinion, so treat as anecdote.",
+   "topic": "Models",
+   "replies": "Mostly agreement from Neon users, some saying they now prefer it over Opus 5.5 in Antigravity; Logan Kilpatrick replied with hearts. One skeptic says DeepMind tends to ship one great model then stall; others ask whether Neon was used alone or with an orchestrator.",
+   "replyCount": 10
+  },
   {
    "title": "Amazon closes in on a $7.5bn deal to buy AI start-up Decart",
    "author": "@FT",
@@ -271,90 +342,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Antigravity lead at Google posting the change himself; follows days of complaints (incl. from Theo) about Neon limits.",
    "topic": "Tools",
    "replies": "Mostly thanks and relief from users who hit the limits. A few report problems: one says the reset started their bucket partly used and Claude/GPT weekly quotas stayed stuck, another says a 'hi' to Claude Sonnet used 11% of a 5-hour limit. One asks for Antigravity CLI fixes and more quota versus Codex.",
-   "replyCount": 10
-  },
-  {
-   "title": "Rumor/early signal: hidden 'periodic table' model selector in Gemini lists Hydrogen, Argon, Carbon, Neon",
-   "author": "@testingcatalog",
-   "authorName": "TestingCatalog News",
-   "url": "https://x.com/testingcatalog/status/2124099608510931256",
-   "published": "2026-11-21 16:46 IST",
-   "summary": "TestingCatalog says long-pressing the Gemini model selector opens a periodic-table picker listing Gemini 4 Hydrogen, Argon, Carbon and Neon, with Nano Banana under Potassium.",
-   "why": "Rumor/early signal: TestingCatalog app find with screenshots; not confirmed by Google.",
-   "topic": "Models",
-   "replies": "Mostly jokes about the naming (bananas and potassium, needing a chemistry degree to pick a model). One reply says hiding it behind a long press keeps the normal picker simple; another just wants fewer models. Low signal otherwise.",
-   "replyCount": 9
-  },
-  {
-   "title": "Arcfront launches, says four of five frontier labs are customers",
-   "author": "@anshuman_ssh",
-   "authorName": "Anshuman (Arcfront co-founder)",
-   "url": "https://x.com/anshuman_ssh/status/2123848140575182946",
-   "published": "2026-11-21 00:07 IST",
-   "summary": "Arcfront launched publicly; the co-founder says four of the five frontier labs became customers in under a year. Investor @gokulr separately called it the fastest company he has seen to a $1B annualized revenue run rate.",
-   "why": "Founder's own launch post, backed by a named investor; revenue figure is self-reported, not audited.",
-   "topic": "Industry",
-   "replies": "Mostly congratulations from friends and former staff. A couple of replies push back that acing contests is not the same as messy real-world work, and one skeptic questions the hype around the $1B figure. Low signal otherwise.",
-   "replyCount": 10
-  },
-  {
-   "title": "Nikkei: new US export rules reach consumer chips, not just AI accelerators",
-   "author": "@Techmeme",
-   "authorName": "Techmeme",
-   "url": "https://x.com/Techmeme/status/2124020434140328340",
-   "published": "2026-11-21 11:31 IST",
-   "summary": "Industry insiders say the new US export rules cover a broader range of chips, including SoCs used in consumer electronics, going beyond advanced AI chips (via Cheng Ting-Fang, Nikkei Asia).",
-   "why": "Techmeme pointing to a Nikkei Asia chip-supply reporter with a long track record.",
-   "topic": "Policy",
-   "replies": "Only one reply so far: it argues extending controls to consumer SoCs means 12-18 month redesign cycles and wider supply-chain reshuffles beyond AI.",
-   "replyCount": 1
-  },
-  {
-   "title": "Mollick: autonomy graphs on frontier research undersell everyday work",
-   "author": "@emollick",
-   "authorName": "Ethan Mollick",
-   "url": "https://x.com/emollick/status/2123972584400204199",
-   "published": "2026-11-21 08:21 IST",
-   "summary": "Quoting Ramez Naam's new thread arguing that task-length autonomy graphs clash with real-world data from inside OpenAI and Google, Mollick calls it a useful counter to the boldest claims about autonomous AI research. He adds that focusing on frontier research tasks can underestimate what AI already does on ordinary economically valuable work, citing Epoch's MirrorCode results.",
-   "why": "Wharton professor who tracks AI capability evidence closely; engages a named critique rather than hype",
-   "topic": "Research",
-   "replies": "Most replies agree that frontier-research autonomy and everyday business tasks are different benchmarks, and that the money is in the boring, well-specified tasks. Pushback centres on measurement: one reply asks how to measure this honestly when benchmarks either use toy tasks or quietly lean on a human. Others note the hard part of real work is defining what 'done' looks like.",
-   "replyCount": 10
-  },
-  {
-   "title": "Tibo teases an internal OpenAI experience that is 'a bit too fun'",
-   "author": "@thsottiaux",
-   "authorName": "Tibo",
-   "url": "https://x.com/thsottiaux/status/2123997735326232775",
-   "published": "2026-11-21 10:01 IST",
-   "summary": "Tibo (OpenAI Codex) says the team 'inadvertently created an experience that's a bit too fun internally' and now everyone is playing with it instead of working. No product, date or details are given, so treat it as a teaser only.",
-   "why": "Watchlist: OpenAI Codex lead; first-party hint, but no specifics yet",
-   "topic": "Tools",
-   "replies": "Low signal: mostly jokes, emoji and Chinese-language replies asking for a usage-limit reset. One reply asks whether it involves Gemini 4 Neon; nobody has real details.",
-   "replyCount": 10
-  },
-  {
-   "title": "WSJ: inside Anthropic's IPO 'perfect storm'",
-   "author": "@WSJ",
-   "authorName": "The Wall Street Journal",
-   "url": "https://x.com/WSJ/status/2123987360408813676",
-   "published": "2026-11-21 09:20 IST",
-   "summary": "WSJ reports that Anthropic and its advisers knew listing during the most intense turbulence in the AI trade was a risk, but did not anticipate the perfect storm that followed its debut. It follows the post-IPO drop in ANT shares amid the wider AI selloff.",
-   "why": "Reputable business newsroom on the year's biggest AI listing",
-   "topic": "Industry",
-   "replies": "Low signal: mostly anger and jokes aimed at Anthropic and Dario Amodei, plus spam. One reply points out the 'knew it was a risk' framing reads like every postmortem opener; another notes early holders could sell on day one.",
-   "replyCount": 10
-  },
-  {
-   "title": "Scoop: Cognition in talks at a $75B valuation",
-   "author": "@RebeccaTorrenc5",
-   "authorName": "Rebecca Torrence",
-   "url": "https://x.com/RebeccaTorrenc5/status/2123884044429701567",
-   "published": "2026-11-21 02:29 IST",
-   "summary": "Cognition, maker of the Devin coding agent, is in talks to raise $2 billion or more at a $75 billion valuation, per people familiar with the matter. That is a big jump from its $48 billion valuation in September.",
-   "why": "Reporter's own scoop, carried by Bloomberg headlines; private-market contrast to this week's public AI selloff",
-   "topic": "Industry",
-   "replies": "Replies are skeptical of the jump from $48B to $75B in a few months, asking whether it prices future revenue or hype. The most-liked reply calls Cognition a consulting company with a weak business model; the rest is mostly jokes.",
    "replyCount": 10
   }
  ]
