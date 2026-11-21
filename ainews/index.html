@@ -128,9 +128,153 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-21T01:05:00+05:30",
- "windowHours": 3,
+ "updated": "2026-11-21T08:10:00+05:30",
+ "windowHours": 7,
  "posts": [
+  {
+   "title": "Thinking Machines releases Inkling 2 Mini, a 26B looped transformer",
+   "author": "@thinkymachines",
+   "authorName": "Thinking Machines",
+   "url": "https://x.com/thinkymachines/status/2123871643797995872",
+   "published": "2026-11-21 01:40 IST",
+   "summary": "Thinking Machines launched Inkling 2 Mini, a 26B-parameter looped transformer it says is small enough to run on a laptop and scores 20.1 on the Artificial Analysis Index. Artificial Analysis separately put it on the open-weights Pareto frontier for intelligence vs active parameters.",
+   "why": "Official lab announcement, backed by an independent Artificial Analysis listing",
+   "topic": "Models",
+   "replies": "Mostly thanks and questions about hardware requirements and OpenRouter availability. A Grok reply says it needs about 20GB, so 32GB+ Apple silicon or a 32GB GPU; one user asks how much the looping slows inference.",
+   "replyCount": 10
+  },
+  {
+   "title": "OpenAI publishes research on detecting and disrupting distillation of its models",
+   "author": "@OpenAI",
+   "authorName": "OpenAI",
+   "url": "https://x.com/OpenAI/status/2123862344422088794",
+   "published": "2026-11-21 01:03 IST",
+   "summary": "OpenAI shared research on how distillation can copy model capabilities without the safeguards, how those capabilities transfer, and how it detects and disrupts coordinated distillation attempts.",
+   "why": "Primary source: OpenAI's own research post",
+   "topic": "Research",
+   "replies": "Overwhelmingly hostile. Most replies call it hypocritical given OpenAI trained on others' work (\"You can't build on everyone else's work and then act surprised\"), plus memes. Little technical discussion.",
+   "replyCount": 10
+  },
+  {
+   "title": "Mollick: the end of easy distillation may explain slower open-weights progress",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2123867811005014143",
+   "published": "2026-11-21 01:25 IST",
+   "summary": "Ethan Mollick suggests that OpenAI and Anthropic shutting down easy distillation may be behind the relative slowdown in open-weights model progress. He says we don't know how much distillation drove open-model gains, but will find out soon.",
+   "why": "Wharton professor who tracks AI adoption closely; watchlist",
+   "topic": "Industry",
+   "replies": "Replies mostly agree the next few open-weights releases are the real test. Some argue labs that stall without distillation were never independent; others say synthetic data, self-play and narrow cost/speed wins are alternative routes.",
+   "replyCount": 10
+  },
+  {
+   "title": "Hassabis: Isomorphic Labs partners with Merck on a new cancer drug",
+   "author": "@demishassabis",
+   "authorName": "Demis Hassabis",
+   "url": "https://x.com/demishassabis/status/2123871861843075099",
+   "published": "2026-11-21 01:41 IST",
+   "summary": "Demis Hassabis announced Isomorphic Labs is collaborating with Merck to design a new cancer drug, calling it another proof point for its approach to drug discovery.",
+   "why": "Google DeepMind / Isomorphic CEO, primary source",
+   "topic": "Industry",
+   "replies": "Positive, focused on AI speeding drug design and patients waiting. A few ask what the teams will target first; several replies are off-topic Grok history threads about Merck.",
+   "replyCount": 10
+  },
+  {
+   "title": "OpenAI: AI-found leads for neurodegenerative disease with Perturb AI and Scripps",
+   "author": "@OpenAI",
+   "authorName": "OpenAI",
+   "url": "https://x.com/OpenAI/status/2123899406550528422",
+   "published": "2026-11-21 03:30 IST",
+   "summary": "OpenAI posted about its collaboration with Perturb AI and Scripps Research on using AI to find new leads for understanding and treating neurodegenerative diseases. Greg Brockman linked it to GPT-Rosalind.",
+   "why": "Primary source, named research partners",
+   "topic": "Research",
+   "replies": "Mostly welcoming this as 'the right kind of AI news'. Replies mention the cholesterol-transport lead and DCTN1 gene link from mouse brain data, and ask how far it is from a real treatment; wet-lab validation is flagged as the real test.",
+   "replyCount": 10
+  },
+  {
+   "title": "Brockman: GPT-6.2 Astra is great at robotics",
+   "author": "@gdb",
+   "authorName": "Greg Brockman",
+   "url": "https://x.com/gdb/status/2123876651583111322",
+   "published": "2026-11-21 02:00 IST",
+   "summary": "OpenAI president Greg Brockman says GPT-6.2 Astra is great at robotics, linking a benchmark result.",
+   "why": "OpenAI co-founder; watchlist",
+   "topic": "Models",
+   "replies": "Replies cite a jump from 19.6% to 41.2% on the linked benchmark and predict it will saturate soon. Skeptics ask which arm it ran on, and how much is better tool calling versus real spatial control.",
+   "replyCount": 10
+  },
+  {
+   "title": "Theo: Gemini usage is growing exponentially in T3 Code",
+   "author": "@theo",
+   "authorName": "Theo",
+   "url": "https://x.com/theo/status/2123929867393831114",
+   "published": "2026-11-21 05:31 IST",
+   "summary": "Theo says Gemini is seeing exponential growth in T3 Code usage, sharing a usage chart.",
+   "why": "Runs T3 Code, so he sees real usage data; watchlist",
+   "topic": "Tools",
+   "replies": "Mixed. Theo adds in replies that about 98.5% of T3 Code usage is Codex, Claude and Antigravity. Some call it influencer marketing; one user blames Gemini's uneven cache rates for cost.",
+   "replyCount": 10
+  },
+  {
+   "title": "Theo: all-or-nothing source control access feels stupider than ever",
+   "author": "@theo",
+   "authorName": "Theo",
+   "url": "https://x.com/theo/status/2123901093751280052",
+   "published": "2026-11-21 03:37 IST",
+   "summary": "Theo argues that repo access being all-or-nothing is outdated. He wants private files in repos, private branches for small groups, and built-in secret management.",
+   "why": "Developer-tools founder with a strong agent-era take; watchlist",
+   "topic": "Tools",
+   "replies": "Lots of agreement. A former GitHub person says requests for private branches and nested repos go back years; others suggest password-manager harnesses, GitLab, or tools like Lore with per-directory permissions.",
+   "replyCount": 10
+  },
+  {
+   "title": "Arena launches Agent Arena Index: Gemini 4 Neon #2, GPT-6.2 Astra #6, Sol #11",
+   "author": "@arena",
+   "authorName": "LMArena",
+   "url": "https://x.com/arena/status/2123894102496555446",
+   "published": "2026-11-21 03:09 IST",
+   "summary": "Arena's weekly recap says it launched an Agent Arena Index, where Gemini 4 Neon (High) debuted at #2 with 1336 points and GPT-6.2 Astra and Sol landed at #6 and #11.",
+   "why": "Large crowd-sourced eval org; watchlist",
+   "topic": "Models",
+   "replies": "People like an agent-focused index and the per-task cost data. Questions: does it score task completion or just confidence, and knowing when to stop. Several point to Muse Ember's cheap WebDev scores and Sol at $0.90/task.",
+   "replyCount": 10
+  },
+  {
+   "title": "Rumor/early signal: Claude mobile app gets new bottom nav for Chat, Projects, Code, Artifacts",
+   "author": "@testingcatalog",
+   "authorName": "TestingCatalog News",
+   "url": "https://x.com/testingcatalog/status/2123908634325508233",
+   "published": "2026-11-21 04:07 IST",
+   "summary": "Rumor/early signal: TestingCatalog reports Anthropic is rolling out a new Claude mobile experience with a bottom navigation bar for Chat, Projects, Code and Artifacts, plus changes to the model selector and attachment menu.",
+   "why": "TestingCatalog has a good record on app teardowns; not yet officially announced",
+   "topic": "Tools",
+   "replies": "Replies read the top-level Code tab as Anthropic expecting real work and agent check-ins from phones. One user confirms Android is included; an app-tracking account claims a big install spike, unverified.",
+   "replyCount": 10
+  },
+  {
+   "title": "FT: US SEC probes Nvidia's accounting",
+   "author": "@FT",
+   "authorName": "Financial Times",
+   "url": "https://x.com/FT/status/2123901806480634328",
+   "published": "2026-11-21 03:40 IST",
+   "summary": "The FT reports Nvidia faces a US securities regulator probe into its accounting, following a Reuters report. It comes as Nvidia closed down 14% Friday, its seventh straight losing day.",
+   "why": "FT, corroborating Reuters; genuinely big for the AI chip market",
+   "topic": "Industry",
+   "replies": "Mostly market jokes and spam. One reply notes Reuters says the SEC hasn't said what it's examining and points to Nvidia's receivables; others speculate about knock-on effects for its partners.",
+   "replyCount": 10
+  },
+  {
+   "title": "CNBC: S&P 500 and Dow enter correction as Anthropic leads AI sell-off",
+   "author": "@CNBC",
+   "authorName": "CNBC",
+   "url": "https://x.com/CNBC/status/2123862707824706001",
+   "published": "2026-11-21 01:05 IST",
+   "summary": "CNBC's live coverage says the S&P 500 and Dow entered correction territory and the Nasdaq erased its 2026 gain, with Anthropic leading an AI stock sell-off on its second trading day.",
+   "why": "Major market outlet; a big AI-market move, not routine wire",
+   "topic": "Industry",
+   "replies": "Low signal: almost entirely partisan political arguments and spam, nothing about AI.",
+   "replyCount": 10
+  },
   {
    "title": "OpenAI introduces MedChemBench, a medicinal chemistry reasoning benchmark",
    "author": "@OpenAI",
@@ -274,112 +418,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "topic": "Tools",
    "replies": "Mostly excitement. The repeated question is whether the agent can keep one character consistent across every shot in a longer piece; one reply asks about cost. No hands-on results yet.",
    "replyCount": 10
-  },
-  {
-   "title": "NVIDIA Research's WorldTrace helps video world models remember places",
-   "author": "@NVIDIAAI",
-   "authorName": "NVIDIA AI",
-   "url": "https://x.com/NVIDIAAI/status/2123817447413395732",
-   "published": "2026-11-20 22:05 IST",
-   "summary": "NVIDIA Research introduced WorldTrace, which helps interactive video world models keep a scene consistent when the user looks away and comes back, without retraining. It is evaluated on a benchmark called LoopBench.",
-   "why": "Official NVIDIA AI account; research release",
-   "topic": "Research",
-   "replies": "Mostly off-topic anger about Nvidia leadership (many 'bring Jensen back' replies) and spam. One reply compares it to babies learning object permanence; little technical discussion.",
-   "replyCount": 10
-  },
-  {
-   "title": "poteto: pstack v0.15.46 prunes skills and adds Gemini 4 Neon as a reviewer",
-   "author": "@poteto",
-   "authorName": "Lauren Tan",
-   "url": "https://x.com/poteto/status/2123824683862855898",
-   "published": "2026-11-20 22:33 IST",
-   "summary": "Lauren Tan shipped pstack v0.15.46: skills are much shorter after heavy pruning, and Gemini 4 Neon joins the review panel. It autoupdates for Grok Bot and Cursor users; /setup-pstack changes model routing.",
-   "why": "Watchlist practitioner; release notes from the author",
-   "topic": "Tools",
-   "replies": "Mostly positive. @hasesify says the shorter skills matter most because setup text rides along on every request; one user asks how strict the TDD flow is, and another says usage limits on the $20 plan are the main pain.",
-   "replyCount": 10
-  },
-  {
-   "title": "Matt Pocock is building /vector, a skill to help non-devs delegate to AI",
-   "author": "@mattpocockuk",
-   "authorName": "Matt Pocock",
-   "url": "https://x.com/mattpocockuk/status/2123810087361810663",
-   "published": "2026-11-20 21:35 IST",
-   "summary": "Matt Pocock is working on his first skill for non-developers, /vector, which walks through six steps to turn any task into an AI workflow that is easy to use, easy to trust and improves over time. He plans frameworks and docs around it.",
-   "why": "Watchlist practitioner; his own work in progress",
-   "topic": "Tools",
-   "replies": "Warm reception, with several people saying non-devs get burned copying setups from social media. @IncomeSurfers warns about the context step, since feeding an agent every past customer email got heavy; others ask for a video walkthrough.",
-   "replyCount": 10
-  },
-  {
-   "title": "Jeff Dean objects to detention of a Princeton PhD student returning from a conference",
-   "author": "@JeffDean",
-   "authorName": "Jeff Dean",
-   "url": "https://x.com/JeffDean/status/2123793677860696070",
-   "published": "2026-11-20 20:30 IST",
-   "summary": "Jeff Dean said detaining a PhD student on her way back to Princeton after presenting at a conference is not how the US attracts top scientists, and hoped it is resolved quickly.",
-   "why": "Google's chief scientist on a talent and immigration issue",
-   "topic": "Policy",
-   "replies": "Replies are hostile and partisan. Many ask about her immigration status, some make xenophobic remarks, and a few suggest special visa powers for lawmakers. There are no new facts about the case.",
-   "replyCount": 10
-  },
-  {
-   "title": "The Information: Nvidia close to buying diffusion startup Inception for $500M+",
-   "author": "@theinformation",
-   "authorName": "The Information",
-   "url": "https://x.com/theinformation/status/2123808770237018296",
-   "published": "2026-11-20 21:30 IST",
-   "summary": "The Information reports Nvidia is close to paying more than $500 million for Inception, a diffusion-model AI startup with just over 30 employees that had raised $50 million. It adds to Nvidia's spending on its Nemotron models.",
-   "why": "Exclusive from a reporting outlet with a strong AI track record",
-   "topic": "Industry",
-   "replies": "Replies do the math, about $16M per employee and 10x what Inception raised, and call it an expensive acquihire. One notes diffusion LMs write blocks at once rather than token by token, which could ease memory-bound inference.",
-   "replyCount": 5
-  },
-  {
-   "title": "Anthropic shares give back most of their first-day jump",
-   "author": "@business",
-   "authorName": "Bloomberg",
-   "url": "https://x.com/business/status/2123819956512952640",
-   "published": "2026-11-20 22:15 IST",
-   "summary": "Bloomberg reports Anthropic shares erased much of their first-day gain on Friday, a day after the largest IPO in history, as volatility rose across markets.",
-   "why": "Bloomberg markets reporting on the biggest AI story of the week",
-   "topic": "Industry",
-   "replies": "Only two replies: one calls a day-two reality check normal, and another notes the stock is nearly back to its $83 IPO price.",
-   "replyCount": 2
-  },
-  {
-   "title": "The Information: Microsoft courts Chinese AI customers Anthropic cut off",
-   "author": "@theinformation",
-   "authorName": "The Information",
-   "url": "https://x.com/theinformation/status/2123801066143695320",
-   "published": "2026-11-20 21:00 IST",
-   "summary": "The Information reports Microsoft is trying to win Chinese AI customers that Anthropic cut off, including ByteDance and Alibaba.",
-   "why": "Exclusive from The Information",
-   "topic": "Industry",
-   "replies": "Jokes about Microsoft getting a referral from Anthropic. A couple of replies point out that courting customers is not booked revenue, and that Microsoft may face political pressure for taking them.",
-   "replyCount": 7
-  },
-  {
-   "title": "Bessent: Trump and Xi agreed humans should be in military AI decisions",
-   "author": "@Techmeme",
-   "authorName": "Techmeme",
-   "url": "https://x.com/Techmeme/status/2123828966343807348",
-   "published": "2026-11-20 22:50 IST",
-   "summary": "Per Reuters via Techmeme, Treasury Secretary Scott Bessent said Trump and Xi agreed that military AI decisions should involve humans, and that spying allegations involving Alice Huang did not come up.",
-   "why": "Reuters reporting, aggregated by Techmeme",
-   "topic": "Policy",
-   "replyCount": 0
-  },
-  {
-   "title": "Anthropic mathematician claims a Claude-assisted proof of the Riemann Hypothesis",
-   "author": "@sciam",
-   "authorName": "Scientific American",
-   "url": "https://x.com/sciam/status/2123782587235655707",
-   "published": "2026-11-20 19:46 IST",
-   "summary": "Scientific American reports that Levent Alpöge, a mathematician at Anthropic, claims he proved the Riemann Hypothesis working with Claude, and posted a Lean formalization. His note on alpo.ge says the method also resolves the Generalized Riemann Hypothesis; experts have not verified it yet.",
-   "why": "Reputable science outlet (Joseph Howlett, ex-Quanta) quoting Alpöge's own posted statement; still an unverified claim",
-   "topic": "Research",
-   "replyCount": 0
   }
  ]
 }
