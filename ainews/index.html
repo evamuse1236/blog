@@ -128,9 +128,91 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-21T20:15:00+05:30",
+ "updated": "2026-11-21T23:15:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Amazon closes in on a $7.5bn deal to buy AI start-up Decart",
+   "author": "@FT",
+   "authorName": "Financial Times",
+   "url": "https://x.com/FT/status/2124194480999813154",
+   "published": "2026-11-21 23:03 IST",
+   "summary": "The FT reports Amazon is close to a roughly $7.5bn deal to acquire AI start-up Decart. The post gives no further terms.",
+   "why": "Financial Times report; deal not yet announced by either company.",
+   "topic": "Industry",
+   "replyCount": 0
+  },
+  {
+   "title": "Arena: GPT-6.2 Astra (Max) is #6 on the Agent Arena Index, up big in coding and down in chat",
+   "author": "@arena",
+   "authorName": "Arena.ai",
+   "url": "https://x.com/arena/status/2124191294360588725",
+   "published": "2026-11-21 22:50 IST",
+   "summary": "Arena says GPT-6.2 Astra (Max) ranks #6, one place above GPT-6 Astra (Max). Versus GPT-6 Astra it scores 1,338 vs 1,288 on Coding (#8 to #3), 1,280 vs 1,267 on Work, and 1,211 vs 1,265 on Chat (#8 to #11), so the shifts nearly cancel out overall.",
+   "why": "Arena (formerly LMArena) publishing its own leaderboard numbers.",
+   "topic": "Models",
+   "replies": "Most replies focus on the trade-off: a big coding gain offset by a chat drop, with some saying a single index hides regressions for research or writing agents. Others ask which harness Arena uses to evaluate, request the same split for Sol 6.2, and one complains the Max setting burns credits fast.",
+   "replyCount": 10
+  },
+  {
+   "title": "Harrison Chase: every LangChain agent has a learning loop, a 'knowledge factory'",
+   "author": "@hwchase17",
+   "authorName": "Harrison Chase",
+   "url": "https://x.com/hwchase17/status/2124181216719151585",
+   "published": "2026-11-21 22:10 IST",
+   "summary": "Chase says all of LangChain's agents, including internal GTM and content agents and LangSmith Engine, have a learning loop with similar pieces, and links an X article on what makes up a 'knowledge factory'. In a follow-up he says agents can't reliably edit the shared wiki themselves, so a separate 'curator agent' does the edits.",
+   "why": "LangChain CEO describing how his own company runs agents in production.",
+   "topic": "Tools",
+   "replies": "Replies push on the hard parts: what gets written back to the knowledge store and who can override it, how to break ties when two systems give different numbers, and whether a curator agent just hides disagreement between agents. Some suggest scoping each lesson to the team whose run produced it; the rest is light praise.",
+   "replyCount": 10
+  },
+  {
+   "title": "Mollick: expertise plus AI is doing the incredible work, the models can't (yet) do it alone",
+   "author": "@emollick",
+   "authorName": "Ethan Mollick",
+   "url": "https://x.com/emollick/status/2124173181065806006",
+   "published": "2026-11-21 21:38 IST",
+   "summary": "Mollick says we are in a possibly temporary period where expertise plus skill with AI lets people do incredible things, and notes the people proving Millennium Problems have all been great mathematicians. He quotes economist Kevin Bryan on Levent Alpöge's Riemann work as an example of AI as a complement.",
+   "why": "Wharton professor who studies AI at work; commentary on the AI-assisted Riemann Hypothesis claim.",
+   "topic": "Research",
+   "replies": "Broad agreement: repliers say the expert's job is choosing the next subgoal and knowing which output to throw away, while the model grinds through well-posed steps. Several point to Lean as the unforgiving checker in the Riemann work, and one says in an unfamiliar field AI 'mostly helps you be wrong faster'.",
+   "replyCount": 10
+  },
+  {
+   "title": "Nathan Lambert posts slides on the biggest open problems in post-training",
+   "author": "@natolambert",
+   "authorName": "Nathan Lambert",
+   "url": "https://x.com/natolambert/status/2124152733145923892",
+   "published": "2026-11-21 20:17 IST",
+   "summary": "Lambert shared a slide deck on the biggest open problems in post-training and how the field got here. He says it is largely a statement of his goals with Trillium Labs, and invites people working on these problems in the open to reach out.",
+   "why": "Post-training researcher and author of the RLHF book; slides from a talk he gave at Cornell.",
+   "topic": "Research",
+   "replies": "Mostly researchers engaging: one doing RL for SWE on Gemma says hard tasks rarely get a single solve, another says the verifier is what doesn't scale for open RL environments. Lambert says the talk was at Cornell and isn't on YouTube yet; others share related papers and projects.",
+   "replyCount": 10
+  },
+  {
+   "title": "The Information: some AI researchers switch employers to diversify stock, a risk for Anthropic after its IPO",
+   "author": "@theinformation",
+   "authorName": "The Information",
+   "url": "https://x.com/theinformation/status/2124186155528671292",
+   "published": "2026-11-21 22:30 IST",
+   "summary": "The Information reports some AI researchers have switched employers to diversify their personal stock holdings. It says the trend could threaten Anthropic's ability to keep talent after its IPO.",
+   "why": "The Information, reporter-sourced story on AI lab talent.",
+   "topic": "Industry",
+   "replyCount": 0
+  },
+  {
+   "title": "Chainalysis: suspected Chinese users pay in crypto to reach banned US frontier models",
+   "author": "@chainalysis",
+   "authorName": "Chainalysis",
+   "url": "https://x.com/chainalysis/status/2124144803361263740",
+   "published": "2026-11-21 19:46 IST",
+   "summary": "Chainalysis says on-chain data suggests suspected Chinese users pay crypto, mostly stablecoins, to proxy services that resell access to US frontier models restricted by export controls; 40% of proxies it surveyed accepted crypto. Payments from suspected China-linked wallets rise above normal in the days after new US model launches, which it says fits an effort to get quick access, including for distillation.",
+   "why": "Blockchain analytics firm publishing its own on-chain research, with a linked blog post.",
+   "topic": "Policy",
+   "replies": "Few replies. One asks whether crypto is the problem or just the payment rail, another argues distillation is the real end-run around export controls and the payment method is a sideshow, and one notes the proxies mostly use custodial processors, so KYB on processors is the real check.",
+   "replyCount": 4
+  },
   {
    "title": "Sebastian Raschka: US and Chinese open-weight models push each other, and push closed models too",
    "author": "@rasbt",
@@ -273,42 +355,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Reporter's own scoop, carried by Bloomberg headlines; private-market contrast to this week's public AI selloff",
    "topic": "Industry",
    "replies": "Replies are skeptical of the jump from $48B to $75B in a few months, asking whether it prices future revenue or hype. The most-liked reply calls Cognition a consulting company with a weak business model; the rest is mostly jokes.",
-   "replyCount": 10
-  },
-  {
-   "title": "Ubisoft launches Motherbrain for AI NPCs and game masters",
-   "author": "@Techmeme",
-   "authorName": "Techmeme",
-   "url": "https://x.com/Techmeme/status/2124008895328985484",
-   "published": "2026-11-21 10:45 IST",
-   "summary": "Ubisoft has launched Motherbrain, a subsidiary focused on 'smart NPCs with memory and AI game masters that manage large-scale systemic worlds', per GamesIndustry.biz.",
-   "why": "Techmeme aggregation of a GamesIndustry.biz report; concrete move by a major publisher",
-   "topic": "Industry",
-   "replies": "Only one reply so far: it says the launch came the same week as Ubisoft job cuts in Quebec (unverified here) and that the real test is NPC memory staying consistent across a long save.",
-   "replyCount": 1
-  },
-  {
-   "title": "Thinking Machines releases Inkling 2 Mini, a 26B looped transformer",
-   "author": "@thinkymachines",
-   "authorName": "Thinking Machines",
-   "url": "https://x.com/thinkymachines/status/2123871643797995872",
-   "published": "2026-11-21 01:40 IST",
-   "summary": "Thinking Machines launched Inkling 2 Mini, a 26B-parameter looped transformer it says is small enough to run on a laptop and scores 20.1 on the Artificial Analysis Index. Artificial Analysis separately put it on the open-weights Pareto frontier for intelligence vs active parameters.",
-   "why": "Official lab announcement, backed by an independent Artificial Analysis listing",
-   "topic": "Models",
-   "replies": "Mostly thanks and questions about hardware requirements and OpenRouter availability. A Grok reply says it needs about 20GB, so 32GB+ Apple silicon or a 32GB GPU; one user asks how much the looping slows inference.",
-   "replyCount": 10
-  },
-  {
-   "title": "OpenAI publishes research on detecting and disrupting distillation of its models",
-   "author": "@OpenAI",
-   "authorName": "OpenAI",
-   "url": "https://x.com/OpenAI/status/2123862344422088794",
-   "published": "2026-11-21 01:03 IST",
-   "summary": "OpenAI shared research on how distillation can copy model capabilities without the safeguards, how those capabilities transfer, and how it detects and disrupts coordinated distillation attempts.",
-   "why": "Primary source: OpenAI's own research post",
-   "topic": "Research",
-   "replies": "Overwhelmingly hostile. Most replies call it hypocritical given OpenAI trained on others' work (\"You can't build on everyone else's work and then act surprised\"), plus memes. Little technical discussion.",
    "replyCount": 10
   }
  ]
