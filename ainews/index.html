@@ -128,9 +128,45 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-21T14:05:00+05:30",
+ "updated": "2026-11-21T17:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "OpenRouter tells users MiniMax prompts may have been read by a third party",
+   "author": "@nateberkopec",
+   "authorName": "Nate Berkopec",
+   "url": "https://x.com/nateberkopec/status/2123992018850595164",
+   "published": "2026-11-21 09:38 IST",
+   "summary": "OpenRouter emailed users that a security researcher's unique test URLs, placed in prompts sent to MiniMax models from July to October, were opened by a third party 40 to 130 hours later. Berkopec says the notice confirms providers AtlasCloud, Novita and StreamLake were forwarding requests back to MiniMax; OpenRouter has removed MiniMax's zero-data-retention label.",
+   "why": "Known Ruby/perf engineer posting the OpenRouter notice he received; several other users posted the same email. No public OpenRouter post found yet, and MiniMax has not responded.",
+   "topic": "Industry",
+   "replies": "Mostly anger at OpenRouter: several say a ZDR flag means nothing if the endpoint relays upstream, and some say they will stop trusting providers on the platform. Practical advice from replies: pin providers by name, go direct to labs under contract, or self-host for sensitive data.",
+   "replyCount": 10
+  },
+  {
+   "title": "Varun Mohan resets everyone's Gemini quota on Antigravity; caching gives 22% more per quota",
+   "author": "@_mohansolo",
+   "authorName": "Varun Mohan",
+   "url": "https://x.com/_mohansolo/status/2124070033534161407",
+   "published": "2026-11-21 14:48 IST",
+   "summary": "Mohan says he reset all users' Gemini quota on Antigravity and that caching improvements increase how much you can get done per quota by 22%, ahead of a weekend of building with Neon.",
+   "why": "Antigravity lead at Google posting the change himself; follows days of complaints (incl. from Theo) about Neon limits.",
+   "topic": "Tools",
+   "replies": "Mostly thanks and relief from users who hit the limits. A few report problems: one says the reset started their bucket partly used and Claude/GPT weekly quotas stayed stuck, another says a 'hi' to Claude Sonnet used 11% of a 5-hour limit. One asks for Antigravity CLI fixes and more quota versus Codex.",
+   "replyCount": 10
+  },
+  {
+   "title": "Rumor/early signal: hidden 'periodic table' model selector in Gemini lists Hydrogen, Argon, Carbon, Neon",
+   "author": "@testingcatalog",
+   "authorName": "TestingCatalog News",
+   "url": "https://x.com/testingcatalog/status/2124099608510931256",
+   "published": "2026-11-21 16:46 IST",
+   "summary": "TestingCatalog says long-pressing the Gemini model selector opens a periodic-table picker listing Gemini 4 Hydrogen, Argon, Carbon and Neon, with Nano Banana under Potassium.",
+   "why": "Rumor/early signal: TestingCatalog app find with screenshots; not confirmed by Google.",
+   "topic": "Models",
+   "replies": "Mostly jokes about the naming (bananas and potassium, needing a chemistry degree to pick a model). One reply says hiding it behind a long press keeps the normal picker simple; another just wants fewer models. Low signal otherwise.",
+   "replyCount": 9
+  },
   {
    "title": "Arcfront launches, says four of five frontier labs are customers",
    "author": "@anshuman_ssh",
@@ -273,30 +309,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Primary source, named research partners",
    "topic": "Research",
    "replies": "Mostly welcoming this as 'the right kind of AI news'. Replies mention the cholesterol-transport lead and DCTN1 gene link from mouse brain data, and ask how far it is from a real treatment; wet-lab validation is flagged as the real test.",
-   "replyCount": 10
-  },
-  {
-   "title": "Brockman: GPT-6.2 Astra is great at robotics",
-   "author": "@gdb",
-   "authorName": "Greg Brockman",
-   "url": "https://x.com/gdb/status/2123876651583111322",
-   "published": "2026-11-21 02:00 IST",
-   "summary": "OpenAI president Greg Brockman says GPT-6.2 Astra is great at robotics, linking a benchmark result.",
-   "why": "OpenAI co-founder; watchlist",
-   "topic": "Models",
-   "replies": "Replies cite a jump from 19.6% to 41.2% on the linked benchmark and predict it will saturate soon. Skeptics ask which arm it ran on, and how much is better tool calling versus real spatial control.",
-   "replyCount": 10
-  },
-  {
-   "title": "Theo: Gemini usage is growing exponentially in T3 Code",
-   "author": "@theo",
-   "authorName": "Theo",
-   "url": "https://x.com/theo/status/2123929867393831114",
-   "published": "2026-11-21 05:31 IST",
-   "summary": "Theo says Gemini is seeing exponential growth in T3 Code usage, sharing a usage chart.",
-   "why": "Runs T3 Code, so he sees real usage data; watchlist",
-   "topic": "Tools",
-   "replies": "Mixed. Theo adds in replies that about 98.5% of T3 Code usage is Codex, Claude and Antigravity. Some call it influencer marketing; one user blames Gemini's uneven cache rates for cost.",
    "replyCount": 10
   }
  ]
