@@ -128,9 +128,80 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-22T23:00:00+05:30",
+ "updated": "2026-11-23T01:10:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Noam Brown: everyone deserves to know the trajectory of AI progress, including internal models",
+   "author": "@polynoamial",
+   "authorName": "Noam Brown",
+   "url": "https://x.com/polynoamial/status/2124555186043818245",
+   "published": "2026-11-22 22:56 IST",
+   "summary": "Quoting Jakub Pachocki's 'Perplexity and Intelligence' post, Brown says AI will affect everyone, so everyone deserves to know the trajectory of progress, including for internal models.",
+   "why": "OpenAI reasoning researcher backing his company's new disclosure",
+   "topic": "Policy",
+   "replies": "Mostly supportive of publishing internal-model numbers. The main pushback (@BitcoinBro21) is that the loss is measured on OpenAI's own held-out code snapshot, so other labs can't check or compare it without a shared test set. Some replies speculate about where rival models sit on the chart.",
+   "replyCount": 10
+  },
+  {
+   "title": "Greg Brockman: OpenAI's perplexity post can be the foundation of industry-wide shared safety bars",
+   "author": "@gdb",
+   "authorName": "Greg Brockman",
+   "url": "https://x.com/gdb/status/2124582684840399311",
+   "published": "2026-11-23 00:45 IST",
+   "summary": "Brockman says he helped start OpenAI to make AGI safe and beneficial, and that the perplexity transparency post can be the foundation of industry-wide shared safety bars.",
+   "why": "OpenAI co-founder and president on the company's pacing proposal",
+   "topic": "Policy",
+   "replies": "Mixed. Several say shared limits only work if every lab enforces the same bar and the exit criteria are public and testable by outsiders. Cynics read it as OpenAI calling for pacing because it's behind Anthropic and Google; others just ask for the internal model or 4o back.",
+   "replyCount": 10
+  },
+  {
+   "title": "Jeremy Howard: Gemini Neon still invents ludicrous workarounds instead of asking permission",
+   "author": "@jeremyphoward",
+   "authorName": "Jeremy Howard",
+   "url": "https://x.com/jeremyphoward/status/2124561815065776280",
+   "published": "2026-11-22 23:23 IST",
+   "summary": "Howard says Neon is great but shares a flaw with every current model: it re-implemented about 450 lines of code instead of pausing to ask whether it could make something public.",
+   "why": "fast.ai founder, hands-on report from real coding use",
+   "topic": "Models",
+   "replies": "Many agree this is the classic agent failure and frame asking as a cost tradeoff the model prices badly. Pushback: one user says it's a system prompt issue and Neon doesn't do this in their setup; another says Opus 5.5 behaves the same way.",
+   "replyCount": 10
+  },
+  {
+   "title": "Sarvam releases Sarvam-105B-1711, a new Flash-Lite-class checkpoint",
+   "author": "@SarvamAI",
+   "authorName": "Sarvam",
+   "url": "https://x.com/SarvamAI/status/2124532170505273661",
+   "published": "2026-11-22 21:25 IST",
+   "summary": "Sarvam released a new checkpoint of its 105B model. It claims a new Pareto frontier among Flash-Lite models on instruction following, chat, tool calling and Indian languages, with gains on IFBench, Tau2 and its Indic suite.",
+   "why": "Official release from India's leading LLM lab; benchmarks are self-reported",
+   "topic": "Models",
+   "replies": "Mixed. Some builders are already using it via Token Factory, and people ask for smaller 20B-50B versions and comparisons with Inkling 2 Mini. Skeptics question the benchmark chart and why a model 4x bigger only matches Qwen, which sparked an argument about India's compute.",
+   "replyCount": 10
+  },
+  {
+   "title": "The Information: Moonshot AI scraps $150M deal for Nvidia Blackwell access in Indonesia",
+   "author": "@theinformation",
+   "authorName": "The Information",
+   "url": "https://x.com/theinformation/status/2124586226632081626",
+   "published": "2026-11-23 01:00 IST",
+   "summary": "China's Moonshot AI (Kimi) scrapped a $150 million deal to access Nvidia Blackwell chips in Indonesia after new US restrictions, threatening a key compute source for Chinese AI developers.",
+   "why": "Reporting from The Information, which covers AI compute closely",
+   "topic": "Industry",
+   "replyCount": 0
+  },
+  {
+   "title": "FT: Bessent refuses to rule out Jensen Huang's return to Nvidia",
+   "author": "@FT",
+   "authorName": "Financial Times",
+   "url": "https://x.com/FT/status/2124570386884936002",
+   "published": "2026-11-22 23:57 IST",
+   "summary": "Treasury Secretary Scott Bessent would not rule out Jensen Huang returning to Nvidia.",
+   "why": "Financial Times report on the ongoing Nvidia leadership story",
+   "topic": "Industry",
+   "replies": "Low signal, mostly partisan takes on whether the Treasury should have a say. Useful context from replies: Colette Kress is interim CEO, and one reply says Nvidia closed Friday at $125.53 after a seven-week slide (unverified).",
+   "replyCount": 10
+  },
   {
    "title": "Jakub Pachocki: OpenAI publishes its pretraining progress and proposes shared perplexity limits",
    "author": "@merettm",
@@ -274,113 +345,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "topic": "Tools",
    "replies": "Replies are excited about using one Gemini sub inside the tool of their choice and note it reverses Google's earlier bans on Gemini logins in OpenClaw. One points out Google gets to pick which harnesses go first; another wonders if 'first step' means Hermes only at launch.",
    "replyCount": 10
-  },
-  {
-   "title": "Rumor/early signal: Antigravity is getting an 'Inbox mode' for threads that need you",
-   "author": "@testingcatalog",
-   "authorName": "TestingCatalog",
-   "url": "https://x.com/testingcatalog/status/2124494418891645153",
-   "published": "2026-11-22 18:55 IST",
-   "summary": "Google is working on an 'Inbox mode' in Antigravity that surfaces agent threads needing the user's attention, part of a wider shift seen in Gemini and Loop.",
-   "why": "Rumor/early signal: TestingCatalog app teardown with screenshots",
-   "topic": "Tools",
-   "replies": "Replies broadly like it: with more than two or three agents running, knowing which one is stuck waiting on you is the hard part. One warns it needs priority levels so trivial approvals don't look like outages; one claims the inbox already appears live in the screenshot.",
-   "replyCount": 10
-  },
-  {
-   "title": "Matt Pocock wants to write a /the-perfect-typescript-codebase skill",
-   "author": "@mattpocockuk",
-   "authorName": "Matt Pocock",
-   "url": "https://x.com/mattpocockuk/status/2124500662436151797",
-   "published": "2026-11-22 19:20 IST",
-   "summary": "Matt Pocock is considering a skill that describes a platonic ideal of a great TypeScript codebase, and asks what should go in it.",
-   "why": "Watchlist practitioner; TypeScript educator",
-   "topic": "Tools",
-   "replies": "Suggestions lean on enforcement over prose: strict tsconfig (checked index access, erasableSyntaxOnly, verbatimModuleSyntax), lint bans on any and non-null assertions, and one command that runs all checks. Others pitch a fast bun/oxc toolchain, XState/statecharts, and keeping the skill to only what agents got wrong twice.",
-   "replyCount": 10
-  },
-  {
-   "title": "Jeremy Howard: Antigravity/Neon now reads llms.txt, two years after he proposed it",
-   "author": "@jeremyphoward",
-   "authorName": "Jeremy Howard",
-   "url": "https://x.com/jeremyphoward/status/2124431431699193996",
-   "published": "2026-11-22 14:44 IST",
-   "summary": "Jeremy Howard says Google's Antigravity / Neon agent is using llms.txt, the protocol he created two years ago, and that it is now very widely used. He tells product teams to put agent instructions in llms.txt and link it from their home page.",
-   "why": "Creator of the llms.txt protocol (fast.ai, Answer.AI), first-hand.",
-   "topic": "Tools",
-   "replies": "Replies are mostly congratulations on a standard winning slowly. Practical tips: @Ryan_Wynn_Dev suggests shipping an llms-full.txt with docs inlined to save agent fetches, and another reply says to add llms.txt links to docs CI so renames don't leave 404s. One asks whether AGENTS.md displaced it.",
-   "replyCount": 10
-  },
-  {
-   "title": "Reuters exclusive: Anthropic ran an unusual, SpaceX-style IPO process that chafed bankers",
-   "author": "@Reuters",
-   "authorName": "Reuters",
-   "url": "https://x.com/Reuters/status/2124460422916956296",
-   "published": "2026-11-22 16:40 IST",
-   "summary": "Reuters reports that, like SpaceX, Anthropic ran an unusual IPO process that annoyed some of its bankers. FT separately asks whether Anthropic and its bankers got a key call wrong after the IPO.",
-   "why": "Reuters exclusive; FT running a parallel analysis the same hour.",
-   "topic": "Industry",
-   "replies": "Thin thread (6 replies). @LuFeiGetr says the 424(b)(4) filing shows a $550M underwriting discount on an $81.34B offering and no discount on the underwriters' option shares; another reply says the SpaceX playbook means fewer fees and more issuer control over allocation. The rest is noise.",
-   "replyCount": 6
-  },
-  {
-   "title": "FT investigation: woman linked to Jensen Huang had ties to an AI-chip supply network into China",
-   "author": "@FT",
-   "authorName": "Financial Times",
-   "url": "https://x.com/FT/status/2124445063648338382",
-   "published": "2026-11-22 15:39 IST",
-   "summary": "A Financial Times investigation finds the Chinese businesswoman romantically linked to former Nvidia CEO Jensen Huang had connections to a network supplying AI chips to China, including an alleged Cambodian criminal enterprise.",
-   "why": "FT original investigation; extends the WSJ chip-smuggling story from earlier today.",
-   "topic": "Policy",
-   "replies": "Mixed and partly low signal. One reply summarizes the piece as linking Alice Huang, a former Megaspeed executive, to a network that may have moved Nvidia chips into China; @valdegold pushes back hard, saying Megaspeed sold chips legally and only a smuggler is under investigation. Also spam and off-topic replies.",
-   "replyCount": 9
-  },
-  {
-   "title": "FT: AI is speeding up planning of cyberattacks on industrial equipment",
-   "author": "@Techmeme",
-   "authorName": "Techmeme",
-   "url": "https://x.com/Techmeme/status/2124458308216238209",
-   "published": "2026-11-22 16:31 IST",
-   "summary": "Experts tell the Financial Times that AI has made planning attacks on industrial equipment faster, by helping attackers read manuals and research past accidents more quickly.",
-   "why": "Techmeme pointer to Financial Times reporting by Thomas M. Wilson.",
-   "topic": "Policy",
-   "replies": "Only two replies: one says the site-specific details, not manuals, were always the hard part, so plant owners should audit what they leak publicly; the other says most OT environments still can't audit decisions in real time.",
-   "replyCount": 2
-  },
-  {
-   "title": "FT: AI server suppliers raise prices up to 45% after deals are signed",
-   "author": "@FT",
-   "authorName": "Financial Times",
-   "url": "https://x.com/FT/status/2124379685215740064",
-   "published": "2026-11-22 11:19 IST",
-   "summary": "The FT reports that tech suppliers are hiking AI server prices by up to 45% months after contracts were signed. Techmeme's write-up names Dell, HPE, Lenovo and Supermicro as suppliers demanding substantially higher prices.",
-   "why": "FT reporting; corroborated by Techmeme's summary of the same story.",
-   "topic": "Industry",
-   "replies": "Most replies read it as a leverage story: repricing a signed deal only works when buyers have nowhere else to go, and one notes memory tightness broke price certainty. Several point out equities are punishing the AI trade while the hardware supply chain is still tight. The rest is emoji and links.",
-   "replyCount": 10
-  },
-  {
-   "title": "NYT: officials describe China's MSS campaign to get advanced AI chips",
-   "author": "@Techmeme",
-   "authorName": "Techmeme",
-   "url": "https://x.com/Techmeme/status/2124397883705475098",
-   "published": "2026-11-22 12:31 IST",
-   "summary": "Current and former officials from the US and other countries describe a campaign by China's Ministry of State Security to help Chinese companies acquire advanced AI chips, per the New York Times. A separate WSJ story the same morning ties an associate of Alice Huang to smuggling restricted chips from Southeast Asia to China.",
-   "why": "Techmeme pointer to New York Times reporting sourced to officials.",
-   "topic": "Policy",
-   "replyCount": 0
-  },
-  {
-   "title": "Tesla FSD v15 renders surroundings with real-time AI video generation",
-   "author": "@Techmeme",
-   "authorName": "Techmeme",
-   "url": "https://x.com/Techmeme/status/2124392746869985563",
-   "published": "2026-11-22 12:11 IST",
-   "summary": "Tesla is rolling out FSD v15 with a photorealistic rendering of the car's surroundings. Elon Musk says it is real-time AI video generation without using game engines (via Gizmodo).",
-   "why": "Techmeme summary of Gizmodo reporting; the no-game-engine claim is Musk's own.",
-   "topic": "Tools",
-   "replies": "Only two replies, low signal: one jokes the windshield has done this for years, another says it will make game engines obsolete.",
-   "replyCount": 2
   }
  ]
 }
