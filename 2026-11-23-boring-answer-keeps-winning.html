@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The boring answer keeps winning</title><style>body{max-width:680px;margin:0 auto;padding:2.5rem 1.2rem;font:18px/1.7 Georgia,serif;color:#222;background:#fdfcf9}
+a{color:#2b5fa8}h1,h2{font-family:system-ui,sans-serif;line-height:1.25}header a{color:#222;text-decoration:none;font-family:system-ui,sans-serif;font-weight:700}
+.meta{color:#888;font:14px system-ui,sans-serif}blockquote{border-left:3px solid #ccc;margin:1rem 0;padding-left:1rem;color:#555}
+ul.posts{list-style:none;padding:0}ul.posts li{margin:1.2rem 0}footer{margin-top:3rem;color:#aaa;font:13px system-ui,sans-serif}</style></head><body><header><a href="index.html">Vishwajit Pathare's Notes</a></header>
+<main><h1>The boring answer keeps winning</h1><p class='meta'>2026-11-23</p><p>Three bookmarks from this weekend point the same way, and it's not the way I expected. Everyone around me is building more machinery for AI. These three are each saying: you probably need less.</p>
+<h2>The three bookmarks</h2>
+<p><a href="https://x.com/nasuvit_z/status/2124441515196129660">@nasuvit_z</a>, summarising an Anthropic blog post (my rough translation from Japanese): if your knowledge base is under 200k tokens, about 500 pages, you can skip building RAG and just put the whole thing in the prompt. Turn it into a cached prefix and, per the post, latency improves more than 2x and cost drops by up to 90%.</p>
+<p><a href="https://x.com/joyofcodedev/status/2124488082019983691">@joyofcodedev</a> on Matt Pocock's reading list for software design with AI:</p>
+<blockquote>
+<p>"A Philosophy of Software Design • The Pragmatic Programmer • Working Effectively with Legacy Code • Refactoring • Extreme Programming Explained • Domain-Driven Design • The Design of Design"</p>
+</blockquote>
+<p><a href="https://x.com/poteto/status/2123898792487576021">poteto</a>:</p>
+<blockquote>
+<p>"give /no-comments from pstack a try! or better yet, ask your agent to turn it into a lint rule"</p>
+</blockquote>
+<h2>What they have in common</h2>
+<p>None of these is a new tool. The first says the fancy retrieval pipeline is often the wrong answer when the plain one fits. The second is a list of books that are mostly decades old, picked as the best prep for working with agents. The third says a skill is good, but a dumb lint rule that just fails is better.</p>
+<p>That's the same move three times: when something smart is optional, prefer the boring thing that can't drift.</p>
+<h2>Why it hits me</h2>
+<p>My bots run on a pile of skills, prompts and instructions. Every time something goes wrong, my instinct is to add another line telling them not to do it. poteto's point is that a line of text is the weakest fix. If a bot keeps doing the same wrong thing, the fix should live somewhere it can't ignore, like a check that fails.</p>
+<p>The RAG one is similar. I've been tempted to give my bots some kind of search index over my notes. But most of what they need is small. My blog posts, the Slow Reads spec, a few state files. That's nowhere near 500 pages. Just reading the files is probably the right answer, and it's the one I already have.</p>
+<p>And the reading list is a bit of a mirror. If the people who are best at this are going back to Ousterhout and Fowler, then "good design" didn't get replaced by AI. It just matters more, because the agent copies whatever shape it finds.</p>
+<h2>The part I'm unsure about</h2>
+<p>The 2x and 90% numbers are from Anthropic's write-up as summarised in that post, not something I measured. And "just stuff it in the prompt" has a ceiling. At some point the pile gets big enough that the boring answer stops working, and I won't notice the day it crosses that line.</p>
+<h2>What I'd try</h2>
+<p>Pick one instruction I've repeated to my bots more than twice and turn it into a check that fails loudly instead. If it never comes up again, that's proof the boring fix wins. If the check is annoying and I end up turning it off, then maybe the text instruction was the right weight after all.</p></main><footer>Written from my X posts and bookmarks.</footer></body></html>
