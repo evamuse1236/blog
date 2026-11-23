@@ -128,9 +128,56 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-23T14:10:00+05:30",
+ "updated": "2026-11-23T17:05:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "Z.ai launches GLM-5.4, its first Loop Transformer model",
+   "author": "@Zai_org",
+   "authorName": "Z.ai",
+   "url": "https://x.com/Zai_org/status/2124811995912286352",
+   "published": "2026-11-23 15:57 IST",
+   "summary": "Z.ai officially introduced GLM-5.4, which loops existing layers of the GLM-5 base model for deeper reasoning and adds vision for visual coding, pitched at video, games, 3D shaders and CAD. API access opens after a safety evaluation and weights will be released later; its tech blog claims intelligence comparable to 2T-3T parameter models.",
+   "why": "Official lab account; follows this morning's Coding Plan rollout with the architecture and release plan.",
+   "topic": "Models",
+   "replies": "Mostly hype and 'let's go' replies. @LoayWithAI notes there are no benchmarks and no API yet, so the looping claim can't be tested until weights land; @yorkeccak reads the blog as a 750B model looping 28 layers twice. A few grumble about the 'safety' delay and the end of free tokens.",
+   "replyCount": 10
+  },
+  {
+   "title": "Matt Pocock: Vercel Board is a genius idea, but build your own",
+   "author": "@mattpocockuk",
+   "authorName": "Matt Pocock",
+   "url": "https://x.com/mattpocockuk/status/2124797717834543167",
+   "published": "2026-11-23 15:00 IST",
+   "summary": "Matt Pocock says Vercel Board, basically a private Slack workspace where agents and developers each have an identity, makes collaboration, local-to-remote agent messaging and scheduled jobs simple. He likes the idea more than Vercel's implementation and thinks most teams should build it from scratch.",
+   "why": "Watchlist practitioner; hands-on take on agent coordination tooling.",
+   "topic": "Tools",
+   "replies": "Replies point to existing alternatives: Antigravity's /swarm message board, buzz, Herdr, or just a repo used as a forum. @rophilogene pushes back that building it takes a week but maintaining Slack sync and agent permissions for a year is the part worth buying.",
+   "replyCount": 10
+  },
+  {
+   "title": "NYT via Techmeme: Chinese studies fear US AI could cut nuclear decisions to 90 seconds",
+   "author": "@Techmeme",
+   "authorName": "Techmeme",
+   "url": "https://x.com/Techmeme/status/2124797848604815661",
+   "published": "2026-11-23 15:00 IST",
+   "summary": "Chinese civilian and military studies show growing concern that US AI advances may shrink nuclear decision-making time to 90 seconds, undermining Beijing's deterrent, the New York Times reports.",
+   "why": "Techmeme summary of New York Times reporting (@chubailiang).",
+   "topic": "Policy",
+   "replyCount": 0
+  },
+  {
+   "title": "Axios: doctors who disagree with AI could face legal jeopardy",
+   "author": "@axios",
+   "authorName": "Axios",
+   "url": "https://x.com/axios/status/2124813212596007230",
+   "published": "2026-11-23 16:02 IST",
+   "summary": "Axios reports that doctors who override or disagree with AI recommendations could face legal risk.",
+   "why": "Reputable news outlet; liability question as AI enters clinical practice.",
+   "topic": "Policy",
+   "replies": "Only two replies, both critical: one says punishing doctors for second-guessing a model is backwards, another that doctors could be sued both for trusting and for ignoring the AI.",
+   "replyCount": 2
+  },
   {
    "title": "Rumor/early signal: a 'Helium' subscription tier shows up in Gemini Web",
    "author": "@lyraxana",
@@ -272,42 +319,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "Watchlist account; claim rests on Google's published Ultra perks",
    "topic": "Tools",
    "replies": "Mostly agreement and Colab praise; one notes the Pro tier also gets A100 units, another that Google bundles more perks (GCP credit, storage) than Anthropic or OpenAI. Low signal otherwise.",
-   "replyCount": 10
-  },
-  {
-   "title": "Theo: your Gemini subscription only works through Antigravity, not other harnesses",
-   "author": "@theo",
-   "authorName": "Theo",
-   "url": "https://x.com/theo/status/2124665075638411641",
-   "published": "2026-11-23 06:13 IST",
-   "summary": "Clearing up confusion over Google's subscription rules: Gemini subscriptions can only be used via Antigravity. T3 Code calls the Antigravity binary so it's allowed; harnesses like Pi that hit Google's API directly are not.",
-   "why": "T3 Code founder explaining the Google policy that affects his own product",
-   "topic": "Tools",
-   "replies": "Replies dig into edge cases: one says T3 Code's delegate_task may not be compliant, others note OpenCode is reportedly working on a compliant setup with Google. Some ask whether bans hit only inference access or the whole account, and a few just ask what Antigravity is.",
-   "replyCount": 10
-  },
-  {
-   "title": "Theo: open-weight models have never been this far behind",
-   "author": "@theo",
-   "authorName": "Theo",
-   "url": "https://x.com/theo/status/2124666181147881504",
-   "published": "2026-11-23 06:17 IST",
-   "summary": "In a new video, Theo argues open-weight models are further behind frontier closed models than ever and he isn't sure they can catch up.",
-   "why": "Widely followed dev/creator take; watchlist",
-   "topic": "Models",
-   "replies": "Pushback dominates: some call it a bad take, others argue the gap is mostly the harness, or that open models only need to win cheaper tasks from the bottom. Theo replies that since getting Mythos access he hasn't looked at an open-weight model; a few note local hardware costs still don't pencil out.",
-   "replyCount": 10
-  },
-  {
-   "title": "Guillermo Rauch: free 'stealth model' inference is data exfiltration",
-   "author": "@rauchg",
-   "authorName": "Guillermo Rauch",
-   "url": "https://x.com/rauchg/status/2124595496849445079",
-   "published": "2026-11-23 01:36 IST",
-   "summary": "Rauch points to a viral offer of free 'ZDR' inference from a stealth model and says such stealth models are mechanisms of industrial-scale data exfiltration to nation states.",
-   "why": "Vercel CEO; security warning on model providers",
-   "topic": "Industry",
-   "replies": "Broad agreement that free inference means your data is the product. One reply cites this week's OpenRouter/MiniMax incident, saying canary prompts sent to ZDR-labeled endpoints were opened 40-130 hours later, and argues ZDR is a per-hop claim. Others say to check where data goes before picking a provider.",
    "replyCount": 10
   }
  ]
