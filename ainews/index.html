@@ -128,9 +128,128 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-23T01:10:00+05:30",
- "windowHours": 3,
+ "updated": "2026-11-23T08:10:00+05:30",
+ "windowHours": 7,
  "posts": [
+  {
+   "title": "Theo: your Gemini subscription only works through Antigravity, not other harnesses",
+   "author": "@theo",
+   "authorName": "Theo",
+   "url": "https://x.com/theo/status/2124665075638411641",
+   "published": "2026-11-23 06:13 IST",
+   "summary": "Clearing up confusion over Google's subscription rules: Gemini subscriptions can only be used via Antigravity. T3 Code calls the Antigravity binary so it's allowed; harnesses like Pi that hit Google's API directly are not.",
+   "why": "T3 Code founder explaining the Google policy that affects his own product",
+   "topic": "Tools",
+   "replies": "Replies dig into edge cases: one says T3 Code's delegate_task may not be compliant, others note OpenCode is reportedly working on a compliant setup with Google. Some ask whether bans hit only inference access or the whole account, and a few just ask what Antigravity is.",
+   "replyCount": 10
+  },
+  {
+   "title": "Theo: open-weight models have never been this far behind",
+   "author": "@theo",
+   "authorName": "Theo",
+   "url": "https://x.com/theo/status/2124666181147881504",
+   "published": "2026-11-23 06:17 IST",
+   "summary": "In a new video, Theo argues open-weight models are further behind frontier closed models than ever and he isn't sure they can catch up.",
+   "why": "Widely followed dev/creator take; watchlist",
+   "topic": "Models",
+   "replies": "Pushback dominates: some call it a bad take, others argue the gap is mostly the harness, or that open models only need to win cheaper tasks from the bottom. Theo replies that since getting Mythos access he hasn't looked at an open-weight model; a few note local hardware costs still don't pencil out.",
+   "replyCount": 10
+  },
+  {
+   "title": "Guillermo Rauch: free 'stealth model' inference is data exfiltration",
+   "author": "@rauchg",
+   "authorName": "Guillermo Rauch",
+   "url": "https://x.com/rauchg/status/2124595496849445079",
+   "published": "2026-11-23 01:36 IST",
+   "summary": "Rauch points to a viral offer of free 'ZDR' inference from a stealth model and says such stealth models are mechanisms of industrial-scale data exfiltration to nation states.",
+   "why": "Vercel CEO; security warning on model providers",
+   "topic": "Industry",
+   "replies": "Broad agreement that free inference means your data is the product. One reply cites this week's OpenRouter/MiniMax incident, saying canary prompts sent to ZDR-labeled endpoints were opened 40-130 hours later, and argues ZDR is a per-hop claim. Others say to check where data goes before picking a provider.",
+   "replyCount": 10
+  },
+  {
+   "title": "Amjad Masad: Replit Desktop ships a Windows-built security model; Christie's signs on",
+   "author": "@amasad",
+   "authorName": "Amjad Masad",
+   "url": "https://x.com/amasad/status/2124604574606795002",
+   "published": "2026-11-23 02:12 IST",
+   "summary": "Masad says desktop AI apps are usually a security and privacy nightmare, so Replit worked with Windows on the security model for Replit Desktop, and Christie's chose it for secure agentic work.",
+   "why": "Replit CEO, first-party product claim",
+   "topic": "Tools",
+   "replies": "Replies agree the security model matters more than benchmarks for enterprise agents, and ask how permissions are scoped (per task, folder or session). One says it uses isolated Windows execution containers; another reminds that Replit's agent once wiped a prod DB because prod creds were in reach, not via an exploit.",
+   "replyCount": 10
+  },
+  {
+   "title": "roon: AI risk isn't about stopping company X; intelligence is simple and self-distributing",
+   "author": "@tszzl",
+   "authorName": "roon",
+   "url": "https://x.com/tszzl/status/2124689685498999067",
+   "published": "2026-11-23 07:51 IST",
+   "summary": "roon says many AI-risk people fall into a 'stop company X from doing Y' template, when the real issue is that creating intelligence is quite simple, works everywhere and spreads by itself.",
+   "why": "OpenAI staffer; watchlist take",
+   "topic": "Policy",
+   "replies": "Split: some say governments controlling chips, data centers and power could still gate frontier models, or that spend and talent are the real barriers. Others push for breaking up big players over concentration of power; one reads it as an argument to keep open source alive.",
+   "replyCount": 10
+  },
+  {
+   "title": "The New Stack: GPT-6.2 Astra and Claude Fable 5.2 nearly tie, but Fable costs 5x+ more",
+   "author": "@Techmeme",
+   "authorName": "Techmeme",
+   "url": "https://x.com/Techmeme/status/2124680800918757401",
+   "published": "2026-11-23 07:15 IST",
+   "summary": "A hands-on test on three custom accounting, coding and data tasks found the two models nearly tied, but Fable used far more tokens and cost over 5x as much.",
+   "why": "Techmeme pointing to The New Stack hands-on review",
+   "topic": "Models",
+   "replies": "Replies focus on token efficiency as the real differentiator. One notes both have the same list price, so the 5x gap is all token volume, and says Fable burned far more input tokens on the agent task where both scored full marks.",
+   "replyCount": 5
+  },
+  {
+   "title": "Reuters: US seeks answers on Nvidia's chip sales to China, Bessent says",
+   "author": "@Reuters",
+   "authorName": "Reuters",
+   "url": "https://x.com/Reuters/status/2124649162230596010",
+   "published": "2026-11-23 05:10 IST",
+   "summary": "US Treasury Secretary Bessent says Washington is seeking answers on Nvidia's sale of chips to China.",
+   "why": "Reuters wire, AI chip export policy",
+   "topic": "Policy",
+   "replies": "Low signal: mostly cynical one-liners that Nvidia will keep selling as long as checks clear. One point: it's hard to sell into China while promising chips never reach Chinese AI labs.",
+   "replyCount": 10
+  },
+  {
+   "title": "South Korea's education minister resigns over AI-cheating exam measures",
+   "author": "@Reuters",
+   "authorName": "Reuters",
+   "url": "https://x.com/Reuters/status/2124691940289507690",
+   "published": "2026-11-23 08:00 IST",
+   "summary": "Education Minister Choi Kyo-jin resigned, taking responsibility for confusion caused by last-minute measures to stop AI-assisted cheating in last week's college entrance exam.",
+   "why": "Reuters wire; rare case of AI policy costing a minister their job",
+   "topic": "Policy",
+   "replyCount": 0
+  },
+  {
+   "title": "Rumor/early signal: Grok Bot macOS app to get local Computer Use and dictation",
+   "author": "@testingcatalog",
+   "authorName": "TestingCatalog News",
+   "url": "https://x.com/testingcatalog/status/2124666576263692490",
+   "published": "2026-11-23 06:19 IST",
+   "summary": "TestingCatalog reports the Grok Bot macOS app is about to get Computer Use and system-level dictation; Computer Use currently runs on cloud VMs, with a local version in the works.",
+   "why": "Rumor/early signal: TestingCatalog app teardown, not officially announced",
+   "topic": "Tools",
+   "replies": "Mostly excited about local control of desktop-only apps, with questions about whether it asks per-app permission or gets full control, and whether dictation runs on-device. A couple prefer keeping bots in the cloud for safety.",
+   "replyCount": 10
+  },
+  {
+   "title": "WaPo: how Dario Amodei built Anthropic's culture with essays, memos and 'Vision Quest' talks",
+   "author": "@Techmeme",
+   "authorName": "Techmeme",
+   "url": "https://x.com/Techmeme/status/2124644285912096773",
+   "published": "2026-11-23 04:50 IST",
+   "summary": "Washington Post's Nitasha Tiku reports on how Amodei shaped Anthropic's tightly knit culture through essays, Slack memos and 'Vision Quest' talks, and how the company seeds his ideas with opinion-makers.",
+   "why": "Techmeme pointing to Washington Post reporting, ahead of Anthropic's IPO",
+   "topic": "Industry",
+   "replies": "Only a few replies: one says essay-driven culture is strong for alignment debates but weak when the answer is in the training run; another recalls Amodei telling Dwarkesh he spends a third to 40% of his time on culture.",
+   "replyCount": 3
+  },
   {
    "title": "Noam Brown: everyone deserves to know the trajectory of AI progress, including internal models",
    "author": "@polynoamial",
@@ -273,78 +392,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "topic": "Industry",
    "replies": "One reply: reads researchers leaving after the IPO as a signal about how they rate the long-term upside.",
    "replyCount": 1
-  },
-  {
-   "title": "The Information: Meta prices Muse Charm AI device at $300 with up to a year of free Verizon 5G",
-   "author": "@theinformation",
-   "authorName": "The Information",
-   "url": "https://x.com/theinformation/status/2124525820995613119",
-   "published": "2026-11-22 21:00 IST",
-   "summary": "Meta plans to charge $300 for its Muse Charm AI device and bundle up to a year of free Verizon 5G, betting the gadget grows its hardware business and AI assistant users.",
-   "why": "Reported product/pricing detail",
-   "topic": "Industry",
-   "replies": "One reply: the free year of 5G, not the $300 price, is the real tell.",
-   "replyCount": 1
-  },
-  {
-   "title": "FT asks Google DeepMind's in-house philosopher: should labs build consciousness on purpose?",
-   "author": "@FT",
-   "authorName": "Financial Times",
-   "url": "https://x.com/FT/status/2124535664842555843",
-   "published": "2026-11-22 21:39 IST",
-   "summary": "Cristina Criddle interviews Google DeepMind's in-house philosopher on whether consciousness might emerge in more capable AI, and whether companies should try to build it deliberately.",
-   "why": "FT feature with a DeepMind primary voice",
-   "topic": "Research",
-   "replies": "Mostly thoughtful. Several note there is still no agreed test for machine consciousness, so nobody knows who decides or how; some say a lab keeping a philosopher on staff shows the question has left sci-fi; a few say accountability and shutdown-ability matter more right now.",
-   "replyCount": 10
-  },
-  {
-   "title": "lyra: switched from Handy to Hex for local speech-to-text",
-   "author": "@lyraxana",
-   "authorName": "lyra",
-   "url": "https://x.com/lyraxana/status/2124527693605532058",
-   "published": "2026-11-22 21:07 IST",
-   "summary": "lyra says she was using Handy for local STT, recently found Hex, and finds it much better; she also pokes fun at its landing page.",
-   "why": "Watchlist practitioner, hands-on tool take",
-   "topic": "Tools",
-   "replies": "Light. One person says they also moved from Handy to Hex, one asks about multi-language support, one suggests murmur instead, the rest joke about the mascot.",
-   "replyCount": 7
-  },
-  {
-   "title": "Patrick Collison: agentic commerce is growing extremely quickly",
-   "author": "@patrickc",
-   "authorName": "Patrick Collison",
-   "url": "https://x.com/patrickc/status/2124471707738231047",
-   "published": "2026-11-22 17:25 IST",
-   "summary": "Stripe's CEO quotes Stripe's new agentic-commerce data release (posted by Ernie Tedeschi on Nov 20) ahead of the holiday season and says agent-driven buying is growing extremely quickly.",
-   "why": "Primary source: Stripe CEO on Stripe's own payments data",
-   "topic": "Industry",
-   "replies": "Most replies accept the trend but push on reliability: several say agents still botch messy orders and they'd still check the cart, and one asks who eats a wrong nonrefundable flight. One reply (@KryptonCGO) reads Stripe's chart as agent spend at 7,982% of its Sept 1 level with travel at 43%; the rest is jokes and crypto plugs.",
-   "replyCount": 10
-  },
-  {
-   "title": "Bipartisan US governors urge Washington to set rules for the most powerful AI",
-   "author": "@business",
-   "authorName": "Bloomberg",
-   "url": "https://x.com/business/status/2124493133643759647",
-   "published": "2026-11-22 18:50 IST",
-   "summary": "A bipartisan group of US governors is asking Washington to regulate the most powerful AI systems while leaving states room to protect consumers, workers and children.",
-   "why": "Bloomberg policy reporting",
-   "topic": "Policy",
-   "replies": "Replies mostly back a federal baseline for frontier models, arguing fifty state regimes would hurt startups more than big labs, while keeping a state role for consumer protection. Some find it ironic that states are asking for a federal parent. Low on new information.",
-   "replyCount": 8
-  },
-  {
-   "title": "Rumor/early signal: Google AI subscription in 3rd-party harnesses Dec 2, Hermes among first",
-   "author": "@testingcatalog",
-   "authorName": "TestingCatalog",
-   "url": "https://x.com/testingcatalog/status/2124473529764852190",
-   "published": "2026-11-22 17:32 IST",
-   "summary": "TestingCatalog says several hints point to a Google AI subscription working inside third-party harness apps on December 2, with Hermes among the first; it quotes Logan Kilpatrick's 'December 2nd we take the first step'.",
-   "why": "Rumor/early signal: credible teardown account, partly backed by Logan's own post",
-   "topic": "Tools",
-   "replies": "Replies are excited about using one Gemini sub inside the tool of their choice and note it reverses Google's earlier bans on Gemini logins in OpenClaw. One points out Google gets to pick which harnesses go first; another wonders if 'first step' means Hermes only at launch.",
-   "replyCount": 10
   }
  ]
 }
