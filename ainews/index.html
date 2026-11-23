@@ -128,9 +128,68 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
 <!-- ===== DATA: the bot replaces only this block each day ===== -->
 <script id="digest" type="application/json">
 {
- "updated": "2026-11-23T17:05:00+05:30",
+ "updated": "2026-11-23T20:05:00+05:30",
  "windowHours": 3,
  "posts": [
+  {
+   "title": "NVIDIA board reinstates Jensen Huang as President, CEO and board director",
+   "author": "@nvidianewsroom",
+   "authorName": "NVIDIA Newsroom",
+   "url": "https://x.com/nvidianewsroom/status/2124865060397019480",
+   "published": "2026-11-23 19:28 IST",
+   "summary": "NVIDIA's board reinstated Jensen Huang as President, CEO and Board Director, with a release on nvidianews.nvidia.com. Wire coverage (Reuters, WSJ, CNBC, Bloomberg) says the vote was unanimous, comes 11 days after he resigned, and sent shares up more than 27%.",
+   "why": "Official NVIDIA newsroom account; confirmed by Reuters, WSJ, FT, Bloomberg",
+   "topic": "Industry",
+   "replies": "Low signal: mostly reactions like \"HE IS BACK\", memes and jokes, with a few calls to fire the board and one claim that China will win anyway. No new facts in the replies.",
+   "replyCount": 10
+  },
+  {
+   "title": "FT via Techmeme: board acted after input from \"senior levels\" of the US government; probe ongoing",
+   "author": "@Techmeme",
+   "authorName": "Techmeme",
+   "url": "https://x.com/Techmeme/status/2124871855895175282",
+   "published": "2026-11-23 19:55 IST",
+   "summary": "Per the Financial Times, Nvidia's board says it voted to reinstate Huang after receiving input from \"senior levels\" of the US government, and a probe into his conduct is ongoing. Separately, Trump said Nvidia \"made the correct and proper decision\" and that the US AG found no evidence of \"unlawful conduct\" (also via Techmeme).",
+   "why": "Techmeme summarising FT reporting (@tim)",
+   "topic": "Policy",
+   "replyCount": 0
+  },
+  {
+   "title": "Nathan Lambert: interpretable chain of thought will go away; looped architectures are step one",
+   "author": "@natolambert",
+   "authorName": "Nathan Lambert",
+   "url": "https://x.com/natolambert/status/2124855489846485045",
+   "published": "2026-11-23 18:50 IST",
+   "summary": "Lambert argues it is an inevitable path of optimization that readable chain of thought disappears, since its intelligibility is an inefficiency from how inference-time reasoning was first discovered. He calls looped architectures (like this week's GLM-5.4 Loop Transformer) the first step.",
+   "why": "Ai2 post-training researcher, Interconnects author",
+   "topic": "Research",
+   "replies": "Most replies worry about losing the audit trail: readable CoT was \"the only audit log anyone actually read\", so governance would shift to tool calls, outputs and evals. Some push back on \"inevitable\" (regulation could set other incentives), and one asks how RL credit assignment works without tokens to branch on.",
+   "replyCount": 10
+  },
+  {
+   "title": "Vercel launches Audited ZDR on AI Gateway",
+   "author": "@rauchg",
+   "authorName": "Guillermo Rauch",
+   "url": "https://x.com/rauchg/status/2124860284863209732",
+   "published": "2026-11-23 19:09 IST",
+   "summary": "Rauch quotes Vercel's launch of Audited Zero Data Retention on AI Gateway: an independent firm verifies provider claims against source code and live traffic. Reports from launch partners Baseten, Modal and Wafer are expected by December 8.",
+   "why": "Vercel CEO quoting the official Vercel announcement and blog",
+   "topic": "Tools",
+   "replies": "Broadly positive: people say an audit, not a policy page, is what gets through procurement for clinics, law and HR data. Repeated questions are whether the reports will be public and whether audits re-run on a schedule; one reply says to check that ZDR covers abuse-monitoring copies and the upstream model provider, not just the gateway.",
+   "replyCount": 10
+  },
+  {
+   "title": "Bloomberg: Amazon to acquire much of AI startup Decart",
+   "author": "@business",
+   "authorName": "Bloomberg",
+   "url": "https://x.com/business/status/2124868102752026968",
+   "published": "2026-11-23 19:40 IST",
+   "summary": "Bloomberg reports Amazon has agreed to acquire much of Decart AI, buying its tools to bolster its cloud AI infrastructure. The linked story's headline says Amazon is said to pay $7.5 billion for Decart's tech.",
+   "why": "Bloomberg reporting; sourced deal story",
+   "topic": "Industry",
+   "replies": "Only one reply so far, asking which part of Decart Amazon isn't buying.",
+   "replyCount": 1
+  },
   {
    "title": "Z.ai launches GLM-5.4, its first Loop Transformer model",
    "author": "@Zai_org",
@@ -272,53 +331,6 @@ footer{font-size:.85rem;color:var(--faint);display:flex;flex-direction:column;ga
    "why": "fast.ai founder and hands-on model user",
    "topic": "Tools",
    "replies": "Strong agreement from builders: models fail confidently, so you find the wall after building on top of it, and demos look solved while real deployments with messy data don't. One reply says cheaper implementation should raise ambition, not end the field.",
-   "replyCount": 10
-  },
-  {
-   "title": "Julius (T3): MCP Events spec was accepted, but no client supports it yet",
-   "author": "@jullerino",
-   "authorName": "Julius",
-   "url": "https://x.com/jullerino/status/2124693799654019541",
-   "published": "2026-11-23 08:07 IST",
-   "summary": "Adding MCP Events to T3 Code so outside agents can subscribe to T3 environment events, Julius notes no client supports the spec accepted this week (SEP-3415); ChatGPT and AI SDK support an older draft. He asks whether to ship a temporary bridge or follow the spec 1:1.",
-   "why": "T3 Code engineer reporting a real protocol gap from implementation",
-   "topic": "Tools",
-   "replies": "Split vote: many say follow the spec 1:1 and let clients catch up, others say ship the bridge behind a flag with the spec path as default. Several note MCP's spec keeps moving ahead of client support.",
-   "replyCount": 10
-  },
-  {
-   "title": "Techmeme: Alexandr Wang says the Riemann proof means AI will surpass humans everywhere",
-   "author": "@Techmeme",
-   "authorName": "Techmeme",
-   "url": "https://x.com/Techmeme/status/2124715334943027648",
-   "published": "2026-11-23 09:33 IST",
-   "summary": "Per Techmeme, Meta's Alexandr Wang says the Riemann Hypothesis proof shows AI will surpass humans in every field, including AI research, and calls for AI safety and alignment work.",
-   "why": "Techmeme summary of a Meta AI chief's statement",
-   "topic": "Research",
-   "replies": "Skeptical: replies say a checkable proof and automating AI research are very different claims, and that math is the easiest domain because Lean can verify every step. One asks whether the proof is formalized yet or still with referees.",
-   "replyCount": 7
-  },
-  {
-   "title": "FT: Novartis rejects AI industry hopes of curing cancer in 5-10 years",
-   "author": "@FT",
-   "authorName": "Financial Times",
-   "url": "https://x.com/FT/status/2124734624333013279",
-   "published": "2026-11-23 10:49 IST",
-   "summary": "The FT reports Novartis rejects the AI industry's hopes of curing cancer within 5 to 10 years.",
-   "why": "FT reporting; a big pharma pushing back on AI lab timelines",
-   "topic": "Industry",
-   "replyCount": 0
-  },
-  {
-   "title": "lyra: Gemini Ultra's Colab CLI credits alone pay for the sub",
-   "author": "@lyraxana",
-   "authorName": "lyra",
-   "url": "https://x.com/lyraxana/status/2124700515145511064",
-   "published": "2026-11-23 08:34 IST",
-   "summary": "Quoting a post that Gemini Ultra includes 1000 Colab credits a month (about 55 H100 hours) usable from the CLI by agents, lyra says the credits alone pay for the Google Ultra subscription.",
-   "why": "Watchlist account; claim rests on Google's published Ultra perks",
-   "topic": "Tools",
-   "replies": "Mostly agreement and Colab praise; one notes the Pro tier also gets A100 units, another that Google bundles more perks (GCP credit, storage) than Anthropic or OpenAI. Low signal otherwise.",
    "replyCount": 10
   }
  ]
